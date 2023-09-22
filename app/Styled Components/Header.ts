@@ -102,7 +102,6 @@ export const SerialTab = styled.div`
   justify-content: center;
   align-items: center;
   cursor: default;
-  background-color: red;
 `;
 
 export const SerialHover = styled.div`
@@ -113,7 +112,6 @@ export const SerialHover = styled.div`
   height: 100%;
   width: fit-content;
   transition: all 0.3s ease;
-  background-color: green;
 
   &:hover ${FilmSerialImg} {
     transform: rotate(180deg);
