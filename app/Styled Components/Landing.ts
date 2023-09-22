@@ -6,10 +6,18 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     overflow-x: hidden;
   }
+  @font-face {
+    font-family:"IRANSansX";
+    src: url("./Fonts/IRANSansXMedium.ttf");
+  }
+  @font-face {
+    font-family:"Digi Lalezar Plus";
+    src: url("./Fonts/Digi Lalezar Plus.ttf");
+  }
 `;
 export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   max-width: 1440;
-  background-color: #291212;
+  background-color: #000;
 `;

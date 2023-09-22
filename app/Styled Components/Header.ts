@@ -29,9 +29,10 @@ export const SignLoginBtn = styled.button`
 `;
 
 export const ButtonsText = styled.p`
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 21px;
+  font-family: "IRANSansX";
 `;
 
 export const BuyBtn = styled.button`
@@ -84,8 +85,13 @@ export const TabsPlace = styled.div`
   font-family: IRANSansX;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
+`;
+
+export const FilmSerialImg = styled.img`
+  height: 16px;
+  width: 16px;
 `;
 
 export const SerialTab = styled.div`
@@ -96,6 +102,22 @@ export const SerialTab = styled.div`
   justify-content: center;
   align-items: center;
   cursor: default;
+  background-color: red;
+`;
+
+export const SerialHover = styled.div`
+  display: flex;
+  row-gap: 7px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: fit-content;
+  transition: all 0.3s ease;
+  background-color: green;
+
+  &:hover ${FilmSerialImg} {
+    transform: rotate(180deg);
+  }
 `;
 
 export const FilmTab = styled.div`
@@ -108,6 +130,20 @@ export const FilmTab = styled.div`
   cursor: default;
 `;
 
+export const FilmHover = styled.div`
+  display: flex;
+  row-gap: 7px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: fit-content;
+  transition: all 0.3s ease;
+
+  &:hover ${FilmSerialImg} {
+    transform: rotate(180deg);
+  }
+`;
+
 export const CategoryTab = styled.div`
   height: fit-content;
   width: 25%;
@@ -115,6 +151,10 @@ export const CategoryTab = styled.div`
   gap: 7px;
   justify-content: center;
   align-items: center;
+`;
+
+export const CatgoryText = styled.p`
+  cursor: pointer;
 `;
 
 export const HomeTab = styled.div`
@@ -127,7 +167,12 @@ export const HomeTab = styled.div`
   align-items: center;
 `;
 
+export const HomeText = styled.p`
+  cursor: pointer;
+`;
+
 export const BebinimIconAndText = styled.div`
+  height: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,9 +189,22 @@ export const BebinimText = styled.p`
   font-weight: 950;
   line-height: 52.45px;
   color: #b55253;
+  font-family: "Digi Lalezar Plus";
 `;
 
-export const FilmSerialImg = styled.img`
-  height: 16px;
-  width: 16px;
+export const DropDownFilm = styled.div`
+  position: absolute;
+  top: 67px;
+  right: 28.5%;
+  transition: all 0.3s linear;
+  z-index: 1;
+`;
+
+export const DropDownSerial = styled.div`
+  display: inline-block;
+  position: absolute;
+  top: 67px;
+  right: 34.8%;
+  transition: all 0.3s linear;
+  z-index: 1;
 `;
