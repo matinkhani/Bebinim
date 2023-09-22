@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const BackContainer = styled.div`
+  width: 352px;
+  height: 316px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+`;
+
 export const Container = styled.div`
   height: 312px;
   width: 352px;
@@ -9,7 +17,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: end;
   gap: 20px;
-  background-color: rgba(117, 117, 117, 0.9);
+  background-color: rgba(7, 7, 7, 0.9);
   font-family: IRANSansX;
 `;
 

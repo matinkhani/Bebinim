@@ -19,5 +19,5 @@ export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   max-width: 1440;
-  background-color: #000;
+  background-color: #291212;
 `;
