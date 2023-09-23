@@ -111,11 +111,6 @@ export const SerialHover = styled.div`
   align-items: center;
   height: 100%;
   width: fit-content;
-  transition: all 0.3s ease;
-
-  &:hover ${FilmSerialImg} {
-    transform: rotate(180deg);
-  }
 `;
 
 export const FilmTab = styled.div`
@@ -135,11 +130,6 @@ export const FilmHover = styled.div`
   align-items: center;
   height: 100%;
   width: fit-content;
-  transition: all 0.3s ease;
-
-  &:hover ${FilmSerialImg} {
-    transform: rotate(180deg);
-  }
 `;
 
 export const CategoryTab = styled.div`
@@ -192,17 +182,14 @@ export const BebinimText = styled.p`
 
 export const DropDownFilm = styled.div`
   position: absolute;
-  top: 67px;
+  top: 64px;
   right: 28.5%;
   transition: all 0.3s linear;
-  z-index: 1;
 `;
 
 export const DropDownSerial = styled.div`
-  display: inline-block;
   position: absolute;
-  top: 67px;
+  top: 64px;
   right: 34.8%;
   transition: all 0.3s linear;
-  z-index: 1;
 `;

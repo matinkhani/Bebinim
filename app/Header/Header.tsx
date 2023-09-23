@@ -33,6 +33,9 @@ export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
   const [serialDropDown, setSerialDropDown] = useState<boolean>(false);
 
+  const [filmArrow, setFilmArrow] = useState<boolean>(false);
+  const [serialArrow, setSerialArrow] = useState<boolean>(false);
+
   return (
     <Container>
       <LeftSection>
@@ -49,6 +52,8 @@ export default function Header() {
         onMouseLeave={() => {
           setSerialDropDown(false);
           setFilmDropDown(false);
+          setFilmArrow(false);
+          setSerialArrow(false);
         }}
       >
         <TabsPlace>
@@ -57,6 +62,8 @@ export default function Header() {
               onMouseEnter={() => {
                 setSerialDropDown(true);
                 setFilmDropDown(false);
+                setSerialArrow(true);
+                setFilmArrow(false);
               }}
               style={{
                 display: "flex",
@@ -67,7 +74,22 @@ export default function Header() {
                 width: "fit-content",
               }}
             >
-              <FilmSerialImg src="./images/arrowdown.svg" />
+              <FilmSerialImg
+                src="./images/arrowdown.svg"
+                style={
+                  serialArrow
+                    ? {
+                        transition: "0.3s",
+                        WebkitTransition: "0.3s",
+                        MozTransition: "0.3s",
+                        msTransition: "0.3s",
+                        OTransition: "0.3s",
+                        WebkitTransform: "rotate(180deg)",
+                        transform: "rotate(180deg)",
+                      }
+                    : { transition: "0.2s" }
+                }
+              />
               <p>سریال</p>
             </SerialHover>
           </SerialTab>
@@ -79,6 +101,8 @@ export default function Header() {
               onMouseEnter={() => {
                 setFilmDropDown(true);
                 setSerialDropDown(false);
+                setFilmArrow(true);
+                setSerialArrow(false);
               }}
               style={{
                 display: "flex",
@@ -87,7 +111,22 @@ export default function Header() {
                 alignItems: "center",
               }}
             >
-              <FilmSerialImg src="./images/arrowdown.svg" />
+              <FilmSerialImg
+                src="./images/arrowdown.svg"
+                style={
+                  filmArrow
+                    ? {
+                        transition: "0.3s",
+                        WebkitTransition: "0.3s",
+                        MozTransition: "0.3s",
+                        msTransition: "0.3s",
+                        OTransition: "0.3s",
+                        WebkitTransform: "rotate(180deg)",
+                        transform: "rotate(180deg)",
+                      }
+                    : { transition: "0.2s" }
+                }
+              />
               <p>فیلم</p>
             </FilmHover>
           </FilmTab>
