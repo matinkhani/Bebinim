@@ -1,0 +1,22 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper > .swiper-button-next {
+color: rgba(82,181,180,1);
+right: -20px;
+}
+
+.swiper > .swiper-button-prev {
+color: rgba(82,181,180,1);
+}
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
