@@ -1,17 +1,18 @@
 .swiper {
   width: 100%;
   height: 100%;
+  position: unset;
 }
 
 .swiper > .swiper-button-next {
-color: rgba(82,181,180,1);
-right: -20px;
+  color: rgba(82, 181, 180, 1);
+  right: 70px; 
 }
 
 .swiper > .swiper-button-prev {
-color: rgba(82,181,180,1);
+  color: rgba(82, 181, 180, 1);
+  left: 70px;
 }
-
 
 .swiper-slide {
   text-align: center;

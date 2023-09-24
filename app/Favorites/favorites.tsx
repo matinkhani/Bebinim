@@ -45,7 +45,7 @@ export default function Favorites() {
           />
         </ArrowLeft> */}
         <Carousel>
-          <Swiper navigation={true} slidesPerView={6} speed={1200} modules={[Navigation]} className="mySwiper"  slidesPerGroup={4}>
+          <Swiper  navigation={true} slidesPerView={6} speed={1200} modules={[Navigation]} className="mySwiper"  slidesPerGroup={4}>
         
           
             
