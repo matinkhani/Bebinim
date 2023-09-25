@@ -7,6 +7,7 @@ import Favorites from "./Favorites/favorites";
 import OnlineCinema from "./Online Cinema/onlineCinema";
 import Exclusive from "./Exclusive/exclusive";
 import Animation from "./Animation/animation";
+import Nostalgia from "./Nostalgia/nostalgia";
 export default function Home() {
   return (
     <React.Fragment>
@@ -18,6 +19,7 @@ export default function Home() {
         <OnlineCinema />
         <Exclusive/>
         <Animation />
+        <Nostalgia/>
       </Container>
     </React.Fragment>
   );
