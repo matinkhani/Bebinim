@@ -27,11 +27,11 @@ export default function Exclusive() {
             <HoverText>
               <Details>
                 <DetailsTop>
-                  <RealBtn>ریلیتی شو</RealBtn>
+                  <RealBtn>ریلیتی‌شو</RealBtn>
                 </DetailsTop>
                 <DetailsBottom>
                   <HoverFilmName>صداتو</HoverFilmName>
-                  <HoverDate>پنجشنبه ها</HoverDate>
+                  <HoverDate>پنجشنبه‌ها</HoverDate>
                 </DetailsBottom>
               </Details>
             </HoverText>
@@ -42,11 +42,11 @@ export default function Exclusive() {
             <HoverText>
               <Details>
                 <DetailsTop>
-                  <RealBtn>ریلیتی شو</RealBtn>
+                  <RealBtn>سریال</RealBtn>
                 </DetailsTop>
                 <DetailsBottom>
                   <HoverFilmName>آکتور</HoverFilmName>
-                  <HoverDate>شنبه ها</HoverDate>
+                  <HoverDate>شنبه‌ها</HoverDate>
                 </DetailsBottom>
               </Details>
             </HoverText>
@@ -57,11 +57,11 @@ export default function Exclusive() {
             <HoverText>
               <Details>
                 <DetailsTop>
-                  <RealBtn>ریلیتی شو</RealBtn>
+                  <RealBtn>ریلیتی‌شو</RealBtn>
                 </DetailsTop>
                 <DetailsBottom>
                   <HoverFilmName>پدر خوانده</HoverFilmName>
-                  <HoverDate>جمعه ها</HoverDate>
+                  <HoverDate>جمعه‌ها</HoverDate>
                 </DetailsBottom>
               </Details>
             </HoverText>
@@ -72,11 +72,11 @@ export default function Exclusive() {
             <HoverText>
               <Details>
                 <DetailsTop>
-                  <RealBtn>ریلیتی شو</RealBtn>
+                  <RealBtn>ریلیتی‌شو</RealBtn>
                 </DetailsTop>
                 <DetailsBottom>
                   <HoverFilmName>ناتو</HoverFilmName>
-                  <HoverDate>دوشنبه ها</HoverDate>
+                  <HoverDate>دوشنبه‌ها</HoverDate>
                 </DetailsBottom>
               </Details>
             </HoverText>
