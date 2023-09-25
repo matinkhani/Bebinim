@@ -83,13 +83,52 @@ export const Details = styled.div`
 `;
 
 export const DetailsTop = styled.div`
-height: 20%;
-width: 100%;
-`
+  height: 28%;
+  width: 70%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+`;
+export const RealBtn = styled.button`
+  height: 32px;
+  width: 82px;
+  font-family: IRANSansX;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  color: #070707;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #52b5b4;
+`;
+
 export const DetailsBottom = styled.div`
-height: 50%;
-width: 100%;
-`
+  height: 30%;
+  width: 100%;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+export const HoverFilmName = styled.div`
+  height: 40%;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-family: IRANSansX;
+  font-size: 32px;
+  font-weight: 700;
+`;
+export const HoverDate = styled.div`
+  height: 35%;
+  width: 100%;
+  color: #b55253;
+  text-align: center;
+  font-family: IRANSansX;
+  font-size: 20px;
+  font-weight: 700;
+`;
 
 export const Hover = styled.div`
   width: 319px;
