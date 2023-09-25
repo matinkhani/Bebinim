@@ -38,7 +38,6 @@ export const Movie1 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
   border-radius: 8px;
   background-size: cover;
   background-position: 50% 70%;
@@ -53,7 +52,6 @@ export const Movie2 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
   border-radius: 8px;
   background-size: cover;
   background-position: 50% 15%;
@@ -68,7 +66,6 @@ export const Movie3 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
   border-radius: 8px;
   background-size: cover;
   background-position: 50% 0%;
@@ -83,7 +80,6 @@ export const Movie4 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
   border-radius: 8px;
   background-size: cover;
   background-position: 50% 70%;
