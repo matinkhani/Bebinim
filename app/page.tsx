@@ -4,6 +4,12 @@ import { Container, GlobalStyle } from "./Styled Components/Landing";
 import Header from "./Header/Header";
 import MainLanding from "./Main Landing/MainLanding";
 import Favorites from "./Favorites/favorites";
+import OnlineCinema from "./Online Cinema/onlineCinema";
+import Exclusive from "./Exclusive/exclusive";
+import Animation from "./Animation/animation";
+import Nostalgia from "./Nostalgia/nostalgia";
+import BestIMDb from "./Best IMDb/bestIMDb";
+import FooterSection from "./Footer Section/footerSection";
 export default function Home() {
   return (
     <React.Fragment>
@@ -12,6 +18,12 @@ export default function Home() {
         <Header />
         <MainLanding />
         <Favorites />
+        <OnlineCinema />
+        <Exclusive />
+        <Animation />
+        <Nostalgia />
+        <BestIMDb />
+        <FooterSection/>
       </Container>
     </React.Fragment>
   );

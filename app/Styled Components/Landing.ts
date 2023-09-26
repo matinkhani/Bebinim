@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     justify-content: center;
   }
+
   @font-face {
     font-family:"IRANSansX";
     src: url("./Fonts/IRANSansXMedium.ttf");
