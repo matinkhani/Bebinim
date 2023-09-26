@@ -23,7 +23,4 @@ export const Container = styled.div`
   width: 100vw;
   max-width: 1440px;
   background-color: #291212;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
