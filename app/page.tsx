@@ -9,6 +9,7 @@ import Exclusive from "./Exclusive/exclusive";
 import Animation from "./Animation/animation";
 import Nostalgia from "./Nostalgia/nostalgia";
 import BestIMDb from "./Best IMDb/bestIMDb";
+import FooterSection from "./Footer Section/footerSection";
 export default function Home() {
   return (
     <React.Fragment>
@@ -22,6 +23,7 @@ export default function Home() {
         <Animation />
         <Nostalgia />
         <BestIMDb />
+        <FooterSection/>
       </Container>
     </React.Fragment>
   );
