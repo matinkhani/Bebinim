@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-image: url("./images/GharibFilm.png");
-  height: 620px;
-  width: 100%;
+  height: 639px;
+  width: 1440px;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -28,7 +28,7 @@ export const LeftSide = styled.div`
 export const ArrowIconsPlace = styled.div`
   height: 10%;
   width: 30%;
-  gap: 15px;
+  gap: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,8 @@ export const RightSide = styled.div`
 `;
 
 export const ExplainContainer = styled.div`
-  height: 50%;
+  height: 45%;
+  gap: 13px;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -105,28 +106,28 @@ export const WatchSVG = styled.img`
 `;
 
 export const Text = styled.div`
-  height: 18%;
-  width: 70%;
+  height: fit-content;
+  width: 79%;
   direction: rtl;
   font-family: IRANSansX;
   font-size: 15px;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 25px;
   letter-spacing: 0em;
   color: rgba(0, 0, 0, 1);
 `;
 
 export const BebinimBox = styled.div`
   width: 100%;
-  height: 200px;
+  height: 160px;
   background-image: linear-gradient(to top, #291212, transparent);
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: space-evenly;
 `;
 
 export const LinksPlace = styled.div`
-  height: 80%;
+  height: 100%;
   width: 90%;
   display: flex;
   align-items: end;
@@ -135,7 +136,7 @@ export const LinksPlace = styled.div`
 
 export const BebinimLinks = styled.div`
   width: 392px;
-  height: 80%;
+  height: 100%;
   padding: 28px, 96px, 28px, 118px;
   border-radius: 12px;
   display: flex;

@@ -53,7 +53,6 @@ export default function MainLanding() {
 
       <BebinimBox>
         <LinksPlace>
-
           <BebinimLinks>
             <FreshText>انیمیشن تازه ببینیم</FreshText>
             <FreshSVG src="./images/freshAnimation.svg" />
@@ -68,7 +67,6 @@ export default function MainLanding() {
             <FreshText>فیلم تازه ببینیم</FreshText>
             <FreshSVG src="./images/freshMovie.svg" />
           </BebinimLinks>
-          
         </LinksPlace>
       </BebinimBox>
     </Container>
