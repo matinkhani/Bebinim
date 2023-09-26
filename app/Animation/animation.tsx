@@ -22,6 +22,100 @@ import {
 } from "../Styled Components/animation";
 
 export default function Animation() {
+  const Animations = [
+    // Sponge Bob
+    {
+      url: "./images/animation/sponge-bob.png",
+      name: "باب اسنفجی",
+      year: "۱۹۹۹",
+      category: "انیمیشن",
+    },
+    // Panda
+    {
+      url: "./images/animation/panda.svg",
+      name: "پاندای کونگ فو کار ۳",
+      year: "۲۰۱۶",
+      category: "انیمیشن",
+    },
+    // Ice Age
+    {
+      url: "./images/animation/ice-age.jpg",
+      name: "عصر یخبندان",
+      year: "۲۰۰۲",
+      category: "انیمیشن",
+    },
+    // Cars
+    {
+      url: "./images/animation/cars.jpg",
+      name: "ماشین‌ها",
+      year: "۲۰۰۶",
+      category: "انیمیشن",
+    },
+    // Tom & Jerry
+    {
+      url: "./images/animation/tom&jerry.png",
+      name: "تام و جری",
+      year: "۱۹۴۰",
+      category: "انیمیشن",
+    },
+    // Pink Panther
+    {
+      url: "./images/animation/pink-panther.png",
+      name: "پلنگ صورتی",
+      year: "۱۹۶۹",
+      category: "انیمیشن",
+    },
+    // Madagascar
+    {
+      url: "./images/animation/madagascar.jpg",
+      name: "ماداگاسکار ۲",
+      year: "۲۰۰۵",
+      category: "انیمیشن",
+    },
+    // Toy Story
+    {
+      url: "./images/animation/toy-story.jpeg",
+      name: "داستان اسباب بازی",
+      year: "۱۹۹۵",
+      category: "انیمیشن",
+    },
+    // Luca
+    {
+      url: "./images/animation/luca.svg",
+      name: "لوکا",
+      year: "۲۰۲۱",
+      category: "انیمیشن",
+    },
+    // Soul
+    {
+      url: "./images/animation/soul.svg",
+      name: "روح",
+      year: "۲۰۲۰",
+      category: "انیمیشن",
+    },
+    // Rango
+    {
+      url: "./images/animation/rango.svg",
+      name: "رنگو",
+      year: "۲۰۱۱",
+      category: "انیمیشن",
+    },
+    // Dolphin Boy
+    {
+      url: "./images/animation/dolphin.svg",
+      name: "پسر دلفینی",
+      year: "۲۰۲۱",
+      category: "انیمیشن",
+    },
+    // Turning Red
+    {
+      url: "./images/animation/turning-red.svg",
+      name: "قرمز شدن",
+      year: "۲۰۲۱",
+      category: "انیمیشن",
+    },
+  ];
+
   return (
     <Container>
       <TextPlace>
@@ -37,214 +131,25 @@ export default function Animation() {
             className="mySwiper"
             slidesPerGroup={4}
           >
-            {/* Film 1 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/animation/sponge-bob.png" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>باب اسنفجی</NameFilm>
-                    <DateFilm>
-                      <Year>۱۹۹۹</Year>
-                      <Line />
-                      <Name>انیمیشن</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 2 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/animation/panda.svg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>پاندای کونگ فو کار ۳</NameFilm>
-                    <DateFilm>
-                      <Year>۲۰۱۶</Year>
-                      <Line />
-                      <Name>انیمیشن</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 3 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/animation/ice-age.jpg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>عصر یخبندان</NameFilm>
-                    <DateFilm>
-                      <Year>۲۰۰۲</Year>
-                      <Line />
-                      <Name>انیمیشن</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 4 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/animation/cars.jpg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>ماشین‌ها</NameFilm>
-                    <DateFilm>
-                      <Year>۲۰۰۶</Year>
-                      <Line />
-                      <Name>انیمیشن</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 5 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/animation/tom&jerry.png" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>تام و جری</NameFilm>
-                    <DateFilm>
-                      <Year>۱۹۴۰</Year>
-                      <Line />
-                      <Name>انیمیشن</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 6 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/animation/pink-panther.png" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>پلنگ صورتی</NameFilm>
-                    <DateFilm>
-                      <Year>۱۹۶۹</Year>
-                      <Line />
-                      <Name>انیمیشن</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>
-            {/* Film 7 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/animation/madagascar.jpg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>ماداگاسکار ۲</NameFilm>
-                    <DateFilm>
-                      <Year>۲۰۰۵</Year>
-                      <Line />
-                      <Name>انیمیشن</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 8 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/animation/toy-story.jpeg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>داستان اسباب بازی</NameFilm>
-                    <DateFilm>
-                      <Year>۱۹۹۵</Year>
-                      <Line />
-                      <Name>انیمیشن</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 9 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/animation/luca.svg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>لوکا</NameFilm>
-                    <DateFilm>
-                      <Year>۲۰۲۱</Year>
-                      <Line />
-                      <Name>انیمیشن</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 10 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/animation/soul.svg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>روح</NameFilm>
-                    <DateFilm>
-                      <Year>۲۰۲۰</Year>
-                      <Line />
-                      <Name>انیمیشن</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 11 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/animation/rango.svg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>رنگو</NameFilm>
-                    <DateFilm>
-                      <Year>۲۰۱۱</Year>
-                      <Line />
-                      <Name>انیمیشن</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 12 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/animation/dolphin.svg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>پسر دلفینی</NameFilm>
-                    <DateFilm>
-                      <Year>۲۰۲۲</Year>
-                      <Line />
-                      <Name>انیمیشن</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 13 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/animation/turning-red.svg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>قرمز شدن</NameFilm>
-                    <DateFilm>
-                      <Year>۲۰۲۲</Year>
-                      <Line />
-                      <Name>انیمیشن</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
+            {Animations.map((item, index) => {
+              return (
+                <SwiperSlide>
+                  <FavoriteImg key={index} src={item.url} />
+                  <Hover>
+                    <HoverText>
+                      <Details>
+                        <NameFilm>{item.name}</NameFilm>
+                        <DateFilm>
+                          <Year>{item.year}</Year>
+                          <Line />
+                          <Name>{item.category}</Name>
+                        </DateFilm>
+                      </Details>
+                    </HoverText>
+                  </Hover>
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </Carousel>
       </CarouselContainer>
