@@ -21,6 +21,68 @@ import {
 } from "../Styled Components/bestIMDb";
 
 export default function BestIMDb() {
+  const BestIMDbTop = [
+    // Fight Club
+    {
+      url: "./images/imdb/fight-club.png",
+      name: "Fight Club",
+      year: "۱۹۹۹",
+      category: "فیلم",
+    },
+    // The Dark Knight
+    {
+      url: "./images/imdb/dark-knight.png",
+      name: "The Dark Knight",
+      year: "۲۰۰۸",
+      category: "فیلم",
+    },
+    // Breaking Bad
+    {
+      url: "./images/imdb/breaking-bad.png",
+      name: "Breaking Bad",
+      year: "۲۰۰۸",
+      category: "سریال",
+    },
+    // Inception
+    {
+      url: "./images/imdb/inception.png",
+      name: "Inception",
+      year: "۲۰۱۰",
+      category: "فیلم",
+    },
+  ];
+
+  const BestIMDbDown = [
+    // La La Land
+    {
+      url: "./images/imdb/lala-land.png",
+      name: "La La Land",
+      year: "۲۰۱۶",
+      category: "فیلم",
+    },
+    // Coda
+    {
+      url: "./images/imdb/coda.png",
+      name: "Coda",
+      year: "۲۰۲۱",
+      category: "فیلم",
+    },
+    // Interstellar
+    {
+      url: "./images/imdb/interstellar.png",
+      name: "Interstellar",
+      year: "۲۰۱۴",
+      category: "فیلم",
+    },
+    // The Godfather
+    {
+      url: "./images/imdb/god-father.png",
+      name: "The Godfather",
+      year: "۱۹۷۲",
+      category: "فیلم",
+    },
+  ];
+
   return (
     <Container>
       <ImdbDetails>
@@ -32,135 +94,53 @@ export default function BestIMDb() {
         <ImdbText>Imdb برترین‌های</ImdbText>
       </ImdbDetails>
       <PlaceImdb>
+        {/* Top Section */}
         <ImdbTop>
-          <ImgContainer>
-            <ImdbImg src="./images/imdb/fight-club.png" />
-            <Hover>
-              <HoverText>
-                <Details>
-                  <NameFilm>Fight Club</NameFilm>
-                  <DateFilm>
-                    <Year>۱۹۹۹</Year>
-                    <Line />
-                    <Name>فیلم</Name>
-                  </DateFilm>
-                </Details>
-              </HoverText>
-            </Hover>
-          </ImgContainer>
-
-          <ImgContainer>
-            <ImdbImg src="./images/imdb/dark-knight.png" />
-            <Hover>
-              <HoverText>
-                <Details>
-                  <NameFilm>The Dark Knight</NameFilm>
-                  <DateFilm>
-                    <Year>۲۰۰۸</Year>
-                    <Line />
-                    <Name>فیلم</Name>
-                  </DateFilm>
-                </Details>
-              </HoverText>
-            </Hover>
-          </ImgContainer>
-
-          <ImgContainer>
-            <ImdbImg src="./images/imdb/breaking-bad.png" />
-            <Hover>
-              <HoverText>
-                <Details>
-                  <NameFilm>Breaking Bad</NameFilm>
-                  <DateFilm>
-                    <Year>۲۰۰۸</Year>
-                    <Line />
-                    <Name>سریال</Name>
-                  </DateFilm>
-                </Details>
-              </HoverText>
-            </Hover>
-          </ImgContainer>
-
-          <ImgContainer>
-            <ImdbImg src="./images/imdb/inception.png" />
-            <Hover>
-              <HoverText>
-                <Details>
-                  <NameFilm>Inception</NameFilm>
-                  <DateFilm>
-                    <Year>۲۰۱۰</Year>
-                    <Line />
-                    <Name>فیلم</Name>
-                  </DateFilm>
-                </Details>
-              </HoverText>
-            </Hover>
-          </ImgContainer>
+          {BestIMDbTop.map((item, index) => {
+            return (
+              <>
+                <ImgContainer>
+                  <ImdbImg src={item.url} />
+                  <Hover>
+                    <HoverText>
+                      <Details>
+                        <NameFilm>{item.name}</NameFilm>
+                        <DateFilm>
+                          <Year>{item.year}</Year>
+                          <Line />
+                          <Name>{item.category}</Name>
+                        </DateFilm>
+                      </Details>
+                    </HoverText>
+                  </Hover>
+                </ImgContainer>
+              </>
+            );
+          })}
         </ImdbTop>
+          {/* Down Section */}
         <ImdbDown>
-          <ImgContainer>
-            <ImdbImg src="./images/imdb/lala-land.png" />
-            <Hover>
-              <HoverText>
-                <Details>
-                  <NameFilm>La La Land</NameFilm>
-                  <DateFilm>
-                    <Year>۲۰۱۶</Year>
-                    <Line />
-                    <Name>فیلم</Name>
-                  </DateFilm>
-                </Details>
-              </HoverText>
-            </Hover>
-          </ImgContainer>
-
-          <ImgContainer>
-            <ImdbImg src="./images/imdb/coda.png" />
-            <Hover>
-              <HoverText>
-                <Details>
-                  <NameFilm>Coda</NameFilm>
-                  <DateFilm>
-                    <Year>۲۰۲۱</Year>
-                    <Line />
-                    <Name>فیلم</Name>
-                  </DateFilm>
-                </Details>
-              </HoverText>
-            </Hover>
-          </ImgContainer>
-
-          <ImgContainer>
-            <ImdbImg src="./images/imdb/interstellar.png" />
-            <Hover>
-              <HoverText>
-                <Details>
-                  <NameFilm>Interstellar</NameFilm>
-                  <DateFilm>
-                    <Year>۲۰۱۴</Year>
-                    <Line />
-                    <Name>فیلم</Name>
-                  </DateFilm>
-                </Details>
-              </HoverText>
-            </Hover>
-          </ImgContainer>
-
-          <ImgContainer>
-            <ImdbImg src="./images/imdb/god-father.png" />
-            <Hover>
-              <HoverText>
-                <Details>
-                  <NameFilm>The Godfather</NameFilm>
-                  <DateFilm>
-                    <Year>۱۹۷۲</Year>
-                    <Line />
-                    <Name>فیلم</Name>
-                  </DateFilm>
-                </Details>
-              </HoverText>
-            </Hover>
-          </ImgContainer>
+          {BestIMDbDown.map((item, index) => {
+            return (
+              <>
+                <ImgContainer>
+                  <ImdbImg src={item.url} />
+                  <Hover>
+                    <HoverText>
+                      <Details>
+                        <NameFilm>{item.name}</NameFilm>
+                        <DateFilm>
+                          <Year>{item.year}</Year>
+                          <Line />
+                          <Name>{item.category}</Name>
+                        </DateFilm>
+                      </Details>
+                    </HoverText>
+                  </Hover>
+                </ImgContainer>
+              </>
+            );
+          })}
         </ImdbDown>
       </PlaceImdb>
     </Container>
