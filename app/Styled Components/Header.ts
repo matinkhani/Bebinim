@@ -172,6 +172,7 @@ export const BebinimIconAndText = styled.div`
 export const BebinimIcon = styled.img`
   height: 40px;
   width: 40px;
+  cursor: pointer;
 `;
 
 export const BebinimText = styled.p`
@@ -180,6 +181,7 @@ export const BebinimText = styled.p`
   line-height: 52.45px;
   color: #b55253;
   font-family: "Digi Lalezar Plus";
+  cursor: pointer;
 `;
 
 export const DropDownFilm = styled.div`

@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     justify-content: center;
   }
+
   @font-face {
     font-family:"IRANSansX";
     src: url("./Fonts/IRANSansXMedium.ttf");
@@ -22,4 +23,7 @@ export const Container = styled.div`
   width: 100vw;
   max-width: 1440px;
   background-color: #291212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;

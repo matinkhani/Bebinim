@@ -27,7 +27,7 @@ export const PosterPlace = styled.div`
   height: 90%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 `;
