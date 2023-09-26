@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  top: 0;
   width: 1440px;
   height: 64px;
   display: flex;
@@ -62,7 +61,7 @@ export const SearchIcon = styled.img`
 export const RightSection = styled.div`
   height: 100%;
   width: 40%;
-  gap: 12px;
+  gap: 15px;
   display: flex;
   align-items: center;
 `;

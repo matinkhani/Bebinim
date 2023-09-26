@@ -31,7 +31,7 @@ export const ExclusiveMovie = styled.div`
 `;
 
 export const Movies = styled.div`
-  width: 319px;
+  width: 288px;
   height: 400px;
   border-radius: 8px;
   background-size: cover;
@@ -39,51 +39,13 @@ export const Movies = styled.div`
   position: relative;
 `;
 
-export const Movies1 = styled.div`
-  width: 319px;
-  height: 400px;
-  border-radius: 8px;
-  background-image: url("./images/exclusive/sedato.svg");
-  background-size: cover;
-  cursor: pointer;
-  position: relative;
-`;
-
-export const Movies2 = styled.div`
-  width: 319px;
-  height: 400px;
-  border-radius: 8px;
-  background-image: url("./images/exclusive/actor.svg");
-  background-size: cover;
-  cursor: pointer;
-  position: relative;
-`;
-
-export const Movies3 = styled.div`
-  width: 319px;
-  height: 400px;
-  border-radius: 8px;
-  background-image: url("./images/exclusive/godfather.svg");
-  background-size: cover;
-  cursor: pointer;
-  position: relative;
-`;
-
-export const Movies4 = styled.div`
-  width: 319px;
-  height: 400px;
-  border-radius: 8px;
-  background-image: url("./images/exclusive/nato.svg");
-  background-size: cover;
-  cursor: pointer;
-  position: relative;
-`;
 export const HoverText = styled.div`
   display: none;
 `;
+
 export const Details = styled.div`
+  width: 288px;
   height: 400px;
-  width: 319px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -140,7 +102,7 @@ export const HoverDate = styled.div`
 `;
 
 export const Hover = styled.div`
-  width: 319px;
+  width: 288px;
   height: 400px;
   position: absolute;
   cursor: pointer;

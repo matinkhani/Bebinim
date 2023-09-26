@@ -19,8 +19,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 export const Container = styled.div`
-  height: fit-content;
-  width: 1440px;
+  height: 100vh;
+  width: 100vw;
+  max-width: 1440px;
   background-color: #291212;
   display: flex;
   flex-direction: column;

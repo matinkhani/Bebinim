@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const CinemaOlineText = styled.div`
   width: 79%;
-  height: 10%;
+  height: 5%;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -72,6 +72,7 @@ export const Movie3 = styled.div`
   background-image: url("./images/CinemaOnline/maslahat.png");
   cursor: pointer;
   position: relative;
+  margin-top: -80px;
 `;
 
 export const Movie4 = styled.div`
@@ -86,6 +87,7 @@ export const Movie4 = styled.div`
   background-image: url("./images/CinemaOnline/fosil.png");
   cursor: pointer;
   position: relative;
+  margin-top: -80px;
 `;
 
 export const HoverText = styled.div`
