@@ -5,6 +5,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
   }
   @font-face {
     font-family:"IRANSansX";
@@ -17,7 +19,10 @@ export const GlobalStyle = createGlobalStyle`
 `;
 export const Container = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 1440px;
   max-width: 1440;
   background-color: #291212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
