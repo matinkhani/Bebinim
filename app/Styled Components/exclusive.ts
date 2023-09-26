@@ -30,6 +30,15 @@ export const ExclusiveMovie = styled.div`
   gap: 24px;
 `;
 
+export const Movies = styled.div`
+  width: 319px;
+  height: 400px;
+  border-radius: 8px;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+`;
+
 export const Movies1 = styled.div`
   width: 319px;
   height: 400px;

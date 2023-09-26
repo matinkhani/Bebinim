@@ -10,78 +10,65 @@ import {
   HoverDate,
   HoverFilmName,
   HoverText,
-  Movies1,
-  Movies2,
-  Movies3,
-  Movies4,
+  Movies,
   RealBtn,
 } from "../Styled Components/exclusive";
 
 export default function Exclusive() {
+  const Movie = [
+    // Sedato
+    {
+      url: "./images/exclusive/sedato.svg",
+      name: "صداتو",
+      date: "پنجشنبه‌ها",
+      category: "ریلیتی‌شو",
+    },
+    // Actor
+    {
+      url: "./images/exclusive/actor.svg",
+      name: "آکتور",
+      date: "شنبه‌ها",
+      category: "سریال",
+    },
+    // The God Father
+    {
+      url: "./images/exclusive/godfather.svg",
+      name: "پدر خوانده",
+      date: "جمعه‌ها",
+      category: "ریلیتی‌شو",
+    },
+    // Nato
+    {
+      url: "./images/exclusive/nato.svg",
+      name: "ناتو",
+      date: "دوشنبه‌ها",
+      category: "ریلیتی‌شو",
+    },
+  ];
+
   return (
     <Container>
       <ExclusiveText>اختصاصی ببینیم</ExclusiveText>
       <ExclusiveMovie>
-        <Movies1>
-          <Hover>
-            <HoverText>
-              <Details>
-                <DetailsTop>
-                  <RealBtn>ریلیتی‌شو</RealBtn>
-                </DetailsTop>
-                <DetailsBottom>
-                  <HoverFilmName>صداتو</HoverFilmName>
-                  <HoverDate>پنجشنبه‌ها</HoverDate>
-                </DetailsBottom>
-              </Details>
-            </HoverText>
-          </Hover>
-        </Movies1>
-        <Movies2>
-          <Hover>
-            <HoverText>
-              <Details>
-                <DetailsTop>
-                  <RealBtn>سریال</RealBtn>
-                </DetailsTop>
-                <DetailsBottom>
-                  <HoverFilmName>آکتور</HoverFilmName>
-                  <HoverDate>شنبه‌ها</HoverDate>
-                </DetailsBottom>
-              </Details>
-            </HoverText>
-          </Hover>
-        </Movies2>
-        <Movies3>
-          <Hover>
-            <HoverText>
-              <Details>
-                <DetailsTop>
-                  <RealBtn>ریلیتی‌شو</RealBtn>
-                </DetailsTop>
-                <DetailsBottom>
-                  <HoverFilmName>پدر خوانده</HoverFilmName>
-                  <HoverDate>جمعه‌ها</HoverDate>
-                </DetailsBottom>
-              </Details>
-            </HoverText>
-          </Hover>
-        </Movies3>
-        <Movies4>
-          <Hover>
-            <HoverText>
-              <Details>
-                <DetailsTop>
-                  <RealBtn>ریلیتی‌شو</RealBtn>
-                </DetailsTop>
-                <DetailsBottom>
-                  <HoverFilmName>ناتو</HoverFilmName>
-                  <HoverDate>دوشنبه‌ها</HoverDate>
-                </DetailsBottom>
-              </Details>
-            </HoverText>
-          </Hover>
-        </Movies4>
+        {Movie.map((item, index) => {
+          return (
+            <Movies key={index} style={{ backgroundImage: `url(${item.url})` }}>
+              <Hover>
+                <HoverText>
+                  <Details>
+                    <DetailsTop>
+                      <RealBtn>{item.category}</RealBtn>
+                    </DetailsTop>
+                    <DetailsBottom>
+                      <HoverFilmName>{item.name}</HoverFilmName>
+                      <HoverDate>{item.date}</HoverDate>
+                    </DetailsBottom>
+                  </Details>
+                </HoverText>
+              </Hover>
+            </Movies>
+          );
+        })}
       </ExclusiveMovie>
     </Container>
   );
