@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const CinemaOlineText = styled.div`
   width: 79%;
-  height: 10%;
+  height: 5%;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -23,7 +23,7 @@ export const CinemaOlineText = styled.div`
 `;
 
 export const PosterPlace = styled.div`
-  width: 80%;
+  width: 85%;
   height: 90%;
   display: flex;
   flex-wrap: wrap;
@@ -33,8 +33,8 @@ export const PosterPlace = styled.div`
 `;
 
 export const Movie1 = styled.div`
-  width: 660px;
-  height: 255px;
+  width: 600px;
+  height: 228px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,8 +47,8 @@ export const Movie1 = styled.div`
 `;
 
 export const Movie2 = styled.div`
-  width: 660px;
-  height: 255px;
+  width: 600px;
+  height: 228px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,8 +61,8 @@ export const Movie2 = styled.div`
 `;
 
 export const Movie3 = styled.div`
-  width: 660px;
-  height: 255px;
+  width: 600px;
+  height: 228px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,11 +72,12 @@ export const Movie3 = styled.div`
   background-image: url("./images/CinemaOnline/maslahat.png");
   cursor: pointer;
   position: relative;
+  margin-top: -80px;
 `;
 
 export const Movie4 = styled.div`
-  width: 660px;
-  height: 255px;
+  width: 600px;
+  height: 228px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +87,7 @@ export const Movie4 = styled.div`
   background-image: url("./images/CinemaOnline/fosil.png");
   cursor: pointer;
   position: relative;
+  margin-top: -80px;
 `;
 
 export const HoverText = styled.div`
@@ -93,8 +95,8 @@ export const HoverText = styled.div`
 `;
 
 export const DetailsPlace = styled.div`
-  height: 255px;
-  width: 660px;
+  width: 600px;
+  height: 228px;
   display: flex;
   align-items: end;
   flex-direction: column;
@@ -103,8 +105,8 @@ export const DetailsPlace = styled.div`
 `;
 
 export const Hover = styled.div`
-  width: 660px;
-  height: 255px;
+  width: 600px;
+  height: 228px;
   position: absolute;
   border-radius: 8px;
   border: 4px solid transparent;

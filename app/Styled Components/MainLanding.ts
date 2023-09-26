@@ -9,6 +9,7 @@ export const Container = styled.div`
   align-items: end;
   flex-direction: column;
   background-size: cover;
+  background-position: 40%;
 `;
 
 export const FilmPoster = styled.div`

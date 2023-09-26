@@ -23,7 +23,7 @@ export const ImdbTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 71px;
+  gap: 25px;
 `;
 
 export const ImdbDown = styled.div`
@@ -32,7 +32,7 @@ export const ImdbDown = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 71px;
+  gap: 25px;
 `;
 
 export const ImdbDetails = styled.div`
@@ -77,8 +77,8 @@ export const More = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-  height: 216px;
   width: 288px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +91,7 @@ export const HoverText = styled.div`
 
 export const Hover = styled.div`
   width: 288px;
-  height: 216px;
+  height: 200px;
   border-radius: 8px;
   position: absolute;
   transition: all 0.3s;
@@ -115,7 +115,7 @@ export const Hover = styled.div`
 
 export const ImdbImg = styled.img`
   width: 288px;
-  height: 216px;
+  height: 200px;
   border-radius: 8px;
   cursor: pointer;
 `;

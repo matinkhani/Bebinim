@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+  width: 1440px;
   height: 64px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 70px;
   background-color: #291212;
+  position: fixed;
+  z-index: 2;
 `;
 
 export const LeftSection = styled.div`
@@ -59,7 +61,7 @@ export const SearchIcon = styled.img`
 export const RightSection = styled.div`
   height: 100%;
   width: 40%;
-  gap: 7px;
+  gap: 15px;
   display: flex;
   align-items: center;
 `;
