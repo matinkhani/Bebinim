@@ -1,13 +1,16 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+  top: 0;
+  width: 1440px;
   height: 64px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 70px;
   background-color: #291212;
+  position: fixed;
+  z-index: 2;
 `;
 
 export const LeftSection = styled.div`
@@ -59,7 +62,7 @@ export const SearchIcon = styled.img`
 export const RightSection = styled.div`
   height: 100%;
   width: 40%;
-  gap: 7px;
+  gap: 12px;
   display: flex;
   align-items: center;
 `;
@@ -170,6 +173,7 @@ export const BebinimIconAndText = styled.div`
 export const BebinimIcon = styled.img`
   height: 40px;
   width: 40px;
+  cursor: pointer;
 `;
 
 export const BebinimText = styled.p`
@@ -178,6 +182,7 @@ export const BebinimText = styled.p`
   line-height: 52.45px;
   color: #b55253;
   font-family: "Digi Lalezar Plus";
+  cursor: pointer;
 `;
 
 export const DropDownFilm = styled.div`

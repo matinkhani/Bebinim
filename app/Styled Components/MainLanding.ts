@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-image: url("./images/GharibFilm.png");
-  height: 745px;
+  height: 620px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: end;
   flex-direction: column;
   background-size: cover;
+  margin-top: 64px;
 `;
 
 export const FilmPoster = styled.div`

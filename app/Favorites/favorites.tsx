@@ -9,10 +9,7 @@ import {
   Container,
   TextPlace,
   Text,
-  ArrowLeft,
   Carousel,
-  ArrowRight,
-  Arrow,
   FavoriteImg,
   Hover,
   HoverText,
@@ -25,6 +22,99 @@ import {
 } from "../Styled Components/favorites";
 
 export default function Favorites() {
+  const Favorites = [
+    //ablagh
+    {
+      url: "./images/favorites/Frame1.png",
+      name: "ابلق",
+      category: "فیلم",
+      year: "۱۳۹۹",
+    },
+    //titi
+    {
+      url: "./images/favorites/frame2.png",
+      name: "تی تی",
+      category: "فیلم",
+      year: "۱۳۹۹",
+    },
+    //posteshir
+    {
+      url: "./images/favorites/Frame3.png",
+      name: "پوست شیر‍",
+      category: "سریال",
+      year: "۱۴۰۱",
+    },
+    //marde baznde
+    {
+      url: "./images/favorites/Frame4.png",
+      name: "مرد بازنده",
+      category: "فیلم",
+      year: "۱۴۰۰",
+    },
+    //sag band
+    {
+      url: "./images/favorites/Frame5.png",
+      name: "سگ بند",
+      category: "فیلم",
+      year: "۱۴۰۰",
+    },
+    //shadravan
+    {
+      url: "./images/favorites/Frame6.png",
+      name: "شادروان",
+      category: "فیلم",
+      year: "۱۴۰۱",
+    },
+    //zelava
+    {
+      url: "./images/favorites/Frame7.jpg",
+      name: "زلاوا",
+      category: "فیلم",
+      year: "۱۳۹۹",
+    },
+    //last of us
+    {
+      url: "./images/favorites/Frame8.jpg",
+      name: "The Last of Us",
+      category: "سریال",
+      year: "۲۰۱۳",
+    },
+    //bedon ghara ghabli
+    {
+      url: "./images/favorites/Frame9.jpg",
+      name: "بدون قرار قبلی",
+      category: "فیلم",
+      year: "۱۴۰۰",
+    },
+    //john wick 4
+    {
+      url: "./images/favorites/Frame10.jpg",
+      name: "John Wick: Chapter 4",
+      category: "فیلم",
+      year: "۲۰۲۳",
+    },
+    //shenaye parvane
+    {
+      url: "./images/favorites/Frame11.jpg",
+      name: "شنای پروانه",
+      category: "فیلم",
+      year: "۱۳۹۸",
+    },
+    //mogheiat mahdi
+    {
+      url: "./images/favorites/Frame12.jpeg",
+      name: "موقعیت مهدی",
+      category: "فیلم",
+      year: "۱۴۰۰",
+    },
+    //dozist
+    {
+      url: "./images/favorites/Frame13.jpg",
+      name: "دوزیست",
+      category: "فیلم",
+      year: "۱۳۹۹",
+    },
+  ];
   return (
     <Container>
       <TextPlace>
@@ -40,214 +130,25 @@ export default function Favorites() {
             className="mySwiper"
             slidesPerGroup={4}
           >
-            {/* Film 1 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/favorites/Frame1.png" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>ابلق</NameFilm>
-                    <DateFilm>
-                      <Year>۱۳۹۹</Year>
-                      <Line />
-                      <Name>فیلم</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 2 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/favorites/frame2.png" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>تی تی</NameFilm>
-                    <DateFilm>
-                      <Year>۱۳۹۹</Year>
-                      <Line />
-                      <Name>فیلم</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 3 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/favorites/Frame3.png" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>پوست شیر‍‍</NameFilm>
-                    <DateFilm>
-                      <Year>۱۴۰۱</Year>
-                      <Line />
-                      <Name>سریال</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 4 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/favorites/Frame4.png" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>مرد بازنده</NameFilm>
-                    <DateFilm>
-                      <Year>۱۴۰۰</Year>
-                      <Line />
-                      <Name>فیلم</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 5 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/favorites/Frame5.png" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>سگ بند</NameFilm>
-                    <DateFilm>
-                      <Year>۱۴۰۰</Year>
-                      <Line />
-                      <Name>فیلم</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 6 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/favorites/Frame6.png" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>شادروان</NameFilm>
-                    <DateFilm>
-                      <Year>۱۴۰۱</Year>
-                      <Line />
-                      <Name>فیلم</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 7 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/favorites/Frame7.jpg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>زلاوا</NameFilm>
-                    <DateFilm>
-                      <Year>۱۳۹۹</Year>
-                      <Line />
-                      <Name>فیلم</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 8 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/favorites/Frame8.jpg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>The Last of Us</NameFilm>
-                    <DateFilm>
-                      <Year>۲۰۱۳</Year>
-                      <Line />
-                      <Name>سریال</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 9 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/favorites/Frame9.jpg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>بدون قرار قبلی</NameFilm>
-                    <DateFilm>
-                      <Year>۱۴۰۰</Year>
-                      <Line />
-                      <Name>فیلم</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 10 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/favorites/Frame10.jpg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>John Wick: Chapter 4</NameFilm>
-                    <DateFilm>
-                      <Year>۲۰۲۳</Year>
-                      <Line />
-                      <Name>فیلم</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 11 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/favorites/Frame11.jpg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>شنای پروانه</NameFilm>
-                    <DateFilm>
-                      <Year>۱۳۹۸</Year>
-                      <Line />
-                      <Name>فیلم</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 12 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/favorites/Frame12.jpeg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>موقعیت مهدی</NameFilm>
-                    <DateFilm>
-                      <Year>۱۴۰۰</Year>
-                      <Line />
-                      <Name>فیلم</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>{" "}
-            {/* Film 13 */}
-            <SwiperSlide>
-              <FavoriteImg src="./images/favorites/Frame13.jpg" />
-              <Hover>
-                <HoverText>
-                  <Details>
-                    <NameFilm>دوزیست</NameFilm>
-                    <DateFilm>
-                      <Year>۱۳۹۹</Year>
-                      <Line />
-                      <Name>فیلم</Name>
-                    </DateFilm>
-                  </Details>
-                </HoverText>
-              </Hover>
-            </SwiperSlide>
+            {Favorites.map((item, index) => {
+              return (
+                <SwiperSlide>
+                  <FavoriteImg key={index} src={item.url} />
+                  <Hover>
+                    <HoverText>
+                      <Details>
+                        <NameFilm>{item.name}</NameFilm>
+                        <DateFilm>
+                          <Year>{item.year}</Year>
+                          <Line />
+                          <Name>{item.category}</Name>
+                        </DateFilm>
+                      </Details>
+                    </HoverText>
+                  </Hover>
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </Carousel>
       </CarouselContainer>
