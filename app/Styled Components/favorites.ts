@@ -7,11 +7,12 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: end;
   background-color: #291212;
+  /* background-color: red; */
 `;
 
 export const TextPlace = styled.div`
   height: 20%;
-  width: 31.5%;
+  width: 28%;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -58,7 +59,7 @@ export const ArrowRight = styled.div`
 
 export const Carousel = styled.div`
   height: 100%;
-  width: 82%;
+  width: 88%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

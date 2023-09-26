@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 export const Container = styled.div`
-  height: 100vh;
+  height: fit-content;
   width: 1440px;
   background-color: #291212;
   display: flex;
