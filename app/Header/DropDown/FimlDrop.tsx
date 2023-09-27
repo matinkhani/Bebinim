@@ -7,6 +7,7 @@ import {
   SectionRight,
   TextMovies,
 } from "@/app/Styled Components/HeaderDropDown";
+import Link from "next/link";
 import React from "react";
 
 export default function FimlDrop() {
@@ -15,46 +16,72 @@ export default function FimlDrop() {
       <Container>
         <SectionLeft>
           <LeftTabs>
-            <TextMovies>جنگی</TextMovies>
+            <TextMovies>
+              <Link href="#">جنگی</Link>
+            </TextMovies>
           </LeftTabs>
           <LeftTabs>
-            <TextMovies>کمدی</TextMovies>
+            <TextMovies>
+              <Link href="#">کمدی</Link>
+            </TextMovies>
           </LeftTabs>
           <LeftTabs>
-            <TextMovies>ترسناک</TextMovies>
+            <TextMovies>
+              <Link href="#">ترسناک</Link>
+            </TextMovies>
           </LeftTabs>
           <LeftTabs>
-            <TextMovies>تاریخی</TextMovies>
+            <TextMovies>
+              <Link href="#">تاریخی</Link>
+            </TextMovies>
           </LeftTabs>
           <LeftTabs>
-            <TextMovies>درام</TextMovies>
+            <TextMovies>
+              <Link href="#">درام</Link>
+            </TextMovies>
           </LeftTabs>
           <LeftTabs>
-            <TextMovies>اجتماعی</TextMovies>
+            <TextMovies>
+              <Link href="#">اجتماعی</Link>
+            </TextMovies>
           </LeftTabs>
           <LeftTabs />
         </SectionLeft>
         <SectionRight>
           <RightTabs>
-            <TextMovies>معمایی</TextMovies>
+            <TextMovies>
+              <Link href="#">معمایی</Link>
+            </TextMovies>
           </RightTabs>
           <RightTabs>
-            <TextMovies>جنایی</TextMovies>
+            <TextMovies>
+              <Link href="#">جنایی</Link>
+            </TextMovies>
           </RightTabs>
           <RightTabs>
-            <TextMovies>عاشقانه</TextMovies>
+            <TextMovies>
+              <Link href="#">عاشقانه</Link>
+            </TextMovies>
           </RightTabs>
           <RightTabs>
-            <TextMovies>ماجراجویی</TextMovies>
+            <TextMovies>
+              <Link href="#">ماجراجویی</Link>
+            </TextMovies>
           </RightTabs>
           <RightTabs>
-            <TextMovies>اکشن</TextMovies>
+            <TextMovies>
+              <Link href="#">اکشن</Link>
+            </TextMovies>
           </RightTabs>
           <RightTabs>
-            <TextMovies>وسترن</TextMovies>
+            <TextMovies>
+              <Link href="#">وسترن</Link>
+            </TextMovies>
           </RightTabs>
           <RightTabs>
-            <TextMovies>بیوگرافی</TextMovies>
+            <TextMovies>
+              <Link href="#">بیوگرافی</Link>
+            </TextMovies>
           </RightTabs>
         </SectionRight>
       </Container>

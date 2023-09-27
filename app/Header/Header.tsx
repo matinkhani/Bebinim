@@ -28,6 +28,7 @@ import {
 import { useState } from "react";
 import FimlDrop from "./DropDown/FimlDrop";
 import SerialDrop from "./DropDown/SerialDrop";
+import Link from "next/link";
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
@@ -40,12 +41,18 @@ export default function Header() {
     <Container>
       <LeftSection>
         <SignLoginBtn>
-          <ButtonsText>ورود / ثبت نام</ButtonsText>
+          <ButtonsText>
+            <Link href="#">ورود / ثبت نام</Link>
+          </ButtonsText>
         </SignLoginBtn>
         <BuyBtn>
-          <ButtonsText>خرید اشتراک</ButtonsText>
+          <ButtonsText>
+            <Link href="#">خرید اشتراک</Link>
+          </ButtonsText>
         </BuyBtn>
-        <SearchIcon src="./images/SearchIcon.svg" />
+        <Link href="#">
+          <SearchIcon src="./images/SearchIcon.svg" />
+        </Link>
       </LeftSection>
 
       <RightSection
@@ -134,11 +141,15 @@ export default function Header() {
           <DropDownFilm>{filmDropDown && <FimlDrop />}</DropDownFilm>
 
           <CategoryTab>
-            <CatgoryText>دسته‌بندی</CatgoryText>
+            <CatgoryText>
+              <Link href="#">دسته‌بندی</Link>
+            </CatgoryText>
           </CategoryTab>
 
           <HomeTab>
-            <HomeText>خانه</HomeText>
+            <HomeText>
+              <Link href="#">خانه</Link>
+            </HomeText>
           </HomeTab>
         </TabsPlace>
 
@@ -146,8 +157,12 @@ export default function Header() {
 
         <BebinimPlace>
           <BebinimIconAndText>
-            <BebinimText>ببینیم</BebinimText>
-            <BebinimIcon src="./images/BebinimIcon.svg" />
+            <BebinimText>
+              <Link href="#">ببینیم</Link>
+            </BebinimText>
+            <Link href="#">
+              <BebinimIcon src="./images/BebinimIcon.svg" />
+            </Link>
           </BebinimIconAndText>
         </BebinimPlace>
       </RightSection>
