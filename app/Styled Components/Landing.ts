@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     display: flex;
     justify-content: center;
+    background-color: #291212;
   }
 
   @font-face {
