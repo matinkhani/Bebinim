@@ -59,7 +59,7 @@ export const ArrowRight = styled.div`
 
 export const Carousel = styled.div`
   height: 100%;
-  width: 88%;
+  width: 82%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
