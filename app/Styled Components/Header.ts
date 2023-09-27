@@ -12,12 +12,23 @@ export const Container = styled.div`
   z-index: 2;
 `;
 
-export const LeftSection = styled.div`
+export const LeftSectionContainer = styled.div`
   height: 100%;
   width: 20%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
+`;
+
+export const LeftSection1 = styled.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  transition: all 0.3s;
+  /* background-color: red; */
 `;
 
 export const SignLoginBtn = styled.button`
