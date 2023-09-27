@@ -6,12 +6,12 @@
 
 .swiper > .swiper-button-next {
   color: rgba(82, 181, 180, 1);
-  right: 70px;
+  right: 35px;
 }
 
 .swiper > .swiper-button-prev {
   color: rgba(82, 181, 180, 1);
-  left: 70px;
+  left: 35px;
 }
 
 .swiper-slide {

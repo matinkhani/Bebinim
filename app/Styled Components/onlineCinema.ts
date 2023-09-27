@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 77vh;
+  height: 73vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 
 export const CinemaOlineText = styled.div`
-  width: 79%;
+  width: 86%;
   height: 5%;
   display: flex;
   justify-content: end;
@@ -23,13 +23,13 @@ export const CinemaOlineText = styled.div`
 `;
 
 export const PosterPlace = styled.div`
-  width: 85%;
+  width: 86%;
   height: 90%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 35px;
 `;
 
 export const Movie1 = styled.div`

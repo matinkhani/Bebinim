@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const TextPlace = styled.div`
   height: 20%;
-  width: 24%;
+  width: 19.5%;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -26,8 +26,8 @@ export const Text = styled.p`
 `;
 
 export const CarouselContainer = styled.div`
-  height: 95%;
-  width: 98%;
+  height: 90%;
+  width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -58,7 +58,7 @@ export const ArrowRight = styled.div`
 
 export const Carousel = styled.div`
   height: 85%;
-  width: 81%;
+  width: 85.5%;
   border: 1px solid #ab8427;
   border-radius: 8px;
   padding: 15px 15px;
@@ -73,6 +73,7 @@ export const ImagePlace = styled.div`
   display: flex;
   justify-content: start;
   align-items: center;
+  margin-left: 5px;
 `;
 
 export const Details = styled.div`

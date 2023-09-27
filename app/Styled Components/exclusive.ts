@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const ExclusiveText = styled.div`
   height: 15%;
-  width: 28.2%;
+  width: 23.5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@ export const ExclusiveMovie = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 30px;
 `;
 
 export const Movies = styled.div`

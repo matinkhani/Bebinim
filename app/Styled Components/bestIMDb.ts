@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 66vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const PlaceImdb = styled.div`
   height: 90%;
-  width: 82%;
+  width: 85.5%;
   display: flex;
   flex-direction: column;
 `;
@@ -22,8 +22,7 @@ export const ImdbTop = styled.div`
   height: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 25px;
+  justify-content: space-between;
 `;
 
 export const ImdbDown = styled.div`
@@ -37,7 +36,7 @@ export const ImdbDown = styled.div`
 
 export const ImdbDetails = styled.div`
   height: 10%;
-  width: 39.2%;
+  width: 37.2%;
   gap: 15px;
   display: flex;
   justify-content: center;
@@ -47,7 +46,7 @@ export const ImdbDetails = styled.div`
 
 export const ImdbText = styled.div`
   height: 100%;
-  width: 24%;
+  width: fit-content;
   display: flex;
   justify-content: start;
   align-items: center;

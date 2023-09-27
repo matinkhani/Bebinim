@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 50vh;
+  height: 45vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const TextPlace = styled.div`
   height: 20%;
-  width: 24%;
+  width: 19%;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -58,7 +58,7 @@ export const ArrowRight = styled.div`
 
 export const Carousel = styled.div`
   height: 100%;
-  width: 82%;
+  width: 87.9%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
