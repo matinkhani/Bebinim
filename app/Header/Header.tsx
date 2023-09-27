@@ -6,7 +6,7 @@ import {
   ButtonsText,
   BuyBtn,
   Container,
-  LeftSection,
+  LeftSection1,
   RightSection,
   SearchIcon,
   SignLoginBtn,
@@ -24,6 +24,7 @@ import {
   DropDownSerial,
   SerialHover,
   FilmHover,
+  LeftSectionContainer,
 } from "../Styled Components/Header";
 import { useState } from "react";
 import FimlDrop from "./DropDown/FimlDrop";
@@ -31,6 +32,7 @@ import SerialDrop from "./DropDown/SerialDrop";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./Header.css";
+import 'animate.css';
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
@@ -43,21 +45,27 @@ export default function Header() {
 
   return (
     <Container>
-      <LeftSection>
-        <SignLoginBtn>
-          <ButtonsText>
-            <Link href="#">ورود / ثبت نام</Link>
-          </ButtonsText>
-        </SignLoginBtn>
-        <BuyBtn>
-          <ButtonsText>
-            <Link href="#">خرید اشتراک</Link>
-          </ButtonsText>
-        </BuyBtn>
-        <Link href="#">
-          <SearchIcon src="./images/SearchIcon.svg" />
-        </Link>
-      </LeftSection>
+
+      <LeftSectionContainer>
+
+          <LeftSection1>
+            <SignLoginBtn className="animate__animated animate__fadeInRight">
+              <ButtonsText>
+                <Link href="#">ورود / ثبت نام</Link>
+              </ButtonsText>
+            </SignLoginBtn>
+            <BuyBtn className="animate__animated animate__fadeInLeft">
+              <ButtonsText>
+                <Link href="#">خرید اشتراک</Link>
+              </ButtonsText>
+            </BuyBtn>
+          </LeftSection1>
+
+          <Link href="#">
+            <SearchIcon src="./images/SearchIcon.svg" />
+          </Link>
+
+      </LeftSectionContainer>
 
       <RightSection
         onMouseLeave={() => {
