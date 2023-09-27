@@ -142,13 +142,13 @@ export default function Header() {
 
           <CategoryTab>
             <CatgoryText>
-              <Link href="#">دسته‌بندی</Link>
+              <Link href="/category">دسته‌بندی</Link>
             </CatgoryText>
           </CategoryTab>
 
           <HomeTab>
             <HomeText>
-              <Link href="#">خانه</Link>
+              <Link href="/#">خانه</Link>
             </HomeText>
           </HomeTab>
         </TabsPlace>
