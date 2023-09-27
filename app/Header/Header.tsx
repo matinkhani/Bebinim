@@ -159,7 +159,7 @@ export default function Header() {
             <HomeText>
               <Link
                 className={`link ${pathname === "/" ? "active" : ""}`}
-                href="/#"
+                href="/"
               >
                 خانه
               </Link>
