@@ -29,6 +29,8 @@ import { useState } from "react";
 import FimlDrop from "./DropDown/FimlDrop";
 import SerialDrop from "./DropDown/SerialDrop";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import "./Header.css";
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
@@ -36,6 +38,8 @@ export default function Header() {
 
   const [filmArrow, setFilmArrow] = useState<boolean>(false);
   const [serialArrow, setSerialArrow] = useState<boolean>(false);
+
+  const pathname = usePathname();
 
   return (
     <Container>
@@ -142,13 +146,23 @@ export default function Header() {
 
           <CategoryTab>
             <CatgoryText>
-              <Link href="/category">دسته‌بندی</Link>
+              <Link
+                className={`link ${pathname === "/category" ? "active" : ""}`}
+                href="/category"
+              >
+                دسته‌بندی
+              </Link>
             </CatgoryText>
           </CategoryTab>
 
           <HomeTab>
             <HomeText>
-              <Link href="/#">خانه</Link>
+              <Link
+                className={`link ${pathname === "/" ? "active" : ""}`}
+                href="/#"
+              >
+                خانه
+              </Link>
             </HomeText>
           </HomeTab>
         </TabsPlace>
