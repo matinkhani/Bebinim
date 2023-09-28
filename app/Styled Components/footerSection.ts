@@ -2,13 +2,21 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 50vh;
-  width: 100%;
+  width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 70%;
   background-image: url("./images/footer/cinema-seats.svg");
   background-color: #291212;
   position: relative;
+`;
+
+export const Place = styled.div`
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const FooterContainer = styled.div`
