@@ -32,7 +32,7 @@ import SerialDrop from "./DropDown/SerialDrop";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./Header.css";
-import 'animate.css';
+import "animate.css";
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
@@ -45,26 +45,23 @@ export default function Header() {
 
   return (
     <Container>
-
       <LeftSectionContainer>
+        <LeftSection1>
+          <SignLoginBtn className="animate__animated animate__fadeInRight animate__faster">
+            <ButtonsText>
+              <Link href="#">ورود / ثبت نام</Link>
+            </ButtonsText>
+          </SignLoginBtn>
+          <BuyBtn className="animate__animated animate__fadeInLeft animate__faster">
+            <ButtonsText>
+              <Link href="#">خرید اشتراک</Link>
+            </ButtonsText>
+          </BuyBtn>
+        </LeftSection1>
 
-          <LeftSection1>
-            <SignLoginBtn className="animate__animated animate__fadeInRight animate__faster">
-              <ButtonsText>
-                <Link href="#">ورود / ثبت نام</Link>
-              </ButtonsText>
-            </SignLoginBtn>
-            <BuyBtn className="animate__animated animate__fadeInLeft animate__faster">
-              <ButtonsText>
-                <Link href="#">خرید اشتراک</Link>
-              </ButtonsText>
-            </BuyBtn>
-          </LeftSection1>
-
-          <Link href="#">
-            <SearchIcon src="./images/SearchIcon.svg" />
-          </Link>
-
+        <Link href="#">
+          <SearchIcon src="./images/SearchIcon.svg" />
+        </Link>
       </LeftSectionContainer>
 
       <RightSection
