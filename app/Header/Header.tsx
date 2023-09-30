@@ -49,7 +49,7 @@ export default function Header() {
         <LeftSection1>
           <SignLoginBtn className="animate__animated animate__fadeInRight animate__faster">
             <ButtonsText>
-              <Link href="#">ورود / ثبت نام</Link>
+              <Link href="/Login">ورود / ثبت نام</Link>
             </ButtonsText>
           </SignLoginBtn>
           <BuyBtn className="animate__animated animate__fadeInLeft animate__faster">
