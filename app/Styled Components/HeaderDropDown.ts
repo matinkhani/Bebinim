@@ -18,7 +18,7 @@ export const Container = styled.div`
   justify-content: end;
   gap: 20px;
   background-color: rgba(7, 7, 7, 0.9);
-  font-family: IRANSansX;
+  font-family:  var(--medium);
 `;
 
 export const SectionRight = styled.div`
