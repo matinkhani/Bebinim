@@ -45,6 +45,7 @@ export const SignIn = styled.button`
 export const DownContainer = styled.div`
   height: 85%;
   width: 100%;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,6 +74,7 @@ export const Input = styled.input`
   width: 390px;
   outline: none;
   border: none;
+  color: #070707;
   border-radius: 8px;
   background: #f9f9f9;
   display: inline-flex;

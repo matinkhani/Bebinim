@@ -51,9 +51,7 @@ export const DownContainer = styled.div`
 
 export const SignInForm = styled.div`
   width: 600px;
-  height: 498px;
-  top: 240px;
-  left: 420px;
+  height: 100%;
   border-radius: 8px;
   background-color: rgba(7, 7, 7, 0.8);
   display: flex;
@@ -81,7 +79,7 @@ export const InputPlace = styled.div`
   display: flex;
   justify-content: end;
   align-items: center;
-  background-color: green;
+  /* background-color: green; */
 `;
 
 export const Input = styled.input`
@@ -101,7 +99,7 @@ export const CodePlace = styled.div`
   display: flex;
   flex-direction: column;
   align-items: end;
-  background-color: blue;
+  /* background-color: blue; */
 `;
 
 export const CodeTop = styled.div`

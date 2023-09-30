@@ -16,13 +16,16 @@ import {
   TextSignIn,
   TopContainer,
 } from "../Styled Components/signin";
+import Link from "next/link";
 
 export default function SingIn() {
   return (
     <Container>
       <MiddleContainer>
         <TopContainer>
-          <LoginBtn>ورود</LoginBtn>
+        <Link href="/Login">
+        <LoginBtn>ورود</LoginBtn>
+        </Link>
         </TopContainer>
         <DownContainer>
           <SignInForm>

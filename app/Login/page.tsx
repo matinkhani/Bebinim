@@ -13,16 +13,19 @@ import {
   TopContainer,
   TopText,
 } from "../Styled Components/login";
+import Link from "next/link";
 
 export default function Login() {
   return (
     <Container>
       <MiddleContainer>
         <TopContainer>
-          <SignIn>
+        <Link href="/SignIn">
+        <SignIn>
             ثبت نام
             <img src="./images/Login/login.svg" />
           </SignIn>
+        </Link>
         </TopContainer>
         <DownContainer>
           <TopText>ورود از طریق شماره تلفن همراه</TopText>
