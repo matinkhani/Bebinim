@@ -1,12 +1,114 @@
 import { styled } from "styled-components";
 
-export const SearchContainer = styled.div`
-width: 1440px;
-min-height: 100vh;
-height: fit-content;
-background-color: #291212;
-`
+export const SearchMain = styled.div`
+  height: 92.3vh;
+  width: 1440px;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+export const InputContainer = styled.div`
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+`;
+export const SerachInputPlace = styled.div`
+  height: 55%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+`;
+export const InputandSearch = styled.div`
+  height: 64px;
+  width: 78%;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  background-color: rgba(254, 254, 254, 1);
+`;
+export const Input = styled.input`
+  height: 64px;
+  width: 93%;
+  text-align: right;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: var(--medium);
+  color: rgba(7, 7, 7, 1);
+  background-color: rgba(254, 254, 254, 1);
+`;
+export const SearchIcons = styled.div`
+  height: 64px;
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const CloseInput = styled.div`
+  height: 50%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--medium);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+`;
+export const FilterPlace = styled.div`
+  height: 35%;
+  width: 20.5%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  /* background-color: black; */
+`;
+export const FilterDrop = styled.div`
+  height: 48px;
+  width: 124px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--medium);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  border-radius: 8px;
+  gap: 8px;
+  background-color: rgba(254, 254, 254, 1);
+  color: rgba(7, 7, 7, 1);
+`;
 
+export const SearchItem = styled.div`
+  height: 75%;
+  width: 100%;
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:  #fefefe;
+  text-align: right;
+  font-family: var(--medium);
+  font-size: 16px;
+  font-weight: 400;
+`;
+
+///Search Header Styled
+export const SearchContainer = styled.div`
+  width: 1440px;
+  min-height: 100vh;
+  height: fit-content;
+  background-color: #291212;
+`;
 
 export const HeaderContainer = styled.div`
   width: 1440px;
@@ -22,7 +124,7 @@ export const HeaderContainer = styled.div`
 
 export const LeftSectionContainer = styled.div`
   height: 100%;
-  width: 20%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -32,7 +134,7 @@ export const LeftSection1 = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 15px;
   align-items: center;
   transition: all 0.3s;
