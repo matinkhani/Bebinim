@@ -1,40 +1,14 @@
 import React from "react";
-import {
-  BebinimIcon,
-  BebinimIconAndText,
-  BebinimText,
-  ButtonsText,
-  BuyBtn,
-  Container,
-  LeftSection1,
-  RightSection,
-  SearchIcon,
-  SignLoginBtn,
-  BebinimPlace,
-  MiddleLine,
-  TabsPlace,
-  SerialTab,
-  FilmTab,
-  CategoryTab,
-  HomeTab,
-  FilmSerialImg,
-  CatgoryText,
-  HomeText,
-  DropDownFilm,
-  DropDownSerial,
-  SerialHover,
-  FilmHover,
-  LeftSectionContainer,
-} from "../Styled Components/Header";
 import { useState } from "react";
-import FimlDrop from "./DropDown/FimlDrop";
-import SerialDrop from "./DropDown/SerialDrop";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import "./Header.css";
 import "animate.css";
+import { BebinimIcon, BebinimIconAndText, BebinimPlace, BebinimText, ButtonsText, BuyBtn, CategoryTab, CatgoryText, DropDownFilm, DropDownSerial, FilmHover, FilmSerialImg, FilmTab, HeaderContainer, HomeTab, HomeText, LeftSection1, LeftSectionContainer, MiddleLine, RightSection, SerialHover, SerialTab, SignLoginBtn, TabsPlace } from "./search";
+import SerialDrop from "../Header/DropDown/SerialDrop";
+import FimlDrop from "../Header/DropDown/FimlDrop";
 
-export default function Header() {
+
+export default function Searchheader() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
   const [serialDropDown, setSerialDropDown] = useState<boolean>(false);
 
@@ -42,9 +16,8 @@ export default function Header() {
   const [serialArrow, setSerialArrow] = useState<boolean>(false);
 
   const pathname = usePathname();
-
   return (
-    <Container>
+    <HeaderContainer>
       <LeftSectionContainer>
         <LeftSection1>
           <SignLoginBtn className="animate__animated animate__fadeInRight animate__faster">
@@ -58,10 +31,6 @@ export default function Header() {
             </ButtonsText>
           </BuyBtn>
         </LeftSection1>
-
-        <Link href="/Search">
-          <SearchIcon src="./images/SearchIcon.svg" />
-        </Link>
       </LeftSectionContainer>
 
       <RightSection
@@ -185,6 +154,6 @@ export default function Header() {
           </BebinimIconAndText>
         </BebinimPlace>
       </RightSection>
-    </Container>
+    </HeaderContainer>
   );
 }

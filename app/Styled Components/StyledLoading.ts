@@ -10,6 +10,6 @@ export const Container = styled.div`
 `;
 
 export const Text = styled.h2`
-  font-family: "IRANSansX";
+  font-family: var(--medium);
   color: #fefefe;
 `;

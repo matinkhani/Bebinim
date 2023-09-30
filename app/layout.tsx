@@ -2,8 +2,19 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import StyledComponentsRegistry from "./lib/registry";
+import localfont from 'next/font/local'
 
 const inter = Inter({ subsets: ["latin"] });
+
+//Fonts Style
+const iransans = localfont({
+  src: "./Fonts/IRANSansXMedium.ttf",
+  variable:"--medium"
+})
+const lalezar = localfont({
+  src: "./Fonts/DigiLalezarPlus.ttf",
+  variable:"--regular"
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${iransans.variable} ${lalezar.variable}`}>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
