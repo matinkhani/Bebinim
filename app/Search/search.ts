@@ -56,6 +56,7 @@ export const SearchIcons = styled.div`
 export const CloseInput = styled.div`
   height: 50%;
   width: 10%;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +96,7 @@ export const SearchItem = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color:  #fefefe;
+  color: #fefefe;
   text-align: right;
   font-family: var(--medium);
   font-size: 16px;

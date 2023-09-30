@@ -24,6 +24,7 @@ import React from "react";
 import { GlobalStyle } from "../Styled Components/Landing";
 import Header from "../Header/Header";
 import "animate.css";
+import Link from "next/link";
 
 export default function Category() {
   return (
@@ -45,7 +46,9 @@ export default function Category() {
           <Image10 />
           <Image11 />
           <Image12 />
-          <Image13 />
+          <Link href="/Search">
+            <Image13 />
+          </Link>
           <Image14 />
           <Image15 />
         </ImagesPlace>
