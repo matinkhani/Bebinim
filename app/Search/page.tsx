@@ -15,15 +15,21 @@ import {
   SerachInputPlace,
 } from "./search";
 import Searchheader from "./search-header";
+import { useRouter } from "next/navigation";
 
 export default function Search() {
+  const route = useRouter();
   return (
     <SearchContainer>
       <Searchheader />
       <SearchMain>
         <InputContainer>
           <SerachInputPlace>
-            <CloseInput>
+            <CloseInput
+              onClick={() => {
+                route.back();
+              }}
+            >
               بستن
               <img
                 style={{ height: 48, width: 48 }}
@@ -52,9 +58,10 @@ export default function Search() {
         </InputContainer>
 
         <SearchItem>
-          <img src="./images/Search/searchstatus.svg"/>
-          عنوان فیلم، سریال یا بازیگر مورد نظر خود را<br/> جستجو کنید و یا از طریق
-          فیلترهای موجود<br/> {"."}فیلم و سریال مورد نظر خود را پیدا کنید  
+          <img src="./images/Search/searchstatus.svg" />
+          عنوان فیلم، سریال یا بازیگر مورد نظر خود را
+          <br /> جستجو کنید و یا از طریق فیلترهای موجود
+          <br /> {"."}فیلم و سریال مورد نظر خود را پیدا کنید
         </SearchItem>
       </SearchMain>
     </SearchContainer>
