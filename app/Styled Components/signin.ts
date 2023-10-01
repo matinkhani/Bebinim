@@ -118,9 +118,12 @@ export const CodeTop = styled.div`
 `;
 
 export const CodeDown = styled.div`
-  width: 85%;
+  width: 76.5%;
   height: 60%;
-  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: orange; */
 `;
 
 export const SignInBtnPlace = styled.div`
