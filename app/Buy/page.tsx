@@ -23,13 +23,22 @@ import {
   PriceText,
   Tax,
 } from "../Styled Components/buy";
+import "animate.css";
 
 export default function Buy() {
+  const BanksData = [
+    { url: "images/Buy/saman.svg", name: "بانک سامان" },
+    { url: "images/Buy/ayande.svg", name: "بانک آینده" },
+    { url: "images/Buy/maskan.svg", name: "بانک مسکن" },
+    { url: "images/Buy/mellat.svg", name: "بانک ملت" },
+    { url: "images/Buy/sepah.svg", name: "بانک سپه" },
+  ];
+
   return (
     <Container>
       <BuyPlace>
         <BuyComplete>تکمیل خرید</BuyComplete>
-        <BuySub>
+        <BuySub className="animate__animated animate__slideInUp">
           <Month>یک ماهه </Month>
           <Price>
             <PriceNumber> ۱۱۹,۰۰۰ تومان</PriceNumber>
@@ -47,7 +56,7 @@ export default function Buy() {
             <PriceNumber
               style={{ color: "rgba(181, 82, 83, 1)", fontWeight: 700 }}
             >
-              ۸۹‍,۰۰۰ تومان
+              ۹۸,۰۰۰ تومان
             </PriceNumber>
             <PriceText>مبلغ قابل پرداخت:</PriceText>
           </AmountPayable>
@@ -56,48 +65,18 @@ export default function Buy() {
           </MiddleLine>
           <ChooseBank>انتخاب بانک</ChooseBank>
           <BanksPlace>
-            <Bank>
-              {" "}
-              <BankIconPlace>
-                {" "}
-                <img src="./images/Buy/saman.svg" />{" "}
-              </BankIconPlace>{" "}
-              <BankNamePlace>بانک سامان</BankNamePlace>{" "}
-            </Bank>
-            <Bank>
-              {" "}
-              <BankIconPlace>
-                {" "}
-                <img src="./images/Buy/ayande.svg" />{" "}
-              </BankIconPlace>{" "}
-              <BankNamePlace>بانک آینده</BankNamePlace>{" "}
-            </Bank>
-            <Bank>
-              {" "}
-              <BankIconPlace>
-                {" "}
-                <img src="./images/Buy/maskan.svg" />{" "}
-              </BankIconPlace>{" "}
-              <BankNamePlace>بانک مسکن</BankNamePlace>{" "}
-            </Bank>
-            <Bank>
-              {" "}
-              <BankIconPlace>
-                {" "}
-                <img src="./images/Buy/mellat.svg" />{" "}
-              </BankIconPlace>{" "}
-              <BankNamePlace>بانک ملت</BankNamePlace>{" "}
-            </Bank>
-            <Bank>
-              {" "}
-              <BankIconPlace>
-                {" "}
-                <img src="./images/Buy/sepah.svg" />{" "}
-              </BankIconPlace>{" "}
-              <BankNamePlace>بانک سپه</BankNamePlace>{" "}
-            </Bank>
+            {BanksData.map((item, index) => {
+              return (
+                <Bank key={index}>
+                  <BankIconPlace>
+                    <img src={item.url} />
+                  </BankIconPlace>
+                  <BankNamePlace>{item.name}</BankNamePlace>
+                </Bank>
+              );
+            })}
           </BanksPlace>
-          <LastPrice>۸۹‍,۰۰۰ تومان</LastPrice>
+          <LastPrice>۹۸,۰۰۰ تومان</LastPrice>
           <BuyBtnPlace>
             <BuyButton>ادامه و پرداخت</BuyButton>
           </BuyBtnPlace>

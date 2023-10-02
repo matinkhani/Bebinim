@@ -8,6 +8,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(203, 203, 203, 1);
+  overflow-y: hidden;
 `;
 
 export const BuyPlace = styled.div`
@@ -160,10 +161,16 @@ export const Bank = styled.div`
 `;
 
 export const BankIconPlace = styled.div`
-  height: 128px;
-  width: 128px;
-  /* border-radius: 8px; */
-  /* border: 1px solid rgba(82, 181, 180, 1); */
+  height: 135px;
+  width: 135px;
+  border: 2px solid rgba(82, 181, 180, 1);
+  border-radius: 8px;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid rgba(181, 82, 83, 1);
+  }
 `;
 
 export const BankNamePlace = styled.div`

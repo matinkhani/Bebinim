@@ -23,7 +23,6 @@ export const TittleText = styled.div`
   font-weight: 700;
   font-style: normal;
   line-height: normal;
-  background-color: red;
 `;
 
 export const BuySubscribe1 = styled.div`
@@ -31,7 +30,6 @@ export const BuySubscribe1 = styled.div`
   width: 67%;
   display: flex;
   justify-content: center;
-  background-color: blue;
 `;
 
 export const Month1 = styled.div`
@@ -43,7 +41,6 @@ export const Month1 = styled.div`
   justify-content: space-between;
   background-color: #fefefe;
   border-radius: 8px;
-  background-color: green;
 `;
 
 export const AutoTop = styled.div`
@@ -51,7 +48,6 @@ export const AutoTop = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: blueviolet;
 `;
 
 export const MiddleLine = styled.div`
@@ -72,7 +68,6 @@ export const AutoText = styled.div`
   font-weight: 700;
   font-style: normal;
   line-height: normal;
-  background-color: yellowgreen;
 `;
 
 export const AutoPrice = styled.div`
@@ -89,8 +84,16 @@ export const AutoPrice = styled.div`
   font-weight: 700;
   font-style: normal;
   line-height: normal;
-  background-color: violet;
 `;
+
+export const LinkPlace = styled.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+`
 
 export const AutoBottom = styled.div`
   height: 45%;
@@ -98,7 +101,6 @@ export const AutoBottom = styled.div`
   display: flex;
   justify-content: end;
   align-items: center;
-  background-color: bisque;
 `;
 
 export const AutoBottomText = styled.div`
@@ -114,7 +116,6 @@ export const AutoBottomText = styled.div`
   font-weight: 400;
   font-style: normal;
   line-height: normal;
-  background-color: tomato;
 `;
 
 export const More = styled.p`
@@ -124,7 +125,6 @@ export const More = styled.p`
   font-weight: 400;
   font-style: normal;
   line-height: normal;
-  background-color: tan;
 `;
 
 export const BuySubscribe2 = styled.div`

@@ -12,6 +12,7 @@ import {
   BuySubscribe3,
   BuySubscribe4,
   Container,
+  LinkPlace,
   MiddleLine,
   Month1,
   Month2,
@@ -49,15 +50,8 @@ export default function Subscribe() {
         <Month1>
           <AutoTop>
             <AutoPrice>
-              <Link href="/Buy">
-                <p style={{ cursor: "pointer" }}>۷۵‍‍‍,۰۰۰ تومان</p>
-              </Link>
-              <Link href="/Buy">
-                <img
-                  style={{ cursor: "pointer" }}
-                  src="./images/Subscribe/arrow.svg"
-                />
-              </Link>
+              <p>۷۵‍‍‍,۰۰۰ تومان</p>
+              <img src="./images/Subscribe/arrow.svg" />
             </AutoPrice>
             <AutoText>یک ماهه با تمدید خودکار </AutoText>
           </AutoTop>
@@ -75,18 +69,20 @@ export default function Subscribe() {
       <BuySubscribe2>
         <Month2>
           <OnceMonthPrice>
-            <ArrowIcon>
-              <img
-                style={{ height: 24, width: 24 }}
-                src="./images/Subscribe/arrow.svg"
-              />
-            </ArrowIcon>
+            <Link href="/Buy">
+              <ArrowIcon>
+                <img
+                  style={{ height: 24, width: 24 }}
+                  src="./images/Subscribe/arrow.svg"
+                />
+              </ArrowIcon>
+            </Link>
             <OncePrice>
               <OncePriceTop>
                 ۱۱۹‍,۰۰۰ تومان
                 <Reduction />
               </OncePriceTop>
-              <OncePriceBottom> ۸۹‍,۰۰۰ تومان </OncePriceBottom>
+              <OncePriceBottom> ۹۸,۰۰۰ تومان </OncePriceBottom>
             </OncePrice>
           </OnceMonthPrice>
           <OnceMonthText>
