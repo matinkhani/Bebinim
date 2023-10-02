@@ -54,7 +54,7 @@ export default function Header() {
           </SignLoginBtn>
           <BuyBtn className="animate__animated animate__fadeInLeft animate__faster">
             <ButtonsText>
-              <Link href="/SignIn">خرید اشتراک</Link>
+              <Link href="/Subscribe">خرید اشتراک</Link>
             </ButtonsText>
           </BuyBtn>
         </LeftSection1>
