@@ -8,8 +8,11 @@ import {
   DownContainer,
   Input,
   InputPlace,
+  Line,
   LoginBtn,
   MiddleContainer,
+  NumInput,
+  Numberr,
   SignInBtn,
   SignInBtnPlace,
   SignInForm,
@@ -21,6 +24,8 @@ import OtpInput from "react-otp-input";
 
 export default function SingIn() {
   const [otp, setOtp] = useState<string>("");
+  const [phone, setPhone] = useState<number>(0);
+  const regex = /^[0-9۰-۹\b]+$/;
 
   return (
     <Container>
@@ -34,7 +39,21 @@ export default function SingIn() {
           <SignInForm>
             <TextSignIn>ثبت نام با شماره تلفن همراه</TextSignIn>
             <InputPlace>
-              <Input></Input>
+              <NumInput>
+                <Numberr>
+                  +۹۸
+                  <Line />
+                </Numberr>
+                <Input
+                  onChange={(e: any) => {
+                    if (e.target.value === "" || regex.test(e.target.value)) {
+                      setPhone(e.target.value);
+                    }
+                  }}
+                  value={phone === 0 ? "" : phone}
+                  maxLength={10}
+                />
+              </NumInput>
             </InputPlace>
             <CodePlace>
               <CodeTop>کد فعالسازی را وارد کنید</CodeTop>
@@ -52,7 +71,7 @@ export default function SingIn() {
                   }}
                   value={otp}
                   onChange={setOtp}
-                  inputType="tel"                  
+                  inputType="tel"
                   renderSeparator={
                     <div
                       style={{ width: 20, backgroundColor: "transparent" }}

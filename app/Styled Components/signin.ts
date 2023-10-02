@@ -60,7 +60,7 @@ export const SignInForm = styled.div`
 `;
 
 export const TextSignIn = styled.div`
-  width: 85%;
+  width: 82%;
   height: 15%;
   display: flex;
   justify-content: end;
@@ -74,32 +74,67 @@ export const TextSignIn = styled.div`
 `;
 
 export const InputPlace = styled.div`
-  width: 85%;
+  width: 82%;
   height: 20%;
   display: flex;
   justify-content: end;
   align-items: center;
-  /* background-color: green; */
+`;
+
+export const NumInput = styled.div`
+  height: 56px;
+  width: 390px;
+  border-radius: 8px;
+  background-color: rgba(254, 254, 254, 1);
+  display: flex;
+`;
+
+export const Numberr = styled.div`
+  height: 56px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 25px;
+  color: black;
+  border-radius: 8px;
+  font-family: var(--medium);
+`;
+
+export const Line = styled.div`
+  width: 2px;
+  height: 26px;
+  background-color: black;
 `;
 
 export const Input = styled.input`
-  width: 390px;
   height: 56px;
-  padding: 14px, 195px, 6px, 16px;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  color: black;
-  border: none;
+  width: 80%;
   outline: none;
-`;
+  border: none;
+  color: #070707;
+  border-radius: 8px;
+  background: #f9f9f9;
+  display: inline-flex;
+  align-items: center;
+  padding-inline: 15px;
 
+  font-family: var(--medium);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+
+  &::placeholder {
+    color: #070707;
+  }
+`;
 export const CodePlace = styled.div`
-  width: 85%;
+  width: 82%;
   height: 35%;
   display: flex;
   flex-direction: column;
   align-items: end;
-  /* background-color: blue; */
 `;
 
 export const CodeTop = styled.div`
@@ -108,7 +143,6 @@ export const CodeTop = styled.div`
   display: flex;
   justify-content: end;
   align-items: center;
-  //styleName: caption/l;
   font-family: var(--medium);
   font-size: 14px;
   font-weight: 500;
@@ -123,11 +157,10 @@ export const CodeDown = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: orange; */
 `;
 
 export const SignInBtnPlace = styled.div`
-  width: 85%;
+  width: 82%;
   height: 30%;
   display: flex;
   justify-content: end;
