@@ -50,8 +50,15 @@ export default function Subscribe() {
         <Month1>
           <AutoTop>
             <AutoPrice>
-              <p>۷۵‍‍‍,۰۰۰ تومان</p>
-              <img src="./images/Subscribe/arrow.svg" />
+              <Link href="/Subscribe/Buy-one-month-auto">
+                <LinkPlace>
+                  <p style={{ cursor: "pointer" }}>۷۵‍‍‍,۰۰۰ تومان</p>
+                  <img
+                    style={{ cursor: "pointer" }}
+                    src="./images/Subscribe/arrow.svg"
+                  />
+                </LinkPlace>
+              </Link>
             </AutoPrice>
             <AutoText>یک ماهه با تمدید خودکار </AutoText>
           </AutoTop>
@@ -69,7 +76,7 @@ export default function Subscribe() {
       <BuySubscribe2>
         <Month2>
           <OnceMonthPrice>
-            <Link href="/Buy">
+            <Link href="/Subscribe/Buy-one-month">
               <ArrowIcon>
                 <img
                   style={{ height: 24, width: 24 }}
@@ -82,7 +89,7 @@ export default function Subscribe() {
                 ۱۱۹‍,۰۰۰ تومان
                 <Reduction />
               </OncePriceTop>
-              <OncePriceBottom> ۹۸,۰۰۰ تومان </OncePriceBottom>
+              <OncePriceBottom> ۸۹‍,۰۰۰ تومان </OncePriceBottom>
             </OncePrice>
           </OnceMonthPrice>
           <OnceMonthText>
@@ -96,12 +103,14 @@ export default function Subscribe() {
       <BuySubscribe3>
         <Month3>
           <ThirdMonthPrice>
-            <ArrowIcon>
-              <img
-                style={{ height: 24, width: 24 }}
-                src="./images/Subscribe/arrow.svg"
-              />
-            </ArrowIcon>
+            <Link href="/Subscribe/Buy-three-month">
+              <ArrowIcon>
+                <img
+                  style={{ height: 24, width: 24 }}
+                  src="./images/Subscribe/arrow.svg"
+                />
+              </ArrowIcon>
+            </Link>
             <ThirdPrice>
               <ThirdPriceTop>
                 ۳۴۹,۰۰۰ تومان
@@ -122,10 +131,12 @@ export default function Subscribe() {
         <Month4>
           <SixthPrice>
             ۴۹۹,۰۰۰ تومان
-            <img
-              style={{ height: 24, width: 24 }}
-              src="./images/Subscribe/arrow.svg"
-            />
+            <Link href="/Subscribe/Buy-six-month">
+              <img
+                style={{ height: 24, width: 24 }}
+                src="./images/Subscribe/arrow.svg"
+              />
+            </Link>
           </SixthPrice>
           <SixthText>شش ماهه </SixthText>
         </Month4>

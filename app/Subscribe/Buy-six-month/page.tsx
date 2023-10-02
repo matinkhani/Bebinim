@@ -22,16 +22,16 @@ import {
   PriceNumber,
   PriceText,
   Tax,
-} from "../Styled Components/buy";
+} from "../../Styled Components/buy";
 import "animate.css";
 
 export default function Buy() {
   const BanksData = [
-    { url: "images/Buy/saman.svg", name: "بانک سامان" },
-    { url: "images/Buy/ayande.svg", name: "بانک آینده" },
-    { url: "images/Buy/maskan.svg", name: "بانک مسکن" },
-    { url: "images/Buy/mellat.svg", name: "بانک ملت" },
-    { url: "images/Buy/sepah.svg", name: "بانک سپه" },
+    { url: "../images/Buy/saman.svg", name: "بانک سامان" },
+    { url: "../images/Buy/ayande.svg", name: "بانک آینده" },
+    { url: "../images/Buy/maskan.svg", name: "بانک مسکن" },
+    { url: "../images/Buy/mellat.svg", name: "بانک ملت" },
+    { url: "../images/Buy/sepah.svg", name: "بانک سپه" },
   ];
 
   return (
@@ -39,13 +39,13 @@ export default function Buy() {
       <BuyPlace>
         <BuyComplete>تکمیل خرید</BuyComplete>
         <BuySub className="animate__animated animate__slideInUp">
-          <Month>یک ماهه </Month>
+          <Month>شش ماهه </Month>
           <Price>
-            <PriceNumber> ۱۱۹,۰۰۰ تومان</PriceNumber>
+            <PriceNumber> ۴۹۹,۰۰۰ تومان</PriceNumber>
             <PriceText>قیمت:</PriceText>
           </Price>
           <Discount>
-            <PriceNumber>۲۹,۰۰۰ تومان</PriceNumber>
+            <PriceNumber>۰ تومان</PriceNumber>
             <PriceText>جمع تخفیف:</PriceText>
           </Discount>
           <Tax>
@@ -56,7 +56,7 @@ export default function Buy() {
             <PriceNumber
               style={{ color: "rgba(181, 82, 83, 1)", fontWeight: 700 }}
             >
-              ۹۸,۰۰۰ تومان
+              ۵۰۷,۰۰۰ تومان
             </PriceNumber>
             <PriceText>مبلغ قابل پرداخت:</PriceText>
           </AmountPayable>
@@ -76,7 +76,7 @@ export default function Buy() {
               );
             })}
           </BanksPlace>
-          <LastPrice>۹۸,۰۰۰ تومان</LastPrice>
+          <LastPrice>۵۰۷,۰۰۰ تومان</LastPrice>
           <BuyBtnPlace>
             <BuyButton>ادامه و پرداخت</BuyButton>
           </BuyBtnPlace>
