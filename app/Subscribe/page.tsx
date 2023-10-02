@@ -39,6 +39,7 @@ import {
   ThirdTop,
   TittleText,
 } from "../Styled Components/subscribe";
+import Link from "next/link";
 
 export default function Subscribe() {
   return (
@@ -48,8 +49,15 @@ export default function Subscribe() {
         <Month1>
           <AutoTop>
             <AutoPrice>
-              ۷۵‍‍‍,۰۰۰ تومان
-              <img src="./images/Subscribe/arrow.svg" />
+              <Link href="/Buy">
+                <p style={{ cursor: "pointer" }}>۷۵‍‍‍,۰۰۰ تومان</p>
+              </Link>
+              <Link href="/Buy">
+                <img
+                  style={{ cursor: "pointer" }}
+                  src="./images/Subscribe/arrow.svg"
+                />
+              </Link>
             </AutoPrice>
             <AutoText>یک ماهه با تمدید خودکار </AutoText>
           </AutoTop>
