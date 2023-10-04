@@ -20,6 +20,7 @@ import {
   Name,
   Line,
 } from "../Styled Components/favorites";
+import Link from "next/link";
 
 export default function Favorites() {
   const Favorites = [
@@ -133,19 +134,21 @@ export default function Favorites() {
             {Favorites.map((item, index) => {
               return (
                 <SwiperSlide>
-                  <FavoriteImg key={index} src={item.url} />
-                  <Hover>
-                    <HoverText>
-                      <Details>
-                        <NameFilm>{item.name}</NameFilm>
-                        <DateFilm>
-                          <Year>{item.year}</Year>
-                          <Line />
-                          <Name>{item.category}</Name>
-                        </DateFilm>
-                      </Details>
-                    </HoverText>
-                  </Hover>
+                  <Link href="/WatchMovie">
+                    <FavoriteImg key={index} src={item.url} />
+                    <Hover>
+                      <HoverText>
+                        <Details>
+                          <NameFilm>{item.name}</NameFilm>
+                          <DateFilm>
+                            <Year>{item.year}</Year>
+                            <Line />
+                            <Name>{item.category}</Name>
+                          </DateFilm>
+                        </Details>
+                      </HoverText>
+                    </Hover>{" "}
+                  </Link>
                 </SwiperSlide>
               );
             })}
