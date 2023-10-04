@@ -12,6 +12,7 @@ import {
   BuySubscribe3,
   BuySubscribe4,
   Container,
+  LinkPlace,
   MiddleLine,
   Month1,
   Month2,
@@ -39,6 +40,7 @@ import {
   ThirdTop,
   TittleText,
 } from "../Styled Components/subscribe";
+import Link from "next/link";
 
 export default function Subscribe() {
   return (
@@ -48,8 +50,15 @@ export default function Subscribe() {
         <Month1>
           <AutoTop>
             <AutoPrice>
-              ۷۵‍‍‍,۰۰۰ تومان
-              <img src="./images/Subscribe/arrow.svg" />
+              <Link href="/Subscribe/Buy-one-month-auto">
+                <LinkPlace>
+                  <p style={{ cursor: "pointer" }}>۷۵‍‍‍,۰۰۰ تومان</p>
+                  <img
+                    style={{ cursor: "pointer" }}
+                    src="./images/Subscribe/arrow.svg"
+                  />
+                </LinkPlace>
+              </Link>
             </AutoPrice>
             <AutoText>یک ماهه با تمدید خودکار </AutoText>
           </AutoTop>
@@ -67,12 +76,14 @@ export default function Subscribe() {
       <BuySubscribe2>
         <Month2>
           <OnceMonthPrice>
-            <ArrowIcon>
-              <img
-                style={{ height: 24, width: 24 }}
-                src="./images/Subscribe/arrow.svg"
-              />
-            </ArrowIcon>
+            <Link href="/Subscribe/Buy-one-month">
+              <ArrowIcon>
+                <img
+                  style={{ height: 24, width: 24 }}
+                  src="./images/Subscribe/arrow.svg"
+                />
+              </ArrowIcon>
+            </Link>
             <OncePrice>
               <OncePriceTop>
                 ۱۱۹‍,۰۰۰ تومان
@@ -92,12 +103,14 @@ export default function Subscribe() {
       <BuySubscribe3>
         <Month3>
           <ThirdMonthPrice>
-            <ArrowIcon>
-              <img
-                style={{ height: 24, width: 24 }}
-                src="./images/Subscribe/arrow.svg"
-              />
-            </ArrowIcon>
+            <Link href="/Subscribe/Buy-three-month">
+              <ArrowIcon>
+                <img
+                  style={{ height: 24, width: 24 }}
+                  src="./images/Subscribe/arrow.svg"
+                />
+              </ArrowIcon>
+            </Link>
             <ThirdPrice>
               <ThirdPriceTop>
                 ۳۴۹,۰۰۰ تومان
@@ -118,10 +131,12 @@ export default function Subscribe() {
         <Month4>
           <SixthPrice>
             ۴۹۹,۰۰۰ تومان
-            <img
-              style={{ height: 24, width: 24 }}
-              src="./images/Subscribe/arrow.svg"
-            />
+            <Link href="/Subscribe/Buy-six-month">
+              <img
+                style={{ height: 24, width: 24 }}
+                src="./images/Subscribe/arrow.svg"
+              />
+            </Link>
           </SixthPrice>
           <SixthText>شش ماهه </SixthText>
         </Month4>

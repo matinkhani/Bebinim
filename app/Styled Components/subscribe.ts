@@ -86,6 +86,15 @@ export const AutoPrice = styled.div`
   line-height: normal;
 `;
 
+export const LinkPlace = styled.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+`
+
 export const AutoBottom = styled.div`
   height: 45%;
   width: 100%;
