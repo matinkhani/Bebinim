@@ -135,3 +135,11 @@ export const FavoriteImg = styled.img`
   cursor: pointer;
   position: relative;
 `;
+
+export const LinkPlace = styled.div`
+  height: 256px;
+  width: 184px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
