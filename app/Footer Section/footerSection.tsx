@@ -28,7 +28,7 @@ export default function FooterSection() {
               <Link href="#">درباره ما</Link>{" "}
             </AboutUs>
             <BuySubscription>
-              <Link href="/Success">خرید اشتراک</Link>
+              <Link href="/Subscribe">خرید اشتراک</Link>
             </BuySubscription>
             <HomePage>
               <Link href="#">صفحه اصلی</Link>

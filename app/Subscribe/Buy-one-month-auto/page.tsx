@@ -24,6 +24,7 @@ import {
   Tax,
 } from "../../Styled Components/buy";
 import "animate.css";
+import Link from "next/link";
 
 export default function Buy() {
   const BanksData = [
@@ -39,7 +40,7 @@ export default function Buy() {
       <BuyPlace>
         <BuyComplete>تکمیل خرید</BuyComplete>
         <BuySub className="animate__animated animate__slideInUp">
-          <Month>یک  ماهه با تمدید خودکار</Month>
+          <Month>یک ماهه با تمدید خودکار</Month>
           <Price>
             <PriceNumber> ۶۷,۰۰۰ تومان</PriceNumber>
             <PriceText>قیمت:</PriceText>
@@ -78,7 +79,10 @@ export default function Buy() {
           </BanksPlace>
           <LastPrice>۷۵,۰۰۰ تومان</LastPrice>
           <BuyBtnPlace>
-            <BuyButton>ادامه و پرداخت</BuyButton>
+            <Link href="/Subscribe/Buy-one-month-auto/Success">
+              {" "}
+              <BuyButton>ادامه و پرداخت</BuyButton>
+            </Link>
           </BuyBtnPlace>
         </BuySub>
       </BuyPlace>
