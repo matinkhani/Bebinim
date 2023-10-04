@@ -14,7 +14,7 @@ import {
 export default function Success() {
   return (
     <Container>
-      <SuccessMain>
+      <SuccessMain className="animate__animated animate__slideInUp">
         <PlaceIcon>
           <img src="../../images/Success/tick.svg" />
         </PlaceIcon>
