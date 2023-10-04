@@ -24,6 +24,7 @@ import {
   Tax,
 } from "../../Styled Components/buy";
 import "animate.css";
+import Link from "next/link";
 
 export default function Buy() {
   const BanksData = [
@@ -78,7 +79,10 @@ export default function Buy() {
           </BanksPlace>
           <LastPrice>۵۰۷,۰۰۰ تومان</LastPrice>
           <BuyBtnPlace>
-            <BuyButton>ادامه و پرداخت</BuyButton>
+            <Link href="/Subscribe/Buy-six-month/Success">
+              {" "}
+              <BuyButton>ادامه و پرداخت</BuyButton>
+            </Link>
           </BuyBtnPlace>
         </BuySub>
       </BuyPlace>

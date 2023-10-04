@@ -9,17 +9,17 @@ import {
   PlaceIcon,
   SuccessMain,
   SuccessText,
-} from "../Styled Components/success";
+} from "../../../Styled Components/success";
 
 export default function Success() {
   return (
     <Container>
       <SuccessMain>
         <PlaceIcon>
-          <img src="./images/Success/tick.svg" />
+          <img src="../../images/Success/tick.svg" />
         </PlaceIcon>
         <SuccessText>
-          اشتراک یک ماهه شما از تاریخ
+          اشتراک سه ماهه شما از تاریخ
           <Date> {"۱۴۰۲,۰۷,۱۰"} </Date>
           با موفقیت فعال شد{"."}
         </SuccessText>
@@ -27,11 +27,11 @@ export default function Success() {
           {"."}وضعیت اشتراکتان را می‌توانید از طریق پنل کاربری پیگیری کنید
         </MassageText>
         <LoginSection>
-          <img src="./images/Success/user.svg" />
+          <img src="../../images/Success/user.svg" />
           ورود به حساب کاربری
         </LoginSection>
         <LandingButton>
-          <img src="./images/Success/arrowleft.svg" />
+          <img src="../../images/Success/arrowleft.svg" />
           بازکشت به صفحه اصلی
         </LandingButton>
       </SuccessMain>
