@@ -21,12 +21,13 @@ import {
   WatchButton,
   Year,
 } from "../../Styled Components/watchMovie";
-import FavoritesArr from "../array";
+import ExclusiveArr from "../array";
 
 export default function WatchMovie({ params }: { params: { id: number } }) {
-  const Find: any = FavoritesArr.find((elem) => elem.id === +params.id);
+  const Find: any = ExclusiveArr.find((elem) => elem.id === +params.id);
 
   console.log(params.id);
+
 
   return (
     <Container>
