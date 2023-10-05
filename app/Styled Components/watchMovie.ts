@@ -15,7 +15,7 @@ export const LeftSection = styled.div`
   direction: rtl;
   background-size: cover;
   background-position: 50% 10%;
-  background-image: url("./images/Watch/postshir.svg");
+  /* background-image: url("./images/Watch/postshir.svg"); */
 `;
 
 export const RightSection = styled.div`
@@ -38,7 +38,7 @@ export const AboutMovies = styled.div`
 
 export const Tittle = styled.div`
   height: 100px;
-  width: 40%;
+  width: fit-content;
   color: #fefefe;
   font-family: var(--medium);
   font-size: 40px;
@@ -120,7 +120,7 @@ export const AboutText = styled.div`
   width: 100%;
   color: #fefefe;
   font-family: var(--medium);
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   direction: rtl;
@@ -196,8 +196,10 @@ export const Sekans = styled.div`
   justify-content: space-between;
 `;
 
-export const SekansPhoto = styled.img`
+export const SekansPhoto = styled.div`
   height: 256px;
   width: 184px;
+  background-size: cover;
+  background-position: 50% 50%;
   border-radius: 8px;
 `;
