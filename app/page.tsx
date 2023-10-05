@@ -4,7 +4,7 @@ import { Container, GlobalStyle } from "./Styled Components/Landing";
 import Header from "./Header/Header";
 import MainLanding from "./Main Landing/MainLanding";
 import Favorites from "./Favorites/favorites";
-import OnlineCinema from "./Online Cinema/onlineCinema";
+import OnlineCinema from "./Online-Cinema/onlineCinema";
 import Exclusive from "./Exclusive/exclusive";
 import Animation from "./Animation/animation";
 import Nostalgia from "./Nostalgia/nostalgia";

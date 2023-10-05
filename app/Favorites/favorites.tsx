@@ -24,9 +24,7 @@ import {
 import Link from "next/link";
 import FavoritesArr from "./array";
 
-export default function Favorites(id: number) {
-  const Kir = FavoritesArr.find((elem) => elem.id === id);
-
+export default function Favorites() {
   return (
     <Container>
       <TextPlace>

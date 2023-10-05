@@ -21,14 +21,10 @@ import {
   WatchButton,
   Year,
 } from "../../Styled Components/watchMovie";
-import FavoritesArr from "../array";
+import OnlineMovie from "../onlineMovie";
 
-export default function WatchMovie({ params }: { params: { id: number } }) {
-  const Find: any = FavoritesArr.find((elem) => elem.id === +params.id);
-
-  console.log(params.id);
-
-  // console.log('test', FavoritesArr.find((elem) => elem.id === +(params.id)));
+export default function WatchOnline({ params }: { params: { id: number } }) {
+  const Find: any = OnlineMovie.find((elem) => elem.id === +params.id);
 
   return (
     <Container>

@@ -40,8 +40,8 @@ export const Movie1 = styled.div`
   align-items: center;
   border-radius: 8px;
   background-size: cover;
-  background-position: 50% 70%;
-  background-image: url("./images/CinemaOnline/ablagh.svg");
+  /* background-position: 50% 70%; */
+  /* background-image: url("./images/CinemaOnline/ablagh.svg"); */
   cursor: pointer;
   position: relative;
 `;
@@ -55,7 +55,7 @@ export const Movie2 = styled.div`
   border-radius: 8px;
   background-size: cover;
   background-position: 50% 15%;
-  background-image: url("./images/CinemaOnline/worldwar3.svg");
+  /* background-image: url("./images/CinemaOnline/worldwar3.svg"); */
   position: relative;
   cursor: pointer;
 `;
@@ -69,7 +69,7 @@ export const Movie3 = styled.div`
   border-radius: 8px;
   background-size: cover;
   background-position: 50% 0%;
-  background-image: url("./images/CinemaOnline/maslahat.png");
+  /* background-image: url("./images/CinemaOnline/maslahat.png"); */
   cursor: pointer;
   position: relative;
   margin-top: -80px;
@@ -84,7 +84,7 @@ export const Movie4 = styled.div`
   border-radius: 8px;
   background-size: cover;
   background-position: 50% 70%;
-  background-image: url("./images/CinemaOnline/fosil.png");
+  /* background-image: url("./images/CinemaOnline/fosil.png"); */
   cursor: pointer;
   position: relative;
   margin-top: -80px;
