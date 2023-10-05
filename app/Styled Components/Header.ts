@@ -191,7 +191,7 @@ export const BebinimText = styled.p`
   font-weight: 950;
   line-height: 52.45px;
   color: #b55253;
-  font-family: "Digi Lalezar Plus";
+  font-family: var(--regular);
   cursor: pointer;
 `;
 
