@@ -52,6 +52,7 @@ export default function SingIn() {
                   }}
                   value={phone === 0 ? "" : phone}
                   maxLength={10}
+                  placeholder="* * * * * * * * *"
                 />
               </NumInput>
             </InputPlace>
@@ -82,7 +83,10 @@ export default function SingIn() {
               </CodeDown>
             </CodePlace>
             <SignInBtnPlace>
-              <SignInBtn>ثبت نام</SignInBtn>
+              <Link href="/Account">
+                {" "}
+                <SignInBtn>ثبت نام</SignInBtn>
+              </Link>
             </SignInBtnPlace>
           </SignInForm>
         </DownContainer>
