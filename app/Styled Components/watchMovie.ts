@@ -120,7 +120,7 @@ export const AboutText = styled.div`
   width: 100%;
   color: #fefefe;
   font-family: var(--medium);
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   direction: rtl;

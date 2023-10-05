@@ -13,6 +13,8 @@ const FavoritesArr = [
     time: "۲:۳۸:۰۰",
     rate: "۱۸",
     bgImg: "../images/Watch/ablagh.svg",
+    description:
+      "راحله به همراه خوانواده در یکی از محله‌های تهران زندگی می‌کنند. شوهر خواهر علی، فردی است که یک کسب و کار را برای خانم‌های محله ایجاد کرده است.",
   },
   //titi
   {
@@ -28,6 +30,8 @@ const FavoritesArr = [
     time: "۱:۴۲:۵۹",
     rate: "۶۵",
     bgImg: "../images/Watch/titi.svg",
+    description:
+      "ابراهیم، استاد فیزیک دانشگاه که روی تئوری پایان دنیا کار می‌کند، در بیمارستان با خانم نظافتچی عجیبی به نام تی تی آشنا می‌شود.",
   },
   //posteshir
   {
@@ -43,6 +47,8 @@ const FavoritesArr = [
     time: "۴۵:۳۰",
     rate: "۹۰",
     bgImg: "../images/Watch/postshir.svg",
+    description:
+      "نعیم که پانزده سال زندان را به عشق دیدن دخترش تاب آورده پس از رهایی، برای دیدار با او دچار بحرانی بزرگ می شود.",
   },
   //marde baznde
   {
@@ -58,6 +64,8 @@ const FavoritesArr = [
     time: "۱:۵۳:۳۰",
     rate: "۵۵",
     bgImg: "../images/Watch/loser.svg",
+    description:
+      "احمد خسروی مسئول رسیدگی به پرونده‌های مشکوک به قتل می‌شود و به سرنخ‌هایی دست می‌یابد که پشت پرده این قتل رازگونه به کشف شبکه فساد اقتصادی می‌رسد.",
   },
   //sag band
   {
@@ -73,6 +81,8 @@ const FavoritesArr = [
     time: "۱:۳۰:۳۰",
     rate: "۲۴",
     bgImg: "../images/Watch/sagband.svg",
+    description:
+      "هیچ وقت گول اسم و ظاهر آدم‌ها رو نخورید؛ ارتش هیتلر با اون عظمت، اسمش نازی بود. این فیلم سینمایی  دومین ساخته مهران احمدی پس از فیلم سینمایی «مصادره» محسوب می‌شود.",
   },
   //shadravan
   {
@@ -88,12 +98,14 @@ const FavoritesArr = [
     time: "۱:۳۴:۳۰",
     rate: "۳۵",
     bgImg: "../images/Watch/shad.svg",
+    description:
+      "شادروان به دردسرهای یک خانواده پس از فوت ناگهانی پدرشان می‌پردازد. آن‌ها که در حاشیهٔ شهر زندگی می‌کنند و حالا با درگذشت پدرشان ماجراهای تازه‌ای برایشان به وجود می‌آید.",
   },
   //zelava
   {
     id: 7,
     url: "./images/favorites/Frame7.jpg",
-    name: "زلاوا",
+    name: "زالاوا",
     category: "فیلم",
     year: "۱۳۹۹",
     image1: "../images/Watch/zelava1.jpg",
@@ -103,6 +115,8 @@ const FavoritesArr = [
     time: "۱:۳۰:۱۵",
     rate: "۴۵",
     bgImg: "../images/Watch/zelava.svg",
+    description:
+      "داستان زالاوا در اواخر دههٔ ۱۳۵۰ خورشیدی روی می‌دهد و راوی اتفاقی است که باعث ترس مردم شده و رئیس پاسگاه تلاش می‌کند تا امنیت را به روستا بازگرداند.",
   },
   //last of us
   {
@@ -118,6 +132,8 @@ const FavoritesArr = [
     time: "۴۶:۲۰",
     rate: "۸۷",
     bgImg: "../images/favorites/Frame8.jpg",
+    description:
+      "وقایع این سریال در سال ۲۰۲۳ جریان دارد و اتفاقات مربوط به ۲۰ سال پس از همه‌گیری یک بیماری قارچی را به تصویر می‌کشد.",
   },
   //bedon gharar ghabli
   {
@@ -133,6 +149,8 @@ const FavoritesArr = [
     time: "۲:۰۲:۰۵",
     rate: "۵۸",
     bgImg: "../images/Watch/gharar.svg",
+    description:
+      "داستان فیلم در مورد دختری به نام یاسمن است که پس از سال‌ها به دلیل مرگ پدرش از آلمان به ایران بازگشته است.",
   },
   //john wick 4
   {
@@ -148,6 +166,8 @@ const FavoritesArr = [
     time: "۲:۴۹:۱۵",
     rate: "۹۲",
     bgImg: "../images/Watch/john-wick.svg",
+    description:
+      "چند سالی است که ماشینش را دزدیده و سگش را کشته‌اند و صدها نفر کشته شده‌اند. جان ویک هر قانون ممکنی در دنیای زیرزمینی قاتلان شکسته.",
   },
   //shenaye parvane
   {
@@ -163,6 +183,8 @@ const FavoritesArr = [
     time: "۲:۰۱:۱۷",
     rate: "۶۷",
     bgImg: "../images/Watch/shena.svg",
+    description:
+      "پروانه به گاراژ صافکاری برادرشوهرش حجت می‌رود و از او می‌خواهد تا جلوی همسرش هاشم  را بگیرد.",
   },
   //mogheiat mahdi
   {
@@ -178,6 +200,8 @@ const FavoritesArr = [
     time: "۱:۴۰:۰۰",
     rate: "۷۵",
     bgImg: "../images/Watch/mehdi.svg",
+    description:
+      "داستان درباره زندگی مهدی باکری و رابطه وی با همسرش، شرکت در جنگ ایران و عراق همراه برادرش حمید باکری، فرماندهی سپاه عاشورا در جنگ و به شهادت رسیدن وی است.",
   },
   //dozist
   {
@@ -193,6 +217,8 @@ const FavoritesArr = [
     time: "۱:۳۵:۰۰",
     rate: "۶۹",
     bgImg: "../images/Watch/dozist.svg",
+    description:
+      "در جنوب شهر، پسری به نام عطا (جواد عزتی)، با پدرش زندگی می‌کند و دو تن از دوستان خود را نیز به خانه راه داده‌ است.",
   },
 ];
 

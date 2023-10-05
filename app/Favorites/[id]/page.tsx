@@ -47,10 +47,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
             <Year>{Find.year} </Year>
             <AgeLimit>+۱۵</AgeLimit>
           </Numbers>
-          <AboutText>
-            نعیم که پانزده سال زندان را به عشق دیدن دخترش تاب آورده پس از رهایی،
-            برای <br /> دیدار با او دچار بحرانی بزرگ می شود.
-          </AboutText>
+          <AboutText>{Find.description}</AboutText>
           <Buttons>
             <LikesButton>
               <img src="../images/Watch/dislike.svg" />
