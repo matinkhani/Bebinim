@@ -22,11 +22,9 @@ import {
 } from "../Styled Components/animation";
 import AnimationsArr from "./arrayAnimation";
 import Link from "next/link";
-
+import { LinkPlace } from "../Styled Components/favorites";
 
 export default function Animation() {
- 
-
   return (
     <Container>
       <TextPlace>
@@ -47,18 +45,20 @@ export default function Animation() {
                 <SwiperSlide>
                   <FavoriteImg key={index} src={item.url} />
                   <Hover>
-                   <Link href={`Animation/${item.id}`}>
-                   <HoverText>
-                      <Details>
-                        <NameFilm>{item.name}</NameFilm>
-                        <DateFilm>
-                          <Year>{item.year}</Year>
-                          <Line />
-                          <Name>{item.category}</Name>
-                        </DateFilm>
-                      </Details>
-                    </HoverText>
-                   </Link>
+                    <Link href={`Animation/${item.id}`}>
+                      <LinkPlace>
+                        <HoverText>
+                          <Details>
+                            <NameFilm>{item.name}</NameFilm>
+                            <DateFilm>
+                              <Year>{item.year}</Year>
+                              <Line />
+                              <Name>{item.category}</Name>
+                            </DateFilm>
+                          </Details>
+                        </HoverText>
+                      </LinkPlace>
+                    </Link>
                   </Hover>
                 </SwiperSlide>
               );

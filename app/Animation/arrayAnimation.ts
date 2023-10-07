@@ -6,7 +6,7 @@ const AnimationsArr = [
     name: "باب اسنفجی",
     year: "۱۹۹۹",
     category: "انیمیشن",
-    bgImg: "../images/animation/sponge-bob.png",
+    bgImg: "../images/animation/pong-bob.jpg",
     image1: "../images/D-Animation/bob1.jpg",
     image2: "../images/D-Animation/bob2.jpg",
     image3: "../images/D-Animation/bob3.jpg",
@@ -65,7 +65,7 @@ const AnimationsArr = [
     time: "۱:۵۸:۰۰",
     rate: "۹۸٪",
     description:
-      "راحله به همراه خوانواده در یکی از محله‌های تهران زندگی می‌کنند. شوهر خواهر علی، فردی است که یک کسب و کار را برای خانم‌های محله ایجاد کرده است.",
+      "لایتنینگ مک کوئین ماشین مسابقه تازه‌کاری است که تنها هدفش برنده شدن است به‌طوری‌که برای برنده شدن اخلاق‌های خود را زیر پا می‌گذارد. در یک روز ...",
   },
   // Tom & Jerry
   {
