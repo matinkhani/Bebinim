@@ -32,6 +32,7 @@ import {
   ItemsPlace,
   ItemsName,
 } from "../Styled Components/SearchFilter";
+import Link from "next/link";
 
 export default function Search() {
   const [userInput, setUserInput] = useState<string>("");
@@ -119,7 +120,7 @@ export default function Search() {
                       }}
                     >
                       <Hover>
-                        {/* <Link href={`Animation/${item.id}`}> */}
+                        <Link href={`Search/${item.id}`}>
                         <LinkPlace>
                           <HoverText>
                             <Details>
@@ -132,7 +133,7 @@ export default function Search() {
                             </Details>
                           </HoverText>
                         </LinkPlace>
-                        {/* </Link> */}
+                        </Link>
                       </Hover>
                     </Items>
                     <ItemsName>{item.name}</ItemsName>
