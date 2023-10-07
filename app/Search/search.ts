@@ -101,6 +101,7 @@ export const SearchItem = styled.div`
   font-family: var(--medium);
   font-size: 16px;
   font-weight: 400;
+  background-color: red;
 `;
 
 ///Search Header Styled
