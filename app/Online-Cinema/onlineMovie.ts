@@ -10,7 +10,7 @@ const OnlineMovie = [
     image3: "../images/Watch/ablagh3.jpg",
     age: "+۱۲",
     time: "۲:۳۸:۰۰",
-    rate: "۱۸",
+    rate: "۱۸٪",
     bgImg: "../images/Watch/ablagh.svg",
     description:
       "راحله به همراه همسرش علی و دختر کوچکش در یکی از محله‌های حاشیه‌ای تهران زندگی می‌کنند...",
@@ -26,7 +26,7 @@ const OnlineMovie = [
     image3: "../images/Online/ww3-3.jpg",
     age: "+۱۳",
     time: "۱:۴۷:۰۸",
-    rate: "۶۷",
+    rate: "۶۷٪",
     bgImg: "../images/Online/ww3.png",
     description:
       "شکیب (محسن تنابنده) یک کارگر روزمزد میانسالِ بی‌خانمان است که همسر و پسرش را سال‌ها پیش در زلزله از دست داده و تاکنون با این امر کنار نیامده است",
@@ -42,7 +42,7 @@ const OnlineMovie = [
     image3: "../images/Online/maslahat3.jpg",
     age: "+۱۶",
     time: "۲:۱۴:۰۰",
-    rate: "۵۴",
+    rate: "۵۴٪",
     bgImg: "../images/Online/maslahat.jpg",
     description:
       "داستان از آنجایی آغاز می‌شود که «مهدی» پسر آیت‌الله مشکاتیان که یکی از مقامات بلندپایه‌ی قوه‌ی قضائیه است، مرتکب قتل می‌شود، اما از پذیرفتن آن سر باز می‌زند و ...",
@@ -58,7 +58,7 @@ const OnlineMovie = [
     image3: "../images/Online/fosil3.png",
     age: "+۱۵",
     time: "۱:۵۰:۰۰",
-    rate: "۹۷",
+    rate: "۹۷٪",
     bgImg: "../images/Online/fosil.jpg",
     description:
       "اسماعیل، سعید و صفا که عضو گروه موسیقی بلک داگز هستند، برای معروفیت و موفقیت تلاش دارند. اسماعیل (با نام خوانندگی اسی) دنبال اجرا جلوی شاه است. اما ...",

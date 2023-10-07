@@ -2,7 +2,7 @@
 import React from "react";
 import { Container, GlobalStyle } from "./Styled Components/Landing";
 import Header from "./Header/Header";
-import MainLanding from "./Main Landing/MainLanding";
+import MainLanding from "./Main-Landing/MainLanding";
 import Favorites from "./Favorites/favorites";
 import OnlineCinema from "./Online-Cinema/onlineCinema";
 import Exclusive from "./Exclusive/exclusive";
