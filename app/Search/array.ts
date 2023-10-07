@@ -2,7 +2,7 @@ const AllMovies = [
   // Ablagh
   {
     id: 1,
-    url: "./images/favorites/Frame1.png",
+    url: "../../images/Watch/ablagh.svg",
     name: "ابلق",
     name2: "ablagh",
     category: "فیلم",
@@ -234,23 +234,23 @@ const AllMovies = [
       "در جنوب شهر، پسری به نام عطا (جواد عزتی)، با پدرش زندگی می‌کند و دو تن از دوستان خود را نیز به خانه راه داده‌ است.",
   },
   // Ablagh
-  {
-    id: 14,
-    url: "./images/CinemaOnline/ablagh.svg",
-    name: "ابلق",
-    name2: "ablagh",
-    category: "فیلم",
-    year: "۱۳۹۹",
-    image1: "../images/Watch/ablagh1.jpg",
-    image2: "../images/Watch/ablagh2.jpg",
-    image3: "../images/Watch/ablagh3.jpg",
-    age: "+۱۲",
-    time: "۲:۳۸:۰۰",
-    rate: "۱۸",
-    bgImg: "../images/Watch/ablagh.svg",
-    description:
-      "راحله به همراه همسرش علی و دختر کوچکش در یکی از محله‌های حاشیه‌ای تهران زندگی می‌کنند...",
-  },
+  // {
+  //   id: 14,
+  //   url: "./images/CinemaOnline/ablagh.svg",
+  //   name: "ابلق",
+  //   name2: "ablagh",
+  //   category: "فیلم",
+  //   year: "۱۳۹۹",
+  //   image1: "../images/Watch/ablagh1.jpg",
+  //   image2: "../images/Watch/ablagh2.jpg",
+  //   image3: "../images/Watch/ablagh3.jpg",
+  //   age: "+۱۲",
+  //   time: "۲:۳۸:۰۰",
+  //   rate: "۱۸",
+  //   bgImg: "../images/Watch/ablagh.svg",
+  //   description:
+  //     "راحله به همراه همسرش علی و دختر کوچکش در یکی از محله‌های حاشیه‌ای تهران زندگی می‌کنند...",
+  // },
   // WW3
   {
     id: 15,

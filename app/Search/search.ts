@@ -92,7 +92,6 @@ export const FilterDrop = styled.div`
 export const SearchItem = styled.div`
   height: 75%;
   width: 100%;
-  gap: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +100,7 @@ export const SearchItem = styled.div`
   font-family: var(--medium);
   font-size: 16px;
   font-weight: 400;
-  background-color: red;
+  /* background-color: red; */
 `;
 
 ///Search Header Styled

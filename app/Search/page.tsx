@@ -29,6 +29,7 @@ import {
   NameFilm,
   Year,
 } from "../Styled Components/favorites";
+import { Container, Items } from "../Styled Components/SearchFilter";
 
 export default function Search() {
   const [userInput, setUserInput] = useState<string>("");
@@ -91,22 +92,25 @@ export default function Search() {
 
         <SearchItem>
           {userInput === "" ? (
-            <div>
+            <>
               <img src="./images/Search/searchstatus.svg" />
               عنوان فیلم، سریال یا بازیگر مورد نظر خود را
               <br /> جستجو کنید و یا از طریق فیلترهای موجود
               <br /> {"."}فیلم و سریال مورد نظر خود را پیدا کنید
-            </div>
+            </>
           ) : (
-            <div>
+            <Container>
               {filteredData.map((item, index) => {
                 return (
-                  <>
-                    <div>{item.name}</div>
-                  </>
+                  <Items
+                    style={{
+                      backgroundImage: `url(${item.url})`,
+                      backgroundSize: "cover",
+                    }}
+                  ></Items>
                 );
               })}
-            </div>
+            </Container>
           )}
         </SearchItem>
       </SearchMain>
