@@ -15,22 +15,9 @@ export const PlaceImdb = styled.div`
   width: 85.5%;
   display: flex;
   flex-direction: column;
-`;
-
-export const ImdbTop = styled.div`
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-export const ImdbDown = styled.div`
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 25px;
 `;
 
@@ -51,7 +38,7 @@ export const ImdbText = styled.div`
   justify-content: start;
   align-items: center;
   color: #fefefe;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 20px;
   font-weight: 700;
 `;
@@ -67,7 +54,7 @@ export const More = styled.div`
   width: 30%;
   gap: 5px;
   color: #52b5b4;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 14px;
   font-weight: 500;
   display: flex;
