@@ -18,18 +18,20 @@ import Searchheader from "./search-header";
 import { useRouter } from "next/navigation";
 import AllMovies from "./array";
 import {
-  DateFilm,
-  Details,
-  FavoriteImg,
+  Container,
+  Items,
   Hover,
   HoverText,
   Line,
-  LinkPlace,
   Name,
-  NameFilm,
   Year,
-} from "../Styled Components/favorites";
-import { Container, Items } from "../Styled Components/SearchFilter";
+  DateFilm,
+  Details,
+  NameFilm,
+  LinkPlace,
+  ItemsPlace,
+  ItemsName,
+} from "../Styled Components/SearchFilter";
 
 export default function Search() {
   const [userInput, setUserInput] = useState<string>("");
@@ -39,7 +41,7 @@ export default function Search() {
     if (userInput === "") {
       return "";
     } else {
-      return id.name.includes(userInput);
+      return id.name.toLowerCase().includes(userInput);
     }
   });
 
@@ -92,39 +94,49 @@ export default function Search() {
 
         <SearchItem>
           {userInput === "" ? (
-            <>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginTop: 160,
+              }}
+            >
               <img src="./images/Search/searchstatus.svg" />
               عنوان فیلم، سریال یا بازیگر مورد نظر خود را
               <br /> جستجو کنید و یا از طریق فیلترهای موجود
               <br /> {"."}فیلم و سریال مورد نظر خود را پیدا کنید
-            </>
+            </div>
           ) : (
             <Container>
               {filteredData.map((item, index) => {
                 return (
-                  <Items
-                    style={{
-                      backgroundImage: `url(${item.url})`,
-                      backgroundSize: "cover",
-                    }}
-                  >
-                    <Hover>
-                    {/* <Link href={`Animation/${item.id}`}> */}
-                      <LinkPlace>
-                        <HoverText>
-                          <Details>
-                            <NameFilm>{item.name}</NameFilm>
-                            <DateFilm>
-                              <Year>{item.year}</Year>
-                              <Line />
-                              <Name>{item.category}</Name>
-                            </DateFilm>
-                          </Details>
-                        </HoverText>
-                      </LinkPlace>
-                    {/* </Link> */}
-                  </Hover>
-                  </Items>
+                  <ItemsPlace>
+                    <Items
+                      style={{
+                        backgroundImage: `url(${item.url})`,
+                        backgroundSize: "cover",
+                      }}
+                    >
+                      <Hover>
+                        {/* <Link href={`Animation/${item.id}`}> */}
+                        <LinkPlace>
+                          <HoverText>
+                            <Details>
+                              <NameFilm>{item.name}</NameFilm>
+                              <DateFilm>
+                                <Year>{item.year}</Year>
+                                <Line />
+                                <Name>{item.category}</Name>
+                              </DateFilm>
+                            </Details>
+                          </HoverText>
+                        </LinkPlace>
+                        {/* </Link> */}
+                      </Hover>
+                    </Items>
+                    <ItemsName>{item.name}</ItemsName>
+                  </ItemsPlace>
                 );
               })}
             </Container>

@@ -1,20 +1,27 @@
 import { styled } from "styled-components";
 
 export const SearchMain = styled.div`
-  height: 92.3vh;
+  height: 100%;
+  min-height: 92.3vh;
   width: 1440px;
   margin-top: 64px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  /* background-color: yellowgreen; */
+  overflow-y: hidden;
+  gap: 30px;
 `;
 export const InputContainer = styled.div`
   height: 30%;
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
   align-items: end;
+  gap: 20px;
+  /* background-color: beige; */
 `;
 export const SerachInputPlace = styled.div`
   height: 55%;
@@ -31,6 +38,7 @@ export const InputandSearch = styled.div`
   border: none;
   display: flex;
   background-color: rgba(254, 254, 254, 1);
+  /* background-color: aqua; */
 `;
 export const Input = styled.input`
   height: 64px;
@@ -64,6 +72,7 @@ export const CloseInput = styled.div`
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  /* background-color: green; */
 `;
 export const FilterPlace = styled.div`
   height: 35%;
@@ -91,6 +100,8 @@ export const FilterDrop = styled.div`
 
 export const SearchItem = styled.div`
   height: 75%;
+  /* max-height: 600px; */
+  /* min-height: 900px; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -107,7 +118,7 @@ export const SearchItem = styled.div`
 export const SearchContainer = styled.div`
   width: 1440px;
   min-height: 100vh;
-  height: fit-content;
+  /* height: fit-content; */
   background-color: #291212;
 `;
 

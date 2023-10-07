@@ -1,30 +1,57 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Container = styled.div`
-height: 100%;
-width: 88%;
-gap: 32px;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-`
+  height: 100%;
+  width: 88%;
+  gap: 32px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: red; */
+`;
+
+export const ItemsPlace = styled.div`
+  height: 290px;
+  width: 184px;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ItemsName = styled.div`
+  width: 184px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-family: var(--medium);
+  font-size: 16px;
+  font-weight: 500;
+  color: #fefefe;
+  /* background-color: red; */
+`;
+
 export const Items = styled.div`
-height: 256px;
-width: 184px;
-`
+  height: 256px;
+  width: 184px;
+  border-radius: 8px;
+  background-color: red;
+`;
 export const Details = styled.div`
   height: 100px;
-  width: 130px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
+  /* background-color: green; */
 `;
 
 export const NameFilm = styled.div`
   height: 50px;
-  width: fit-content;
+  width: 100%;
   display: flex;
   align-items: end;
+  justify-content: center;
+  /* background-color: red; */
 `;
 
 export const DateFilm = styled.div`
@@ -59,7 +86,7 @@ export const Hover = styled.div`
   transition: all 0.3s;
   cursor: pointer;
   border: 3px solid transparent;
-  font-family: IRANSansX;
+  font-family: var(--medium);
 
   &:hover {
     display: flex;
@@ -73,4 +100,12 @@ export const Hover = styled.div`
   &:hover ${HoverText} {
     display: flex;
   }
+`;
+
+export const LinkPlace = styled.div`
+  height: 256px;
+  width: 184px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
