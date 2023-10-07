@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-image: url("./images/GharibFilm.png");
+  /* background-image: url("./images/GharibFilm.png"); */
   height: 745px;
   width: 100%;
   display: flex;
