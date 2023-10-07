@@ -20,101 +20,12 @@ import {
   Name,
   Line,
 } from "../Styled Components/animation";
+import AnimationsArr from "./arrayAnimation";
+import Link from "next/link";
+
 
 export default function Animation() {
-  const Animations = [
-    // Sponge Bob
-    {
-      url: "./images/animation/sponge-bob.png",
-      name: "باب اسنفجی",
-      year: "۱۹۹۹",
-      category: "انیمیشن",
-    },
-    // Panda
-    {
-      url: "./images/animation/panda.svg",
-      name: "پاندای کونگ فو کار ۳",
-      year: "۲۰۱۶",
-      category: "انیمیشن",
-    },
-    // Ice Age
-    {
-      url: "./images/animation/ice-age.jpg",
-      name: "عصر یخبندان",
-      year: "۲۰۰۲",
-      category: "انیمیشن",
-    },
-    // Cars
-    {
-      url: "./images/animation/cars.jpg",
-      name: "ماشین‌ها",
-      year: "۲۰۰۶",
-      category: "انیمیشن",
-    },
-    // Tom & Jerry
-    {
-      url: "./images/animation/tom&jerry.png",
-      name: "تام و جری",
-      year: "۱۹۴۰",
-      category: "انیمیشن",
-    },
-    // Pink Panther
-    {
-      url: "./images/animation/pink-panther.png",
-      name: "پلنگ صورتی",
-      year: "۱۹۶۹",
-      category: "انیمیشن",
-    },
-    // Madagascar
-    {
-      url: "./images/animation/madagascar.jpg",
-      name: "ماداگاسکار ۲",
-      year: "۲۰۰۵",
-      category: "انیمیشن",
-    },
-    // Toy Story
-    {
-      url: "./images/animation/toy-story.jpeg",
-      name: "داستان اسباب بازی",
-      year: "۱۹۹۵",
-      category: "انیمیشن",
-    },
-    // Luca
-    {
-      url: "./images/animation/luca.svg",
-      name: "لوکا",
-      year: "۲۰۲۱",
-      category: "انیمیشن",
-    },
-    // Soul
-    {
-      url: "./images/animation/soul.svg",
-      name: "روح",
-      year: "۲۰۲۰",
-      category: "انیمیشن",
-    },
-    // Rango
-    {
-      url: "./images/animation/rango.svg",
-      name: "رنگو",
-      year: "۲۰۱۱",
-      category: "انیمیشن",
-    },
-    // Dolphin Boy
-    {
-      url: "./images/animation/dolphin.svg",
-      name: "پسر دلفینی",
-      year: "۲۰۲۱",
-      category: "انیمیشن",
-    },
-    // Turning Red
-    {
-      url: "./images/animation/turning-red.svg",
-      name: "قرمز شدن",
-      year: "۲۰۲۱",
-      category: "انیمیشن",
-    },
-  ];
+ 
 
   return (
     <Container>
@@ -131,12 +42,13 @@ export default function Animation() {
             className="mySwiper"
             slidesPerGroup={4}
           >
-            {Animations.map((item, index) => {
+            {AnimationsArr.map((item, index) => {
               return (
                 <SwiperSlide>
                   <FavoriteImg key={index} src={item.url} />
                   <Hover>
-                    <HoverText>
+                   <Link href={`Animation/${item.id}`}>
+                   <HoverText>
                       <Details>
                         <NameFilm>{item.name}</NameFilm>
                         <DateFilm>
@@ -146,6 +58,7 @@ export default function Animation() {
                         </DateFilm>
                       </Details>
                     </HoverText>
+                   </Link>
                   </Hover>
                 </SwiperSlide>
               );
