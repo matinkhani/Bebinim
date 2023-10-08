@@ -7,7 +7,6 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* background-color: red; */
 `;
 
 export const ItemsPlace = styled.div`
@@ -27,7 +26,6 @@ export const ItemsName = styled.div`
   font-size: 16px;
   font-weight: 500;
   color: #fefefe;
-  /* background-color: red; */
 `;
 
 export const Items = styled.div`
@@ -42,7 +40,6 @@ export const Details = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* background-color: green; */
 `;
 
 export const NameFilm = styled.div`
@@ -51,7 +48,6 @@ export const NameFilm = styled.div`
   display: flex;
   align-items: end;
   justify-content: center;
-  /* background-color: red; */
 `;
 
 export const DateFilm = styled.div`

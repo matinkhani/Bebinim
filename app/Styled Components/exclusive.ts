@@ -16,7 +16,7 @@ export const ExclusiveText = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 20px;
   font-weight: 700;
 `;
@@ -60,10 +60,11 @@ export const DetailsTop = styled.div`
   justify-content: end;
   align-items: center;
 `;
+
 export const RealBtn = styled.button`
   height: 32px;
   width: 82px;
-  font-family: IRANSansX;
+  font-family:  var(--medium);
   font-size: 16px;
   font-weight: 700;
   border: none;
@@ -82,21 +83,23 @@ export const DetailsBottom = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
 export const HoverFilmName = styled.div`
   height: 40%;
   width: 100%;
   color: #fff;
   text-align: center;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 32px;
   font-weight: 700;
 `;
+
 export const HoverDate = styled.div`
   height: 35%;
   width: 100%;
   color: #b55253;
   text-align: center;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 20px;
   font-weight: 700;
 `;
@@ -106,7 +109,7 @@ export const Hover = styled.div`
   height: 400px;
   position: absolute;
   cursor: pointer;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   border: 4px solid transparent;
   transition: all 0.3s;
   border-radius: 8px;

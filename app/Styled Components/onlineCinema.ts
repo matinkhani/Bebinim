@@ -17,7 +17,7 @@ export const CinemaOlineText = styled.div`
   justify-content: end;
   align-items: center;
   color: #fefefe;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 20px;
   font-weight: 700;
 `;
@@ -40,8 +40,6 @@ export const Movie1 = styled.div`
   align-items: center;
   border-radius: 8px;
   background-size: cover;
-  /* background-position: 50% 70%; */
-  /* background-image: url("./images/CinemaOnline/ablagh.svg"); */
   cursor: pointer;
   position: relative;
 `;
@@ -55,7 +53,6 @@ export const Movie2 = styled.div`
   border-radius: 8px;
   background-size: cover;
   background-position: 50% 15%;
-  /* background-image: url("./images/CinemaOnline/worldwar3.svg"); */
   position: relative;
   cursor: pointer;
 `;
@@ -69,7 +66,6 @@ export const Movie3 = styled.div`
   border-radius: 8px;
   background-size: cover;
   background-position: 50% 0%;
-  /* background-image: url("./images/CinemaOnline/maslahat.png"); */
   cursor: pointer;
   position: relative;
   margin-top: -80px;
@@ -84,7 +80,6 @@ export const Movie4 = styled.div`
   border-radius: 8px;
   background-size: cover;
   background-position: 50% 70%;
-  /* background-image: url("./images/CinemaOnline/fosil.png"); */
   cursor: pointer;
   position: relative;
   margin-top: -80px;
@@ -112,7 +107,7 @@ export const Hover = styled.div`
   border: 4px solid transparent;
   transition: all 0.3s;
   cursor: pointer;
-  font-family: IRANSansX;
+  font-family: var(--medium);
 
   &:hover {
     display: flex;
@@ -153,13 +148,12 @@ export const DetalisDown = styled.div`
   display: flex;
   justify-content: start;
   align-items: center;
-  /* background-color: yellow; */
 `;
 
 export const DetailsText = styled.div`
   height: 100%;
   width: 93%;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 16px;
   direction: rtl;
   line-height: 35px;

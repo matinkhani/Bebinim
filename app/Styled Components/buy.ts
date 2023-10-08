@@ -18,7 +18,6 @@ export const BuyPlace = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
 `;
 
 export const BuyComplete = styled.div`
@@ -34,7 +33,6 @@ export const BuyComplete = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: blue; */
 `;
 
 export const BuySub = styled.div`
@@ -45,7 +43,6 @@ export const BuySub = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: rgba(254, 254, 254, 1);
-  /* background-color: coral; */
 `;
 
 export const Month = styled.div`
@@ -61,7 +58,6 @@ export const Month = styled.div`
   letter-spacing: 0em;
   text-align: right;
   color: rgba(0, 0, 0, 1);
-  /* background-color: greenyellow; */
 `;
 
 export const PricesPlaces = styled.div`
@@ -70,7 +66,6 @@ export const PricesPlaces = styled.div`
   display: flex;
   align-items: end;
   justify-content: space-between;
-
   font-family: var(--medium);
   font-size: 20px;
   font-weight: normal;
@@ -81,7 +76,6 @@ export const PricesPlaces = styled.div`
 `;
 
 export const Price = styled(PricesPlaces)`
-  /* background-color: green; */
 `;
 
 export const PriceNumber = styled.div`
@@ -97,15 +91,12 @@ export const PriceText = styled.div`
 `;
 
 export const Discount = styled(PricesPlaces)`
-  /* background-color: cornsilk; */
 `;
 
 export const Tax = styled(PricesPlaces)`
-  /* background-color: darkkhaki; */
 `;
 
 export const AmountPayable = styled(PricesPlaces)`
-  /* background-color: cyan; */
 `;
 
 export const MiddleLine = styled.div`
@@ -114,7 +105,6 @@ export const MiddleLine = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
 `;
 
 export const Line = styled.div`
@@ -129,8 +119,6 @@ export const ChooseBank = styled.div`
   display: flex;
   align-items: center;
   justify-content: end;
-  /* background-color: springgreen; */
-
   font-family: var(--medium);
   font-size: 20px;
   font-weight: 300;
@@ -146,7 +134,6 @@ export const BanksPlace = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* background-color: seagreen; */
 `;
 
 export const Bank = styled.div`
@@ -157,7 +144,6 @@ export const Bank = styled.div`
   justify-content: center;
   gap: 12px;
   align-items: center;
-  /* background-color: royalblue; */
 `;
 
 export const BankIconPlace = styled.div`
@@ -189,8 +175,6 @@ export const LastPrice = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: saddlebrown; */
-
   font-family: var(--medium);
   font-size: 24px;
   font-weight: 700;
@@ -207,7 +191,6 @@ export const BuyBtnPlace = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: purple; */
 `;
 
 export const BuyButton = styled.button`
@@ -224,7 +207,6 @@ export const BuyButton = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
-
   font-family: var(--medium);
   font-size: 16px;
   font-weight: 500;

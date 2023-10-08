@@ -52,7 +52,7 @@ export const Support = styled.div`
   align-items: center;
   color: #fff;
   text-align: right;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 12px;
   font-weight: 500;
 `;
@@ -65,7 +65,7 @@ export const Rules = styled.div`
   align-items: center;
   color: #fff;
   text-align: right;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 12px;
   font-weight: 500;
 `;
@@ -77,7 +77,7 @@ export const AboutUs = styled.div`
   align-items: center;
   color: #fff;
   text-align: right;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 12px;
   font-weight: 500;
 `;
@@ -90,7 +90,7 @@ export const BuySubscription = styled.div`
   align-items: center;
   color: #fff;
   text-align: right;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 12px;
   font-weight: 500;
 `;
@@ -103,7 +103,7 @@ export const HomePage = styled.div`
   align-items: center;
   color: #fff;
   text-align: right;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 12px;
   font-weight: 500;
 `;

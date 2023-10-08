@@ -7,10 +7,12 @@ export const Container = styled.div`
   overflow-y: hidden;
   background-color: #291212;
 `;
+
 export const Null = styled.div`
   height: 1px;
   width: 100%;
 `;
+
 export const ImagesPlace = styled.div`
   height: fit-content;
   width: 90.5%;
@@ -23,6 +25,7 @@ export const ImagesPlace = styled.div`
   align-items: center;
   gap: 24px;
 `;
+
 export const CategoryItems = styled.div`
   height: 200px;
   width: 288px;
@@ -30,48 +33,63 @@ export const CategoryItems = styled.div`
   border-radius: 8px;
   border: 1px solid rgba(254, 254, 254, 1);
 `;
+
 export const Image1 = styled(CategoryItems)`
   background-image: url("./images/Category/serial.svg");
 `;
+
 export const Image2 = styled(CategoryItems)`
   background-image: url("./images/Category/ekhtesasi.svg");
 `;
+
 export const Image3 = styled(CategoryItems)`
   background-image: url("./images/Category/online.svg");
 `;
+
 export const Image4 = styled(CategoryItems)`
   background-image: url("./images/Category/irani.svg");
 `;
+
 export const Image5 = styled(CategoryItems)`
   background-image: url("./images/Category/imdb.svg");
 `;
+
 export const Image6 = styled(CategoryItems)`
   background-image: url("./images/Category/rielitisho.svg");
 `;
+
 export const Image7 = styled(CategoryItems)`
   background-image: url("./images/Category/taksho.svg");
 `;
+
 export const Image8 = styled(CategoryItems)`
   background-image: url("./images/Category/animat.svg");
 `;
+
 export const Image9 = styled(CategoryItems)`
   background-image: url("./images/Category/khareji.svg");
 `;
+
 export const Image10 = styled(CategoryItems)`
   background-image: url("./images/Category/torki.svg");
 `;
+
 export const Image11 = styled(CategoryItems)`
   background-image: url("./images/Category/koreii.svg");
 `;
+
 export const Image12 = styled(CategoryItems)`
   background-image: url("./images/Category/hendi.svg");
 `;
+
 export const Image13 = styled(CategoryItems)`
   background-image: url("./images/Category/search.svg");
 `;
+
 export const Image14 = styled(CategoryItems)`
   background-image: url("./images/Category/mostanad.svg");
 `;
+
 export const Image15 = styled(CategoryItems)`
   background-image: url("./images/Category/kotah.svg");
 `;

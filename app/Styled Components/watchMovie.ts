@@ -15,7 +15,6 @@ export const LeftSection = styled.div`
   direction: rtl;
   background-size: cover;
   background-position: 50% 10%;
-  /* background-image: url("./images/Watch/postshir.svg"); */
 `;
 
 export const RightSection = styled.div`

@@ -7,12 +7,11 @@ export const SearchMain = styled.div`
   margin-top: 64px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  /* background-color: yellowgreen; */
   overflow-y: hidden;
   gap: 30px;
 `;
+
 export const InputContainer = styled.div`
   height: 30%;
   width: 100%;
@@ -21,16 +20,16 @@ export const InputContainer = styled.div`
   margin-top: 20px;
   align-items: end;
   gap: 20px;
-  /* background-color: beige; */
 `;
+
 export const SerachInputPlace = styled.div`
   height: 55%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
 `;
+
 export const InputandSearch = styled.div`
   height: 64px;
   width: 78%;
@@ -38,8 +37,8 @@ export const InputandSearch = styled.div`
   border: none;
   display: flex;
   background-color: rgba(254, 254, 254, 1);
-  /* background-color: aqua; */
 `;
+
 export const Input = styled.input`
   height: 64px;
   width: 93%;
@@ -54,6 +53,7 @@ export const Input = styled.input`
   color: rgba(7, 7, 7, 1);
   background-color: rgba(254, 254, 254, 1);
 `;
+
 export const SearchIcons = styled.div`
   height: 64px;
   width: 8%;
@@ -61,6 +61,7 @@ export const SearchIcons = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
 export const CloseInput = styled.div`
   height: 50%;
   width: 10%;
@@ -72,16 +73,16 @@ export const CloseInput = styled.div`
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  /* background-color: green; */
 `;
+
 export const FilterPlace = styled.div`
   height: 35%;
   width: 20.5%;
   display: flex;
   justify-content: center;
   align-items: start;
-  /* background-color: black; */
 `;
+
 export const FilterDrop = styled.div`
   height: 48px;
   width: 124px;
@@ -100,8 +101,6 @@ export const FilterDrop = styled.div`
 
 export const SearchItem = styled.div`
   height: 75%;
-  /* max-height: 600px; */
-  /* min-height: 900px; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -111,14 +110,12 @@ export const SearchItem = styled.div`
   font-family: var(--medium);
   font-size: 16px;
   font-weight: 400;
-  /* background-color: red; */
 `;
 
 ///Search Header Styled
 export const SearchContainer = styled.div`
   width: 1440px;
   min-height: 100vh;
-  /* height: fit-content; */
   background-color: #291212;
 `;
 

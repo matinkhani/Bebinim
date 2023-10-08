@@ -18,7 +18,7 @@ export const TextPlace = styled.div`
 `;
 
 export const Text = styled.p`
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
@@ -93,7 +93,7 @@ export const DetailsTop = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: end;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   color: #fefefe;
 `;
 
@@ -133,7 +133,7 @@ export const DetailsCenter = styled.div`
   align-items: center;
   text-align: end;
   line-height: 40px;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 17px;
   font-weight: 500;
   color: #fefefe;
@@ -159,7 +159,7 @@ export const WatchBtn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 20px;
   font-weight: 500;
   color: #fefefe;
