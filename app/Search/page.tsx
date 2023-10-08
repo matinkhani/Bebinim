@@ -107,7 +107,24 @@ export default function Search() {
                       backgroundImage: `url(${item.url})`,
                       backgroundSize: "cover",
                     }}
-                  ></Items>
+                  >
+                    <Hover>
+                    {/* <Link href={`Animation/${item.id}`}> */}
+                      <LinkPlace>
+                        <HoverText>
+                          <Details>
+                            <NameFilm>{item.name}</NameFilm>
+                            <DateFilm>
+                              <Year>{item.year}</Year>
+                              <Line />
+                              <Name>{item.category}</Name>
+                            </DateFilm>
+                          </Details>
+                        </HoverText>
+                      </LinkPlace>
+                    {/* </Link> */}
+                  </Hover>
+                  </Items>
                 );
               })}
             </Container>
