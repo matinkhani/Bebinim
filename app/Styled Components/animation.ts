@@ -104,8 +104,8 @@ export const HoverText = styled.div`
 `;
 
 export const Hover = styled.div`
-  height: 256px;
-  width: 184px;
+  height: 260px;
+  width: 190px;
   border-radius: 8px;
   position: absolute;
   transition: all 0.3s;
