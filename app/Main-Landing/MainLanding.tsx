@@ -39,7 +39,21 @@ export default function MainLanding() {
               <RightSide>
                 <ExplainContainer>
                   <ExplainAndWatch>
-                    <MoreExplainText>توضیحات بیشتر</MoreExplainText>
+                    <MoreExplainText
+                      style={
+                        item.id === 1
+                          ? { color: "black" }
+                          : item.id === 2
+                          ? { color: "black" }
+                          : item.id === 3
+                          ? { color: "white" }
+                          : item.id === 4
+                          ? { color: "white" }
+                          : {}
+                      }
+                    >
+                      توضیحات بیشتر
+                    </MoreExplainText>
                     <Link href={`Main-Landing/${item.id}`}>
                       <MoreIcon src="./images/mores.svg" />
                     </Link>
@@ -50,7 +64,21 @@ export default function MainLanding() {
                       </MoreExplainBtn>
                     </Link>
                   </ExplainAndWatch>
-                  <Text>{item.text}</Text>
+                  <Text
+                    style={
+                      item.id === 1
+                        ? { color: "black" }
+                        : item.id === 2
+                        ? { color: "black" }
+                        : item.id === 3
+                        ? { color: "white" }
+                        : item.id === 4
+                        ? { color: "white" }
+                        : {}
+                    }
+                  >
+                    {item.text}
+                  </Text>
                 </ExplainContainer>
               </RightSide>
             </FilmPoster>

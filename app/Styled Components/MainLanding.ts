@@ -69,7 +69,7 @@ export const MoreExplainText = styled.p`
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0em;
-  color: rgba(0, 0, 0, 1);
+  /* color: rgba(0, 0, 0, 1); */
 `;
 
 export const MoreIcon = styled.img`
