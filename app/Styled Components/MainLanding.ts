@@ -65,7 +65,7 @@ export const ExplainAndWatch = styled.div`
 `;
 
 export const MoreExplainText = styled.p`
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -108,7 +108,7 @@ export const Text = styled.div`
   height: 18%;
   width: 70%;
   direction: rtl;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 15px;
   font-weight: 500;
   line-height: 25px;
