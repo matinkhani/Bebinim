@@ -233,28 +233,10 @@ const AllMovies = [
     description:
       "در جنوب شهر، پسری به نام عطا (جواد عزتی)، با پدرش زندگی می‌کند و دو تن از دوستان خود را نیز به خانه راه داده‌ است.",
   },
-  // Ablagh
-  // {
-  //   id: 14,
-  //   url: "./images/CinemaOnline/ablagh.svg",
-  //   name: "ابلق",
-  //   name2: "ablagh",
-  //   category: "فیلم",
-  //   year: "۱۳۹۹",
-  //   image1: "../images/Watch/ablagh1.jpg",
-  //   image2: "../images/Watch/ablagh2.jpg",
-  //   image3: "../images/Watch/ablagh3.jpg",
-  //   age: "+۱۲",
-  //   time: "۲:۳۸:۰۰",
-  //   rate: "۱۸",
-  //   bgImg: "../images/Watch/ablagh.svg",
-  //   description:
-  //     "راحله به همراه همسرش علی و دختر کوچکش در یکی از محله‌های حاشیه‌ای تهران زندگی می‌کنند...",
-  // },
   // WW3
   {
-    id: 15,
-    url: "./images/CinemaOnline/worldwar3.svg",
+    id: 14,
+    url: "./images/Search/ww3.jpg",
     name: "جنگ جهانی سوم",
     name2: "ww3",
     category: "فیلم",
@@ -271,8 +253,8 @@ const AllMovies = [
   },
   // Maslahat
   {
-    id: 16,
-    url: "./images/CinemaOnline/maslahat.png",
+    id: 15,
+    url: "./images/Search/mslahat.jpeg",
     name: "مصلحت",
     name2: "maslahat",
     category: "فیلم",
@@ -289,8 +271,8 @@ const AllMovies = [
   },
   // Fosil
   {
-    id: 17,
-    url: "./images/CinemaOnline/fosil.png",
+    id: 16,
+    url: "./images/Search/fosil.jpg",
     name: "فسیل",
     name2: "fosil",
     category: "فیلم",
@@ -307,7 +289,7 @@ const AllMovies = [
   },
   // Sedato
   {
-    id: 18,
+    id: 17,
     url: "./images/exclusive/sedato.svg",
     name: "صداتو",
     name2: "sedato",
@@ -326,7 +308,7 @@ const AllMovies = [
   },
   // Actor
   {
-    id: 19,
+    id: 18,
     url: "./images/exclusive/actor.svg",
     name: "آکتور",
     name2: "actor",
@@ -345,7 +327,7 @@ const AllMovies = [
   },
   // The God Father
   {
-    id: 20,
+    id: 19,
     url: "./images/exclusive/godfather.svg",
     name: "پدر خوانده",
     name2: "pedar khande",
@@ -364,7 +346,7 @@ const AllMovies = [
   },
   // Nato
   {
-    id: 21,
+    id: 20,
     url: "./images/exclusive/nato.svg",
     name: "ناتو",
     name2: "nato",
@@ -383,7 +365,7 @@ const AllMovies = [
   },
   // Sponge Bob
   {
-    id: 22,
+    id: 21,
     url: "../images/animation/sponge-bob.png",
     name: "باب اسنفجی",
     name2: "sponge bob",
@@ -401,7 +383,7 @@ const AllMovies = [
   },
   // Panda
   {
-    id: 23,
+    id: 22,
     url: "./images/animation/panda.svg",
     name: "پاندای کونگ فو کار ۳",
     name2: "kung fu panda",
@@ -419,7 +401,7 @@ const AllMovies = [
   },
   // Ice Age
   {
-    id: 24,
+    id: 23,
     url: "./images/animation/ice-age.jpg",
     name: "عصر یخبندان",
     name2: "ice age",
@@ -437,7 +419,7 @@ const AllMovies = [
   },
   // Cars
   {
-    id: 25,
+    id: 24,
     url: "./images/animation/cars.jpg",
     name: "ماشین‌ها",
     name2: "cars",
@@ -455,7 +437,7 @@ const AllMovies = [
   },
   // Tom & Jerry
   {
-    id: 26,
+    id: 25,
     url: "./images/animation/tom&jerry.png",
     name: "تام و جری",
     name2: "tom and jerry",
@@ -473,7 +455,7 @@ const AllMovies = [
   },
   // Pink Panther
   {
-    id: 27,
+    id: 26,
     url: "./images/animation/pink-panther.png",
     name: "پلنگ صورتی",
     name2: "pink panther",
@@ -491,7 +473,7 @@ const AllMovies = [
   },
   // Madagascar
   {
-    id: 28,
+    id: 27,
     url: "./images/animation/madagascar.jpg",
     name: "ماداگاسکار ۲",
     name2: "madagascar",
@@ -509,7 +491,7 @@ const AllMovies = [
   },
   // Toy Story
   {
-    id: 29,
+    id: 28,
     url: "./images/animation/toy-story.jpeg",
     name: "داستان اسباب بازی",
     name2: "toy story",
@@ -527,7 +509,7 @@ const AllMovies = [
   },
   // Luca
   {
-    id: 30,
+    id: 29,
     url: "./images/animation/luca.svg",
     name: "لوکا",
     name2: "luca",
@@ -545,7 +527,7 @@ const AllMovies = [
   },
   // Soul
   {
-    id: 31,
+    id: 30,
     url: "./images/animation/soul.svg",
     name: "روح",
     name2: "soul",
@@ -563,7 +545,7 @@ const AllMovies = [
   },
   // Rango
   {
-    id: 32,
+    id: 31,
     url: "./images/animation/rango.svg",
     name: "رنگو",
     name2: "rango",
@@ -581,7 +563,7 @@ const AllMovies = [
   },
   // Dolphin Boy
   {
-    id: 33,
+    id: 32,
     url: "./images/animation/dolphin.svg",
     name: "پسر دلفینی",
     name2: "dolphin boy",
@@ -599,7 +581,7 @@ const AllMovies = [
   },
   // Turning Red
   {
-    id: 34,
+    id: 33,
     url: "./images/animation/turning-red.svg",
     name: "قرمز شدن",
     name2: "turning red",
@@ -617,8 +599,8 @@ const AllMovies = [
   },
   // Fight Club
   {
-    id: 35,
-    url: "./images/imdb/fight-club.png",
+    id: 34,
+    url: "./images/Search/fightclub.jpg",
     name: "Fight Club",
     name2: "باشگاه مبارزه",
     year: "۱۹۹۹",
@@ -635,8 +617,8 @@ const AllMovies = [
   },
   // The Dark Knight
   {
-    id: 36,
-    url: "./images/imdb/dark-knight.png",
+    id: 35,
+    url: "./images/Search/darkknight.jpg",
     name: "The Dark Knight",
     name2: "شوالیه تاریکی",
     year: "۲۰۰۸",
@@ -653,8 +635,8 @@ const AllMovies = [
   },
   // Breaking Bad
   {
-    id: 37,
-    url: "./images/imdb/breaking-bad.png",
+    id: 36,
+    url: "./images/Search/breakingbad.jpg",
     name: "Breaking Bad",
     name2: "افسارگسیخته",
     year: "۲۰۰۸",
@@ -671,8 +653,8 @@ const AllMovies = [
   },
   // Inception
   {
-    id: 38,
-    url: "./images/imdb/inception.png",
+    id: 37,
+    url: "./images/Search/inception.jpg",
     name: "Inception",
     name2: "الهام",
     year: "۲۰۱۰",
@@ -689,8 +671,8 @@ const AllMovies = [
   },
   // La La Land
   {
-    id: 39,
-    url: "./images/imdb/lala-land.png",
+    id: 38,
+    url: "./images/Search/lalaland.jpg",
     name: "La La Land",
     name2: "لا لا لند",
     year: "۲۰۱۶",
@@ -707,8 +689,8 @@ const AllMovies = [
   },
   // Coda
   {
-    id: 40,
-    url: "./images/imdb/coda.png",
+    id: 39,
+    url: "./images/Search/coda.jpg",
     name: "Coda",
     name2: "کدا",
     year: "۲۰۲۱",
@@ -725,8 +707,8 @@ const AllMovies = [
   },
   // Interstellar
   {
-    id: 41,
-    url: "./images/imdb/interstellar.png",
+    id: 40,
+    url: "./images/Search/interstellar.jpg",
     name: "Interstellar",
     name2: "میان ستاره‌ای",
     year: "۲۰۱۴",
@@ -743,8 +725,8 @@ const AllMovies = [
   },
   // The Godfather
   {
-    id: 42,
-    url: "./images/imdb/god-father.png",
+    id: 41,
+    url: "./images/Search/god.jpg",
     name: "The Godfather",
     name2: "پدر خوانده",
     year: "۱۹۷۲",
