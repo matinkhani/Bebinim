@@ -28,7 +28,6 @@ export const LeftSection1 = styled.div`
   gap: 15px;
   align-items: center;
   transition: all 0.3s;
-  /* background-color: red; */
 `;
 
 export const SignLoginBtn = styled.button`
@@ -45,7 +44,7 @@ export const ButtonsText = styled.p`
   font-size: 13px;
   font-weight: 500;
   line-height: 21px;
-  font-family: "IRANSansX";
+  font-family: var(--medium);
 `;
 
 export const BuyBtn = styled.button`
@@ -95,7 +94,7 @@ export const TabsPlace = styled.div`
   justify-content: end;
   align-items: center;
   color: #fefefe;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;

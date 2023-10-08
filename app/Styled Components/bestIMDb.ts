@@ -83,7 +83,7 @@ export const Hover = styled.div`
   transition: all 0.3s;
   cursor: pointer;
   border: 3px solid transparent;
-  font-family: IRANSansX;
+  font-family: var(--medium);
 
   &:hover {
     display: flex;

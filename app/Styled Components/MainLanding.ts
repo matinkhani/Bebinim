@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  /* background-image: url("./images/GharibFilm.png"); */
   height: 745px;
   width: 100%;
   display: flex;
@@ -65,7 +64,7 @@ export const ExplainAndWatch = styled.div`
 `;
 
 export const MoreExplainText = styled.p`
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -86,7 +85,7 @@ export const MoreExplainBtn = styled.button`
   border-radius: 4px;
   color: rgba(254, 254, 254, 1);
   background-color: rgba(181, 82, 83, 1);
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
@@ -108,7 +107,7 @@ export const Text = styled.div`
   height: 18%;
   width: 70%;
   direction: rtl;
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 15px;
   font-weight: 500;
   line-height: 25px;
@@ -151,7 +150,7 @@ export const FreshSVG = styled.img`
 `;
 
 export const FreshText = styled.p`
-  font-family: IRANSansX;
+  font-family: var(--medium);
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
