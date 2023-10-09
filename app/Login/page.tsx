@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   DownContainer,
@@ -25,11 +25,13 @@ export default function Login() {
   const dispatch = useDispatch();
   const [phone, setPhone] = useState<number>(0);
   const [pass, setPass] = useState<string>("");
+  const [CheckLink, setCheckLink] = useState<boolean>(false);
   const regex = /^[0-9۰-۹\b]+$/;
   const regex2 = /^[a-zA-Z0-9_.-]*$/;
   const ConfirmLogin = () => {
     dispatch(CreateAccount(true));
   };
+
 
   return (
     <Container>
@@ -52,8 +54,9 @@ export default function Login() {
               </Numberr>
               <Input
                 onChange={(e) => {
-                  if (e.target.value === "" || regex.test(e.target.value)) {
+                  if (e.target.value === "" || regex.test(e.target.value )||(e.target.value.length ===10)) {
                     setPhone(+e.target.value);
+                    setCheckLink(true)
                   }
                 }}
                 value={phone === 0 ? "" : phone}
@@ -76,10 +79,18 @@ export default function Login() {
             />
           </InputPlace>
           <LoginButton>
-            <Link href="/">
-              {" "}
-              <LoginBtn onClick={ConfirmLogin}>ورود</LoginBtn>
-            </Link>
+            {CheckLink === true ? (
+              <>
+                <Link href="/">
+                  {" "}
+                  <LoginBtn onClick={ConfirmLogin}>ورود</LoginBtn>
+                </Link>
+              </>
+            ) : (
+              <>
+                <LoginBtn onClick={ConfirmLogin}>ورود</LoginBtn>
+              </>
+            )}
           </LoginButton>
           <DownText>
             <p style={{ cursor: "pointer" }}>رمز عبور خود را فراموش کرده‌ام</p>
