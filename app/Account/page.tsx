@@ -25,8 +25,11 @@ import {
   UnderHeader,
 } from "../Styled Components/Account";
 import Link from "next/link";
+import { RoutState } from "../Redux/store";
+import { useSelector } from "react-redux";
 
 export default function Account() {
+  const select = useSelector((state: RoutState) => state.Reducer);
   return (
     <Container>
       <Header />
@@ -54,8 +57,11 @@ export default function Account() {
             </EmailPlace>
             <PhoneNumberPlace>
               <PhoneNumber>
-                <p>شماره تلفن همراه {":"} </p>
-                <p>۹۸۹۳۳۲۳۳۳۳۱۲+</p>
+                <p>
+                  {"+98"}
+                  {select.PhoneNumber}
+                </p>
+                <p> {":"} شماره تلفن همراه </p>
               </PhoneNumber>
             </PhoneNumberPlace>
             <PasswordPlace>

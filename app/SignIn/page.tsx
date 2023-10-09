@@ -21,10 +21,14 @@ import {
 } from "../Styled Components/signin";
 import Link from "next/link";
 import OtpInput from "react-otp-input";
+import { useDispatch, useSelector } from "react-redux";
+import { RoutState } from "../Redux/store";
+import { GetNumber } from "../Redux/createslice";
 
 export default function SingIn() {
+  const dispatch = useDispatch();
+  const select = useSelector((state:RoutState)=>state.Reducer)
   const [otp, setOtp] = useState<string>("");
-  const [phone, setPhone] = useState<number>(0);
   const regex = /^[0-9۰-۹\b]+$/;
 
   return (
@@ -47,10 +51,10 @@ export default function SingIn() {
                 <Input
                   onChange={(e: any) => {
                     if (e.target.value === "" || regex.test(e.target.value)) {
-                      setPhone(e.target.value);
+                      dispatch(GetNumber(e.target.value));
                     }
                   }}
-                  value={phone === 0 ? "" : phone}
+                  value={select.PhoneNumber === 0 ? "" : select.PhoneNumber}
                   maxLength={10}
                   placeholder="* * * * * * * * *"
                 />

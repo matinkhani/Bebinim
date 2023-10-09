@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import  bebinimReducers  from "./createSlice";
+import  bebinimReducers  from "./createslice";
 
 export const storee = configureStore({
     reducer:{

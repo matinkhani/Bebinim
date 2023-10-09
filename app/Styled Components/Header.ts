@@ -20,6 +20,15 @@ export const LeftSectionContainer = styled.div`
   justify-content: space-around;
 `;
 
+export const LeftSectionContainer2 = styled.div`
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 25px;
+`;
+
 export const LeftSection1 = styled.div`
   height: 100%;
   width: 100%;
