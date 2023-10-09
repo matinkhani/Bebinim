@@ -36,7 +36,7 @@ export default function Account() {
       <UnderHeader />
       <AccountMain>
         <AccountText>
-          <img src="./images/Account/profile.svg" />
+          <img src="./images/Account/profileIcon.svg" />
           حساب کاربری
         </AccountText>
         <InformationMain>
