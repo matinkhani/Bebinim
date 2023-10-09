@@ -19,6 +19,7 @@ export const bebinimReducers = createSlice({
     },
     CreateAccount: (state, { payload }: { payload: boolean }) => {
       state.CheckLogin = payload;
+      console.log(payload);
     },
   },
 });

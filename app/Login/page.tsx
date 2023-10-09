@@ -23,15 +23,27 @@ import { CreateAccount } from "../Redux/createslice";
 
 export default function Login() {
   const dispatch = useDispatch();
-  const [phone, setPhone] = useState<number>(0);
+
+  const [phone, setPhone] = useState<string>("");
   const [pass, setPass] = useState<string>("");
-  const [CheckLink, setCheckLink] = useState<boolean>(false);
+  const [checkInputs, setcheckInputs] = useState<boolean>(false);
+
   const regex = /^[0-9۰-۹\b]+$/;
   const regex2 = /^[a-zA-Z0-9_.-]*$/;
+
   const ConfirmLogin = () => {
     dispatch(CreateAccount(true));
   };
 
+  useEffect(() => {
+    if (phone.length < 10 && pass.length < 8) {
+      setcheckInputs(false);
+    } else {
+      if (phone.length >= 10 && pass.length >= 8) {
+        setcheckInputs(true);
+      }
+    }
+  }, [phone, pass]);
 
   return (
     <Container>
@@ -54,12 +66,12 @@ export default function Login() {
               </Numberr>
               <Input
                 onChange={(e) => {
-                  if (e.target.value === "" || regex.test(e.target.value )||(e.target.value.length ===10)) {
-                    setPhone(+e.target.value);
-                    setCheckLink(true)
+                  if (e.target.value === "" || regex.test(e.target.value)) {
+                    setPhone(e.target.value);
+                    // setCheckLink(true);
                   }
                 }}
-                value={phone === 0 ? "" : phone}
+                value={phone}
                 maxLength={10}
                 placeholder="* * * * * * * * *"
               />
@@ -79,7 +91,7 @@ export default function Login() {
             />
           </InputPlace>
           <LoginButton>
-            {CheckLink === true ? (
+            {checkInputs ? (
               <>
                 <Link href="/">
                   {" "}
@@ -88,7 +100,13 @@ export default function Login() {
               </>
             ) : (
               <>
-                <LoginBtn onClick={ConfirmLogin}>ورود</LoginBtn>
+                <LoginBtn
+                  onClick={() => {
+                    alert("لطفا شماره تلفن و رمز عبور درست وارد نمایید");
+                  }}
+                >
+                  ورود
+                </LoginBtn>
               </>
             )}
           </LoginButton>
