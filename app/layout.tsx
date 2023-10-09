@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import StyledComponentsRegistry from "./lib/registry";
 import localfont from 'next/font/local'
+import { Provider } from "react-redux";
+import storee from "./Redux/store";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${iransans.variable} ${lalezar.variable}`}>
+        <Provider store={storee}>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        </Provider>
       </body>
     </html>
   );
