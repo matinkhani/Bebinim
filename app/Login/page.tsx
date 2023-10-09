@@ -41,6 +41,8 @@ export default function Login() {
     } else {
       if (phone.length >= 10 && pass.length >= 8) {
         setcheckInputs(true);
+      } else {
+        setcheckInputs(false);
       }
     }
   }, [phone, pass]);
