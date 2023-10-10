@@ -142,7 +142,7 @@ export const CodeTop = styled.div`
   height: 40%;
   display: flex;
   justify-content: end;
-  align-items: center;
+  align-items: end;
   font-family: var(--medium);
   font-size: 14px;
   font-weight: 500;

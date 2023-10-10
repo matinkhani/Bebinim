@@ -2,19 +2,20 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import StyledComponentsRegistry from "./lib/registry";
-import localfont from 'next/font/local'
+import localfont from "next/font/local";
+import { Providers } from "./Redux/provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 //Fonts Style
 const iransans = localfont({
   src: "./Fonts/IRANSansXMedium.ttf",
-  variable:"--medium"
-})
+  variable: "--medium",
+});
 const lalezar = localfont({
   src: "./Fonts/DigiLalezarPlus.ttf",
-  variable:"--regular"
-})
+  variable: "--regular",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,7 +30,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${iransans.variable} ${lalezar.variable}`}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <Providers>{children}</Providers>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

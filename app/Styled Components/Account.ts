@@ -142,7 +142,7 @@ export const PhoneNumberPlace = styled.div`
 export const PhoneNumber = styled.div`
   height: 100%;
   width: 60%;
-  direction: rtl;
+  /* direction: rtl; */
   display: flex;
   color: #000;
   justify-content: space-between;

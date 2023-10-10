@@ -25,6 +25,7 @@ import {
   SerialHover,
   FilmHover,
   LeftSectionContainer,
+  LeftSectionContainer2,
 } from "../Styled Components/Header";
 import { useState } from "react";
 import FimlDrop from "./DropDown/FimlDrop";
@@ -33,6 +34,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./Header.css";
 import "animate.css";
+import { RoutState } from "../Redux/store";
+import { useSelector } from "react-redux";
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
@@ -40,13 +43,20 @@ export default function Header() {
 
   const [filmArrow, setFilmArrow] = useState<boolean>(false);
   const [serialArrow, setSerialArrow] = useState<boolean>(false);
-
+  const select = useSelector((state: RoutState) => state.Reducer);
   const pathname = usePathname();
 
   return (
     <Container>
-      <LeftSectionContainer>
-        <LeftSection1>
+      {select.CheckLogin === true ? (
+        <LeftSectionContainer2>
+          <img src="./images/Account/profile.svg" />{" "}
+          <Link href="/Search">
+            <SearchIcon src="./images/SearchIcon.svg" />
+          </Link>
+        </LeftSectionContainer2>
+      ) : (
+        <LeftSectionContainer>
           <SignLoginBtn className="animate__animated animate__fadeInRight animate__faster">
             <ButtonsText>
               <Link href="/Login">ورود / ثبت نام</Link>
@@ -57,12 +67,11 @@ export default function Header() {
               <Link href="/Subscribe">خرید اشتراک</Link>
             </ButtonsText>
           </BuyBtn>
-        </LeftSection1>
-
-        <Link href="/Search">
-          <SearchIcon src="./images/SearchIcon.svg" />
-        </Link>
-      </LeftSectionContainer>
+          <Link href="/Search">
+            <SearchIcon src="./images/SearchIcon.svg" />
+          </Link>
+        </LeftSectionContainer>
+      )}
 
       <RightSection
         onMouseLeave={() => {
