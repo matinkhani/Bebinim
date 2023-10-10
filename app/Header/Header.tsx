@@ -36,10 +36,17 @@ import "./Header.css";
 import "animate.css";
 import { RoutState } from "../Redux/store";
 import { useSelector } from "react-redux";
+import {
+  AccIconConatiner,
+  AccImg,
+  ConatinerAcc,
+} from "../Styled Components/AccDropDown";
+import AccountDrop from "./DropDown/AccountDrop";
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
   const [serialDropDown, setSerialDropDown] = useState<boolean>(false);
+  const [accDropDown, setAccDropDown] = useState<boolean>(false);
 
   const [filmArrow, setFilmArrow] = useState<boolean>(false);
   const [serialArrow, setSerialArrow] = useState<boolean>(false);
@@ -49,12 +56,37 @@ export default function Header() {
   return (
     <Container>
       {select.CheckLogin === true ? (
-        <LeftSectionContainer2>
-          <img src="./images/Account/profile.svg" />{" "}
-          <Link href="/Search">
-            <SearchIcon src="./images/SearchIcon.svg" />
-          </Link>
-        </LeftSectionContainer2>
+        <>
+          <LeftSectionContainer2>
+            <AccIconConatiner
+              onMouseEnter={() => {
+                setAccDropDown(true);
+              }}
+              onMouseLeave={() => {
+                setAccDropDown(false);
+              }}
+            >
+              <AccImg
+                src="./images/Account/profile.svg"
+              />{" "}
+            </AccIconConatiner>
+            <Link href="/Search">
+              <SearchIcon src="./images/SearchIcon.svg" />
+            </Link>
+          </LeftSectionContainer2>
+          {accDropDown && (
+            <ConatinerAcc
+              onMouseEnter={() => {
+                setAccDropDown(true);
+              }}
+              onMouseLeave={() => {
+                setAccDropDown(false);
+              }}
+            >
+              <AccountDrop />
+            </ConatinerAcc>
+          )}
+        </>
       ) : (
         <LeftSectionContainer>
           <SignLoginBtn className="animate__animated animate__fadeInRight animate__faster">
