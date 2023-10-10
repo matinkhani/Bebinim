@@ -48,9 +48,17 @@ export default function Subscribe() {
       <TittleText>اشتراک خود را انتخاب کنید</TittleText>
       <BuySubscribe1>
         <Month1>
-          <AutoTop>
-            <AutoPrice>
-              <Link href="/Subscribe/Buy-one-month-auto">
+          <Link
+            style={{
+              height: "100%",
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+            }}
+            href="/Subscribe/Buy-one-month-auto"
+          >
+            <AutoTop>
+              <AutoPrice>
                 <LinkPlace>
                   <p style={{ cursor: "pointer" }}>۷۵‍‍‍,۰۰۰ تومان</p>
                   <img
@@ -58,87 +66,111 @@ export default function Subscribe() {
                     src="./images/Subscribe/arrow.svg"
                   />
                 </LinkPlace>
-              </Link>
-            </AutoPrice>
-            <AutoText>یک ماهه با تمدید خودکار </AutoText>
-          </AutoTop>
-          <MiddleLine />
-          <AutoBottom>
-            <AutoBottomText>
-              <img src="./images/Subscribe/arrow2.svg" />
-              <More>بیشتر بدانید</More>
-              {"."}
-              مبلغ اشتراک هر ماه به صوت خودکار از حساب شما کسر خواهد شد
-            </AutoBottomText>
-          </AutoBottom>
+              </AutoPrice>
+              <AutoText>یک ماهه با تمدید خودکار </AutoText>
+            </AutoTop>
+            <MiddleLine />
+            <AutoBottom>
+              <AutoBottomText>
+                <img src="./images/Subscribe/arrow2.svg" />
+                <More>بیشتر بدانید</More>
+                {"."}
+                مبلغ اشتراک هر ماه به صوت خودکار از حساب شما کسر خواهد شد
+              </AutoBottomText>
+            </AutoBottom>
+          </Link>
         </Month1>
       </BuySubscribe1>
       <BuySubscribe2>
         <Month2>
-          <OnceMonthPrice>
-            <Link href="/Subscribe/Buy-one-month">
+          <Link
+            style={{
+              display: "flex",
+              height: "100%",
+              width: "100%",
+              justifyContent: "space-between",
+            }}
+            href="/Subscribe/Buy-one-month"
+          >
+            <OnceMonthPrice>
               <ArrowIcon>
                 <img
                   style={{ height: 24, width: 24 }}
                   src="./images/Subscribe/arrow.svg"
                 />
               </ArrowIcon>
-            </Link>
-            <OncePrice>
-              <OncePriceTop>
-                ۱۱۹‍,۰۰۰ تومان
-                <Reduction />
-              </OncePriceTop>
-              <OncePriceBottom> ۸۹‍,۰۰۰ تومان </OncePriceBottom>
-            </OncePrice>
-          </OnceMonthPrice>
-          <OnceMonthText>
-            <OnceTop>یک ماهه </OnceTop>
-            <OnceBottom>
-              <OnceBottomText>۲۵ % تخفیف ویژه خرید اولی ها</OnceBottomText>
-            </OnceBottom>
-          </OnceMonthText>
+              <OncePrice>
+                <OncePriceTop>
+                  ۱۱۹‍,۰۰۰ تومان
+                  <Reduction />
+                </OncePriceTop>
+                <OncePriceBottom> ۸۹‍,۰۰۰ تومان </OncePriceBottom>
+              </OncePrice>
+            </OnceMonthPrice>
+            <OnceMonthText>
+              <OnceTop>یک ماهه </OnceTop>
+              <OnceBottom>
+                <OnceBottomText>۲۵ % تخفیف ویژه خرید اولی ها</OnceBottomText>
+              </OnceBottom>
+            </OnceMonthText>
+          </Link>
         </Month2>
       </BuySubscribe2>
       <BuySubscribe3>
         <Month3>
-          <ThirdMonthPrice>
-            <Link href="/Subscribe/Buy-three-month">
+          <Link
+            style={{
+              display: "flex",
+              height: "100%",
+              width: "100%",
+              justifyContent: "space-between",
+            }}
+            href="/Subscribe/Buy-three-month"
+          >
+            <ThirdMonthPrice>
               <ArrowIcon>
                 <img
                   style={{ height: 24, width: 24 }}
                   src="./images/Subscribe/arrow.svg"
                 />
               </ArrowIcon>
-            </Link>
-            <ThirdPrice>
-              <ThirdPriceTop>
-                ۳۴۹,۰۰۰ تومان
-                <Reduction />
-              </ThirdPriceTop>
-              <ThirdPriceBottom> ۲۴۹,۰۰۰ تومان</ThirdPriceBottom>
-            </ThirdPrice>
-          </ThirdMonthPrice>
-          <ThirdMonthText>
-            <ThirdTop>سه ماهه </ThirdTop>
-            <ThirdBottom>
-              <ThirdBottomText>۳۰ % تخفیف ویژه خرید اولی ها</ThirdBottomText>
-            </ThirdBottom>
-          </ThirdMonthText>
+              <ThirdPrice>
+                <ThirdPriceTop>
+                  ۳۴۹,۰۰۰ تومان
+                  <Reduction />
+                </ThirdPriceTop>
+                <ThirdPriceBottom> ۲۴۹,۰۰۰ تومان</ThirdPriceBottom>
+              </ThirdPrice>
+            </ThirdMonthPrice>
+            <ThirdMonthText>
+              <ThirdTop>سه ماهه </ThirdTop>
+              <ThirdBottom>
+                <ThirdBottomText>۳۰ % تخفیف ویژه خرید اولی ها</ThirdBottomText>
+              </ThirdBottom>
+            </ThirdMonthText>
+          </Link>
         </Month3>
       </BuySubscribe3>
       <BuySubscribe4>
         <Month4>
-          <SixthPrice>
-            ۴۹۹,۰۰۰ تومان
-            <Link href="/Subscribe/Buy-six-month">
-              <img
-                style={{ height: 24, width: 24 }}
-                src="./images/Subscribe/arrow.svg"
-              />
-            </Link>
-          </SixthPrice>
-          <SixthText>شش ماهه </SixthText>
+          <Link
+            style={{
+              display: "flex",
+              height: "100%",
+              width: "100%",
+              justifyContent: "space-between",
+            }}
+            href="/Subscribe/Buy-six-month"
+          >
+            <SixthPrice>
+              ۴۹۹,۰۰۰ تومان
+                <img
+                  style={{ height: 24, width: 24 }}
+                  src="./images/Subscribe/arrow.svg"
+                />
+            </SixthPrice>
+            <SixthText>شش ماهه </SixthText>
+          </Link>
         </Month4>
       </BuySubscribe4>
     </Container>

@@ -93,7 +93,7 @@ export const LinkPlace = styled.div`
   justify-content: center;
   align-items: center;
   gap: 16px;
-`
+`;
 
 export const AutoBottom = styled.div`
   height: 45%;
