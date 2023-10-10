@@ -18,7 +18,7 @@ import {
   TopText,
 } from "../Styled Components/login";
 import Link from "next/link";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { CreateAccount } from "../Redux/createslice";
 
 export default function Login() {
@@ -36,10 +36,10 @@ export default function Login() {
   };
 
   useEffect(() => {
-    if (phone.length < 10 && pass.length < 8) {
+    if (phone.length < 10 && pass.length < 8 && phone.slice(0,1) !== "9") {
       setcheckInputs(false);
     } else {
-      if (phone.length >= 10 && pass.length >= 8) {
+      if (phone.length >= 10 && pass.length >= 8 && phone.slice(0,1) === "9") {
         setcheckInputs(true);
       } else {
         setcheckInputs(false);
@@ -70,7 +70,6 @@ export default function Login() {
                 onChange={(e) => {
                   if (e.target.value === "" || regex.test(e.target.value)) {
                     setPhone(e.target.value);
-                    // setCheckLink(true);
                   }
                 }}
                 value={phone}
