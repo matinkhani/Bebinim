@@ -4,14 +4,20 @@ import {
   Container,
   Date,
   LandingButton,
+  LinkToProfile,
   LoginSection,
   MassageText,
   PlaceIcon,
   SuccessMain,
   SuccessText,
 } from "../../../Styled Components/success";
+import Link from "next/link";
+import { useSelector } from "react-redux";
+import { RoutState } from "@/app/Redux/store";
 
 export default function Success() {
+  const select = useSelector((state: RoutState) => state.Reducer);
+
   return (
     <Container>
       <SuccessMain className="animate__animated animate__slideInUp">
@@ -27,13 +33,41 @@ export default function Success() {
           {"."}وضعیت اشتراکتان را می‌توانید از طریق پنل کاربری پیگیری کنید
         </MassageText>
         <LoginSection>
-          <img src="../../images/Success/user.svg" />
-          ورود به حساب کاربری
+        <LinkToProfile>
+            {select.CheckLogin ? (
+              <>
+                <Link
+                  style={{ height: "100%", width: "100%", display: "flex" }}
+                  href="/Account"
+                >
+                  <img src="../../images/Success/user.svg" />
+                  ورود به حساب کاربری
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link
+                  style={{ height: "100%", width: "100%", display: "flex" }}
+                  href="/SignIn"
+                >
+                  <img src="../../images/Success/user.svg" />
+                  ورود به حساب کاربری
+                </Link>
+              </>
+            )}
+          </LinkToProfile>
         </LoginSection>
-        <LandingButton>
-          <img src="../../images/Success/arrowleft.svg" />
-          بازکشت به صفحه اصلی
-        </LandingButton>
+        <Link
+          style={{ display: "flex", gap: 4 }}
+          href="/"
+        >
+          <LandingButton>
+            <LinkToProfile>
+              <img src="../../images/Success/arrowleft.svg" />
+              بازکشت به صفحه اصلی
+            </LinkToProfile>
+          </LandingButton>
+        </Link>
       </SuccessMain>
     </Container>
   );
