@@ -25,6 +25,8 @@ import {
 } from "../../Styled Components/buy";
 import "animate.css";
 import Link from "next/link";
+import { useDispatch } from "react-redux";
+import { ChangeThreeMonth } from "@/app/Redux/createslice";
 
 export default function Buy() {
   const BanksData = [
@@ -34,6 +36,12 @@ export default function Buy() {
     { url: "../images/Buy/mellat.svg", name: "بانک ملت" },
     { url: "../images/Buy/sepah.svg", name: "بانک سپه" },
   ];
+
+  const dispatch = useDispatch();
+
+  const ChangeSubState = () => {
+    dispatch(ChangeThreeMonth(true));
+  };
 
   return (
     <Container>
@@ -80,7 +88,7 @@ export default function Buy() {
           <LastPrice>۲۴۹,۰۰۰ تومان</LastPrice>
           <BuyBtnPlace>
             <Link href="/Subscribe/Buy-three-month/Success">
-              <BuyButton>ادامه و پرداخت</BuyButton>
+              <BuyButton onClick={ChangeSubState}>ادامه و پرداخت</BuyButton>
             </Link>
           </BuyBtnPlace>
         </BuySub>

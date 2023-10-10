@@ -1,4 +1,5 @@
 import { CreateAccount } from "@/app/Redux/createslice";
+import { RoutState } from "@/app/Redux/store";
 import {
   AccDropContainer,
   ArrowIcon,
@@ -25,7 +26,7 @@ import {
 } from "@/app/Styled Components/AccDropDown";
 import Link from "next/link";
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function AccountDrop() {
   const dispatch = useDispatch();
@@ -33,11 +34,25 @@ export default function AccountDrop() {
     dispatch(CreateAccount(false));
   };
 
+  const select = useSelector((state: RoutState) => state.Reducer);
+
   return (
     <AccDropContainer>
       <SubContainer>
         <ExplainSub>
-          <SubText> {"."}اشتراک فعال ندارید </SubText>
+          <SubText>
+            {select.OneMonthAuto ? (
+              <> {"."}اشتراک یک ماهه با تمدید خودکار دارید </>
+            ) : select.OneMonth ? (
+              <> {"."}اشتراک یک ماهه دارید </>
+            ) : select.ThreeMonth ? (
+              <> {"."}اشتراک سه ماهه دارید </>
+            ) : select.SixMonth ? (
+              <> {"."}اشتراک شش ماهه دارید </>
+            ) : (
+              <> {"."}اشتراک فعال ندارید </>
+            )}
+          </SubText>
         </ExplainSub>
         <BuySub>
           <Link href="/Subscribe">
@@ -81,7 +96,7 @@ export default function AccountDrop() {
             </TabsRight>
           </Link>
         </Tabs>
-        {/* Buy Sub Tab */} 
+        {/* Buy Sub Tab */}
         <Tabs>
           <Link
             style={{ display: "flex", height: "100%", width: "100%" }}
