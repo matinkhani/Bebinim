@@ -1,7 +1,25 @@
 import styled from "styled-components";
 
+export const AccIconConatiner = styled.div`
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const AccImg = styled.img`
   cursor: pointer;
+`;
+
+export const ConatinerAcc = styled.div`
+  width: 288px;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 130px;
+  top: 64px;
 `;
 
 export const AccDropContainer = styled.div`
@@ -10,9 +28,6 @@ export const AccDropContainer = styled.div`
   border-radius: 8px;
   background-color: rgba(254, 254, 254, 1);
   color: rgba(7, 7, 7, 1);
-  position: absolute;
-  left: 130px;
-  top: 70px;
   display: flex;
   flex-direction: column;
 `;
@@ -134,7 +149,7 @@ export const TabsLeft = styled.div`
   justify-content: start;
 `;
 
-export const ArrowIcon = styled.img``
+export const ArrowIcon = styled.img``;
 
 export const Line = styled.div`
   width: 90%;

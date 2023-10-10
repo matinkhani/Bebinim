@@ -36,12 +36,17 @@ import "./Header.css";
 import "animate.css";
 import { RoutState } from "../Redux/store";
 import { useSelector } from "react-redux";
-import { AccImg } from "../Styled Components/AccDropDown";
+import {
+  AccIconConatiner,
+  AccImg,
+  ConatinerAcc,
+} from "../Styled Components/AccDropDown";
 import AccountDrop from "./DropDown/AccountDrop";
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
   const [serialDropDown, setSerialDropDown] = useState<boolean>(false);
+  const [accDropDown, setAccDropDown] = useState<boolean>(false);
 
   const [filmArrow, setFilmArrow] = useState<boolean>(false);
   const [serialArrow, setSerialArrow] = useState<boolean>(false);
@@ -53,12 +58,34 @@ export default function Header() {
       {select.CheckLogin === true ? (
         <>
           <LeftSectionContainer2>
-            <AccImg src="./images/Account/profile.svg" />{" "}
+            <AccIconConatiner
+              onMouseEnter={() => {
+                setAccDropDown(true);
+              }}
+              onMouseLeave={() => {
+                setAccDropDown(false);
+              }}
+            >
+              <AccImg
+                src="./images/Account/profile.svg"
+              />{" "}
+            </AccIconConatiner>
             <Link href="/Search">
               <SearchIcon src="./images/SearchIcon.svg" />
             </Link>
           </LeftSectionContainer2>
-          <AccountDrop />
+          {accDropDown && (
+            <ConatinerAcc
+              onMouseEnter={() => {
+                setAccDropDown(true);
+              }}
+              onMouseLeave={() => {
+                setAccDropDown(false);
+              }}
+            >
+              <AccountDrop />
+            </ConatinerAcc>
+          )}
         </>
       ) : (
         <LeftSectionContainer>
