@@ -36,6 +36,8 @@ import "./Header.css";
 import "animate.css";
 import { RoutState } from "../Redux/store";
 import { useSelector } from "react-redux";
+import { AccImg } from "../Styled Components/AccDropDown";
+import AccountDrop from "./DropDown/AccountDrop";
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
@@ -49,12 +51,15 @@ export default function Header() {
   return (
     <Container>
       {select.CheckLogin === true ? (
-        <LeftSectionContainer2>
-          <img src="./images/Account/profile.svg" />{" "}
-          <Link href="/Search">
-            <SearchIcon src="./images/SearchIcon.svg" />
-          </Link>
-        </LeftSectionContainer2>
+        <>
+          <LeftSectionContainer2>
+            <AccImg src="./images/Account/profile.svg" />{" "}
+            <Link href="/Search">
+              <SearchIcon src="./images/SearchIcon.svg" />
+            </Link>
+          </LeftSectionContainer2>
+          <AccountDrop />
+        </>
       ) : (
         <LeftSectionContainer>
           <SignLoginBtn className="animate__animated animate__fadeInRight animate__faster">
