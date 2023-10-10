@@ -1,12 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 interface initial_state {
-  PhoneNumber: number;
+  PhoneNumber: string;
   CheckLogin: boolean;
 }
 
 const initialState: initial_state = {
-  PhoneNumber: 0,
+  PhoneNumber: "",
   CheckLogin: false,
 };
 
@@ -14,7 +14,7 @@ export const bebinimReducers = createSlice({
   name: "bebinimReducers",
   initialState,
   reducers: {
-    GetNumber: (state, { payload }: { payload: number }) => {
+    GetNumber: (state, { payload }: { payload: string }) => {
       state.PhoneNumber = payload;
     },
     CreateAccount: (state, { payload }: { payload: boolean }) => {

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   CodeDown,
   CodePlace,
@@ -23,13 +23,37 @@ import Link from "next/link";
 import OtpInput from "react-otp-input";
 import { useDispatch, useSelector } from "react-redux";
 import { RoutState } from "../Redux/store";
-import { GetNumber } from "../Redux/createslice";
+import { CreateAccount, GetNumber } from "../Redux/createslice";
 
 export default function SingIn() {
   const dispatch = useDispatch();
-  const select = useSelector((state:RoutState)=>state.Reducer)
+  const select = useSelector((state: RoutState) => state.Reducer);
   const [otp, setOtp] = useState<string>("");
   const regex = /^[0-9۰-۹\b]+$/;
+  const [checkInputs, setcheckInputs] = useState<boolean>(false);
+  const ConfirmLogin = () => {
+    dispatch(CreateAccount(true));
+  };
+  
+  useEffect(() => {
+    if (
+      select.PhoneNumber.length < 10 &&
+      otp.length < 4 &&
+      select.PhoneNumber.slice(0, 1) !== "9"
+    ) {
+      setcheckInputs(false);
+    } else {
+      if (
+        select.PhoneNumber.length >= 10 &&
+        otp.length >= 4 &&
+        select.PhoneNumber.slice(0, 1) === "9"
+      ) {
+        setcheckInputs(true);
+      } else {
+        setcheckInputs(false);
+      }
+    }
+  }, [select.PhoneNumber, otp]);
 
   return (
     <Container>
@@ -49,12 +73,12 @@ export default function SingIn() {
                   <Line />
                 </Numberr>
                 <Input
-                  onChange={(e: any) => {
+                  onChange={(e) => {
                     if (e.target.value === "" || regex.test(e.target.value)) {
                       dispatch(GetNumber(e.target.value));
                     }
                   }}
-                  value={select.PhoneNumber === 0 ? "" : select.PhoneNumber}
+                  value={select.PhoneNumber === "0" ? "" : select.PhoneNumber}
                   maxLength={10}
                   placeholder="* * * * * * * * *"
                 />
@@ -87,10 +111,26 @@ export default function SingIn() {
               </CodeDown>
             </CodePlace>
             <SignInBtnPlace>
-              <Link href="/Account">
-                {" "}
-                <SignInBtn>ثبت نام</SignInBtn>
-              </Link>
+              {checkInputs ? (
+                <>
+                  <Link href="/Account">
+                    {" "}
+                    <SignInBtn onClick={ConfirmLogin}>ثبت نام</SignInBtn>
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <SignInBtn
+                    onClick={() => {
+                      alert(
+                        "لطفا شماره تلفن و کد فعالسازی را درست وارد نمایید "
+                      );
+                    }}
+                  >
+                    ثبت نام
+                  </SignInBtn>
+                </>
+              )}
             </SignInBtnPlace>
           </SignInForm>
         </DownContainer>
