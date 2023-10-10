@@ -17,6 +17,7 @@ export const SuccessMain = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #fefefe;
+  border-radius: 8px;
 `;
 
 export const PlaceIcon = styled.div`
@@ -78,6 +79,15 @@ export const LoginSection = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+`;
+
+export const LinkToProfile = styled.div`
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 `;
 
 export const LandingButton = styled.div`
