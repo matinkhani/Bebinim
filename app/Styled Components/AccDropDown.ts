@@ -109,6 +109,7 @@ export const MoreContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 `;
 
 export const Tabs = styled.div`
