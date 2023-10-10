@@ -81,7 +81,7 @@ export default function AccountDrop() {
             </TabsRight>
           </Link>
         </Tabs>
-        {/* Buy Sub Tab */}
+        {/* Buy Sub Tab */} 
         <Tabs>
           <Link
             style={{ display: "flex", height: "100%", width: "100%" }}
