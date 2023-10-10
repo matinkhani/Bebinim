@@ -57,16 +57,16 @@ export default function Header() {
         </LeftSectionContainer2>
       ) : (
         <LeftSectionContainer>
-          <SignLoginBtn className="animate__animated animate__fadeInRight animate__faster">
-            <ButtonsText>
-              <Link href="/Login">ورود / ثبت نام</Link>
-            </ButtonsText>
-          </SignLoginBtn>
-          <BuyBtn className="animate__animated animate__fadeInLeft animate__faster">
-            <ButtonsText>
-              <Link href="/Subscribe">خرید اشتراک</Link>
-            </ButtonsText>
-          </BuyBtn>
+          <Link href="/Login">
+            <SignLoginBtn className="animate__animated animate__fadeInRight animate__faster">
+              <ButtonsText>ورود / ثبت نام</ButtonsText>
+            </SignLoginBtn>
+          </Link>
+          <Link href="/Subscribe">
+            <BuyBtn className="animate__animated animate__fadeInLeft animate__faster">
+              <ButtonsText>خرید اشتراک</ButtonsText>
+            </BuyBtn>
+          </Link>
           <Link href="/Search">
             <SearchIcon src="./images/SearchIcon.svg" />
           </Link>
