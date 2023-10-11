@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BebinimBox,
   LinksPlace,
@@ -21,28 +21,33 @@ import {
 } from "../Styled Components/MainLanding";
 import MainMovie from "./array";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "./main.css";
-import { Navigation } from "swiper/modules";
+import "./styles.css";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 
 export default function MainLanding() {
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
+  const [loaded, setLoaded] = useState<boolean>(false);
+  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
+    initial: 0,
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    created() {
+      setLoaded(true);
+    },
+  });
+
   return (
     <>
-      <Swiper
-        navigation={true}
-        slidesPerView={1}
-        speed={1200}
-        modules={[Navigation]}
-        className="mySwiper"
-        slidesPerGroup={1}
-        loop={true}
-      >
-        {MainMovie.map((item, index) => {
-          return (
-            <SwiperSlide>
-              <Container style={{ backgroundImage: `url(${item.url})` }}>
+      <div className="navigation-wrapper">
+        <div ref={sliderRef} className="keen-slider">
+          {MainMovie.map((item, index) => {
+            return (
+              <Container
+                className="keen-slider__slide"
+                style={{ backgroundImage: `url(${item.url})` }}
+              >
                 <FilmPoster>
                   <LeftSide>
                     <ArrowIconsPlace>
@@ -117,10 +122,56 @@ export default function MainLanding() {
                   </LinksPlace>
                 </BebinimBox>
               </Container>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+            );
+          })}
+        </div>
+        {loaded && instanceRef.current && (
+          <>
+            <Arrow
+              left
+              onClick={(e: any) =>
+                e.stopPropagation() || instanceRef.current?.prev()
+              }
+              disabled={currentSlide === 0}
+            />
+
+            <Arrow
+              onClick={(e: any) =>
+                e.stopPropagation() || instanceRef.current?.next()
+              }
+              disabled={
+                currentSlide ===
+                instanceRef.current.track.details.slides.length - 1
+              }
+            />
+          </>
+        )}
+      </div>
     </>
+  );
+}
+
+function Arrow(props: {
+  disabled: boolean;
+  left?: boolean;
+  onClick: (e: any) => void;
+}) {
+  const disabeld = props.disabled ? " arrow--disabled" : "";
+  return (
+    <svg
+      onClick={props.onClick}
+      className={`arrow ${
+        props.left ? "arrow--left" : "arrow--right"
+      } ${disabeld}`}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      {props.left && (
+        <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+      )}
+      {!props.left && (
+        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+      )}
+    </svg>
   );
 }
