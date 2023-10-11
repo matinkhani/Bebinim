@@ -33,9 +33,20 @@ export const ArrowIconsPlace = styled.div`
   align-items: center;
 `;
 
-export const ArrowIcons = styled.img`
+export const ArrowIconsLeft = styled.img`
   height: 48px;
   width: 48px;
+  position: absolute;
+  bottom: 120px;
+  left: 35px;
+`;
+
+export const ArrowIconsRight = styled.img`
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  left: 90px;
+  bottom: 120px;
 `;
 
 export const RightSide = styled.div`
