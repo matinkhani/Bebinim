@@ -39,6 +39,7 @@ export const ArrowIconsLeft = styled.img`
   position: absolute;
   bottom: 120px;
   left: 35px;
+  cursor: pointer;
 `;
 
 export const ArrowIconsRight = styled.img`
@@ -47,6 +48,7 @@ export const ArrowIconsRight = styled.img`
   position: absolute;
   left: 90px;
   bottom: 120px;
+  cursor: pointer;
 `;
 
 export const RightSide = styled.div`
