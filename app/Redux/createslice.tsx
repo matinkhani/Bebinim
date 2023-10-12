@@ -1,5 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+export interface SavedTypes {
+  id: number;
+  url: string;
+  name: string;
+  category: string;
+  year: string;
+  image1: string;
+  image2: string;
+  image3: string;
+  age: string;
+  time: string;
+  rate: string;
+  bgImg: string;
+  description: string;
+}
+
 interface initial_state {
   PhoneNumber: string;
   CheckLogin: boolean;
@@ -7,6 +23,7 @@ interface initial_state {
   OneMonth: boolean;
   ThreeMonth: boolean;
   SixMonth: boolean;
+  SavedList: SavedTypes[];
 }
 
 const initialState: initial_state = {
@@ -16,6 +33,7 @@ const initialState: initial_state = {
   OneMonth: false,
   ThreeMonth: false,
   SixMonth: false,
+  SavedList: [],
 };
 
 export const bebinimReducers = createSlice({
@@ -42,6 +60,11 @@ export const bebinimReducers = createSlice({
     ChangeSixMonth: (state, { payload }: { payload: boolean }) => {
       state.SixMonth = payload;
     },
+    AddToSavedList: (state, { payload }: { payload: SavedTypes }) => {
+      let savedItem = [...state.SavedList]
+      savedItem.push(payload)
+      state.SavedList = savedItem
+    },
   },
 });
 
@@ -52,5 +75,6 @@ export const {
   ChangeOneMonth,
   ChangeThreeMonth,
   ChangeSixMonth,
+  AddToSavedList,
 } = bebinimReducers.actions;
 export default bebinimReducers.reducer;

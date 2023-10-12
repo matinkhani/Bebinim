@@ -1,37 +1,107 @@
 import React from "react";
+import {
+  BebinimIcon,
+  BebinimIconAndText,
+  BebinimText,
+  ButtonsText,
+  BuyBtn,
+  Container,
+  LeftSection1,
+  RightSection,
+  SearchIcon,
+  SignLoginBtn,
+  BebinimPlace,
+  MiddleLine,
+  TabsPlace,
+  SerialTab,
+  FilmTab,
+  CategoryTab,
+  HomeTab,
+  FilmSerialImg,
+  CatgoryText,
+  HomeText,
+  DropDownFilm,
+  DropDownSerial,
+  SerialHover,
+  FilmHover,
+  LeftSectionContainer,
+  LeftSectionContainer2,
+} from "../Styled Components/Header";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import "../Header/Header.css";
 import "animate.css";
-import { BebinimIcon, BebinimIconAndText, BebinimPlace, BebinimText, ButtonsText, BuyBtn, CategoryTab, CatgoryText, DropDownFilm, DropDownSerial, FilmHover, FilmSerialImg, FilmTab, HeaderContainer, HomeTab, HomeText, LeftSection1, LeftSectionContainer, MiddleLine, RightSection, SerialHover, SerialTab, SignLoginBtn, TabsPlace } from "./search";
+import { RoutState } from "../Redux/store";
+import { useSelector } from "react-redux";
+import {
+  AccIconConatiner,
+  AccImg,
+  ConatinerAcc,
+} from "../Styled Components/AccDropDown";
+import AccountDrop from "../Header/DropDown/AccountDrop";
 import SerialDrop from "../Header/DropDown/SerialDrop";
 import FimlDrop from "../Header/DropDown/FimlDrop";
 
-
-export default function Searchheader() {
+export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
   const [serialDropDown, setSerialDropDown] = useState<boolean>(false);
+  const [accDropDown, setAccDropDown] = useState<boolean>(false);
 
   const [filmArrow, setFilmArrow] = useState<boolean>(false);
   const [serialArrow, setSerialArrow] = useState<boolean>(false);
-
+  const select = useSelector((state: RoutState) => state.Reducer);
   const pathname = usePathname();
+
   return (
-    <HeaderContainer>
-      <LeftSectionContainer>
-        <LeftSection1>
-          <SignLoginBtn className="animate__animated animate__fadeInRight animate__faster">
-            <ButtonsText>
-              <Link href="#">ورود / ثبت نام</Link>
-            </ButtonsText>
-          </SignLoginBtn>
-          <BuyBtn className="animate__animated animate__fadeInLeft animate__faster">
-            <ButtonsText>
-              <Link href="#">خرید اشتراک</Link>
-            </ButtonsText>
-          </BuyBtn>
-        </LeftSection1>
-      </LeftSectionContainer>
+    <Container>
+      {select.CheckLogin === true ? (
+        <>
+          <LeftSectionContainer2>
+            <AccIconConatiner
+              onMouseEnter={() => {
+                setAccDropDown(true);
+              }}
+              onMouseLeave={() => {
+                setAccDropDown(false);
+              }}
+            >
+              <AccImg src="./images/Account/profile.svg" />{" "}
+            </AccIconConatiner>
+            <Link href="/Search">
+              <SearchIcon src="./images/SearchIcon.svg" />
+            </Link>
+          </LeftSectionContainer2>
+          {accDropDown && (
+            <ConatinerAcc
+              onMouseEnter={() => {
+                setAccDropDown(true);
+              }}
+              onMouseLeave={() => {
+                setAccDropDown(false);
+              }}
+            >
+              <AccountDrop />
+            </ConatinerAcc>
+          )}
+        </>
+      ) : (
+        <LeftSectionContainer>
+          <Link href="/Login">
+            <SignLoginBtn className="animate__animated animate__fadeInRight animate__faster">
+              <ButtonsText>ورود / ثبت نام</ButtonsText>
+            </SignLoginBtn>
+          </Link>
+          <Link href="/Subscribe">
+            <BuyBtn className="animate__animated animate__fadeInLeft animate__faster">
+              <ButtonsText>خرید اشتراک</ButtonsText>
+            </BuyBtn>
+          </Link>
+          <Link href="/Search">
+            <SearchIcon src="./images/SearchIcon.svg" />
+          </Link>
+        </LeftSectionContainer>
+      )}
 
       <RightSection
         onMouseLeave={() => {
@@ -154,6 +224,6 @@ export default function Searchheader() {
           </BebinimIconAndText>
         </BebinimPlace>
       </RightSection>
-    </HeaderContainer>
+    </Container>
   );
 }

@@ -22,11 +22,33 @@ import {
   Year,
 } from "../../Styled Components/watchMovie";
 import FavoritesArr from "../array";
+import { AddToSavedList, SavedTypes } from "@/app/Redux/createslice";
+import { useDispatch } from "react-redux";
 
 export default function WatchMovie({ params }: { params: { id: number } }) {
   const Find: any = FavoritesArr.find((elem) => elem.id === +params.id);
+  const dispatch = useDispatch()
 
   console.log(params.id);
+
+  const newList = () => {
+    let items: SavedTypes = {
+      id: Find.id,
+      url: Find.url,
+      name: Find.name,
+      category: Find.category,
+      year: Find.year,
+      image1: Find.image1,
+      image2: Find.image2,
+      image3: Find.image3,
+      age: Find.age,
+      time: Find.time,
+      rate: Find.rate,
+      bgImg: Find.bgImg,
+      description: Find.description,
+    };
+    dispatch(AddToSavedList(items))
+  };
 
   return (
     <Container>
@@ -50,7 +72,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
             <LikesButton>
               <img src="../images/Watch/dislike.svg" />
               <img src="../images/Watch/like.svg" />
-              <img src="../images/Watch/save.svg" />
+              <img onClick={newList} src="../images/Watch/save.svg" />
             </LikesButton>
             <WatchButton>تماشا کردن</WatchButton>
           </Buttons>
