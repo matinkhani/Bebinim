@@ -11,6 +11,8 @@ import { useRouter } from "next/navigation";
 import Savedheader from "./saved-header";
 import { useSelector } from "react-redux";
 import { RoutState } from "../Redux/store";
+import { Container, DateFilm, Details, Hover, HoverText, Items, ItemsName, ItemsPlace, Line, LinkPlace, Name, NameFilm, Year } from "../Styled Components/SearchFilter";
+import Link from "next/link";
 
 export default function Search() {
   const route = useRouter();
@@ -24,21 +26,40 @@ export default function Search() {
           <SavedText> {"."}فیلم یا سریال نشان شده‌ای ندارید </SavedText>
         ) : (
           <>
+          <Container>
             {select.SavedList.map((item, index) => {
               return (
-                <div
-                  style={{
-                    height: 80,
-                    width: 80,
-                    backgroundColor: "blue",
-                    color: "white",
-                  }}
-                >
-                  {item.name}
-                </div>
+                
+                  <ItemsPlace>
+                    <Items
+                      style={{
+                        backgroundImage: `url(${item.url})`,
+                        backgroundSize: "cover",
+                      }}
+                    >
+                      <Hover>
+                        <Link href={`Search/${item.id}`}>
+                        <LinkPlace>
+                          <HoverText>
+                            <Details>
+                              <NameFilm>{item.name}</NameFilm>
+                              <DateFilm>
+                                <Year>{item.year}</Year>
+                                <Line />
+                                <Name>{item.category}</Name>
+                              </DateFilm>
+                            </Details>
+                          </HoverText>
+                        </LinkPlace>
+                        </Link>
+                      </Hover>
+                    </Items>
+                    <ItemsName>{item.name}</ItemsName>
+                  </ItemsPlace>
+          
               );
             })}
-          </>
+            </Container></>
         )}
       </SearchMain>
     </SavedContainer>

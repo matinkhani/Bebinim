@@ -8,10 +8,8 @@ export const SearchMain = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   overflow-y: hidden;
   gap: 30px;
-  background-color: red;
 `;
 
 export const InputContainer = styled.div`
@@ -393,6 +391,8 @@ export const TextMovies = styled.p`
   }
 `;
 export const SavedText = styled.div`
+  height: 772px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -401,4 +401,4 @@ export const SavedText = styled.div`
   font-family: var(--medium);
   font-size: 24px;
   font-weight: 400;
-`
+`;
