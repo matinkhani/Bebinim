@@ -85,7 +85,7 @@ export default function AccountDrop() {
         <Tabs>
           <Link
             style={{ display: "flex", height: "100%", width: "100%" }}
-            href="#"
+            href="/Saved-List"
           >
             <TabsLeft>
               <ArrowIcon src="./images/AccDropDown/Vector.svg" />

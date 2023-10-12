@@ -32,7 +32,6 @@ export const Items = styled.div`
   height: 256px;
   width: 184px;
   border-radius: 8px;
-  background-color: red;
 `;
 export const Details = styled.div`
   height: 100px;
