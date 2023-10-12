@@ -130,7 +130,10 @@ export const Text = styled.div`
 
 export const BebinimBox = styled.div`
   width: 100%;
-  height: 200px;
+  height: 128px;
+  position: absolute;
+  bottom: 91px;
+  left: 20px;
   background-image: linear-gradient(to top, #291212, transparent);
   display: flex;
   align-items: center;
@@ -140,9 +143,10 @@ export const BebinimBox = styled.div`
 export const LinksPlace = styled.div`
   height: 80%;
   width: 90%;
+  gap: 25px;
   display: flex;
   align-items: end;
-  justify-content: space-evenly;
+  justify-content: center;
 `;
 
 export const BebinimLinks = styled.div`

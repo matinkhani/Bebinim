@@ -39,7 +39,6 @@ const renderCenterRightControls = ({ nextSlide }: { nextSlide: any }) => {
   );
 };
 export default function MainLanding() {
-
   return (
     <>
       <Carousel
@@ -102,29 +101,28 @@ export default function MainLanding() {
                   </ExplainContainer>
                 </RightSide>
               </FilmPoster>
-
-              <BebinimBox>
-                <LinksPlace>
-                  <BebinimLinks>
-                    <FreshText>انیمیشن تازه ببینیم</FreshText>
-                    <FreshSVG src="./images/freshAnimation.svg" />
-                  </BebinimLinks>
-
-                  <BebinimLinks>
-                    <FreshText>سریال تازه ببینیم</FreshText>
-                    <FreshSVG src="./images/freshSerial.svg" />
-                  </BebinimLinks>
-
-                  <BebinimLinks>
-                    <FreshText>فیلم تازه ببینیم</FreshText>
-                    <FreshSVG src="./images/freshMovie.svg" />
-                  </BebinimLinks>
-                </LinksPlace>
-              </BebinimBox>
             </Container>
           );
         })}
       </Carousel>
+      <BebinimBox>
+        <LinksPlace>
+          <BebinimLinks>
+            <FreshText>انیمیشن تازه ببینیم</FreshText>
+            <FreshSVG src="./images/freshAnimation.svg" />
+          </BebinimLinks>
+
+          <BebinimLinks>
+            <FreshText>سریال تازه ببینیم</FreshText>
+            <FreshSVG src="./images/freshSerial.svg" />
+          </BebinimLinks>
+
+          <BebinimLinks>
+            <FreshText>فیلم تازه ببینیم</FreshText>
+            <FreshSVG src="./images/freshMovie.svg" />
+          </BebinimLinks>
+        </LinksPlace>
+      </BebinimBox>
     </>
   );
 }
