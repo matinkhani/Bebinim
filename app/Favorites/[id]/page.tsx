@@ -22,32 +22,47 @@ import {
   Year,
 } from "../../Styled Components/watchMovie";
 import FavoritesArr from "../array";
-import { AddToSavedList, SavedTypes } from "@/app/Redux/createslice";
-import { useDispatch } from "react-redux";
+import {
+  AddToSavedList,
+  CheckSave,
+  DeleteItem,
+  SavedTypes,
+} from "@/app/Redux/createslice";
+import { useDispatch, useSelector } from "react-redux";
+import { RoutState } from "@/app/Redux/store";
 
 export default function WatchMovie({ params }: { params: { id: number } }) {
   const Find: any = FavoritesArr.find((elem) => elem.id === +params.id);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
+  const select = useSelector((state: RoutState) => state.Reducer);
 
-  console.log(params.id);
+  // console.log(params.id);
 
   const newList = () => {
-    let items: SavedTypes = {
-      id: Find.id,
-      url: Find.url,
-      name: Find.name,
-      category: Find.category,
-      year: Find.year,
-      image1: Find.image1,
-      image2: Find.image2,
-      image3: Find.image3,
-      age: Find.age,
-      time: Find.time,
-      rate: Find.rate,
-      bgImg: Find.bgImg,
-      description: Find.description,
-    };
-    dispatch(AddToSavedList(items))
+    dispatch(CheckSave(!select.SaveCheck));
+    if (select.SaveCheck === false) {
+      let items: SavedTypes = {
+        id: Find.id,
+        url: Find.url,
+        name: Find.name,
+        category: Find.category,
+        year: Find.year,
+        image1: Find.image1,
+        image2: Find.image2,
+        image3: Find.image3,
+        age: Find.age,
+        time: Find.time,
+        rate: Find.rate,
+        bgImg: Find.bgImg,
+        description: Find.description,
+        saved: Find.saved,
+        save: Find.save,
+      };
+      console.log(items);
+      dispatch(AddToSavedList(items));
+    } else {
+      dispatch(DeleteItem(Find.id));
+    }
   };
 
   return (
@@ -72,7 +87,11 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
             <LikesButton>
               <img src="../images/Watch/dislike.svg" />
               <img src="../images/Watch/like.svg" />
-              <img onClick={newList} src="../images/Watch/save.svg" />
+              <img
+                style={{ cursor: "pointer" }}
+                onClick={newList}
+                src={select.SaveCheck ? Find.saved : Find.save}
+              />
             </LikesButton>
             <WatchButton>تماشا کردن</WatchButton>
           </Buttons>

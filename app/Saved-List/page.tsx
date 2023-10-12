@@ -17,12 +17,13 @@ import Link from "next/link";
 export default function Search() {
   const route = useRouter();
   const select = useSelector((state: RoutState) => state.Reducer);
+  console.log(select.SavedList);
 
   return (
     <SavedContainer>
       <Savedheader />
       <SearchMain>
-        {select.SavedList.length === 0 ? (
+        {select.SaveCheck === false ? (
           <SavedText> {"."}فیلم یا سریال نشان شده‌ای ندارید </SavedText>
         ) : (
           <>

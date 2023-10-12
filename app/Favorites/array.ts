@@ -1,6 +1,6 @@
 const FavoritesArr = [
   //ablagh
-  { 
+  {
     id: 1,
     url: "./images/favorites/Frame1.png",
     name: "ابلق",
@@ -15,6 +15,8 @@ const FavoritesArr = [
     bgImg: "../images/Watch/ablagh.svg",
     description:
       "راحله به همراه خوانواده در یکی از محله‌های تهران زندگی می‌کنند. شوهر خواهر علی، فردی است که یک کسب و کار را برای خانم‌های محله ایجاد کرده است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   //titi
   {
@@ -32,6 +34,8 @@ const FavoritesArr = [
     bgImg: "../images/Watch/titi.svg",
     description:
       "ابراهیم، استاد فیزیک دانشگاه که روی تئوری پایان دنیا کار می‌کند، در بیمارستان با خانم نظافتچی عجیبی به نام تی تی آشنا می‌شود.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   //posteshir
   {
@@ -49,6 +53,8 @@ const FavoritesArr = [
     bgImg: "../images/Watch/postshir.svg",
     description:
       "نعیم که پانزده سال زندان را به عشق دیدن دخترش تاب آورده پس از رهایی، برای دیدار با او دچار بحرانی بزرگ می شود.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   //marde baznde
   {
@@ -66,6 +72,8 @@ const FavoritesArr = [
     bgImg: "../images/Watch/loser.svg",
     description:
       "احمد خسروی مسئول رسیدگی به پرونده‌های مشکوک به قتل می‌شود و به سرنخ‌هایی دست می‌یابد که پشت پرده این قتل رازگونه به کشف شبکه فساد اقتصادی می‌رسد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   //sag band
   {
@@ -83,6 +91,8 @@ const FavoritesArr = [
     bgImg: "../images/Watch/sagband.svg",
     description:
       "هیچ وقت گول اسم و ظاهر آدم‌ها رو نخورید؛ ارتش هیتلر با اون عظمت، اسمش نازی بود. این فیلم سینمایی  دومین ساخته مهران احمدی پس از فیلم سینمایی «مصادره» محسوب می‌شود.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   //shadravan
   {
@@ -100,6 +110,8 @@ const FavoritesArr = [
     bgImg: "../images/Watch/shad.svg",
     description:
       "شادروان به دردسرهای یک خانواده پس از فوت ناگهانی پدرشان می‌پردازد. آن‌ها که در حاشیهٔ شهر زندگی می‌کنند و حالا با درگذشت پدرشان ماجراهای تازه‌ای برایشان به وجود می‌آید.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   //zelava
   {
@@ -117,6 +129,8 @@ const FavoritesArr = [
     bgImg: "../images/Watch/zelava.svg",
     description:
       "داستان زالاوا در اواخر دههٔ ۱۳۵۰ خورشیدی روی می‌دهد و راوی اتفاقی است که باعث ترس مردم شده و رئیس پاسگاه تلاش می‌کند تا امنیت را به روستا بازگرداند.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   //last of us
   {
@@ -134,6 +148,8 @@ const FavoritesArr = [
     bgImg: "../images/favorites/Frame8.jpg",
     description:
       "وقایع این سریال در سال ۲۰۲۳ جریان دارد و اتفاقات مربوط به ۲۰ سال پس از همه‌گیری یک بیماری قارچی را به تصویر می‌کشد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   //bedon gharar ghabli
   {
@@ -151,6 +167,8 @@ const FavoritesArr = [
     bgImg: "../images/Watch/gharar.svg",
     description:
       "داستان فیلم در مورد دختری به نام یاسمن است که پس از سال‌ها به دلیل مرگ پدرش از آلمان به ایران بازگشته است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   //john wick 4
   {
@@ -168,6 +186,8 @@ const FavoritesArr = [
     bgImg: "../images/Watch/john-wick.svg",
     description:
       "چند سالی است که ماشینش را دزدیده و سگش را کشته‌اند و صدها نفر کشته شده‌اند. جان ویک هر قانون ممکنی در دنیای زیرزمینی قاتلان شکسته.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   //shenaye parvane
   {
@@ -185,6 +205,8 @@ const FavoritesArr = [
     bgImg: "../images/Watch/shena.svg",
     description:
       "پروانه به گاراژ صافکاری برادرشوهرش حجت می‌رود و از او می‌خواهد تا جلوی همسرش هاشم  را بگیرد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   //mogheiat mahdi
   {
@@ -202,6 +224,8 @@ const FavoritesArr = [
     bgImg: "../images/Watch/mehdi.svg",
     description:
       "داستان درباره زندگی مهدی باکری و رابطه وی با همسرش، شرکت در جنگ ایران و عراق همراه برادرش حمید باکری، فرماندهی سپاه عاشورا در جنگ و به شهادت رسیدن وی است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   //dozist
   {
@@ -219,6 +243,8 @@ const FavoritesArr = [
     bgImg: "../images/Watch/dozist.svg",
     description:
       "در جنوب شهر، پسری به نام عطا (جواد عزتی)، با پدرش زندگی می‌کند و دو تن از دوستان خود را نیز به خانه راه داده‌ است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
 ];
 

@@ -14,6 +14,8 @@ export interface SavedTypes {
   rate: string;
   bgImg: string;
   description: string;
+  saved: string;
+  save: string;
 }
 
 interface initial_state {
@@ -23,6 +25,7 @@ interface initial_state {
   OneMonth: boolean;
   ThreeMonth: boolean;
   SixMonth: boolean;
+  SaveCheck: boolean;
   SavedList: SavedTypes[];
 }
 
@@ -33,6 +36,7 @@ const initialState: initial_state = {
   OneMonth: false,
   ThreeMonth: false,
   SixMonth: false,
+  SaveCheck: false,
   SavedList: [],
 };
 
@@ -45,7 +49,7 @@ export const bebinimReducers = createSlice({
     },
     CreateAccount: (state, { payload }: { payload: boolean }) => {
       state.CheckLogin = payload;
-      console.log(payload);
+      // console.log(payload);
     },
     ChangeOneMonthAuto: (state, { payload }: { payload: boolean }) => {
       state.OneMonthAuto = payload;
@@ -61,9 +65,17 @@ export const bebinimReducers = createSlice({
       state.SixMonth = payload;
     },
     AddToSavedList: (state, { payload }: { payload: SavedTypes }) => {
-      let savedItem = [...state.SavedList]
-      savedItem.push(payload)
-      state.SavedList = savedItem
+      let savedItem = [...state.SavedList];
+      savedItem.push(payload);
+      state.SavedList = savedItem;
+    },
+    CheckSave: (state, { payload }: { payload: boolean }) => {
+      state.SaveCheck = payload;
+      console.log(payload);
+    },
+    DeleteItem: (state, { payload }: { payload: any }) => {
+      let removedList = state.SavedList.filter((elem) => elem.id !== payload);
+      state.SavedList = removedList;
     },
   },
 });
@@ -76,5 +88,7 @@ export const {
   ChangeThreeMonth,
   ChangeSixMonth,
   AddToSavedList,
+  CheckSave,
+  DeleteItem
 } = bebinimReducers.actions;
 export default bebinimReducers.reducer;
