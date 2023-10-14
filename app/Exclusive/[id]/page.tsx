@@ -24,7 +24,11 @@ import {
 import ExclusiveArr from "../array";
 import { useDispatch, useSelector } from "react-redux";
 import { RoutState } from "@/app/Redux/store";
-import { AddToSavedList, DeleteItem, SavedTypes } from "@/app/Redux/createslice";
+import {
+  AddToSavedList,
+  DeleteItem,
+  SavedTypes,
+} from "@/app/Redux/createslice";
 
 export default function WatchMovie({ params }: { params: { id: number } }) {
   const Find: any = ExclusiveArr.find((elem) => elem.id === +params.id);
@@ -79,13 +83,15 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
             <LikesButton>
               <img src="../images/Watch/dislike.svg" />
               <img src="../images/Watch/like.svg" />
-              <img  style={{ cursor: "pointer" }}
+              <img
+                style={{ cursor: "pointer" }}
                 onClick={newList}
                 src={
                   select.SavedList.find((elem) => elem.id === +params.id)
                     ? Find.saved
                     : Find.save
-                } />
+                }
+              />
             </LikesButton>
             <WatchButton>تماشا کردن</WatchButton>
           </Buttons>

@@ -18,7 +18,7 @@ const OnlineMovie = [
     saved: "../images/Watch/saved.svg",
   },
   {
-    id: 2,
+    id: 14,
     url: "./images/CinemaOnline/worldwar3.svg",
     name: "جنگ جهانی سوم",
     category: "فیلم",
@@ -36,7 +36,7 @@ const OnlineMovie = [
     saved: "../images/Watch/saved.svg",
   },
   {
-    id: 3,
+    id: 15,
     url: "./images/CinemaOnline/maslahat.png",
     name: "مصلحت",
     category: "فیلم",
@@ -54,7 +54,7 @@ const OnlineMovie = [
     saved: "../images/Watch/saved.svg",
   },
   {
-    id: 4,
+    id: 16,
     url: "./images/CinemaOnline/fosil.png",
     name: "فسیل",
     category: "فیلم",

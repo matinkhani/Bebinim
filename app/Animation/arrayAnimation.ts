@@ -1,7 +1,7 @@
 const AnimationsArr = [
   // Sponge Bob
   {
-    id: 1,
+    id: 21,
     url: "../images/animation/sponge-bob.png",
     name: "باب اسنفجی",
     year: "۱۹۹۹",
@@ -20,7 +20,7 @@ const AnimationsArr = [
   },
   // Panda
   {
-    id: 2,
+    id: 22,
     url: "./images/animation/panda.svg",
     name: "پاندای کونگ فو کار ۳",
     year: "۲۰۱۶",
@@ -39,7 +39,7 @@ const AnimationsArr = [
   },
   // Ice Age
   {
-    id: 3,
+    id: 23,
     url: "./images/animation/ice-age.jpg",
     name: "عصر یخبندان",
     year: "۲۰۰۲",
@@ -58,7 +58,7 @@ const AnimationsArr = [
   },
   // Cars
   {
-    id: 4,
+    id: 24,
     url: "./images/animation/cars.jpg",
     name: "ماشین‌ها",
     year: "۲۰۰۶",
@@ -77,7 +77,7 @@ const AnimationsArr = [
   },
   // Tom & Jerry
   {
-    id: 5,
+    id: 25,
     url: "./images/animation/tom&jerry.png",
     name: "تام و جری",
     year: "۱۹۴۰",
@@ -96,7 +96,7 @@ const AnimationsArr = [
   },
   // Pink Panther
   {
-    id: 6,
+    id: 26,
     url: "./images/animation/pink-panther.png",
     name: "پلنگ صورتی",
     year: "۱۹۶۹",
@@ -115,7 +115,7 @@ const AnimationsArr = [
   },
   // Madagascar
   {
-    id: 7,
+    id: 27,
     url: "./images/animation/madagascar.jpg",
     name: "ماداگاسکار ۲",
     year: "۲۰۰۵",
@@ -134,7 +134,7 @@ const AnimationsArr = [
   },
   // Toy Story
   {
-    id: 8,
+    id: 28,
     url: "./images/animation/toy-story.jpeg",
     name: "داستان اسباب بازی",
     year: "۱۹۹۵",
@@ -153,7 +153,7 @@ const AnimationsArr = [
   },
   // Luca
   {
-    id: 9,
+    id: 29,
     url: "./images/animation/luca.svg",
     name: "لوکا",
     year: "۲۰۲۱",
@@ -172,7 +172,7 @@ const AnimationsArr = [
   },
   // Soul
   {
-    id: 10,
+    id: 30,
     url: "./images/animation/soul.svg",
     name: "روح",
     year: "۲۰۲۰",
@@ -191,7 +191,7 @@ const AnimationsArr = [
   },
   // Rango
   {
-    id: 11,
+    id: 31,
     url: "./images/animation/rango.svg",
     name: "رنگو",
     year: "۲۰۱۱",
@@ -210,7 +210,7 @@ const AnimationsArr = [
   },
   // Dolphin Boy
   {
-    id: 12,
+    id: 32,
     url: "./images/animation/dolphin.svg",
     name: "پسر دلفینی",
     year: "۲۰۲۱",
@@ -229,7 +229,7 @@ const AnimationsArr = [
   },
   // Turning Red
   {
-    id: 13,
+    id: 33,
     url: "./images/animation/turning-red.svg",
     name: "قرمز شدن",
     year: "۲۰۲۱",
