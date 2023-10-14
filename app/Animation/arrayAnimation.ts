@@ -15,6 +15,8 @@ const AnimationsArr = [
     rate: "۱۰۰٪",
     description:
       "شخصیت اصلی کارتون باب اسفنجی شلوار مکعبی است که در یک رستوران آشپز است و به کار نسبتاً ساده و یکنواخت خود بسیار علاقه‌مند است و به گل لاله حساسیت دارد ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Panda
   {
@@ -32,6 +34,8 @@ const AnimationsArr = [
     rate: "۹۵٪",
     description:
       "داستان این انیمیشن در چین باستان رخ می‌دهد؛ پاندای چاق بی دست و پایی به نام پو که به توانایی های خود آگاه نیست ولی علاقه زیادی به کونگ فو دارد ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Ice Age
   {
@@ -49,6 +53,8 @@ const AnimationsArr = [
     rate: "۹۸٪",
     description:
       "ابتدا حمله‌ای توسط گروهی از ببرهای دندان خنجری به یکی از دهکده‌های انسان‌ها صورت می‌گیرد که طی آن همسر یکی از افراد قبیله  ... ",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Cars
   {
@@ -66,6 +72,8 @@ const AnimationsArr = [
     rate: "۹۸٪",
     description:
       "لایتنینگ مک کوئین ماشین مسابقه تازه‌کاری است که تنها هدفش برنده شدن است به‌طوری‌که برای برنده شدن اخلاق‌های خود را زیر پا می‌گذارد. در یک روز ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Tom & Jerry
   {
@@ -83,6 +91,8 @@ const AnimationsArr = [
     rate: "۱۰۰٪",
     description:
       "این دو شخصیت با همدیگر دشمن اند ولی وقتی در یک دردسر بزرگی که بین آن دو می‌آید با هم متحد می‌شوند ولی شانس جری موشه بیش‌تر از تام گربه‌هه است ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Pink Panther
   {
@@ -100,6 +110,8 @@ const AnimationsArr = [
     rate: "۹۸٪",
     description:
       "پلنگ صورتی مجموعه فیلمهای کمدی-پلیسی است که اولین آن‌ها در سال ۱۹۶۳ ساخته شد و با موفقیت آن دنباله‌های زیادی برایش ساخته شد ... ",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Madagascar
   {
@@ -117,6 +129,8 @@ const AnimationsArr = [
     rate: "۹۵٪",
     description:
       "الکس بچه‌ای بازیگوش بوده و پدرش هم سلطان جنگل. پدرش می‌خواهد او را برای جانشینی خود تربیت کند، ولی الکس فقط به دنبال بازی است. ناگهان ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Toy Story
   {
@@ -134,6 +148,8 @@ const AnimationsArr = [
     rate: "۹۸٪",
     description:
       "در یک دنیایی که اسباب‌بازی‌ها در غیاب انسان‌ها زنده می‌شوند. گروهی از اسباب‌بازی‌ها درحال آماده شدن برای نقل مکان به یک خانه جدید به همراه صاحبشان ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Luca
   {
@@ -151,6 +167,8 @@ const AnimationsArr = [
     rate: "۷۸٪",
     description:
       "کودک هیولای دریایی ترسو، لوکا پاگورو، از چند بزماهی در سواحل شهر پورتوروسو در ایتالیا نگهداری می‌کند. والدینش از ترس اینکه ممکن است توسط انسان‌ها شکار شود ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Soul
   {
@@ -168,6 +186,8 @@ const AnimationsArr = [
     rate: "۵۸٪",
     description:
       "داستان فیلم پویانمایی روح، دربارهٔ جو گاردنر، آموزگار نوازندگی یک گروه موسیقی در دبیرستان است. جو که همیشه سودای اجرای موسیقی جاز بر صحنه را در سر می‌پرورانده ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Rango
   {
@@ -185,6 +205,8 @@ const AnimationsArr = [
     rate: "۸۸٪",
     description:
       "انیمیشن رنگو داستان زندگی یک آفتاب‌پرست (بزمجه) خانگی است که دچار بحران هویت می‌باشد. این فیلم که حال و هوایی وسترن و کمدی دارد ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Dolphin Boy
   {
@@ -202,6 +224,8 @@ const AnimationsArr = [
     rate: "۸۰٪",
     description:
       "هنگامی که یک هواپیما در دریا سقوط می کند، یک دلفین جوان به نام سفید و مادرش یک نوزاد انسانی پیدا می کنند و از او مراقبت می کنند. دلفین بعداً بزرگ می‌شود و ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Turning Red
   {
@@ -219,6 +243,8 @@ const AnimationsArr = [
     rate: "۶۸٪",
     description:
       " میلین «می» لی، یک دانش‌آموز ۱۳ ساله چینی-کانادایی را دنبال می‌کند که به دلیل یک نفرین ارثی، وقتی هر احساس شدیدی را تجربه می‌کند، به یک ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
 ];
 export default AnimationsArr;
