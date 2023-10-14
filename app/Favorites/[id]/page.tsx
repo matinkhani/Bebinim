@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   AboutMovies,
   AboutPhoto,
@@ -24,7 +24,6 @@ import {
 import FavoritesArr from "../array";
 import {
   AddToSavedList,
-  CheckSave,
   DeleteItem,
   SavedTypes,
 } from "@/app/Redux/createslice";
@@ -36,11 +35,9 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
   const dispatch = useDispatch();
   const select = useSelector((state: RoutState) => state.Reducer);
 
-  // console.log(params.id);
-
   const newList = () => {
-    dispatch(CheckSave(!select.SaveCheck));
-    if (select.SaveCheck === false) {
+    const isListed = select.SavedList.find((elem) => elem.id === +params.id);
+    if (!isListed) {
       let items: SavedTypes = {
         id: Find.id,
         url: Find.url,
@@ -58,7 +55,6 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
         saved: Find.saved,
         save: Find.save,
       };
-      console.log(items);
       dispatch(AddToSavedList(items));
     } else {
       dispatch(DeleteItem(Find.id));
@@ -90,7 +86,11 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
               <img
                 style={{ cursor: "pointer" }}
                 onClick={newList}
-                src={select.SaveCheck ? Find.saved : Find.save}
+                src={
+                  select.SavedList.find((elem) => elem.id === +params.id)
+                    ? Find.saved
+                    : Find.save
+                }
               />
             </LikesButton>
             <WatchButton>تماشا کردن</WatchButton>
