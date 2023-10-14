@@ -1,7 +1,7 @@
 const ExclusiveArr = [
   // Sedato
   {
-    id: 1,
+    id: 17,
     url: "./images/exclusive/sedato.svg",
     name: "صداتو",
     date: "پنجشنبه‌ها",
@@ -16,10 +16,12 @@ const ExclusiveArr = [
     bgImg: "../images/exclusive/sedato.svg",
     description:
       "«صداتو» یک مسابقه موزیکال-معمایی به کارگردانی و تهیه‌کنندگی حامد جوادزاده و با اجرای محسن کیایی محصول سال ۱۴۰۲ می‌باشد که برای پلتفرم نمایش‌خوانگی فیلیمو ساخته شد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Actor
   {
-    id: 2,
+    id: 18,
     url: "./images/exclusive/actor.svg",
     name: "آکتور",
     date: "شنبه‌ها",
@@ -34,10 +36,12 @@ const ExclusiveArr = [
     bgImg: "../images/D-Exclusive/actor.jpg",
     description:
       "داستان این سریال، درباره زندگی پر فراز و نشیب چند بازیگر مستعد تئاتر است که بعد از پیشنهادی که به آن‌ها می‌شود زندگی‌ شان درگیر ماجراهایی پیچیده می‌شود.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // The God Father
   {
-    id: 3,
+    id: 19,
     url: "./images/exclusive/godfather.svg",
     name: "پدر خوانده",
     date: "جمعه‌ها",
@@ -52,10 +56,12 @@ const ExclusiveArr = [
     bgImg: "../images/D-Exclusive/pedar.jpg",
     description:
       "یک مجموعه نمایش خانگی ایرانی به کارگردانی سعید ابوطالب و محمدرضا رضائیان است که بر اساس بازی مافیا ساخته شده‌است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Nato
   {
-    id: 4,
+    id: 20,
     url: "./images/exclusive/nato.svg",
     name: "ناتو",
     date: "دوشنبه‌ها",
@@ -70,6 +76,8 @@ const ExclusiveArr = [
     bgImg: "../images/D-Exclusive/nato.jpg",
     description:
       "ناتو سریال، برنامه، مسابقه یا رئالیتی شو جدید نمایش خانگی است که جایگزین فصل اول پدرخوانده است. سریال یا برنامه ناتو به صورت هفتگی برای دانلود قرار می گیرد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
 ];
 

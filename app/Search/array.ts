@@ -16,6 +16,8 @@ const AllMovies = [
     bgImg: "../images/Watch/ablagh.svg",
     description:
       "راحله به همراه خوانواده در یکی از محله‌های تهران زندگی می‌کنند. شوهر خواهر علی، فردی است که یک کسب و کار را برای خانم‌های محله ایجاد کرده است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // TiTi
   {
@@ -34,6 +36,8 @@ const AllMovies = [
     bgImg: "../images/Watch/titi.svg",
     description:
       "ابراهیم، استاد فیزیک دانشگاه که روی تئوری پایان دنیا کار می‌کند، در بیمارستان با خانم نظافتچی عجیبی به نام تی تی آشنا می‌شود.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Pooste Shir
   {
@@ -52,6 +56,8 @@ const AllMovies = [
     bgImg: "../images/Watch/postshir.svg",
     description:
       "نعیم که پانزده سال زندان را به عشق دیدن دخترش تاب آورده پس از رهایی، برای دیدار با او دچار بحرانی بزرگ می شود.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Marde Bazande
   {
@@ -70,6 +76,8 @@ const AllMovies = [
     bgImg: "../images/Watch/loser.svg",
     description:
       "احمد خسروی مسئول رسیدگی به پرونده‌های مشکوک به قتل می‌شود و به سرنخ‌هایی دست می‌یابد که پشت پرده این قتل رازگونه به کشف شبکه فساد اقتصادی می‌رسد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Sag Band
   {
@@ -88,6 +96,8 @@ const AllMovies = [
     bgImg: "../images/Watch/sagband.svg",
     description:
       "هیچ وقت گول اسم و ظاهر آدم‌ها رو نخورید؛ ارتش هیتلر با اون عظمت، اسمش نازی بود. این فیلم سینمایی  دومین ساخته مهران احمدی پس از فیلم سینمایی «مصادره» محسوب می‌شود.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Shadravan
   {
@@ -106,6 +116,8 @@ const AllMovies = [
     bgImg: "../images/Watch/shad.svg",
     description:
       "شادروان به دردسرهای یک خانواده پس از فوت ناگهانی پدرشان می‌پردازد. آن‌ها که در حاشیهٔ شهر زندگی می‌کنند و حالا با درگذشت پدرشان ماجراهای تازه‌ای برایشان به وجود می‌آید.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Zelava
   {
@@ -124,6 +136,8 @@ const AllMovies = [
     bgImg: "../images/Watch/zelava.svg",
     description:
       "داستان زالاوا در اواخر دههٔ ۱۳۵۰ خورشیدی روی می‌دهد و راوی اتفاقی است که باعث ترس مردم شده و رئیس پاسگاه تلاش می‌کند تا امنیت را به روستا بازگرداند.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // The Last of Us
   {
@@ -142,6 +156,8 @@ const AllMovies = [
     bgImg: "../images/favorites/Frame8.jpg",
     description:
       "وقایع این سریال در سال ۲۰۲۳ جریان دارد و اتفاقات مربوط به ۲۰ سال پس از همه‌گیری یک بیماری قارچی را به تصویر می‌کشد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Bedoone Gharar Ghabli
   {
@@ -160,6 +176,8 @@ const AllMovies = [
     bgImg: "../images/Watch/gharar.svg",
     description:
       "داستان فیلم در مورد دختری به نام یاسمن است که پس از سال‌ها به دلیل مرگ پدرش از آلمان به ایران بازگشته است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // John Wick Chapter 4
   {
@@ -178,6 +196,8 @@ const AllMovies = [
     bgImg: "../images/Watch/john-wick.svg",
     description:
       "چند سالی است که ماشینش را دزدیده و سگش را کشته‌اند و صدها نفر کشته شده‌اند. جان ویک هر قانون ممکنی در دنیای زیرزمینی قاتلان شکسته.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Shenaye Parvane
   {
@@ -196,6 +216,8 @@ const AllMovies = [
     bgImg: "../images/Watch/shena.svg",
     description:
       "پروانه به گاراژ صافکاری برادرشوهرش حجت می‌رود و از او می‌خواهد تا جلوی همسرش هاشم  را بگیرد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Mogheiat Mahdi
   {
@@ -214,6 +236,8 @@ const AllMovies = [
     bgImg: "../images/Watch/mehdi.svg",
     description:
       "داستان درباره زندگی مهدی باکری و رابطه وی با همسرش، شرکت در جنگ ایران و عراق همراه برادرش حمید باکری، فرماندهی سپاه عاشورا در جنگ و به شهادت رسیدن وی است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Dozist
   {
@@ -232,6 +256,8 @@ const AllMovies = [
     bgImg: "../images/Watch/dozist.svg",
     description:
       "در جنوب شهر، پسری به نام عطا (جواد عزتی)، با پدرش زندگی می‌کند و دو تن از دوستان خود را نیز به خانه راه داده‌ است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // WW3
   {
@@ -250,6 +276,8 @@ const AllMovies = [
     bgImg: "../images/Online/ww3.png",
     description:
       "شکیب (محسن تنابنده) یک کارگر روزمزد میانسالِ بی‌خانمان است که همسر و پسرش را سال‌ها پیش در زلزله از دست داده و تاکنون با این امر کنار نیامده است",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Maslahat
   {
@@ -268,6 +296,8 @@ const AllMovies = [
     bgImg: "../images/Online/maslahat.jpg",
     description:
       "داستان از آنجایی آغاز می‌شود که «مهدی» پسر آیت‌الله مشکاتیان که یکی از مقامات بلندپایه‌ی قوه‌ی قضائیه است، مرتکب قتل می‌شود، اما از پذیرفتن آن سر باز می‌زند و ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Fosil
   {
@@ -286,6 +316,8 @@ const AllMovies = [
     bgImg: "../images/Online/fosil.jpg",
     description:
       "اسماعیل، سعید و صفا که عضو گروه موسیقی بلک داگز هستند، برای معروفیت و موفقیت تلاش دارند. اسماعیل (با نام خوانندگی اسی) دنبال اجرا جلوی شاه است. اما ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Sedato
   {
@@ -305,6 +337,8 @@ const AllMovies = [
     bgImg: "../images/exclusive/sedato.svg",
     description:
       "«صداتو» یک مسابقه موزیکال-معمایی به کارگردانی و تهیه‌کنندگی حامد جوادزاده و با اجرای محسن کیایی محصول سال ۱۴۰۲ می‌باشد که برای پلتفرم نمایش‌خوانگی فیلیمو ساخته شد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Actor
   {
@@ -324,6 +358,8 @@ const AllMovies = [
     bgImg: "../images/D-Exclusive/actor.jpg",
     description:
       "داستان این سریال، درباره زندگی پر فراز و نشیب چند بازیگر مستعد تئاتر است که بعد از پیشنهادی که به آن‌ها می‌شود زندگی‌ شان درگیر ماجراهایی پیچیده می‌شود.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // The God Father
   {
@@ -343,6 +379,8 @@ const AllMovies = [
     bgImg: "../images/D-Exclusive/pedar.jpg",
     description:
       "یک مجموعه نمایش خانگی ایرانی به کارگردانی سعید ابوطالب و محمدرضا رضائیان است که بر اساس بازی مافیا ساخته شده‌است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Nato
   {
@@ -362,6 +400,8 @@ const AllMovies = [
     bgImg: "../images/D-Exclusive/nato.jpg",
     description:
       "ناتو سریال، برنامه، مسابقه یا رئالیتی شو جدید نمایش خانگی است که جایگزین فصل اول پدرخوانده است. سریال یا برنامه ناتو به صورت هفتگی برای دانلود قرار می گیرد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Sponge Bob
   {
@@ -380,6 +420,8 @@ const AllMovies = [
     rate: "۱۰۰٪",
     description:
       "شخصیت اصلی کارتون باب اسفنجی شلوار مکعبی است که در یک رستوران آشپز است و به کار نسبتاً ساده و یکنواخت خود بسیار علاقه‌مند است و به گل لاله حساسیت دارد ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Panda
   {
@@ -398,6 +440,8 @@ const AllMovies = [
     rate: "۹۵٪",
     description:
       "داستان این انیمیشن در چین باستان رخ می‌دهد؛ پاندای چاق بی دست و پایی به نام پو که به توانایی های خود آگاه نیست ولی علاقه زیادی به کونگ فو دارد ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Ice Age
   {
@@ -416,6 +460,8 @@ const AllMovies = [
     rate: "۹۸٪",
     description:
       "ابتدا حمله‌ای توسط گروهی از ببرهای دندان خنجری به یکی از دهکده‌های انسان‌ها صورت می‌گیرد که طی آن همسر یکی از افراد قبیله  ... ",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Cars
   {
@@ -434,6 +480,8 @@ const AllMovies = [
     rate: "۹۸٪",
     description:
       "لایتنینگ مک کوئین ماشین مسابقه تازه‌کاری است که تنها هدفش برنده شدن است به‌طوری‌که برای برنده شدن اخلاق‌های خود را زیر پا می‌گذارد. در یک روز ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Tom & Jerry
   {
@@ -452,6 +500,8 @@ const AllMovies = [
     rate: "۱۰۰٪",
     description:
       "این دو شخصیت با همدیگر دشمن اند ولی وقتی در یک دردسر بزرگی که بین آن دو می‌آید با هم متحد می‌شوند ولی شانس جری موشه بیش‌تر از تام گربه‌هه است ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Pink Panther
   {
@@ -470,6 +520,8 @@ const AllMovies = [
     rate: "۹۸٪",
     description:
       "پلنگ صورتی مجموعه فیلمهای کمدی-پلیسی است که اولین آن‌ها در سال ۱۹۶۳ ساخته شد و با موفقیت آن دنباله‌های زیادی برایش ساخته شد ... ",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Madagascar
   {
@@ -488,6 +540,8 @@ const AllMovies = [
     rate: "۹۵٪",
     description:
       "الکس بچه‌ای بازیگوش بوده و پدرش هم سلطان جنگل. پدرش می‌خواهد او را برای جانشینی خود تربیت کند، ولی الکس فقط به دنبال بازی است. ناگهان ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Toy Story
   {
@@ -506,6 +560,8 @@ const AllMovies = [
     rate: "۹۸٪",
     description:
       "در یک دنیایی که اسباب‌بازی‌ها در غیاب انسان‌ها زنده می‌شوند. گروهی از اسباب‌بازی‌ها درحال آماده شدن برای نقل مکان به یک خانه جدید به همراه صاحبشان ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Luca
   {
@@ -524,6 +580,8 @@ const AllMovies = [
     rate: "۷۸٪",
     description:
       "کودک هیولای دریایی ترسو، لوکا پاگورو، از چند بزماهی در سواحل شهر پورتوروسو در ایتالیا نگهداری می‌کند. والدینش از ترس اینکه ممکن است توسط انسان‌ها شکار شود ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Soul
   {
@@ -542,6 +600,8 @@ const AllMovies = [
     rate: "۵۸٪",
     description:
       "داستان فیلم پویانمایی روح، دربارهٔ جو گاردنر، آموزگار نوازندگی یک گروه موسیقی در دبیرستان است. جو که همیشه سودای اجرای موسیقی جاز بر صحنه را در سر می‌پرورانده ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Rango
   {
@@ -560,6 +620,8 @@ const AllMovies = [
     rate: "۸۸٪",
     description:
       "انیمیشن رنگو داستان زندگی یک آفتاب‌پرست (بزمجه) خانگی است که دچار بحران هویت می‌باشد. این فیلم که حال و هوایی وسترن و کمدی دارد ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Dolphin Boy
   {
@@ -578,6 +640,8 @@ const AllMovies = [
     rate: "۸۰٪",
     description:
       "هنگامی که یک هواپیما در دریا سقوط می کند، یک دلفین جوان به نام سفید و مادرش یک نوزاد انسانی پیدا می کنند و از او مراقبت می کنند. دلفین بعداً بزرگ می‌شود و ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Turning Red
   {
@@ -596,6 +660,8 @@ const AllMovies = [
     rate: "۶۸٪",
     description:
       " میلین «می» لی، یک دانش‌آموز ۱۳ ساله چینی-کانادایی را دنبال می‌کند که به دلیل یک نفرین ارثی، وقتی هر احساس شدیدی را تجربه می‌کند، به یک ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Fight Club
   {
@@ -614,6 +680,8 @@ const AllMovies = [
     bgImg: "../images/D-IMDB/fightclub.jpg",
     description:
       "شخصیت اصلی فیلم جوان بی‌نامی است که به عنوان راوی شناخته می‌شود. راوی زندگی غیرعادی و عجیبی دارد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // The Dark Knight
   {
@@ -632,6 +700,8 @@ const AllMovies = [
     bgImg: "../images/D-IMDB/dark-knight.png",
     description:
       "در گاتهام سیتی، یک سال پس از ناپدید شدن دکتر جاناتان کرین معروف به مترسک، امنیت توسط بتمن دوباره به گاتهام بازگردانده شده.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Breaking Bad
   {
@@ -650,6 +720,8 @@ const AllMovies = [
     bgImg: "../images/D-IMDB/breaking-bad.jpg",
     description:
       "بریکینگ بد داستان والتر وایت دانشمند شیمی زحمتکش و بی‌حاشیه‌ای را به تصویر می‌کشد که دبیر دبیرستان است. وایت در ابتدای داستان متوجه می‌شود که مبتلا به سرطان ریه است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Inception
   {
@@ -668,6 +740,8 @@ const AllMovies = [
     bgImg: "../images/D-IMDB/inception.jpg",
     description:
       "دام کاب (لئوناردو دی‌کاپریو) یک دزد ماهر در استخراج اسرار ارزشمند مورد نیاز سازمان‌های جاسوسی و شرکت‌های تجاری و چندملیتی است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // La La Land
   {
@@ -686,6 +760,8 @@ const AllMovies = [
     bgImg: "../images/D-IMDB/lalaland.jpg",
     description:
       "میا، دختری جوان و مشتاقِ بازیگری است که در کافی‌شاپ کمپانی برادران وارنر مشغول به کار است و در فاصله‌ی آزمون‌های بازیگری خود به بازیگرهای هالیوود قهوه لاته می‌دهد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Coda
   {
@@ -704,6 +780,8 @@ const AllMovies = [
     bgImg: "../images/D-IMDB/codaa.jpg",
     description:
       "داستان فیلم در مورد دختری جوان به نام روبی است که تنها عضو شنوای خانواده است. پدر، مادر و برادر بزرگتر روبی به نام لئو همگی ناشنوا هستند.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Interstellar
   {
@@ -722,6 +800,8 @@ const AllMovies = [
     bgImg: "../images/D-IMDB/interstellar.png",
     description:
       "در آینده زمین به علت آتشک محصولات کشاورزی رو به نابودی است و هر روز محصولات بیشتری نابود می‌شود. متیو به همراه پدر زن، پسر و دخترش در یک مزرعه زندگی می‌کنند.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // The Godfather
   {
@@ -740,6 +820,84 @@ const AllMovies = [
     bgImg: "../images/D-IMDB/the-godfather.jpg",
     description:
       "فیلم در جشن عروسی کانی، دختر دون ویتو کورلئونه، با کارلو ریزی در لانگ بیچ نیویورک، لانگ آیلند در اواخر تابستان ۱۹۴۵ شروع می‌شود.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
+  },
+  // Gharib
+  {
+    id: 42,
+    url: "./images/GharibFilm.png",
+    name: "غریب",
+    category: "فیلم",
+    year: "۱۳۹۹",
+    image1: "../images/mainMovies/gharib1.jpg",
+    image2: "../images/mainMovies/gharib2.jpg",
+    image3: "../images/mainMovies/gharib3.jpg",
+    age: "+۱۲",
+    time: "۲:۰۸:۰۰",
+    rate: "۸۸٪",
+    bgImg: "../gharib.jpg",
+    description:
+      "با آغاز شورش کردها در ایران توسط احزاب کُرد در سال ۱۳۵۸ از جمله کومله و دموکرات، محمد بروجردی از طرف آیت الله خمینی مأموریت می‌یابد تا ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
+  },
+  // Maghz
+  {
+    id: 43,
+    url: "./images/Main-Movies/maghz.jpg",
+    name: "مغزهای کوچک زنگ زده",
+    category: "فیلم",
+    year: "۱۳۹۷",
+    image1: "../images/Main-Movies/maghz-1.png",
+    image2: "../images/Main-Movies/maghz-2.png",
+    image3: "../images/Main-Movies/maghz-3.png",
+    age: "+۱۳",
+    time: "۱:۴۲:۰۰",
+    rate: "۹۲٪",
+    bgImg: "../images/Main-Movies/maghzbg.png",
+    description:
+      "در منطقه ای نزدیک البرز و زندان قزل حصار، یک آبادی وجود دارد که مختص فقیران و آشغال جمع کن‌ها، اراذل و اوباش، فروشندگان مواد و افراد به شدت گیر افتاده در تمکن مالی است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
+  },
+  // Sorkh Post
+  {
+    id: 44,
+    url: "./images/Main-Movies/sorkh2.jpg",
+    name: "سرخ پوست",
+    category: "فیلم",
+    year: "۱۳۹۹",
+    image1: "../images/Main-Movies/sorkh-1.png",
+    image2: "../images/Main-Movies/sorkh-2.png",
+    image3: "../images/Main-Movies/sorkh-3.png",
+    age: "+۱۳",
+    time: "۱:۴۰:۰۰",
+    rate: "۸۷٪",
+    bgImg: "../images/Main-Movies/sorkhbg.jpg",
+    description:
+      "سال ۱۳۴۶، یک زندان قدیمی در جنوب، به دلیل مجاورت با فرودگاهِ در حال توسعهٔ شهر، در حال تخلیه است. ",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
+  },
+  // Metri 6.5
+  {
+    id: 45,
+    url: "./images/Main-Movies/metri6_2jpg.jpg",
+    name: "متری شیش و نیم",
+    category: "فیلم",
+    year: "۱۳۹۷",
+    image1: "../images/Main-Movies/metri-6-1.png",
+    image2: "../images/Main-Movies/metri-6-2.png",
+    image3: "../images/Main-Movies/metri-6-3.png",
+    age: "+۱۶",
+    time: "۲:۱۱:۰۰",
+    rate: "۸۴٪",
+    bgImg: "../images/Main-Movies/metribg.png",
+    description:
+      "چند تن از مأمورین پلیس مبارزه با مواد مخدر به سردستگی صمد (پیمان معادی) به دنبال فروشندهٔ بزرگ شیشه در تهران به اسم ناصر خاکزاد (نوید محمدزاده) هستند.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
 ];
 

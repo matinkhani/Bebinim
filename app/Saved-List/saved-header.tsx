@@ -66,7 +66,9 @@ export default function Header() {
                 setAccDropDown(false);
               }}
             >
-              <AccImg src="./images/Account/profile.svg" />{" "}
+              <AccImg
+                src="./images/Account/profile.svg"
+              />{" "}
             </AccIconConatiner>
             <Link href="/Search">
               <SearchIcon src="./images/SearchIcon.svg" />

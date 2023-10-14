@@ -1,7 +1,7 @@
 const AnimationsArr = [
   // Sponge Bob
   {
-    id: 1,
+    id: 21,
     url: "../images/animation/sponge-bob.png",
     name: "باب اسنفجی",
     year: "۱۹۹۹",
@@ -15,10 +15,12 @@ const AnimationsArr = [
     rate: "۱۰۰٪",
     description:
       "شخصیت اصلی کارتون باب اسفنجی شلوار مکعبی است که در یک رستوران آشپز است و به کار نسبتاً ساده و یکنواخت خود بسیار علاقه‌مند است و به گل لاله حساسیت دارد ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Panda
   {
-    id: 2,
+    id: 22,
     url: "./images/animation/panda.svg",
     name: "پاندای کونگ فو کار ۳",
     year: "۲۰۱۶",
@@ -32,10 +34,12 @@ const AnimationsArr = [
     rate: "۹۵٪",
     description:
       "داستان این انیمیشن در چین باستان رخ می‌دهد؛ پاندای چاق بی دست و پایی به نام پو که به توانایی های خود آگاه نیست ولی علاقه زیادی به کونگ فو دارد ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Ice Age
   {
-    id: 3,
+    id: 23,
     url: "./images/animation/ice-age.jpg",
     name: "عصر یخبندان",
     year: "۲۰۰۲",
@@ -49,10 +53,12 @@ const AnimationsArr = [
     rate: "۹۸٪",
     description:
       "ابتدا حمله‌ای توسط گروهی از ببرهای دندان خنجری به یکی از دهکده‌های انسان‌ها صورت می‌گیرد که طی آن همسر یکی از افراد قبیله  ... ",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Cars
   {
-    id: 4,
+    id: 24,
     url: "./images/animation/cars.jpg",
     name: "ماشین‌ها",
     year: "۲۰۰۶",
@@ -66,10 +72,12 @@ const AnimationsArr = [
     rate: "۹۸٪",
     description:
       "لایتنینگ مک کوئین ماشین مسابقه تازه‌کاری است که تنها هدفش برنده شدن است به‌طوری‌که برای برنده شدن اخلاق‌های خود را زیر پا می‌گذارد. در یک روز ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Tom & Jerry
   {
-    id: 5,
+    id: 25,
     url: "./images/animation/tom&jerry.png",
     name: "تام و جری",
     year: "۱۹۴۰",
@@ -83,10 +91,12 @@ const AnimationsArr = [
     rate: "۱۰۰٪",
     description:
       "این دو شخصیت با همدیگر دشمن اند ولی وقتی در یک دردسر بزرگی که بین آن دو می‌آید با هم متحد می‌شوند ولی شانس جری موشه بیش‌تر از تام گربه‌هه است ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Pink Panther
   {
-    id: 6,
+    id: 26,
     url: "./images/animation/pink-panther.png",
     name: "پلنگ صورتی",
     year: "۱۹۶۹",
@@ -100,10 +110,12 @@ const AnimationsArr = [
     rate: "۹۸٪",
     description:
       "پلنگ صورتی مجموعه فیلمهای کمدی-پلیسی است که اولین آن‌ها در سال ۱۹۶۳ ساخته شد و با موفقیت آن دنباله‌های زیادی برایش ساخته شد ... ",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Madagascar
   {
-    id: 7,
+    id: 27,
     url: "./images/animation/madagascar.jpg",
     name: "ماداگاسکار ۲",
     year: "۲۰۰۵",
@@ -117,10 +129,12 @@ const AnimationsArr = [
     rate: "۹۵٪",
     description:
       "الکس بچه‌ای بازیگوش بوده و پدرش هم سلطان جنگل. پدرش می‌خواهد او را برای جانشینی خود تربیت کند، ولی الکس فقط به دنبال بازی است. ناگهان ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Toy Story
   {
-    id: 8,
+    id: 28,
     url: "./images/animation/toy-story.jpeg",
     name: "داستان اسباب بازی",
     year: "۱۹۹۵",
@@ -134,10 +148,12 @@ const AnimationsArr = [
     rate: "۹۸٪",
     description:
       "در یک دنیایی که اسباب‌بازی‌ها در غیاب انسان‌ها زنده می‌شوند. گروهی از اسباب‌بازی‌ها درحال آماده شدن برای نقل مکان به یک خانه جدید به همراه صاحبشان ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Luca
   {
-    id: 9,
+    id: 29,
     url: "./images/animation/luca.svg",
     name: "لوکا",
     year: "۲۰۲۱",
@@ -151,10 +167,12 @@ const AnimationsArr = [
     rate: "۷۸٪",
     description:
       "کودک هیولای دریایی ترسو، لوکا پاگورو، از چند بزماهی در سواحل شهر پورتوروسو در ایتالیا نگهداری می‌کند. والدینش از ترس اینکه ممکن است توسط انسان‌ها شکار شود ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Soul
   {
-    id: 10,
+    id: 30,
     url: "./images/animation/soul.svg",
     name: "روح",
     year: "۲۰۲۰",
@@ -168,10 +186,12 @@ const AnimationsArr = [
     rate: "۵۸٪",
     description:
       "داستان فیلم پویانمایی روح، دربارهٔ جو گاردنر، آموزگار نوازندگی یک گروه موسیقی در دبیرستان است. جو که همیشه سودای اجرای موسیقی جاز بر صحنه را در سر می‌پرورانده ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Rango
   {
-    id: 11,
+    id: 31,
     url: "./images/animation/rango.svg",
     name: "رنگو",
     year: "۲۰۱۱",
@@ -185,10 +205,12 @@ const AnimationsArr = [
     rate: "۸۸٪",
     description:
       "انیمیشن رنگو داستان زندگی یک آفتاب‌پرست (بزمجه) خانگی است که دچار بحران هویت می‌باشد. این فیلم که حال و هوایی وسترن و کمدی دارد ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Dolphin Boy
   {
-    id: 12,
+    id: 32,
     url: "./images/animation/dolphin.svg",
     name: "پسر دلفینی",
     year: "۲۰۲۱",
@@ -202,10 +224,12 @@ const AnimationsArr = [
     rate: "۸۰٪",
     description:
       "هنگامی که یک هواپیما در دریا سقوط می کند، یک دلفین جوان به نام سفید و مادرش یک نوزاد انسانی پیدا می کنند و از او مراقبت می کنند. دلفین بعداً بزرگ می‌شود و ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Turning Red
   {
-    id: 13,
+    id: 33,
     url: "./images/animation/turning-red.svg",
     name: "قرمز شدن",
     year: "۲۰۲۱",
@@ -219,6 +243,8 @@ const AnimationsArr = [
     rate: "۶۸٪",
     description:
       " میلین «می» لی، یک دانش‌آموز ۱۳ ساله چینی-کانادایی را دنبال می‌کند که به دلیل یک نفرین ارثی، وقتی هر احساس شدیدی را تجربه می‌کند، به یک ...",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
 ];
 export default AnimationsArr;

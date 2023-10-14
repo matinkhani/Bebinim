@@ -1,7 +1,7 @@
 const BestIMDbArr = [
   // Fight Club
   {
-    id: 1,
+    id: 34,
     url: "./images/imdb/fight-club.png",
     name: "Fight Club",
     year: "۱۹۹۹",
@@ -15,10 +15,12 @@ const BestIMDbArr = [
     bgImg: "../images/D-IMDB/fightclub.jpg",
     description:
       "شخصیت اصلی فیلم جوان بی‌نامی است که به عنوان راوی شناخته می‌شود. راوی زندگی غیرعادی و عجیبی دارد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // The Dark Knight
   {
-    id: 2,
+    id: 35,
     url: "./images/imdb/dark-knight.png",
     name: "The Dark Knight",
     year: "۲۰۰۸",
@@ -32,10 +34,12 @@ const BestIMDbArr = [
     bgImg: "../images/D-IMDB/dark-knight.png",
     description:
       "در گاتهام سیتی، یک سال پس از ناپدید شدن دکتر جاناتان کرین معروف به مترسک، امنیت توسط بتمن دوباره به گاتهام بازگردانده شده.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Breaking Bad
   {
-    id: 3,
+    id: 36,
     url: "./images/imdb/breaking-bad.png",
     name: "Breaking Bad",
     year: "۲۰۰۸",
@@ -49,10 +53,12 @@ const BestIMDbArr = [
     bgImg: "../images/D-IMDB/breaking-bad.jpg",
     description:
       "بریکینگ بد داستان والتر وایت دانشمند شیمی زحمتکش و بی‌حاشیه‌ای را به تصویر می‌کشد که دبیر دبیرستان است. وایت در ابتدای داستان متوجه می‌شود که مبتلا به سرطان ریه است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Inception
   {
-    id: 4,
+    id: 37,
     url: "./images/imdb/inception.png",
     name: "Inception",
     year: "۲۰۱۰",
@@ -66,10 +72,12 @@ const BestIMDbArr = [
     bgImg: "../images/D-IMDB/inception.jpg",
     description:
       "دام کاب (لئوناردو دی‌کاپریو) یک دزد ماهر در استخراج اسرار ارزشمند مورد نیاز سازمان‌های جاسوسی و شرکت‌های تجاری و چندملیتی است.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // La La Land
   {
-    id: 5,
+    id: 38,
     url: "./images/imdb/lala-land.png",
     name: "La La Land",
     year: "۲۰۱۶",
@@ -83,10 +91,12 @@ const BestIMDbArr = [
     bgImg: "../images/D-IMDB/lalaland.jpg",
     description:
       "میا، دختری جوان و مشتاقِ بازیگری است که در کافی‌شاپ کمپانی برادران وارنر مشغول به کار است و در فاصله‌ی آزمون‌های بازیگری خود به بازیگرهای هالیوود قهوه لاته می‌دهد.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Coda
   {
-    id: 6,
+    id: 39,
     url: "./images/imdb/coda.png",
     name: "Coda",
     year: "۲۰۲۱",
@@ -100,10 +110,12 @@ const BestIMDbArr = [
     bgImg: "../images/D-IMDB/codaa.jpg",
     description:
       "داستان فیلم در مورد دختری جوان به نام روبی است که تنها عضو شنوای خانواده است. پدر، مادر و برادر بزرگتر روبی به نام لئو همگی ناشنوا هستند.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // Interstellar
   {
-    id: 7,
+    id: 40,
     url: "./images/imdb/interstellar.png",
     name: "Interstellar",
     year: "۲۰۱۴",
@@ -117,10 +129,12 @@ const BestIMDbArr = [
     bgImg: "../images/D-IMDB/interstellar.png",
     description:
       "در آینده زمین به علت آتشک محصولات کشاورزی رو به نابودی است و هر روز محصولات بیشتری نابود می‌شود. متیو به همراه پدر زن، پسر و دخترش در یک مزرعه زندگی می‌کنند.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
   // The Godfather
   {
-    id: 8,
+    id: 41,
     url: "./images/imdb/god-father.png",
     name: "The Godfather",
     year: "۱۹۷۲",
@@ -134,6 +148,8 @@ const BestIMDbArr = [
     bgImg: "../images/D-IMDB/the-godfather.jpg",
     description:
       "فیلم در جشن عروسی کانی، دختر دون ویتو کورلئونه، با کارلو ریزی در لانگ بیچ نیویورک، لانگ آیلند در اواخر تابستان ۱۹۴۵ شروع می‌شود.",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
   },
 ];
 
