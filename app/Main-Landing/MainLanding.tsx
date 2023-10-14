@@ -60,13 +60,13 @@ export default function MainLanding() {
                     <ExplainAndWatch>
                       <MoreExplainText
                         style={
-                          item.id === 1
+                          item.id === 42
                             ? { color: "black" }
-                            : item.id === 2
-                            ? { color: "black" }
-                            : item.id === 3
+                            : item.id === 43
+                            ? { color: "White" }
+                            : item.id === 44
                             ? { color: "white" }
-                            : item.id === 4
+                            : item.id === 45
                             ? { color: "white" }
                             : {}
                         }
@@ -96,7 +96,7 @@ export default function MainLanding() {
                           : {}
                       }
                     >
-                      {item.text}
+                      {/* {item.text} */}
                     </Text>
                   </ExplainContainer>
                 </RightSide>
