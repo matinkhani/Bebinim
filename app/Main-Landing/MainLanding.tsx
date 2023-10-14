@@ -60,21 +60,35 @@ export default function MainLanding() {
                     <ExplainAndWatch>
                       <MoreExplainText
                         style={
-                          item.id === 1
+                          item.id === 42
                             ? { color: "black" }
-                            : item.id === 2
-                            ? { color: "black" }
-                            : item.id === 3
+                            : item.id === 43
+                            ? { color: "White" }
+                            : item.id === 44
                             ? { color: "white" }
-                            : item.id === 4
+                            : item.id === 45
                             ? { color: "white" }
                             : {}
                         }
                       >
-                        توضیحات بیشتر
+                        <Link href={`Main-Landing/${item.id}`}>
+                          توضیحات بیشتر
+                        </Link>
                       </MoreExplainText>
                       <Link href={`Main-Landing/${item.id}`}>
-                        <MoreIcon src="./images/mores.svg" />
+                        <MoreIcon
+                          src={
+                            item.id === 42
+                              ? "./images/mores.svg"
+                              : item.id === 43
+                              ? "./images/mores2.svg"
+                              : item.id === 44
+                              ? "./images/mores2.svg"
+                              : item.id === 45
+                              ? "./images/mores2.svg"
+                              : ""
+                          }
+                        />
                       </Link>
                       <Link href={`Main-Landing/${item.id}`}>
                         <MoreExplainBtn>
@@ -96,7 +110,7 @@ export default function MainLanding() {
                           : {}
                       }
                     >
-                      {item.text}
+                      {/* {item.text} */}
                     </Text>
                   </ExplainContainer>
                 </RightSide>
