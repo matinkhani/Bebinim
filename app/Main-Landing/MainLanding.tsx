@@ -71,10 +71,24 @@ export default function MainLanding() {
                             : {}
                         }
                       >
-                        توضیحات بیشتر
+                        <Link href={`Main-Landing/${item.id}`}>
+                          توضیحات بیشتر
+                        </Link>
                       </MoreExplainText>
                       <Link href={`Main-Landing/${item.id}`}>
-                        <MoreIcon src="./images/mores.svg" />
+                        <MoreIcon
+                          src={
+                            item.id === 42
+                              ? "./images/mores.svg"
+                              : item.id === 43
+                              ? "./images/mores2.svg"
+                              : item.id === 44
+                              ? "./images/mores2.svg"
+                              : item.id === 45
+                              ? "./images/mores2.svg"
+                              : ""
+                          }
+                        />
                       </Link>
                       <Link href={`Main-Landing/${item.id}`}>
                         <MoreExplainBtn>
