@@ -78,8 +78,14 @@ const EmailState =
     ? JSON.parse(localStorage.getItem("email") || "")
     : "";
 
+// Value of Phone state for localstorage
+const PhoneState =
+  localStorage.getItem("phone") !== null
+    ? JSON.parse(localStorage.getItem("phone") || "")
+    : "";
+
 const initialState: initial_state = {
-  PhoneNumber: "",
+  PhoneNumber: PhoneState,
   Name: NameState,
   Email: EmailState,
   CheckLogin: LoginState,
@@ -96,6 +102,7 @@ export const bebinimReducers = createSlice({
   reducers: {
     GetNumber: (state, { payload }: { payload: string }) => {
       state.PhoneNumber = payload;
+      localStorage.setItem("phone", JSON.stringify(state.PhoneNumber));
     },
     GetName: (state, { payload }: { payload: string }) => {
       state.Name = payload;
