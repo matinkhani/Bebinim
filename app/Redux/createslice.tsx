@@ -20,8 +20,8 @@ export interface SavedTypes {
 
 interface initial_state {
   PhoneNumber: string;
-  Name:string;
-  Email:string;
+  Name: string;
+  Email: string;
   CheckLogin: boolean;
   OneMonthAuto: boolean;
   OneMonth: boolean;
@@ -66,10 +66,22 @@ const SaveListState =
     ? JSON.parse(localStorage.getItem("savelist") || "")
     : [];
 
+// Value of Name state for localstorage
+const NameState =
+  localStorage.getItem("name") !== null
+    ? JSON.parse(localStorage.getItem("name") || "")
+    : "";
+
+// Value of Email state for localstorage
+const EmailState =
+  localStorage.getItem("email") !== null
+    ? JSON.parse(localStorage.getItem("email") || "")
+    : "";
+
 const initialState: initial_state = {
   PhoneNumber: "",
-  Name:"",
-  Email:"",
+  Name: NameState,
+  Email: EmailState,
   CheckLogin: LoginState,
   OneMonthAuto: OneAutoState,
   OneMonth: OneMonthState,
@@ -87,9 +99,11 @@ export const bebinimReducers = createSlice({
     },
     GetName: (state, { payload }: { payload: string }) => {
       state.Name = payload;
+      localStorage.setItem("name", JSON.stringify(state.Name));
     },
     GetEmail: (state, { payload }: { payload: string }) => {
       state.Email = payload;
+      localStorage.setItem("email", JSON.stringify(state.Email));
     },
     CreateAccount: (state, { payload }: { payload: boolean }) => {
       state.CheckLogin = payload;
