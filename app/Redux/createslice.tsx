@@ -28,14 +28,50 @@ interface initial_state {
   SavedList: SavedTypes[];
 }
 
+// Value of CheckLogin state for localstorage
+const LoginState =
+  localStorage.getItem("login") !== null
+    ? JSON.parse(localStorage.getItem("login") || "")
+    : false;
+
+// Value of OneMonthAuto state for localstorage
+const OneAutoState =
+  localStorage.getItem("oneAuto") !== null
+    ? JSON.parse(localStorage.getItem("oneAuto") || "")
+    : false;
+
+// Value of OneMonth state for localstorage
+const OneMonthState =
+  localStorage.getItem("oneMonth") !== null
+    ? JSON.parse(localStorage.getItem("oneMonth") || "")
+    : false;
+
+// Value of ThreeMonth state for localstorage
+const ThreeMonthState =
+  localStorage.getItem("threeMonth") !== null
+    ? JSON.parse(localStorage.getItem("threeMonth") || "")
+    : false;
+
+// Value of SixMonth state for localstorage
+const SixMonthState =
+  localStorage.getItem("sixMonth") !== null
+    ? JSON.parse(localStorage.getItem("sixMonth") || "")
+    : false;
+
+// Value of SaveList state for localstorage
+const SaveListState =
+  localStorage.getItem("savelist") !== null
+    ? JSON.parse(localStorage.getItem("savelist") || "")
+    : [];
+
 const initialState: initial_state = {
   PhoneNumber: "",
-  CheckLogin: false,
-  OneMonthAuto: false,
-  OneMonth: false,
-  ThreeMonth: false,
-  SixMonth: false,
-  SavedList: [],
+  CheckLogin: LoginState,
+  OneMonthAuto: OneAutoState,
+  OneMonth: OneMonthState,
+  ThreeMonth: ThreeMonthState,
+  SixMonth: SixMonthState,
+  SavedList: SaveListState,
 };
 
 export const bebinimReducers = createSlice({
@@ -47,29 +83,34 @@ export const bebinimReducers = createSlice({
     },
     CreateAccount: (state, { payload }: { payload: boolean }) => {
       state.CheckLogin = payload;
-      // console.log(payload);
+      localStorage.setItem("login", JSON.stringify(state.CheckLogin));
     },
     ChangeOneMonthAuto: (state, { payload }: { payload: boolean }) => {
       state.OneMonthAuto = payload;
-      console.log(payload);
+      localStorage.setItem("oneAuto", JSON.stringify(state.OneMonthAuto));
     },
     ChangeOneMonth: (state, { payload }: { payload: boolean }) => {
       state.OneMonth = payload;
+      localStorage.setItem("oneMonth", JSON.stringify(state.OneMonth));
     },
     ChangeThreeMonth: (state, { payload }: { payload: boolean }) => {
       state.ThreeMonth = payload;
+      localStorage.setItem("threeMonth", JSON.stringify(state.ThreeMonth));
     },
     ChangeSixMonth: (state, { payload }: { payload: boolean }) => {
       state.SixMonth = payload;
+      localStorage.setItem("sixMonth", JSON.stringify(state.SixMonth));
     },
     AddToSavedList: (state, { payload }: { payload: SavedTypes }) => {
       let savedItem = [...state.SavedList];
       savedItem.push(payload);
       state.SavedList = savedItem;
+      localStorage.setItem("savelist", JSON.stringify(state.SavedList));
     },
     DeleteItem: (state, { payload }: { payload: any }) => {
       let removedList = state.SavedList.filter((elem) => elem.id !== payload);
       state.SavedList = removedList;
+      localStorage.setItem("savelist", JSON.stringify(state.SavedList));
     },
   },
 });
