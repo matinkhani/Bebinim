@@ -183,8 +183,7 @@ export const ResultContain = styled.div`
   height: 120px;
   width: 600px;
   display: flex;
-  justify-content: center;
-  gap: 175px;
+  justify-content: end;
   align-items: center;
   border-radius: 8px;
   background: #fefefe;
@@ -193,21 +192,23 @@ export const ResultContain = styled.div`
 
 export const ResultText = styled.div`
   height: 50px;
-  width: 260px;
+  width: 77%;
   color: #000;
+  padding-right: 35px;
+  gap: 10px;
   font-family: var(--medium);
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
 `;
 
 export const Result = styled.div`
   height: 25px;
-  width: 60px;
+  width: fit-content;
   color: #b55253;
   font-family: var(--medium);
   font-size: 16px;

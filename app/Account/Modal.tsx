@@ -29,7 +29,7 @@ export default function TransitionsModal() {
     height: 250,
     width: 600,
     bgcolor: "#291212",
-    borderradius: "8px",
+    borderRadius: "8px",
     outeline: "none",
     boxShadow: 24,
     p: 4,
@@ -37,8 +37,9 @@ export default function TransitionsModal() {
 
   return (
     <Div>
-      <EditName onClick={handleOpen}>{select.Name?<>ویرایش</>:<>افزودن</>}</EditName>
-
+      <EditName onClick={handleOpen}>
+        {select.Name ? <>ویرایش</> : <>افزودن</>}
+      </EditName>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -54,15 +55,15 @@ export default function TransitionsModal() {
       >
         <Fade in={open}>
           <Box sx={style}>
-            <NameInput  
-            onChange={(e) => {
+            <NameInput
+              onChange={(e) => {
                 if (e.target.value === "" || regex.test(e.target.value)) {
-                  dispatch(GetName(e.target.value))
+                  dispatch(GetName(e.target.value));
                 }
               }}
               value={select.Name}
               maxLength={16}
-            placeholder="نام و نام خانوادگی" 
+              placeholder="نام و نام خانوادگی"
             />
             <NameBtn onClick={handleClose}>افزودن</NameBtn>
           </Box>

@@ -77,8 +77,20 @@ export default function Account() {
               <ResultBtn>خرید اشتراک</ResultBtn>
             </Link>
             <ResultText>
-              <Result>غیرفعال</Result>
-              <p> {":"} وضعیت اشتراک جاری </p>
+              <Result>
+              {select.OneMonthAuto ? (
+              <> {"."}اشتراک یک ماهه با تمدید خودکار  </>
+            ) : select.OneMonth ? (
+              <> {"."}اشتراک یک ماهه  </>
+            ) : select.ThreeMonth ? (
+              <> {"."}اشتراک سه ماهه  </>
+            ) : select.SixMonth ? (
+              <> {"."}اشتراک شش ماهه  </>
+            ) : (
+              <> {"."}اشتراک فعال ندارید </>
+            )}
+              </Result>
+              <p> {":"} وضعیت اشتراک </p>
             </ResultText>
           </ResultContain>
         </ResultMain>

@@ -28,7 +28,7 @@ export default function TransitionsModal() {
     height: 250,
     width: 600,
     bgcolor: "#291212",
-    borderradius: "8px",
+    borderRadius: "8px",
     outeline: "none",
     boxShadow: 24,
     p: 4,
@@ -36,8 +36,9 @@ export default function TransitionsModal() {
 
   return (
     <Div>
-      <AddEmail onClick={handleOpen}>{select.Email?<>ویرایش</>:<>افزودن ایمیل</>}</AddEmail>
-
+      <AddEmail onClick={handleOpen}>
+        {select.Email ? <>ویرایش</> : <>افزودن ایمیل</>}
+      </AddEmail>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -55,9 +56,7 @@ export default function TransitionsModal() {
           <Box sx={style}>
             <EmailInput
               onChange={(e) => {
-                
-                  dispatch(GetEmail(e.target.value));
-                
+                dispatch(GetEmail(e.target.value));
               }}
               value={select.Email}
               placeholder="@Gmail.com"
