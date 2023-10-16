@@ -1,125 +1,28 @@
 const ZakhmKariArr = [
-    //ablagh
-    {
-      id: 1,
-      url: "./images/ZakhmKari/Zakhm1.svg",
-      name: "ابلق",
-      category: "فیلم",
-      year: "۱۳۹۹",
-      image1: "../images/Watch/ablagh1.jpg",
-      image2: "../images/Watch/ablagh2.jpg",
-      image3: "../images/Watch/ablagh3.jpg",
-      age: "+۱۳",
-      time: "۲:۳۸:۰۰",
-      rate: "۱۸٪",
-      bgImg: "../images/Watch/ablagh.svg",
-      description:
-        "راحله به همراه خوانواده در یکی از محله‌های تهران زندگی می‌کنند. شوهر خواهر علی، فردی است که یک کسب و کار را برای خانم‌های محله ایجاد کرده است.",
-      save: "../images/Watch/save.svg",
-      saved: "../images/Watch/saved.svg",
-      
-    },
-    //ablagh
-    {
-      id: 2,
-      url: "./images/ZakhmKari/Zakhm1.svg",
-      name: "ابلق",
-      category: "فیلم",
-      year: "۱۳۹۹",
-      image1: "../images/Watch/ablagh1.jpg",
-      image2: "../images/Watch/ablagh2.jpg",
-      image3: "../images/Watch/ablagh3.jpg",
-      age: "+۱۳",
-      time: "۲:۳۸:۰۰",
-      rate: "۱۸٪",
-      bgImg: "../images/Watch/ablagh.svg",
-      description:
-        "راحله به همراه خوانواده در یکی از محله‌های تهران زندگی می‌کنند. شوهر خواهر علی، فردی است که یک کسب و کار را برای خانم‌های محله ایجاد کرده است.",
-      save: "../images/Watch/save.svg",
-      saved: "../images/Watch/saved.svg",
-      
-    },
-    //ablagh
-    {
-      id: 3,
-      url: "./images/ZakhmKari/Zakhm1.svg",
-      name: "ابلق",
-      category: "فیلم",
-      year: "۱۳۹۹",
-      image1: "../images/Watch/ablagh1.jpg",
-      image2: "../images/Watch/ablagh2.jpg",
-      image3: "../images/Watch/ablagh3.jpg",
-      age: "+۱۳",
-      time: "۲:۳۸:۰۰",
-      rate: "۱۸٪",
-      bgImg: "../images/Watch/ablagh.svg",
-      description:
-        "راحله به همراه خوانواده در یکی از محله‌های تهران زندگی می‌کنند. شوهر خواهر علی، فردی است که یک کسب و کار را برای خانم‌های محله ایجاد کرده است.",
-      save: "../images/Watch/save.svg",
-      saved: "../images/Watch/saved.svg",
-      
-    },
-    //ablagh
-    {
-      id: 4,
-      url: "./images/ZakhmKari/Zakhm1.svg",
-      name: "ابلق",
-      category: "فیلم",
-      year: "۱۳۹۹",
-      image1: "../images/Watch/ablagh1.jpg",
-      image2: "../images/Watch/ablagh2.jpg",
-      image3: "../images/Watch/ablagh3.jpg",
-      age: "+۱۳",
-      time: "۲:۳۸:۰۰",
-      rate: "۱۸٪",
-      bgImg: "../images/Watch/ablagh.svg",
-      description:
-        "راحله به همراه خوانواده در یکی از محله‌های تهران زندگی می‌کنند. شوهر خواهر علی، فردی است که یک کسب و کار را برای خانم‌های محله ایجاد کرده است.",
-      save: "../images/Watch/save.svg",
-      saved: "../images/Watch/saved.svg",
-      
-    },
-    //ablagh
-    {
-      id: 5,
-      url: "./images/ZakhmKari/Zakhm1.svg",
-      name: "ابلق",
-      category: "فیلم",
-      year: "۱۳۹۹",
-      image1: "../images/Watch/ablagh1.jpg",
-      image2: "../images/Watch/ablagh2.jpg",
-      image3: "../images/Watch/ablagh3.jpg",
-      age: "+۱۳",
-      time: "۲:۳۸:۰۰",
-      rate: "۱۸٪",
-      bgImg: "../images/Watch/ablagh.svg",
-      description:
-        "راحله به همراه خوانواده در یکی از محله‌های تهران زندگی می‌کنند. شوهر خواهر علی، فردی است که یک کسب و کار را برای خانم‌های محله ایجاد کرده است.",
-      save: "../images/Watch/save.svg",
-      saved: "../images/Watch/saved.svg",
-      
-    },
-    //ablagh
-    {
-      id: 6,
-      url: "./images/ZakhmKari/Zakhm1.svg",
-      name: "ابلق",
-      category: "فیلم",
-      year: "۱۳۹۹",
-      image1: "../images/Watch/ablagh1.jpg",
-      image2: "../images/Watch/ablagh2.jpg",
-      image3: "../images/Watch/ablagh3.jpg",
-      age: "+۱۳",
-      time: "۲:۳۸:۰۰",
-      rate: "۱۸٪",
-      bgImg: "../images/Watch/ablagh.svg",
-      description:
-        "راحله به همراه خوانواده در یکی از محله‌های تهران زندگی می‌کنند. شوهر خواهر علی، فردی است که یک کسب و کار را برای خانم‌های محله ایجاد کرده است.",
-      save: "../images/Watch/save.svg",
-      saved: "../images/Watch/saved.svg",
-      
-    },
-  ];
-  
-  export default ZakhmKariArr;
-  
+  {
+    id: 46,
+    url: "./images/ZakhmKari/zakhm-kari.jpg",
+    name: "زخم کاری: بازگشت",
+    category: "سریال",
+    year: "۱۴۰۱",
+    image1: "../images/ZakhmKari/zakhm-1.jpg",
+    image2: "../images/ZakhmKari/zakhm-2.jpg",
+    image3: "../images/ZakhmKari/zakhm-3.jpg",
+    age: "+۱۶",
+    time: "۵۸:۰۰",
+    rate: "۳۰٪",
+    bgImg: "../images/ZakhmKari/zakhm-kari-bg.jpg",
+    description:
+      "در نبود مالک حالا مدعیان تاج و تخت او یکی یکی از راه می‌رسند و این آغاز آشوب دیگری است… هنوز بوی خون به مشام می‌رسد!»",
+    save: "../images/Watch/save.svg",
+    saved: "../images/Watch/saved.svg",
+    photo1: "./images/ZakhmKari/Zakhm1.svg",
+    photo2: "./images/ZakhmKari/Zakhm2.svg",
+    photo3: "./images/ZakhmKari/Zakhm3.svg",
+    photo4: "./images/ZakhmKari/Zakhm4.svg",
+    photo5: "./images/ZakhmKari/Zakhm5.svg",
+    photo6: "./images/ZakhmKari/Zakhm6.svg",
+  },
+];
+
+export default ZakhmKariArr;
