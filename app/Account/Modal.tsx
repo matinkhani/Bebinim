@@ -5,41 +5,39 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import { EditName } from "../Styled Components/Account";
-import {
-  Div,
-  EmailBtn,
-  EmailInput,
-  NameBtn,
-  NameInput,
-} from "../Styled Components/NameModal";
-
-const style = {
-  position: "absolute" as "absolute",
-  top: "50%",
-  left: "50%",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-around",
-  alignItems: "center",
-  transform: "translate(-50%, -50%)",
-  height: 250,
-  width: 500,
-  bgcolor: "#291212",
-  borderradius: "8px",
-  border: "none",
-  outeline: "none",
-  boxShadow: 24,
-  p: 4,
-};
+import { Div, NameBtn, NameInput } from "../Styled Components/NameModal";
+import { GetName } from "../Redux/createslice";
+import { useDispatch, useSelector } from "react-redux";
+import { RoutState } from "../Redux/store";
 
 export default function TransitionsModal() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const select = useSelector((state: RoutState) => state.Reducer);
+  const dispatch = useDispatch();
+  const regex = /^[a-z A-Zآ-ی_.-]*$/;
+  const style = {
+    position: "absolute" as "absolute",
+    top: "36%",
+    left: "50%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-around",
+    alignItems: "center",
+    transform: "translate(-50%, -50%)",
+    height: 250,
+    width: 600,
+    bgcolor: "#291212",
+    borderradius: "8px",
+    outeline: "none",
+    boxShadow: 24,
+    p: 4,
+  };
 
   return (
     <Div>
-      <EditName onClick={handleOpen}>ویرایش</EditName>
+      <EditName onClick={handleOpen}>{select.Name?<>ویرایش</>:<>افزودن</>}</EditName>
 
       <Modal
         aria-labelledby="transition-modal-title"
@@ -56,8 +54,17 @@ export default function TransitionsModal() {
       >
         <Fade in={open}>
           <Box sx={style}>
-            <NameInput placeholder="نام و نام خانوادگی" />
-            <NameBtn onClick={handleClose}>ویرایش</NameBtn>
+            <NameInput  
+            onChange={(e) => {
+                if (e.target.value === "" || regex.test(e.target.value)) {
+                  dispatch(GetName(e.target.value))
+                }
+              }}
+              value={select.Name}
+              maxLength={16}
+            placeholder="نام و نام خانوادگی" 
+            />
+            <NameBtn onClick={handleClose}>افزودن</NameBtn>
           </Box>
         </Fade>
       </Modal>

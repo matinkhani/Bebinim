@@ -21,6 +21,7 @@ export interface SavedTypes {
 interface initial_state {
   PhoneNumber: string;
   Name:string;
+  Email:string;
   CheckLogin: boolean;
   OneMonthAuto: boolean;
   OneMonth: boolean;
@@ -68,6 +69,7 @@ const SaveListState =
 const initialState: initial_state = {
   PhoneNumber: "",
   Name:"",
+  Email:"",
   CheckLogin: LoginState,
   OneMonthAuto: OneAutoState,
   OneMonth: OneMonthState,
@@ -84,7 +86,10 @@ export const bebinimReducers = createSlice({
       state.PhoneNumber = payload;
     },
     GetName: (state, { payload }: { payload: string }) => {
-      state.PhoneNumber = payload;
+      state.Name = payload;
+    },
+    GetEmail: (state, { payload }: { payload: string }) => {
+      state.Email = payload;
     },
     CreateAccount: (state, { payload }: { payload: boolean }) => {
       state.CheckLogin = payload;
@@ -123,6 +128,7 @@ export const bebinimReducers = createSlice({
 export const {
   GetNumber,
   GetName,
+  GetEmail,
   CreateAccount,
   ChangeOneMonthAuto,
   ChangeOneMonth,

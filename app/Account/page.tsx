@@ -54,7 +54,7 @@ export default function Account() {
               <TransitionsEmailModal />
               <CheckEmail>
                 <p>ایمیل:</p>
-                <p>ندارد.</p>
+                {select.Email ? <p>{select.Email}</p> : <p>ندارد.</p>}
               </CheckEmail>
             </EmailPlace>
             <PhoneNumberPlace>
