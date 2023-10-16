@@ -31,13 +31,22 @@ export default function Login() {
   const regex2 = /^[a-zA-Z0-9_.-]*$/;
   const ConfirmLogin = () => {
     dispatch(CreateAccount(true));
+    dispatch(GetNumber(""));
   };
 
   useEffect(() => {
-    if (select.PhoneNumber.length < 10 && pass.length < 8 && select.PhoneNumber.slice(0, 1) !== "9") {
+    if (
+      select.PhoneNumber.length < 10 &&
+      pass.length < 8 &&
+      select.PhoneNumber.slice(0, 1) !== "9"
+    ) {
       setcheckInputs(false);
     } else {
-      if (select.PhoneNumber.length >= 10 && pass.length >= 8 && select.PhoneNumber.slice(0, 1) === "9") {
+      if (
+        select.PhoneNumber.length >= 10 &&
+        pass.length >= 8 &&
+        select.PhoneNumber.slice(0, 1) === "9"
+      ) {
         setcheckInputs(true);
       } else {
         setcheckInputs(false);
@@ -67,7 +76,7 @@ export default function Login() {
               <Input
                 onChange={(e) => {
                   if (e.target.value === "" || regex.test(e.target.value)) {
-                    dispatch(GetNumber(e.target.value))
+                    dispatch(GetNumber(e.target.value));
                   }
                 }}
                 value={select.PhoneNumber}
