@@ -23,7 +23,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import ZakhmKariArr from "./array";
-import "./movie.css"
+import "./movie.css";
 
 export default function Movie() {
   return (
@@ -57,35 +57,33 @@ export default function Movie() {
               </DetailsMovieText>
             </DetailsText>
           </Details>
-          
-          
-          
-          
+
           <MovieCarousel>
-          <CarouselContainer>
-        <Carousel>
-          <Swiper
-            navigation={true}
-            slidesPerView={6}
-            speed={1200}
-            modules={[Navigation]}
-            className="mySwiper"
-            slidesPerGroup={4}
-          >
-              
-                <SwiperSlide>
-                  <img src="./images/ZakhmKari/Zakhm1.svg"/>                  
-                </SwiperSlide>
-              
-          
-          </Swiper>
-        </Carousel>
-      </CarouselContainer>    
-          
+            <CarouselContainer>
+              <Carousel>
+                <Swiper
+                  navigation={true}
+                  slidesPerView={4}
+                  speed={1200}
+                  modules={[Navigation]}
+                  className="mySwiper"
+                  slidesPerGroup={2}
+                  loop={true}
+                >
+                  {ZakhmKariArr.map((item, index) => {
+                    return (
+                      <SwiperSlide>
+                        <img
+                          style={{ height: 160, width: 280, borderRadius: 8 }}
+                          src={item.url}
+                        />
+                      </SwiperSlide>
+                    );
+                  })}
+                </Swiper>
+              </Carousel>
+            </CarouselContainer>
           </MovieCarousel>
-        
-        
-        
         </MovieMain>
       </BgImg>
     </Container>

@@ -125,11 +125,15 @@ font-family: var(--medium);
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
+
 `
 
 export const MovieCarousel = styled.div`
   height: 160px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: yellowgreen; */
 `;
 
 export const TextPlace = styled.div`
@@ -151,11 +155,12 @@ export const Text = styled.p`
 
 export const CarouselContainer = styled.div`
   height: 100%;
-  width: 100%;
+  width: 1440px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: red; */
 `;
 
 export const Carousel = styled.div`
@@ -164,5 +169,5 @@ export const Carousel = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  /* background-color: blue; */
 `;
-
