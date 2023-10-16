@@ -27,6 +27,8 @@ import {
 import Link from "next/link";
 import { RoutState } from "../Redux/store";
 import { useSelector } from "react-redux";
+import TransitionsModal from "./Modal";
+import TransitionsEmailModal from "./EmailModal";
 
 export default function Account() {
   const select = useSelector((state: RoutState) => state.Reducer);
@@ -42,14 +44,14 @@ export default function Account() {
         <InformationMain>
           <InformationContain>
             <NamePlace>
-              <EditName>ویرایش</EditName>
+              <TransitionsModal />
               <NameandLastName>
                 <p>نام و نام خانوادگی:</p>
-                <p>امیرحسین امین مقدم</p>
+                {select.Name ? <p>{select.Name}</p> : <p>ندارد.</p>}
               </NameandLastName>
             </NamePlace>
             <EmailPlace>
-              <AddEmail>افزودن ایمیل</AddEmail>
+              <TransitionsEmailModal />
               <CheckEmail>
                 <p>ایمیل:</p>
                 <p>ندارد.</p>

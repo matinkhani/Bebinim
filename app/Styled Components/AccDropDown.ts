@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AccIconConatiner = styled.div`
   height: 100%;
-  width: fit-content;
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
