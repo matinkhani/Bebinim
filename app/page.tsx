@@ -10,6 +10,7 @@ import Animation from "./Animation/animation";
 import Nostalgia from "./Nostalgia/nostalgia";
 import BestIMDb from "./Best-IMDb/bestIMDb";
 import FooterSection from "./Footer Section/footerSection";
+import Movie from "./ZakhmKari/ZakhmKari";
 export default function Home() {
   return (
     <React.Fragment>
@@ -21,7 +22,8 @@ export default function Home() {
         <OnlineCinema />
         <Exclusive />
         <Animation />
-        <Nostalgia />
+        <Movie />
+        {/* <Nostalgia /> */}
         <BestIMDb />
       </Container>
       <FooterSection />
