@@ -31,7 +31,6 @@ export default function Login() {
   const regex2 = /^[a-zA-Z0-9_.-]*$/;
   const ConfirmLogin = () => {
     dispatch(CreateAccount(true));
-    dispatch(GetNumber(""));
   };
 
   useEffect(() => {
