@@ -25,8 +25,14 @@ import {
 } from "../../Styled Components/buy";
 import "animate.css";
 import Link from "next/link";
-import { useDispatch } from "react-redux";
-import { ChangeThreeMonth } from "@/app/Redux/createslice";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  ChangeOneMonth,
+  ChangeOneMonthAuto,
+  ChangeSixMonth,
+  ChangeThreeMonth,
+} from "@/app/Redux/createslice";
+import { RoutState } from "@/app/Redux/store";
 
 export default function Buy() {
   const BanksData = [
@@ -38,9 +44,25 @@ export default function Buy() {
   ];
 
   const dispatch = useDispatch();
+  const select = useSelector((state: RoutState) => state.Reducer);
 
   const ChangeSubState = () => {
-    dispatch(ChangeThreeMonth(true));
+    if (select.OneMonthAuto) {
+      dispatch(ChangeOneMonthAuto(false));
+      dispatch(ChangeThreeMonth(true));
+    } else {
+      if (select.OneMonth) {
+        dispatch(ChangeOneMonth(false));
+        dispatch(ChangeThreeMonth(true));
+      } else {
+        if (select.SixMonth) {
+          dispatch(ChangeSixMonth(false));
+          dispatch(ChangeThreeMonth(true));
+        } else {
+          dispatch(ChangeThreeMonth(true));
+        }
+      }
+    }
   };
 
   return (
