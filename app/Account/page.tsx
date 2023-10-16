@@ -61,7 +61,7 @@ export default function Account() {
               <PhoneNumber>
                 <p>
                   {"+98"}
-                  {select.PhoneNumber}
+                  {select.ShowPhoneNumber}
                 </p>
                 <p> {":"} شماره تلفن همراه </p>
               </PhoneNumber>
@@ -78,17 +78,17 @@ export default function Account() {
             </Link>
             <ResultText>
               <Result>
-              {select.OneMonthAuto ? (
-              <> {"."}اشتراک یک ماهه با تمدید خودکار  </>
-            ) : select.OneMonth ? (
-              <> {"."}اشتراک یک ماهه  </>
-            ) : select.ThreeMonth ? (
-              <> {"."}اشتراک سه ماهه  </>
-            ) : select.SixMonth ? (
-              <> {"."}اشتراک شش ماهه  </>
-            ) : (
-              <> {"."}اشتراک فعال ندارید </>
-            )}
+                {select.OneMonthAuto ? (
+                  <> {"."}اشتراک یک ماهه با تمدید خودکار </>
+                ) : select.OneMonth ? (
+                  <> {"."}اشتراک یک ماهه </>
+                ) : select.ThreeMonth ? (
+                  <> {"."}اشتراک سه ماهه </>
+                ) : select.SixMonth ? (
+                  <> {"."}اشتراک شش ماهه </>
+                ) : (
+                  <> {"."}اشتراک فعال ندارید </>
+                )}
               </Result>
               <p> {":"} وضعیت اشتراک </p>
             </ResultText>

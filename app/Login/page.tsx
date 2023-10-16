@@ -19,7 +19,7 @@ import {
 } from "../Styled Components/login";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
-import { CreateAccount, GetNumber } from "../Redux/createslice";
+import { CreateAccount, GetNumber, ShowNumber } from "../Redux/createslice";
 import { RoutState } from "../Redux/store";
 
 export default function Login() {
@@ -31,6 +31,8 @@ export default function Login() {
   const regex2 = /^[a-zA-Z0-9_.-]*$/;
   const ConfirmLogin = () => {
     dispatch(CreateAccount(true));
+    dispatch(ShowNumber(select.PhoneNumber));
+    dispatch(GetNumber(""));
   };
 
   useEffect(() => {

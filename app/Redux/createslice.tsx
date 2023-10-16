@@ -27,6 +27,7 @@ interface initial_state {
   OneMonth: boolean;
   ThreeMonth: boolean;
   SixMonth: boolean;
+  ShowPhoneNumber: string;
   SavedList: SavedTypes[];
 }
 
@@ -84,6 +85,12 @@ const PhoneState =
     ? JSON.parse(localStorage.getItem("phone") || "")
     : "";
 
+// Value of ShowPhoneNumber state for localstorage
+const NumberState =
+  localStorage.getItem("number") !== null
+    ? JSON.parse(localStorage.getItem("number") || "")
+    : "";
+
 const initialState: initial_state = {
   PhoneNumber: PhoneState,
   Name: NameState,
@@ -94,6 +101,7 @@ const initialState: initial_state = {
   ThreeMonth: ThreeMonthState,
   SixMonth: SixMonthState,
   SavedList: SaveListState,
+  ShowPhoneNumber: NumberState,
 };
 
 export const bebinimReducers = createSlice({
@@ -103,6 +111,10 @@ export const bebinimReducers = createSlice({
     GetNumber: (state, { payload }: { payload: string }) => {
       state.PhoneNumber = payload;
       localStorage.setItem("phone", JSON.stringify(state.PhoneNumber));
+    },
+    ShowNumber: (state, { payload }: { payload: string }) => {
+      state.ShowPhoneNumber = payload;
+      localStorage.setItem("number", JSON.stringify(state.ShowPhoneNumber));
     },
     GetName: (state, { payload }: { payload: string }) => {
       state.Name = payload;
@@ -157,5 +169,6 @@ export const {
   ChangeSixMonth,
   AddToSavedList,
   DeleteItem,
+  ShowNumber,
 } = bebinimReducers.actions;
 export default bebinimReducers.reducer;
