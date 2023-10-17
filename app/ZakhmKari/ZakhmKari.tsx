@@ -91,25 +91,25 @@ export default function Movie() {
                   <SwiperSlide>
                     <img
                       style={{ height: 160, width: 280, borderRadius: 8 }}
-                      src="./images/ZakhmKari/Zakhm1.svg"
+                      src="./images/ZakhmKari/Zakhm3.svg"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <img
                       style={{ height: 160, width: 280, borderRadius: 8 }}
-                      src="./images/ZakhmKari/Zakhm1.svg"
+                      src="./images/ZakhmKari/Zakhm4.svg"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <img
                       style={{ height: 160, width: 280, borderRadius: 8 }}
-                      src="./images/ZakhmKari/Zakhm1.svg"
+                      src="./images/ZakhmKari/Zakhm5.svg"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <img
                       style={{ height: 160, width: 280, borderRadius: 8 }}
-                      src="./images/ZakhmKari/Zakhm1.svg"
+                      src="./images/ZakhmKari/Zakhm6.svg"
                     />
                   </SwiperSlide>
                 </Swiper>
