@@ -1,9 +1,10 @@
 import React from "react";
 import {
   BgImg,
+  Carousel,
+  CarouselContainer,
   Category1,
   Category2,
-  // CarouselContainer,
   Container,
   Details,
   DetailsMovieText,
@@ -17,6 +18,12 @@ import {
   Text,
   TextPlace,
 } from "../Styled Components/ZakhmKari";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import ZakhmKariArr from "./array";
+import "./movie.css"
 
 export default function Movie() {
   return (
@@ -50,9 +57,35 @@ export default function Movie() {
               </DetailsMovieText>
             </DetailsText>
           </Details>
+          
+          
+          
+          
           <MovieCarousel>
-            
+          <CarouselContainer>
+        <Carousel>
+          <Swiper
+            navigation={true}
+            slidesPerView={6}
+            speed={1200}
+            modules={[Navigation]}
+            className="mySwiper"
+            slidesPerGroup={4}
+          >
+              
+                <SwiperSlide>
+                  <img src="./images/ZakhmKari/Zakhm1.svg"/>                  
+                </SwiperSlide>
+              
+          
+          </Swiper>
+        </Carousel>
+      </CarouselContainer>    
+          
           </MovieCarousel>
+        
+        
+        
         </MovieMain>
       </BgImg>
     </Container>

@@ -148,3 +148,21 @@ export const Text = styled.p`
   font-weight: 700;
   color: rgba(254, 254, 254, 1);
 `;
+
+export const CarouselContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Carousel = styled.div`
+  height: 100%;
+  width: 87.9%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+`;
+
