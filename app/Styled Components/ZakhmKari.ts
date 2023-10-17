@@ -125,15 +125,39 @@ font-family: var(--medium);
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
-
 `
+export const DetailsMovieBtn = styled.div`
+  width: 110px;
+  height: 40px;
+  margin-top: 15px;
+  padding: 12px, 24px, 12px, 24px;
+  border-radius: 4px;
+  color: rgba(254, 254, 254, 1);
+  background-color: rgba(181, 82, 83, 1);
+  font-family: var(--medium);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: right;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+`
+
+export const WatchSVG = styled.img`
+  width: 24px;
+  height: 24px;
+`;
 
 export const MovieCarousel = styled.div`
   height: 160px;
   width: 100%;
   display: flex;
   justify-content: center;
-  /* background-color: yellowgreen; */
+margin-top: 60px;
 `;
 
 export const TextPlace = styled.div`
@@ -160,7 +184,6 @@ export const CarouselContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
 `;
 
 export const Carousel = styled.div`
@@ -169,5 +192,4 @@ export const Carousel = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* background-color: blue; */
 `;

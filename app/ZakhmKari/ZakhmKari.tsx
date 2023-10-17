@@ -7,6 +7,7 @@ import {
   Category2,
   Container,
   Details,
+  DetailsMovieBtn,
   DetailsMovieText,
   DetailsText,
   Director,
@@ -17,6 +18,7 @@ import {
   RatePlace,
   Text,
   TextPlace,
+  WatchSVG,
 } from "../Styled Components/ZakhmKari";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -55,6 +57,10 @@ export default function Movie() {
                 دوم را در ذهنمان طراحی کنیم باید منتظر زنده ماندن مالک از ضربات
                 چاقو، خروش و انتقام ...
               </DetailsMovieText>
+              <DetailsMovieBtn>
+                تماشا کنید
+                <WatchSVG src="./images/watch.svg" />
+              </DetailsMovieBtn>
             </DetailsText>
           </Details>
 
@@ -70,16 +76,42 @@ export default function Movie() {
                   slidesPerGroup={2}
                   loop={true}
                 >
-                  {ZakhmKariArr.map((item, index) => {
-                    return (
-                      <SwiperSlide>
-                        <img
-                          style={{ height: 160, width: 280, borderRadius: 8 }}
-                          src={item.url}
-                        />
-                      </SwiperSlide>
-                    );
-                  })}
+                  <SwiperSlide>
+                    <img
+                      style={{ height: 160, width: 280, borderRadius: 8 }}
+                      src="./images/ZakhmKari/Zakhm1.svg"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      style={{ height: 160, width: 280, borderRadius: 8 }}
+                      src="./images/ZakhmKari/Zakhm2.svg"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      style={{ height: 160, width: 280, borderRadius: 8 }}
+                      src="./images/ZakhmKari/Zakhm1.svg"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      style={{ height: 160, width: 280, borderRadius: 8 }}
+                      src="./images/ZakhmKari/Zakhm1.svg"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      style={{ height: 160, width: 280, borderRadius: 8 }}
+                      src="./images/ZakhmKari/Zakhm1.svg"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img
+                      style={{ height: 160, width: 280, borderRadius: 8 }}
+                      src="./images/ZakhmKari/Zakhm1.svg"
+                    />
+                  </SwiperSlide>
                 </Swiper>
               </Carousel>
             </CarouselContainer>
