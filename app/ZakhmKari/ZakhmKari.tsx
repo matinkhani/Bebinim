@@ -68,13 +68,13 @@ export default function Movie() {
             <CarouselContainer>
               <Carousel>
                 <Swiper
+              
                   navigation={true}
                   slidesPerView={4}
                   speed={1200}
                   modules={[Navigation]}
                   className="mySwiper"
                   slidesPerGroup={2}
-                  loop={true}
                 >
                   <SwiperSlide>
                     <img
