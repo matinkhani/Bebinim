@@ -102,7 +102,14 @@ export default function Login() {
           <LoginButton>
             {checkInputs ? (
               <>
-                <Link href="/">
+                <Link
+                  style={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                  href="/"
+                >
                   {" "}
                   <LoginBtn onClick={ConfirmLogin}>ورود</LoginBtn>
                 </Link>
