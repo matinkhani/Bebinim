@@ -30,6 +30,12 @@ export const TittleText = styled.div`
     font-size: 20px;
     height: 80px;
   }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    height: 80px;
+  }
 `;
 
 export const BuySubscribe1 = styled.div`
@@ -39,6 +45,10 @@ export const BuySubscribe1 = styled.div`
   justify-content: center;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    height: 160px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
     width: 100%;
     height: 160px;
   }
@@ -57,6 +67,10 @@ export const Month1 = styled.div`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 93%;
     height: 120px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    width: 93%;
+    height: 135px;
   }
 `;
 
@@ -90,6 +104,10 @@ export const AutoText = styled.div`
     width: 56%;
     font-size: 16px;
   }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    width: 56%;
+    font-size: 17px;
+  }
 `;
 
 export const AutoPrice = styled.div`
@@ -111,6 +129,10 @@ export const AutoPrice = styled.div`
     width: 42%;
     font-size: 16px;
   }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    width: 42%;
+    font-size: 18px;
+  }
 `;
 
 export const LinkPlace = styled.div`
@@ -124,6 +146,9 @@ export const LinkPlace = styled.div`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     gap: 5px;
   }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    gap: 10px;
+  }
 `;
 
 export const AutoBottom = styled.div`
@@ -134,6 +159,9 @@ export const AutoBottom = styled.div`
   align-items: center;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
     justify-content: center;
   }
 `;
@@ -157,6 +185,11 @@ export const AutoBottomText = styled.div`
     font-size: 13px;
     gap: 20px;
   }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    width: 92%;
+    font-size: 16px;
+    gap: 20px;
+  }
 `;
 
 export const More = styled.p`
@@ -170,6 +203,9 @@ export const More = styled.p`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     font-size: 14px;
   }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    font-size: 14px;
+  }
 `;
 
 export const BuySubscribe2 = styled.div`
@@ -179,6 +215,10 @@ export const BuySubscribe2 = styled.div`
   justify-content: center;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    height: 130px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
     width: 100%;
     height: 130px;
   }
@@ -196,6 +236,10 @@ export const Month2 = styled.div`
     width: 93%;
     height: 100px;
   }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    width: 93%;
+    height: 110px;
+  }
 `;
 
 export const OnceMonthText = styled.div`
@@ -203,6 +247,9 @@ export const OnceMonthText = styled.div`
   width: 40%;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
     width: 50%;
   }
 `;
@@ -258,6 +305,10 @@ export const OnceBottomText = styled.div`
     font-size: 11px;
     height: 28px;
   }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    font-size: 11px;
+    height: 28px;
+  }
 `;
 
 export const OnceMonthPrice = styled.div`
@@ -266,6 +317,9 @@ export const OnceMonthPrice = styled.div`
   display: flex;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 48%;
+  }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
     width: 48%;
   }
 `;
@@ -354,6 +408,10 @@ export const BuySubscribe3 = styled.div`
     width: 100%;
     height: 130px;
   }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    width: 100%;
+    height: 130px;
+  }
 `;
 
 export const Month3 = styled.div`
@@ -368,6 +426,10 @@ export const Month3 = styled.div`
     width: 93%;
     height: 100px;
   }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    width: 93%;
+    height: 110px;
+  }
 `;
 
 export const ThirdMonthText = styled.div`
@@ -375,6 +437,9 @@ export const ThirdMonthText = styled.div`
   width: 40%;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
     width: 50%;
   }
 `;
@@ -430,6 +495,10 @@ export const ThirdBottomText = styled.div`
     font-size: 11px;
     height: 28px;
   }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    font-size: 11px;
+    height: 28px;
+  }
 `;
 
 export const ThirdMonthPrice = styled.div`
@@ -439,6 +508,9 @@ export const ThirdMonthPrice = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 50%;
+  }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    width: 48%;
   }
 `;
 
@@ -517,6 +589,9 @@ export const BuySubscribe4 = styled.div`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 100%;
   }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    width: 100%;
+  }
 `;
 
 export const Month4 = styled.div`
@@ -530,6 +605,10 @@ export const Month4 = styled.div`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 93%;
     height: 70%;
+  }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    width: 93%;
+    height: 85%;
   }
 `;
 
@@ -549,6 +628,10 @@ export const SixthText = styled.div`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 22%;
     font-size: 16px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    width: 28%;
+    font-size: 18px;
   }
 `;
 
@@ -572,5 +655,11 @@ export const SixthPrice = styled.div`
     width: 49%;
     gap: 0px;
     justify-content: space-around;
+  }
+  @media screen and (min-width: 481px) and (max-width: 631px) {
+    width: 40%;
+    gap: 0px;
+    justify-content: space-around;
+    font-size: 20px;
   }
 `;
