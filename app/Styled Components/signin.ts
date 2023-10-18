@@ -22,6 +22,11 @@ export const MiddleContainer = styled.div`
     height: 470px;
     width: 350px;
   }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 470px;
+    width: 450px;
+  }
+
 `;
 
 export const TopContainer = styled.div`
@@ -49,6 +54,11 @@ export const LoginBtn = styled.button`
   cursor: pointer;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100px;
+    height: 45px;
+    font-size: 15px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 100px;
     height: 45px;
     font-size: 15px;
@@ -90,6 +100,13 @@ export const TextSignIn = styled.div`
     justify-content: center;
     align-items: center;
   }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 100%;
+    height: 12%;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const InputPlace = styled.div`
@@ -100,6 +117,10 @@ export const InputPlace = styled.div`
   align-items: center;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    justify-content: center;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 100%;
     justify-content: center;
   }
@@ -114,6 +135,12 @@ export const NumInput = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 87%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -221,6 +248,10 @@ export const SignInBtnPlace = styled.div`
   align-items: center;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    justify-content: center;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 100%;
     justify-content: center;
   }
