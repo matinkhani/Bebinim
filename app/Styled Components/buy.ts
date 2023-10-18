@@ -18,6 +18,21 @@ export const BuyPlace = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 350px;
+    height: 620px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 450px;
+    height: 620px;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 600px;
+    height: 680px;
+  }
 `;
 
 export const BuyComplete = styled.div`
@@ -33,6 +48,18 @@ export const BuyComplete = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    align-items: start;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    align-items: start;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    align-items: start;
+  }
 `;
 
 export const BuySub = styled.div`
@@ -76,6 +103,26 @@ export const PricesPlaces = styled.div`
 `;
 
 export const Price = styled(PricesPlaces)`
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 85%;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    width: 85%;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    width: 90%;
+  }
 `;
 
 export const PriceNumber = styled.div`
@@ -91,12 +138,72 @@ export const PriceText = styled.div`
 `;
 
 export const Discount = styled(PricesPlaces)`
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 85%;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    width: 85%;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    width: 90%;
+  }
 `;
 
 export const Tax = styled(PricesPlaces)`
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 85%;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    width: 85%;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    width: 90%;
+  }
 `;
 
 export const AmountPayable = styled(PricesPlaces)`
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 85%;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    width: 85%;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    width: 90%;
+  }
 `;
 
 export const MiddleLine = styled.div`
@@ -126,6 +233,18 @@ export const ChooseBank = styled.div`
   letter-spacing: 0em;
   text-align: right;
   color: rgba(0, 0, 0, 1);
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 10%;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 10%;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    height: 10%;
+  }
 `;
 
 export const BanksPlace = styled.div`
@@ -134,6 +253,21 @@ export const BanksPlace = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 25%;
+    width: 95%;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 25%;
+    width: 95%;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    height: 20%;
+    width: 95%;
+  }
 `;
 
 export const Bank = styled.div`
@@ -142,8 +276,25 @@ export const Bank = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 12px;
+  gap: 4px;
   align-items: center;
+`;
+
+export const BankImg = styled.img`
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 55px;
+    height: 55px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 61px;
+    height: 61px;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 75px;
+    height: 75px;
+  }
 `;
 
 export const BankIconPlace = styled.div`
@@ -157,6 +308,21 @@ export const BankIconPlace = styled.div`
   &:hover {
     border: 2px solid rgba(181, 82, 83, 1);
   }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 60px;
+    width: 60px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 65px;
+    width: 65px;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    height: 80px;
+    width: 80px;
+  }
 `;
 
 export const BankNamePlace = styled.div`
@@ -167,6 +333,18 @@ export const BankNamePlace = styled.div`
   letter-spacing: 0em;
   text-align: right;
   color: rgba(0, 0, 0, 1);
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 10px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    font-size: 14px;
+  }
 `;
 
 export const LastPrice = styled.div`
@@ -183,6 +361,24 @@ export const LastPrice = styled.div`
   text-align: right;
   color: rgba(181, 82, 83, 1);
   direction: rtl;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 10%;
+    font-size: 16px;
+    align-items: end;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 10%;
+    font-size: 18px;
+    align-items: end;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    height: 10%;
+    font-size: 20px;
+    align-items: end;
+  }
 `;
 
 export const BuyBtnPlace = styled.div`
@@ -191,6 +387,18 @@ export const BuyBtnPlace = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 15%;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 15%;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    height: 15%;
+  }
 `;
 
 export const BuyButton = styled.button`
@@ -213,4 +421,16 @@ export const BuyButton = styled.button`
   line-height: 24px;
   letter-spacing: 0em;
   text-align: right;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 500px;
+  }
 `;

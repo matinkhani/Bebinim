@@ -4,6 +4,7 @@ import {
   AmountPayable,
   Bank,
   BankIconPlace,
+  BankImg,
   BankNamePlace,
   BanksPlace,
   BuyBtnPlace,
@@ -26,7 +27,12 @@ import {
 import "animate.css";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
-import { ChangeOneMonth, ChangeOneMonthAuto, ChangeSixMonth, ChangeThreeMonth } from "@/app/Redux/createslice";
+import {
+  ChangeOneMonth,
+  ChangeOneMonthAuto,
+  ChangeSixMonth,
+  ChangeThreeMonth,
+} from "@/app/Redux/createslice";
 import { RoutState } from "@/app/Redux/store";
 
 export default function Buy() {
@@ -95,7 +101,7 @@ export default function Buy() {
               return (
                 <Bank key={index}>
                   <BankIconPlace>
-                    <img src={item.url} />
+                    <BankImg src={item.url} />
                   </BankIconPlace>
                   <BankNamePlace>{item.name}</BankNamePlace>
                 </Bank>
