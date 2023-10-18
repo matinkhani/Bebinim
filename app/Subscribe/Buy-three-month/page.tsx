@@ -4,6 +4,7 @@ import {
   AmountPayable,
   Bank,
   BankIconPlace,
+  BankImg,
   BankNamePlace,
   BanksPlace,
   BuyBtnPlace,
@@ -100,7 +101,7 @@ export default function Buy() {
               return (
                 <Bank key={index}>
                   <BankIconPlace>
-                    <img src={item.url} />
+                    <BankImg src={item.url} />
                   </BankIconPlace>
                   <BankNamePlace>{item.name}</BankNamePlace>
                 </Bank>
