@@ -23,6 +23,13 @@ export const TittleText = styled.div`
   font-weight: 700;
   font-style: normal;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    height: 80px;
+  }
 `;
 
 export const BuySubscribe1 = styled.div`
@@ -30,6 +37,11 @@ export const BuySubscribe1 = styled.div`
   width: 67%;
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    height: 160px;
+  }
 `;
 
 export const Month1 = styled.div`
@@ -41,6 +53,11 @@ export const Month1 = styled.div`
   justify-content: space-between;
   background-color: #fefefe;
   border-radius: 8px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 93%;
+    height: 120px;
+  }
 `;
 
 export const AutoTop = styled.div`
@@ -68,6 +85,11 @@ export const AutoText = styled.div`
   font-weight: 700;
   font-style: normal;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 55%;
+    font-size: 16px;
+  }
 `;
 
 export const AutoPrice = styled.div`
@@ -84,6 +106,11 @@ export const AutoPrice = styled.div`
   font-weight: 700;
   font-style: normal;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 42%;
+    font-size: 16px;
+  }
 `;
 
 export const LinkPlace = styled.div`
@@ -93,6 +120,10 @@ export const LinkPlace = styled.div`
   justify-content: center;
   align-items: center;
   gap: 16px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    gap: 5px;
+  }
 `;
 
 export const AutoBottom = styled.div`
@@ -101,6 +132,10 @@ export const AutoBottom = styled.div`
   display: flex;
   justify-content: end;
   align-items: center;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    justify-content: center;
+  }
 `;
 
 export const AutoBottomText = styled.div`
@@ -116,6 +151,12 @@ export const AutoBottomText = styled.div`
   font-weight: 400;
   font-style: normal;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 92%;
+    font-size: 14px;
+    gap: 20px;
+  }
 `;
 
 export const More = styled.p`
@@ -125,6 +166,10 @@ export const More = styled.p`
   font-weight: 400;
   font-style: normal;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 export const BuySubscribe2 = styled.div`
@@ -132,6 +177,11 @@ export const BuySubscribe2 = styled.div`
   width: 67%;
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    height: 130px;
+  }
 `;
 
 export const Month2 = styled.div`
@@ -141,11 +191,20 @@ export const Month2 = styled.div`
   justify-content: space-between;
   background-color: #fefefe;
   border-radius: 8px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 93%;
+    height: 100px;
+  }
 `;
 
 export const OnceMonthText = styled.div`
   height: 100%;
   width: 40%;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 50%;
+  }
 `;
 
 export const OnceTop = styled.div`
@@ -160,6 +219,11 @@ export const OnceTop = styled.div`
   font-style: normal;
   line-height: normal;
   font-weight: 700;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 16px;
+    width: 95%;
+  }
 `;
 
 export const OnceBottom = styled.div`
@@ -167,6 +231,11 @@ export const OnceBottom = styled.div`
   width: 90%;
   display: flex;
   justify-content: end;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 16px;
+    width: 95%;
+  }
 `;
 
 export const OnceBottomText = styled.div`
@@ -184,12 +253,20 @@ export const OnceBottomText = styled.div`
   line-height: normal;
   border-radius: 4px;
   background: #b55253;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 11px;
+  }
 `;
 
 export const OnceMonthPrice = styled.div`
   height: 100%;
   width: 30%;
   display: flex;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 45%;
+  }
 `;
 
 export const OncePrice = styled.div`
@@ -205,6 +282,10 @@ export const OncePrice = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 95%;
+  }
 `;
 
 export const OncePriceTop = styled.div`
@@ -259,6 +340,11 @@ export const BuySubscribe3 = styled.div`
   width: 67%;
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    height: 130px;
+  }
 `;
 
 export const Month3 = styled.div`
@@ -268,11 +354,20 @@ export const Month3 = styled.div`
   justify-content: space-between;
   background-color: #fefefe;
   border-radius: 8px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 93%;
+    height: 100px;
+  }
 `;
 
 export const ThirdMonthText = styled.div`
   height: 100%;
   width: 40%;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 50%;
+  }
 `;
 
 export const ThirdTop = styled.div`
@@ -287,6 +382,11 @@ export const ThirdTop = styled.div`
   font-style: normal;
   line-height: normal;
   font-weight: 700;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 16px;
+    width: 95%;
+  }
 `;
 
 export const ThirdBottom = styled.div`
@@ -294,6 +394,11 @@ export const ThirdBottom = styled.div`
   width: 90%;
   display: flex;
   justify-content: end;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 16px;
+    width: 95%;
+  }
 `;
 
 export const ThirdBottomText = styled.div`
@@ -311,12 +416,20 @@ export const ThirdBottomText = styled.div`
   line-height: normal;
   border-radius: 4px;
   background: #b55253;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 11px;
+  }
 `;
 
 export const ThirdMonthPrice = styled.div`
   height: 100%;
   width: 30%;
   display: flex;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 48%;
+  }
 `;
 
 export const ThirdPrice = styled.div`
@@ -332,6 +445,10 @@ export const ThirdPrice = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 95%;
+  }
 `;
 
 export const ThirdPriceTop = styled.div`
@@ -378,6 +495,10 @@ export const BuySubscribe4 = styled.div`
   width: 67%;
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const Month4 = styled.div`
@@ -387,6 +508,11 @@ export const Month4 = styled.div`
   justify-content: space-between;
   background-color: #fefefe;
   border-radius: 8px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 93%;
+    height: 70%;
+  }
 `;
 
 export const SixthText = styled.div`
@@ -401,6 +527,10 @@ export const SixthText = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 30%;
+  }
 `;
 
 export const SixthPrice = styled.div`
@@ -417,4 +547,11 @@ export const SixthPrice = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 20px;
+    width: 49%;
+    gap: 0px;
+    justify-content: space-around;
+  }
 `;
