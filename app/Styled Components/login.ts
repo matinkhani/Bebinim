@@ -17,6 +17,11 @@ export const MiddleContainer = styled.div`
   width: 600px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 470px;
+    width: 350px;
+  }
 `;
 
 export const TopContainer = styled.div`
@@ -44,6 +49,13 @@ export const SignIn = styled.button`
   border: none;
   cursor: pointer;
   letter-spacing: 0em;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 45px;
+    width: 100px;
+    font-size: 15px;
+    gap: 5px;
+  }
 `;
 
 export const DownContainer = styled.div`
@@ -58,13 +70,22 @@ export const DownContainer = styled.div`
 `;
 
 export const TopText = styled.div`
-  height: 40px;
+  height: 15%;
   width: 390px;
   color: rgba(254, 254, 254, 1);
   text-align: right;
   font-family: var(--medium);
   font-size: 16px;
   font-weight: 700;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 17%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
 `;
 
 export const InputPlace = styled.div`
@@ -72,8 +93,12 @@ export const InputPlace = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around ;
+  justify-content: space-around;
   align-items: center;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 190px;
+  }
 `;
 
 export const NumInput = styled.div`
@@ -82,6 +107,11 @@ export const NumInput = styled.div`
   border-radius: 8px;
   background-color: rgba(254, 254, 254, 1);
   display: flex;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 80%;
+    display: flex;
+  }
 `;
 
 export const Numberr = styled.div`
@@ -94,6 +124,13 @@ export const Numberr = styled.div`
   color: black;
   border-radius: 8px;
   font-family: var(--medium);
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 12.5px;
+  }
 `;
 
 export const Line = styled.div`
@@ -122,6 +159,10 @@ export const Input = styled.input`
   &::placeholder {
     color: #070707;
   }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 79%;
+  }
 `;
 
 export const InputPass = styled.input`
@@ -146,15 +187,23 @@ export const InputPass = styled.input`
   &::placeholder {
     color: black;
   }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 export const LoginButton = styled.div`
-  height: 120px;
-  width: 100%;
+  height: 30%;
+  width: 82%;
   display: flex;
   align-items: center;
   justify-content: end;
   flex-direction: column;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const LoginBtn = styled.button`
@@ -174,6 +223,10 @@ export const LoginBtn = styled.button`
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 79%;
+    height: 50px;
+  }
 `;
 
 export const DownText = styled.div`
@@ -187,4 +240,7 @@ export const DownText = styled.div`
   font-family: var(--medium);
   font-size: 14px;
   font-weight: 500;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    align-items: center;
+  }
 `;
