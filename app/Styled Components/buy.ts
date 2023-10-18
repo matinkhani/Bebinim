@@ -28,6 +28,11 @@ export const BuyPlace = styled.div`
     width: 450px;
     height: 620px;
   }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 600px;
+    height: 680px;
+  }
 `;
 
 export const BuyComplete = styled.div`
@@ -49,6 +54,10 @@ export const BuyComplete = styled.div`
   }
 
   @media screen and (min-width: 481px) and (max-width: 630px) {
+    align-items: start;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
     align-items: start;
   }
 `;
@@ -100,12 +109,19 @@ export const Price = styled(PricesPlaces)`
     font-size: 16px;
     width: 85%;
   }
- 
+
   @media screen and (min-width: 481px) and (max-width: 630px) {
     display: flex;
     align-items: center;
     font-size: 19px;
     width: 85%;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    width: 90%;
   }
 `;
 
@@ -128,12 +144,19 @@ export const Discount = styled(PricesPlaces)`
     font-size: 16px;
     width: 85%;
   }
- 
+
   @media screen and (min-width: 481px) and (max-width: 630px) {
     display: flex;
     align-items: center;
     font-size: 19px;
     width: 85%;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    width: 90%;
   }
 `;
 
@@ -144,12 +167,19 @@ export const Tax = styled(PricesPlaces)`
     font-size: 16px;
     width: 85%;
   }
-  
+
   @media screen and (min-width: 481px) and (max-width: 630px) {
     display: flex;
     align-items: center;
     font-size: 19px;
     width: 85%;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    width: 90%;
   }
 `;
 
@@ -166,6 +196,13 @@ export const AmountPayable = styled(PricesPlaces)`
     align-items: center;
     font-size: 19px;
     width: 85%;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    width: 90%;
   }
 `;
 
@@ -200,8 +237,12 @@ export const ChooseBank = styled.div`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     height: 10%;
   }
- 
+
   @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 10%;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
     height: 10%;
   }
 `;
@@ -222,6 +263,11 @@ export const BanksPlace = styled.div`
     height: 25%;
     width: 95%;
   }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    height: 20%;
+    width: 95%;
+  }
 `;
 
 export const Bank = styled.div`
@@ -239,10 +285,15 @@ export const BankImg = styled.img`
     width: 55px;
     height: 55px;
   }
- 
+
   @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 61px;
     height: 61px;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 75px;
+    height: 75px;
   }
 `;
 
@@ -267,6 +318,11 @@ export const BankIconPlace = styled.div`
     height: 65px;
     width: 65px;
   }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    height: 80px;
+    width: 80px;
+  }
 `;
 
 export const BankNamePlace = styled.div`
@@ -283,6 +339,10 @@ export const BankNamePlace = styled.div`
   }
 
   @media screen and (min-width: 481px) and (max-width: 630px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
     font-size: 14px;
   }
 `;
@@ -313,6 +373,12 @@ export const LastPrice = styled.div`
     font-size: 18px;
     align-items: end;
   }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    height: 10%;
+    font-size: 20px;
+    align-items: end;
+  }
 `;
 
 export const BuyBtnPlace = styled.div`
@@ -327,6 +393,10 @@ export const BuyBtnPlace = styled.div`
   }
 
   @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 15%;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
     height: 15%;
   }
 `;
@@ -357,6 +427,10 @@ export const BuyButton = styled.button`
   }
 
   @media screen and (min-width: 481px) and (max-width: 630px) {
-    width: 40F0px;
+    width: 400px;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 500px;
   }
 `;
