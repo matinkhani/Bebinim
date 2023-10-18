@@ -22,6 +22,10 @@ export const MiddleContainer = styled.div`
     height: 470px;
     width: 350px;
   }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 470px;
+    width: 450px;
+  }
 `;
 
 export const TopContainer = styled.div`
@@ -56,6 +60,12 @@ export const SignIn = styled.button`
     font-size: 15px;
     gap: 5px;
   }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 45px;
+    width: 100px;
+    font-size: 15px;
+    gap: 5px;
+  }
 `;
 
 export const DownContainer = styled.div`
@@ -85,6 +95,14 @@ export const TopText = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 15px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 17%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
   }
 `;
 
@@ -204,6 +222,9 @@ export const LoginButton = styled.div`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 100%;
   }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 100%;
+  }
 `;
 
 export const LoginBtn = styled.button`
@@ -241,6 +262,9 @@ export const DownText = styled.div`
   font-size: 14px;
   font-weight: 500;
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    align-items: center;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
     align-items: center;
   }
 `;
