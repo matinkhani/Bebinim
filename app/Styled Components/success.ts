@@ -18,6 +18,18 @@ export const SuccessMain = styled.div`
   align-items: center;
   background-color: #fefefe;
   border-radius: 8px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 700px;
+  }
 `;
 
 export const PlaceIcon = styled.div`
@@ -26,6 +38,18 @@ export const PlaceIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: end;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 160px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 160px;
+  }
+
+  @media screen and (min-width: 630) and (max-width: 850px) {
+    height: 160px;
+  }
 `;
 
 export const SuccessText = styled.div`
@@ -41,6 +65,27 @@ export const SuccessText = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 22px;
+    height: 150px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    font-size: 22px;
+    height: 150px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 850px) {
+    font-size: 22px;
+    height: 150px;
+  }
 `;
 
 export const Date = styled.pre`
@@ -64,6 +109,21 @@ export const MassageText = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 190px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 190px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    height: 190px;
+    text-align: center;
+  }
 `;
 
 export const LoginSection = styled.div`
@@ -79,6 +139,18 @@ export const LoginSection = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 50px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 50px;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    height: 50px;
+  }
 `;
 
 export const LinkToProfile = styled.div`
@@ -107,4 +179,16 @@ export const LandingButton = styled.div`
   font-weight: 500;
   line-height: normal;
   background-color: #b55253;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 420px;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 580px;
+  }
 `;
