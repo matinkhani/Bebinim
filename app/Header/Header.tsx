@@ -26,6 +26,7 @@ import {
   FilmHover,
   LeftSectionContainer,
   LeftSectionContainer2,
+  UnderContainer,
 } from "../Styled Components/Header";
 import { useState } from "react";
 import FimlDrop from "./DropDown/FimlDrop";
@@ -54,7 +55,8 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <Container>
+  <UnderContainer>
+      <Container>
       {select.CheckLogin === true ? (
         <>
           <LeftSectionContainer2>
@@ -227,5 +229,6 @@ export default function Header() {
         </BebinimPlace>
       </RightSection>
     </Container>
+  </UnderContainer>
   );
 }
