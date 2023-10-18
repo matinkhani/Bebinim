@@ -12,6 +12,17 @@ export const Container = styled.div`
   z-index: 2;
 `;
 
+export const UnderContainer = styled.div`
+height: 64px;
+width: 100vw;
+position: fixed;
+z-index: 2;
+left: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #291212;
+`
 export const LeftSectionContainer = styled.div`
   height: 100%;
   width: 20%;
