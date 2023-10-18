@@ -20,11 +20,14 @@ export interface SavedTypes {
 
 interface initial_state {
   PhoneNumber: string;
+  Name: string;
+  Email: string;
   CheckLogin: boolean;
   OneMonthAuto: boolean;
   OneMonth: boolean;
   ThreeMonth: boolean;
   SixMonth: boolean;
+  ShowPhoneNumber: string;
   SavedList: SavedTypes[];
 }
 
@@ -64,14 +67,41 @@ const SaveListState =
     ? JSON.parse(localStorage.getItem("savelist") || "")
     : [];
 
+// Value of Name state for localstorage
+const NameState =
+  localStorage.getItem("name") !== null
+    ? JSON.parse(localStorage.getItem("name") || "")
+    : "";
+
+// Value of Email state for localstorage
+const EmailState =
+  localStorage.getItem("email") !== null
+    ? JSON.parse(localStorage.getItem("email") || "")
+    : "";
+
+// Value of Phone state for localstorage
+const PhoneState =
+  localStorage.getItem("phone") !== null
+    ? JSON.parse(localStorage.getItem("phone") || "")
+    : "";
+
+// Value of ShowPhoneNumber state for localstorage
+const NumberState =
+  localStorage.getItem("number") !== null
+    ? JSON.parse(localStorage.getItem("number") || "")
+    : "";
+
 const initialState: initial_state = {
-  PhoneNumber: "",
+  PhoneNumber: PhoneState,
+  Name: NameState,
+  Email: EmailState,
   CheckLogin: LoginState,
   OneMonthAuto: OneAutoState,
   OneMonth: OneMonthState,
   ThreeMonth: ThreeMonthState,
   SixMonth: SixMonthState,
   SavedList: SaveListState,
+  ShowPhoneNumber: NumberState,
 };
 
 export const bebinimReducers = createSlice({
@@ -80,6 +110,19 @@ export const bebinimReducers = createSlice({
   reducers: {
     GetNumber: (state, { payload }: { payload: string }) => {
       state.PhoneNumber = payload;
+      localStorage.setItem("phone", JSON.stringify(state.PhoneNumber));
+    },
+    ShowNumber: (state, { payload }: { payload: string }) => {
+      state.ShowPhoneNumber = payload;
+      localStorage.setItem("number", JSON.stringify(state.ShowPhoneNumber));
+    },
+    GetName: (state, { payload }: { payload: string }) => {
+      state.Name = payload;
+      localStorage.setItem("name", JSON.stringify(state.Name));
+    },
+    GetEmail: (state, { payload }: { payload: string }) => {
+      state.Email = payload;
+      localStorage.setItem("email", JSON.stringify(state.Email));
     },
     CreateAccount: (state, { payload }: { payload: boolean }) => {
       state.CheckLogin = payload;
@@ -117,6 +160,8 @@ export const bebinimReducers = createSlice({
 
 export const {
   GetNumber,
+  GetName,
+  GetEmail,
   CreateAccount,
   ChangeOneMonthAuto,
   ChangeOneMonth,
@@ -124,5 +169,6 @@ export const {
   ChangeSixMonth,
   AddToSavedList,
   DeleteItem,
+  ShowNumber,
 } = bebinimReducers.actions;
 export default bebinimReducers.reducer;

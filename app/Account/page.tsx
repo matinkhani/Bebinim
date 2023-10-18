@@ -27,6 +27,8 @@ import {
 import Link from "next/link";
 import { RoutState } from "../Redux/store";
 import { useSelector } from "react-redux";
+import TransitionsModal from "./Modal";
+import TransitionsEmailModal from "./EmailModal";
 
 export default function Account() {
   const select = useSelector((state: RoutState) => state.Reducer);
@@ -42,24 +44,24 @@ export default function Account() {
         <InformationMain>
           <InformationContain>
             <NamePlace>
-              <EditName>ویرایش</EditName>
+              <TransitionsModal />
               <NameandLastName>
                 <p>نام و نام خانوادگی:</p>
-                <p>امیرحسین امین مقدم</p>
+                {select.Name ? <p>{select.Name}</p> : <p>ندارد.</p>}
               </NameandLastName>
             </NamePlace>
             <EmailPlace>
-              <AddEmail>افزودن ایمیل</AddEmail>
+              <TransitionsEmailModal />
               <CheckEmail>
                 <p>ایمیل:</p>
-                <p>ندارد.</p>
+                {select.Email ? <p>{select.Email}</p> : <p>ندارد.</p>}
               </CheckEmail>
             </EmailPlace>
             <PhoneNumberPlace>
               <PhoneNumber>
                 <p>
                   {"+98"}
-                  {select.PhoneNumber}
+                  {select.ShowPhoneNumber}
                 </p>
                 <p> {":"} شماره تلفن همراه </p>
               </PhoneNumber>
@@ -75,8 +77,20 @@ export default function Account() {
               <ResultBtn>خرید اشتراک</ResultBtn>
             </Link>
             <ResultText>
-              <Result>غیرفعال</Result>
-              <p> {":"} وضعیت اشتراک جاری </p>
+              <Result>
+                {select.OneMonthAuto ? (
+                  <> {"."}اشتراک یک ماهه با تمدید خودکار </>
+                ) : select.OneMonth ? (
+                  <> {"."}اشتراک یک ماهه </>
+                ) : select.ThreeMonth ? (
+                  <> {"."}اشتراک سه ماهه </>
+                ) : select.SixMonth ? (
+                  <> {"."}اشتراک شش ماهه </>
+                ) : (
+                  <> {"."}اشتراک فعال ندارید </>
+                )}
+              </Result>
+              <p> {":"} وضعیت اشتراک </p>
             </ResultText>
           </ResultContain>
         </ResultMain>

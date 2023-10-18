@@ -23,7 +23,7 @@ import Link from "next/link";
 import OtpInput from "react-otp-input";
 import { useDispatch, useSelector } from "react-redux";
 import { RoutState } from "../Redux/store";
-import { CreateAccount, GetNumber } from "../Redux/createslice";
+import { CreateAccount, GetNumber, ShowNumber } from "../Redux/createslice";
 
 export default function SingIn() {
   const dispatch = useDispatch();
@@ -33,8 +33,10 @@ export default function SingIn() {
   const [checkInputs, setcheckInputs] = useState<boolean>(false);
   const ConfirmLogin = () => {
     dispatch(CreateAccount(true));
+    dispatch(ShowNumber(select.PhoneNumber));
+    dispatch(GetNumber(""));
   };
-  
+
   useEffect(() => {
     if (
       select.PhoneNumber.length < 10 &&

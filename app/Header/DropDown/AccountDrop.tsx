@@ -1,4 +1,10 @@
-import { CreateAccount } from "@/app/Redux/createslice";
+import {
+  ChangeOneMonth,
+  ChangeOneMonthAuto,
+  ChangeSixMonth,
+  ChangeThreeMonth,
+  CreateAccount,
+} from "@/app/Redux/createslice";
 import { RoutState } from "@/app/Redux/store";
 import {
   AccDropContainer,
@@ -32,6 +38,10 @@ export default function AccountDrop() {
   const dispatch = useDispatch();
   const LogingOut = () => {
     dispatch(CreateAccount(false));
+    dispatch(ChangeOneMonthAuto(false));
+    dispatch(ChangeOneMonth(false));
+    dispatch(ChangeThreeMonth(false));
+    dispatch(ChangeSixMonth(false));
   };
 
   const select = useSelector((state: RoutState) => state.Reducer);

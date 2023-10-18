@@ -18,31 +18,42 @@ import {
   TopText,
 } from "../Styled Components/login";
 import Link from "next/link";
-import { useDispatch } from "react-redux";
-import { CreateAccount } from "../Redux/createslice";
+import { useDispatch, useSelector } from "react-redux";
+import { CreateAccount, GetNumber, ShowNumber } from "../Redux/createslice";
+import { RoutState } from "../Redux/store";
 
 export default function Login() {
   const dispatch = useDispatch();
-  const [phone, setPhone] = useState<string>("");
+  const select = useSelector((state: RoutState) => state.Reducer);
   const [pass, setPass] = useState<string>("");
   const [checkInputs, setcheckInputs] = useState<boolean>(false);
   const regex = /^[0-9۰-۹\b]+$/;
   const regex2 = /^[a-zA-Z0-9_.-]*$/;
   const ConfirmLogin = () => {
     dispatch(CreateAccount(true));
+    dispatch(ShowNumber(select.PhoneNumber));
+    dispatch(GetNumber(""));
   };
 
   useEffect(() => {
-    if (phone.length < 10 && pass.length < 8 && phone.slice(0, 1) !== "9") {
+    if (
+      select.PhoneNumber.length < 10 &&
+      pass.length < 8 &&
+      select.PhoneNumber.slice(0, 1) !== "9"
+    ) {
       setcheckInputs(false);
     } else {
-      if (phone.length >= 10 && pass.length >= 8 && phone.slice(0, 1) === "9") {
+      if (
+        select.PhoneNumber.length >= 10 &&
+        pass.length >= 8 &&
+        select.PhoneNumber.slice(0, 1) === "9"
+      ) {
         setcheckInputs(true);
       } else {
         setcheckInputs(false);
       }
     }
-  }, [phone, pass]);
+  }, [select.PhoneNumber, pass]);
 
   return (
     <Container>
@@ -66,10 +77,10 @@ export default function Login() {
               <Input
                 onChange={(e) => {
                   if (e.target.value === "" || regex.test(e.target.value)) {
-                    setPhone(e.target.value);
+                    dispatch(GetNumber(e.target.value));
                   }
                 }}
-                value={phone}
+                value={select.PhoneNumber}
                 maxLength={10}
                 placeholder="* * * * * * * * *"
               />

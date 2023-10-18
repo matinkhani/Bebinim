@@ -69,7 +69,7 @@ export default function Header() {
               <AccImg
                 src="./images/Account/profile.svg"
               />{" "}
-            </AccIconConatiner>
+            </AccIconConatiner >
             <Link href="/Search">
               <SearchIcon src="./images/SearchIcon.svg" />
             </Link>
