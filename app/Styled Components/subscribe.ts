@@ -87,7 +87,7 @@ export const AutoText = styled.div`
   line-height: normal;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    width: 55%;
+    width: 56%;
     font-size: 16px;
   }
 `;
@@ -154,7 +154,7 @@ export const AutoBottomText = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 92%;
-    font-size: 14px;
+    font-size: 13px;
     gap: 20px;
   }
 `;
@@ -256,6 +256,7 @@ export const OnceBottomText = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     font-size: 11px;
+    height: 28px;
   }
 `;
 
@@ -265,7 +266,7 @@ export const OnceMonthPrice = styled.div`
   display: flex;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    width: 45%;
+    width: 48%;
   }
 `;
 
@@ -284,7 +285,7 @@ export const OncePrice = styled.div`
   line-height: normal;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    width: 95%;
+    width: 97%;
   }
 `;
 
@@ -302,6 +303,10 @@ export const OncePriceTop = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 export const Reduction = styled.div`
@@ -325,6 +330,10 @@ export const OncePriceBottom = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 export const ArrowIcon = styled.div`
@@ -419,6 +428,7 @@ export const ThirdBottomText = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     font-size: 11px;
+    height: 28px;
   }
 `;
 
@@ -428,7 +438,7 @@ export const ThirdMonthPrice = styled.div`
   display: flex;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    width: 48%;
+    width: 50%;
   }
 `;
 
@@ -447,7 +457,7 @@ export const ThirdPrice = styled.div`
   line-height: normal;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    width: 95%;
+    width: 97%;
   }
 `;
 
@@ -465,6 +475,10 @@ export const ThirdPriceTop = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 export const ThirdReduction = styled.div`
@@ -488,6 +502,10 @@ export const ThirdPriceBottom = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 export const BuySubscribe4 = styled.div`
