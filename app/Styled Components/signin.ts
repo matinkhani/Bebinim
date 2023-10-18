@@ -17,6 +17,11 @@ export const MiddleContainer = styled.div`
   width: 600px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 470px;
+    width: 350px;
+  }
 `;
 
 export const TopContainer = styled.div`
@@ -42,6 +47,12 @@ export const LoginBtn = styled.button`
   letter-spacing: 0em;
   border: none;
   cursor: pointer;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100px;
+    height: 45px;
+    font-size: 15px;
+  }
 `;
 
 export const DownContainer = styled.div`
@@ -50,7 +61,7 @@ export const DownContainer = styled.div`
 `;
 
 export const SignInForm = styled.div`
-  width: 600px;
+  width: 100%;
   height: 100%;
   border-radius: 8px;
   background-color: rgba(7, 7, 7, 0.8);
@@ -71,6 +82,14 @@ export const TextSignIn = styled.div`
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0em;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    height: 12%;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const InputPlace = styled.div`
@@ -79,6 +98,11 @@ export const InputPlace = styled.div`
   display: flex;
   justify-content: end;
   align-items: center;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    justify-content: center;
+  }
 `;
 
 export const NumInput = styled.div`
@@ -87,6 +111,13 @@ export const NumInput = styled.div`
   border-radius: 8px;
   background-color: rgba(254, 254, 254, 1);
   display: flex;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 
 export const Numberr = styled.div`
@@ -99,6 +130,11 @@ export const Numberr = styled.div`
   color: black;
   border-radius: 8px;
   font-family: var(--medium);
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 20%;
+    gap: 12.5px;
+  }
 `;
 
 export const Line = styled.div`
@@ -128,13 +164,22 @@ export const Input = styled.input`
   &::placeholder {
     color: #070707;
   }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 79%;
+  }
 `;
+
 export const CodePlace = styled.div`
   width: 82%;
   height: 35%;
   display: flex;
   flex-direction: column;
   align-items: end;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const CodeTop = styled.div`
@@ -149,6 +194,11 @@ export const CodeTop = styled.div`
   line-height: 21px;
   letter-spacing: 0em;
   text-align: right;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 export const CodeDown = styled.div`
@@ -157,6 +207,10 @@ export const CodeDown = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const SignInBtnPlace = styled.div`
@@ -165,6 +219,11 @@ export const SignInBtnPlace = styled.div`
   display: flex;
   justify-content: end;
   align-items: center;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    justify-content: center;
+  }
 `;
 
 export const SignInBtn = styled.button`
@@ -185,4 +244,8 @@ export const SignInBtn = styled.button`
   line-height: 24px;
   letter-spacing: 0em;
   text-align: right;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 280px;
+  }
 `;
