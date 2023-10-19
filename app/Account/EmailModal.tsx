@@ -59,7 +59,7 @@ export default function TransitionsModal() {
                 dispatch(GetEmail(e.target.value));
               }}
               value={select.Email}
-              placeholder="@Gmail.com"
+              placeholder="Email@gmail.com"
             />
             <EmailBtn onClick={handleClose}>افزودن ایمیل</EmailBtn>
           </Box>
