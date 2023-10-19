@@ -4,10 +4,8 @@ import Header from "../Header/Header";
 import {
   AccountMain,
   AccountText,
-  AddEmail,
   CheckEmail,
   Container,
-  EditName,
   EmailPlace,
   InformationContain,
   InformationMain,
@@ -29,9 +27,11 @@ import { RoutState } from "../Redux/store";
 import { useSelector } from "react-redux";
 import TransitionsModal from "./Modal";
 import TransitionsEmailModal from "./EmailModal";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function Account() {
   const select = useSelector((state: RoutState) => state.Reducer);
+  const Responsive = useMediaQuery("(max-width:480px)");
   return (
     <Container>
       <Header />
@@ -41,36 +41,76 @@ export default function Account() {
           <img src="./images/Account/profileIcon.svg" />
           حساب کاربری
         </AccountText>
-        <InformationMain>
-          <InformationContain>
-            <NamePlace>
-              <TransitionsModal />
-              <NameandLastName>
-                <p>نام و نام خانوادگی:</p>
-                {select.Name ? <p>{select.Name}</p> : <p>ندارد.</p>}
-              </NameandLastName>
-            </NamePlace>
-            <EmailPlace>
-              <TransitionsEmailModal />
-              <CheckEmail>
-                <p>ایمیل:</p>
-                {select.Email ? <p>{select.Email}</p> : <p>ندارد.</p>}
-              </CheckEmail>
-            </EmailPlace>
-            <PhoneNumberPlace>
-              <PhoneNumber>
-                <p>
-                  {"+98"}
-                  {select.ShowPhoneNumber}
-                </p>
-                <p> {":"} شماره تلفن همراه </p>
-              </PhoneNumber>
-            </PhoneNumberPlace>
-            <PasswordPlace>
-              <Password>تغییر رمز عبور</Password>
-            </PasswordPlace>
-          </InformationContain>
-        </InformationMain>
+
+        {Responsive ? (
+          <>
+            {" "}
+            <InformationMain>
+              <InformationContain>
+                <NamePlace>
+                  <NameandLastName>
+                    <p>نام و نام خانوادگی:</p>
+                    {select.Name ? <p>{select.Name}</p> : <p>ندارد.</p>}
+                  </NameandLastName>
+                  <TransitionsModal />
+                </NamePlace>
+                <EmailPlace>
+                  <CheckEmail>
+                    <p>ایمیل:</p>
+                    {select.Email ? <p>{select.Email}</p> : <p>ندارد.</p>}
+                  </CheckEmail>
+                  <TransitionsEmailModal />
+                </EmailPlace>
+                <PhoneNumberPlace>
+                  <PhoneNumber>
+                    <p>
+                      {"+98"}
+                      {select.ShowPhoneNumber}
+                    </p>
+                    <p> {":"} شماره تلفن همراه </p>
+                  </PhoneNumber>
+                </PhoneNumberPlace>
+                <PasswordPlace>
+                  <Password>تغییر رمز عبور</Password>
+                </PasswordPlace>
+              </InformationContain>
+            </InformationMain>
+          </>
+        ) : (
+          <>
+            <InformationMain>
+              <InformationContain>
+                <NamePlace>
+                  <TransitionsModal />
+                  <NameandLastName>
+                    <p>نام و نام خانوادگی:</p>
+                    {select.Name ? <p>{select.Name}</p> : <p>ندارد.</p>}
+                  </NameandLastName>
+                </NamePlace>
+                <EmailPlace>
+                  <TransitionsEmailModal />
+                  <CheckEmail>
+                    <p>ایمیل:</p>
+                    {select.Email ? <p>{select.Email}</p> : <p>ندارد.</p>}
+                  </CheckEmail>
+                </EmailPlace>
+                <PhoneNumberPlace>
+                  <PhoneNumber>
+                    <p>
+                      {"+98"}
+                      {select.ShowPhoneNumber}
+                    </p>
+                    <p> {":"} شماره تلفن همراه </p>
+                  </PhoneNumber>
+                </PhoneNumberPlace>
+                <PasswordPlace>
+                  <Password>تغییر رمز عبور</Password>
+                </PasswordPlace>
+              </InformationContain>
+            </InformationMain>
+          </>
+        )}
+
         <ResultMain>
           <ResultContain>
             <Link href="/Subscribe">
@@ -79,18 +119,18 @@ export default function Account() {
             <ResultText>
               <Result>
                 {select.OneMonthAuto ? (
-                  <> {"."}اشتراک یک ماهه با تمدید خودکار </>
+                  <> یک ماهه با تمدید خودکار </>
                 ) : select.OneMonth ? (
-                  <> {"."}اشتراک یک ماهه </>
+                  <> یک ماهه </>
                 ) : select.ThreeMonth ? (
-                  <> {"."}اشتراک سه ماهه </>
+                  <> سه ماهه </>
                 ) : select.SixMonth ? (
-                  <> {"."}اشتراک شش ماهه </>
+                  <> شش ماهه </>
                 ) : (
                   <> {"."}اشتراک فعال ندارید </>
                 )}
               </Result>
-              <p> {":"} وضعیت اشتراک </p>
+              <p style={{ width: "45%" }}> {":"} وضعیت اشتراک </p>
             </ResultText>
           </ResultContain>
         </ResultMain>
