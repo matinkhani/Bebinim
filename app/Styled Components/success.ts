@@ -26,6 +26,10 @@ export const SuccessMain = styled.div`
   @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 450px;
   }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 700px;
+  }
 `;
 
 export const PlaceIcon = styled.div`
@@ -40,6 +44,10 @@ export const PlaceIcon = styled.div`
   }
 
   @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 160px;
+  }
+
+  @media screen and (min-width: 630) and (max-width: 850px) {
     height: 160px;
   }
 `;
@@ -72,6 +80,11 @@ export const SuccessText = styled.div`
     justify-content: end;
     align-items: center;
     flex-direction: column;
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 850px) {
+    font-size: 22px;
+    height: 150px;
   }
 `;
 
@@ -106,6 +119,11 @@ export const MassageText = styled.div`
     height: 190px;
     text-align: center;
   }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    height: 190px;
+    text-align: center;
+  }
 `;
 
 export const LoginSection = styled.div`
@@ -127,6 +145,10 @@ export const LoginSection = styled.div`
   }
 
   @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 50px;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
     height: 50px;
   }
 `;
@@ -164,5 +186,9 @@ export const LandingButton = styled.div`
 
   @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 420px;
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 580px;
   }
 `;
