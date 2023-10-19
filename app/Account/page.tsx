@@ -6,7 +6,6 @@ import {
   AccountText,
   CheckEmail,
   Container,
-  EditName,
   EmailPlace,
   InformationContain,
   InformationMain,

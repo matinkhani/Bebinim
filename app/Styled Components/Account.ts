@@ -50,6 +50,11 @@ export const InformationMain = styled.div`
     height: 390px;
     align-items: center;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 300px;
+    align-items: center;
+  }
 `;
 
 export const InformationContain = styled.div`
@@ -70,6 +75,13 @@ export const InformationContain = styled.div`
     width: 350px;
     height: 350px;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    justify-content: start;
+    gap: 5px;
+    width: 480px;
+    height: 250px;
+  }
 `;
 
 export const NamePlace = styled.div`
@@ -85,6 +97,14 @@ export const NamePlace = styled.div`
     align-items: center;
     width: 310px;
     height: 30%;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
   }
 `;
 
@@ -105,6 +125,14 @@ export const NameandLastName = styled.div`
     height: 40%;
     width: 100%;
     justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 40%;
+    width: 80%;
+    justify-content: start;
     align-items: center;
     font-size: 18px;
   }
@@ -139,6 +167,15 @@ export const EmailPlace = styled.div`
     gap: 10px;
     width: 310px;
     height: 25%;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 20%;
   }
 `;
 
@@ -177,6 +214,13 @@ export const CheckEmail = styled.div`
     align-items: center;
     font-size: 18px;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 40%;
+    width: 73.5%;
+    align-items: center;
+    font-size: 18px;
+  }
 `;
 
 export const PhoneNumberPlace = styled.div`
@@ -191,6 +235,14 @@ export const PhoneNumberPlace = styled.div`
     justify-content: center;
     align-items: center;
     width: 310px;
+    height: 20%;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 96.8%;
     height: 20%;
   }
 `;
@@ -214,6 +266,14 @@ export const PhoneNumber = styled.div`
     align-items: end;
     font-size: 18px;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 100%;
+    height: 70%;
+    justify-content: end;
+    align-items: center;
+    font-size: 18px;
+  }
 `;
 
 export const PasswordPlace = styled.div`
@@ -223,6 +283,12 @@ export const PasswordPlace = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     height: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 80px;
     justify-content: center;
     align-items: center;
   }
@@ -249,6 +315,11 @@ export const ResultMain = styled.div`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     align-items: start;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    align-items: start;
+    margin-top: 5px;
+  }
 `;
 
 export const ResultContain = styled.div`
@@ -265,6 +336,13 @@ export const ResultContain = styled.div`
     height: 80px;
     width: 350px;
     justify-content: center;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 80px;
+    width: 480px;
+    justify-content: space-around;
+    gap: 50px;
   }
 `;
 
@@ -291,6 +369,15 @@ export const ResultText = styled.div`
     padding-right: 0px;
     gap: 0px;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    justify-content: space-between;
+    width: 60%;
+    font-size: 16px;
+    text-align: right;
+    padding-right: 0px;
+    gap: 0px;
+  }
 `;
 
 export const Result = styled.div`
@@ -308,6 +395,14 @@ export const Result = styled.div`
     font-size: 12px;
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 60%;
+    font-size: 16px;
+    display: flex;
+    justify-content: end;
     align-items: center;
   }
 `;
@@ -330,6 +425,12 @@ export const ResultBtn = styled.button`
   background-color: #52b5b4;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 80px;
+    height: 40px;
+    font-size: 13px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 80px;
     height: 40px;
     font-size: 13px;
