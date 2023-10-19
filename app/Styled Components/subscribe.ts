@@ -371,7 +371,7 @@ export const OnceMonthPrice = styled.div`
     width: 36%;
   }
   @media screen and (min-width: 481px) and (max-width: 631px) {
-    width: 48%;
+    width: 41%;
   }
   @media screen and (min-width: 631px) and (max-width: 850px) {
     width: 48%;
@@ -576,7 +576,7 @@ export const ThirdMonthPrice = styled.div`
     width: 39%;
   }
   @media screen and (min-width: 481px) and (max-width: 631px) {
-    width: 48%;
+    width: 46%;
   }
   @media screen and (min-width: 631px) and (max-width: 850px) {
     width: 48%;
@@ -737,7 +737,7 @@ export const SixthPrice = styled.div`
     justify-content: space-around;
   }
   @media screen and (min-width: 481px) and (max-width: 631px) {
-    width: 40%;
+    width: 35%;
     gap: 0px;
     justify-content: space-around;
     font-size: 20px;
