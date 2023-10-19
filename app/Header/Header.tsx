@@ -6,7 +6,6 @@ import {
   ButtonsText,
   BuyBtn,
   Container,
-  LeftSection1,
   RightSection,
   SearchIcon,
   SignLoginBtn,
@@ -27,6 +26,10 @@ import {
   LeftSectionContainer,
   LeftSectionContainer2,
   UnderContainer,
+  ContainerResponsive,
+  SearchSection,
+  BebinimSection,
+  MenuSection,
 } from "../Styled Components/Header";
 import { useState } from "react";
 import FimlDrop from "./DropDown/FimlDrop";
@@ -43,6 +46,21 @@ import {
   ConatinerAcc,
 } from "../Styled Components/AccDropDown";
 import AccountDrop from "./DropDown/AccountDrop";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import Button from "@mui/material/Button";
+import List from "@mui/material/List";
+import Divider from "@mui/material/Divider";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import MailIcon from "@mui/icons-material/Mail";
+
+type Anchor = "top" | "left" | "bottom" | "right";
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
@@ -54,181 +72,247 @@ export default function Header() {
   const select = useSelector((state: RoutState) => state.Reducer);
   const pathname = usePathname();
 
+  const responsive = useMediaQuery("(max-width: 630px)");
+
+  const [state, setState] = useState<boolean>(false);
+
   return (
-  <UnderContainer>
-      <Container>
-      {select.CheckLogin === true ? (
+    <UnderContainer>
+      {responsive ? (
         <>
-          <LeftSectionContainer2>
-            <AccIconConatiner
-              onMouseEnter={() => {
-                setAccDropDown(true);
+          <ContainerResponsive>
+            <SearchSection>
+              <Link href="/Search">
+                <SearchIcon
+                  src="./images/SearchIcon.svg"
+                  style={{ height: 30, width: 30 }}
+                />
+              </Link>
+            </SearchSection>
+            <BebinimSection>
+              <BebinimIconAndText>
+                <BebinimText style={{ fontSize: 28 }}>
+                  <Link href="#">ببینیم</Link>
+                </BebinimText>
+                <Link href="#">
+                  <BebinimIcon
+                    style={{ height: 35, width: 35 }}
+                    src="./images/BebinimIcon.svg"
+                  />
+                </Link>
+              </BebinimIconAndText>
+            </BebinimSection>
+            <MenuSection>
+              <img
+                onClick={() => {
+                  setState(true);
+                }}
+                src="./images/menu.svg"
+                style={{ height: 30, width: 30 }}
+              />
+            </MenuSection>
+
+            {/* Drawer */}
+            <Drawer
+              sx={{
+                "& .MuiPaper-root ": {
+                  width: "75%",
+                },
               }}
-              onMouseLeave={() => {
-                setAccDropDown(false);
-              }}
+              anchor="right"
+              open={state}
             >
-              <AccImg
-                src="./images/Account/profile.svg"
-              />{" "}
-            </AccIconConatiner >
-            <Link href="/Search">
-              <SearchIcon src="./images/SearchIcon.svg" />
-            </Link>
-          </LeftSectionContainer2>
-          {accDropDown && (
-            <ConatinerAcc
-              onMouseEnter={() => {
-                setAccDropDown(true);
-              }}
-              onMouseLeave={() => {
-                setAccDropDown(false);
-              }}
-            >
-              <AccountDrop />
-            </ConatinerAcc>
-          )}
+              <div>
+                <p
+                  onClick={() => {
+                    setState(false);
+                  }}
+                >
+                  KIR
+                </p>
+              </div>
+            </Drawer>
+          </ContainerResponsive>
         </>
       ) : (
-        <LeftSectionContainer>
-          <Link href="/Login">
-            <SignLoginBtn className="animate__animated animate__fadeInRight animate__faster">
-              <ButtonsText>ورود / ثبت نام</ButtonsText>
-            </SignLoginBtn>
-          </Link>
-          <Link href="/Subscribe">
-            <BuyBtn className="animate__animated animate__fadeInLeft animate__faster">
-              <ButtonsText>خرید اشتراک</ButtonsText>
-            </BuyBtn>
-          </Link>
-          <Link href="/Search">
-            <SearchIcon src="./images/SearchIcon.svg" />
-          </Link>
-        </LeftSectionContainer>
-      )}
+        <>
+          <Container>
+            {select.CheckLogin === true ? (
+              <>
+                <LeftSectionContainer2>
+                  <AccIconConatiner
+                    onMouseEnter={() => {
+                      setAccDropDown(true);
+                    }}
+                    onMouseLeave={() => {
+                      setAccDropDown(false);
+                    }}
+                  >
+                    <AccImg src="./images/Account/profile.svg" />{" "}
+                  </AccIconConatiner>
+                  <Link href="/Search">
+                    <SearchIcon src="./images/SearchIcon.svg" />
+                  </Link>
+                </LeftSectionContainer2>
+                {accDropDown && (
+                  <ConatinerAcc
+                    onMouseEnter={() => {
+                      setAccDropDown(true);
+                    }}
+                    onMouseLeave={() => {
+                      setAccDropDown(false);
+                    }}
+                  >
+                    <AccountDrop />
+                  </ConatinerAcc>
+                )}
+              </>
+            ) : (
+              <LeftSectionContainer>
+                <Link href="/Login">
+                  <SignLoginBtn className="animate__animated animate__fadeInRight animate__faster">
+                    <ButtonsText>ورود / ثبت نام</ButtonsText>
+                  </SignLoginBtn>
+                </Link>
+                <Link href="/Subscribe">
+                  <BuyBtn className="animate__animated animate__fadeInLeft animate__faster">
+                    <ButtonsText>خرید اشتراک</ButtonsText>
+                  </BuyBtn>
+                </Link>
+                <Link href="/Search">
+                  <SearchIcon src="./images/SearchIcon.svg" />
+                </Link>
+              </LeftSectionContainer>
+            )}
 
-      <RightSection
-        onMouseLeave={() => {
-          setSerialDropDown(false);
-          setFilmDropDown(false);
-          setFilmArrow(false);
-          setSerialArrow(false);
-        }}
-      >
-        <TabsPlace>
-          <SerialTab>
-            <SerialHover
-              onMouseEnter={() => {
-                setSerialDropDown(true);
-                setFilmDropDown(false);
-                setSerialArrow(true);
-                setFilmArrow(false);
-              }}
-              style={{
-                display: "flex",
-                gap: 7,
-                justifyContent: "center",
-                alignItems: "center",
-                height: "100%",
-                width: "fit-content",
-              }}
-            >
-              <FilmSerialImg
-                src="./images/arrowdown.svg"
-                style={
-                  serialArrow
-                    ? {
-                        transition: "0.3s",
-                        WebkitTransition: "0.3s",
-                        MozTransition: "0.3s",
-                        msTransition: "0.3s",
-                        OTransition: "0.3s",
-                        WebkitTransform: "rotate(180deg)",
-                        transform: "rotate(180deg)",
-                      }
-                    : { transition: "0.2s" }
-                }
-              />
-              <p>سریال</p>
-            </SerialHover>
-          </SerialTab>
-
-          <DropDownSerial>{serialDropDown && <SerialDrop />}</DropDownSerial>
-
-          <FilmTab>
-            <FilmHover
-              onMouseEnter={() => {
-                setFilmDropDown(true);
+            <RightSection
+              onMouseLeave={() => {
                 setSerialDropDown(false);
-                setFilmArrow(true);
+                setFilmDropDown(false);
+                setFilmArrow(false);
                 setSerialArrow(false);
               }}
-              style={{
-                display: "flex",
-                gap: 7,
-                justifyContent: "center",
-                alignItems: "center",
-              }}
             >
-              <FilmSerialImg
-                src="./images/arrowdown.svg"
-                style={
-                  filmArrow
-                    ? {
-                        transition: "0.3s",
-                        WebkitTransition: "0.3s",
-                        MozTransition: "0.3s",
-                        msTransition: "0.3s",
-                        OTransition: "0.3s",
-                        WebkitTransform: "rotate(180deg)",
-                        transform: "rotate(180deg)",
+              <TabsPlace>
+                <SerialTab>
+                  <SerialHover
+                    onMouseEnter={() => {
+                      setSerialDropDown(true);
+                      setFilmDropDown(false);
+                      setSerialArrow(true);
+                      setFilmArrow(false);
+                    }}
+                    style={{
+                      display: "flex",
+                      gap: 7,
+                      justifyContent: "center",
+                      alignItems: "center",
+                      height: "100%",
+                      width: "fit-content",
+                    }}
+                  >
+                    <FilmSerialImg
+                      src="./images/arrowdown.svg"
+                      style={
+                        serialArrow
+                          ? {
+                              transition: "0.3s",
+                              WebkitTransition: "0.3s",
+                              MozTransition: "0.3s",
+                              msTransition: "0.3s",
+                              OTransition: "0.3s",
+                              WebkitTransform: "rotate(180deg)",
+                              transform: "rotate(180deg)",
+                            }
+                          : { transition: "0.2s" }
                       }
-                    : { transition: "0.2s" }
-                }
-              />
-              <p>فیلم</p>
-            </FilmHover>
-          </FilmTab>
+                    />
+                    <p>سریال</p>
+                  </SerialHover>
+                </SerialTab>
 
-          <DropDownFilm>{filmDropDown && <FimlDrop />}</DropDownFilm>
+                <DropDownSerial>
+                  {serialDropDown && <SerialDrop />}
+                </DropDownSerial>
 
-          <CategoryTab>
-            <CatgoryText>
-              <Link
-                className={`link ${pathname === "/category" ? "active" : ""}`}
-                href="/category"
-              >
-                دسته‌بندی
-              </Link>
-            </CatgoryText>
-          </CategoryTab>
+                <FilmTab>
+                  <FilmHover
+                    onMouseEnter={() => {
+                      setFilmDropDown(true);
+                      setSerialDropDown(false);
+                      setFilmArrow(true);
+                      setSerialArrow(false);
+                    }}
+                    style={{
+                      display: "flex",
+                      gap: 7,
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <FilmSerialImg
+                      src="./images/arrowdown.svg"
+                      style={
+                        filmArrow
+                          ? {
+                              transition: "0.3s",
+                              WebkitTransition: "0.3s",
+                              MozTransition: "0.3s",
+                              msTransition: "0.3s",
+                              OTransition: "0.3s",
+                              WebkitTransform: "rotate(180deg)",
+                              transform: "rotate(180deg)",
+                            }
+                          : { transition: "0.2s" }
+                      }
+                    />
+                    <p>فیلم</p>
+                  </FilmHover>
+                </FilmTab>
 
-          <HomeTab>
-            <HomeText>
-              <Link
-                className={`link ${pathname === "/" ? "active" : ""}`}
-                href="/"
-              >
-                خانه
-              </Link>
-            </HomeText>
-          </HomeTab>
-        </TabsPlace>
+                <DropDownFilm>{filmDropDown && <FimlDrop />}</DropDownFilm>
 
-        <MiddleLine />
+                <CategoryTab>
+                  <CatgoryText>
+                    <Link
+                      className={`link ${
+                        pathname === "/category" ? "active" : ""
+                      }`}
+                      href="/category"
+                    >
+                      دسته‌بندی
+                    </Link>
+                  </CatgoryText>
+                </CategoryTab>
 
-        <BebinimPlace>
-          <BebinimIconAndText>
-            <BebinimText>
-              <Link href="#">ببینیم</Link>
-            </BebinimText>
-            <Link href="#">
-              <BebinimIcon src="./images/BebinimIcon.svg" />
-            </Link>
-          </BebinimIconAndText>
-        </BebinimPlace>
-      </RightSection>
-    </Container>
-  </UnderContainer>
+                <HomeTab>
+                  <HomeText>
+                    <Link
+                      className={`link ${pathname === "/" ? "active" : ""}`}
+                      href="/"
+                    >
+                      خانه
+                    </Link>
+                  </HomeText>
+                </HomeTab>
+              </TabsPlace>
+
+              <MiddleLine />
+
+              <BebinimPlace>
+                <BebinimIconAndText>
+                  <BebinimText>
+                    <Link href="#">ببینیم</Link>
+                  </BebinimText>
+                  <Link href="#">
+                    <BebinimIcon src="./images/BebinimIcon.svg" />
+                  </Link>
+                </BebinimIconAndText>
+              </BebinimPlace>
+            </RightSection>
+          </Container>
+        </>
+      )}
+    </UnderContainer>
   );
 }
