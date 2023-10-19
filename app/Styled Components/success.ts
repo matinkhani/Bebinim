@@ -22,6 +22,10 @@ export const SuccessMain = styled.div`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 320px;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 450px;
+  }
 `;
 
 export const PlaceIcon = styled.div`
@@ -32,6 +36,10 @@ export const PlaceIcon = styled.div`
   align-items: end;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 160px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
     height: 160px;
   }
 `;
@@ -51,6 +59,14 @@ export const SuccessText = styled.div`
   line-height: normal;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 22px;
+    height: 150px;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
     font-size: 22px;
     height: 150px;
     justify-content: end;
@@ -85,6 +101,11 @@ export const MassageText = styled.div`
     height: 190px;
     text-align: center;
   }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 190px;
+    text-align: center;
+  }
 `;
 
 export const LoginSection = styled.div`
@@ -102,6 +123,10 @@ export const LoginSection = styled.div`
   line-height: normal;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 50px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
     height: 50px;
   }
 `;
@@ -135,5 +160,9 @@ export const LandingButton = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 280px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 420px;
   }
 `;
