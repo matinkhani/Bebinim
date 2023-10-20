@@ -66,6 +66,8 @@ import {
   HomeeIcon,
   HomeePlace,
   HomeeText,
+  LoginTopSection,
+  PhoneContainer,
   Serial,
   SerialCatg,
   SerialCatgLast,
@@ -151,19 +153,75 @@ export default function Header() {
               open={openMenu}
             >
               <DrawerContainer>
-                <TopSection></TopSection>
+                <TopSection>
+                  {select.CheckLogin ? (
+                    <>
+                      <Link href="/Account">
+                        <LoginTopSection>
+                          <AccIconConatiner>
+                            <AccImg src="./images/Account/profile.svg" />{" "}
+                          </AccIconConatiner>
+                          <PhoneContainer>
+                            +98{select.ShowPhoneNumber}
+                          </PhoneContainer>
+                        </LoginTopSection>
+                      </Link>
+                    </>
+                  ) : (
+                    <>
+                      <Link href="/Login">
+                        <SignLoginBtn>
+                          <ButtonsText>ورود / ثبت نام</ButtonsText>
+                        </SignLoginBtn>
+                      </Link>
+                    </>
+                  )}
+                </TopSection>
                 <ButtomSection>
                   <HomeePlace>
-                    <HomeeText>خانه</HomeeText>
-                    <HomeeIcon src="./images/Drawer/Home.svg" />
+                    <Link
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "end",
+                        gap: "12px",
+                        width: "100%",
+                      }}
+                      href="/"
+                    >
+                      <HomeeText>خانه</HomeeText>
+                      <HomeeIcon src="./images/Drawer/Home.svg" />
+                    </Link>
                   </HomeePlace>
                   <SubsPlace>
-                    <SubsText>خرید اشتراک</SubsText>
-                    <SubsIcon src="./images/Drawer/shoppingcart.svg" />
+                    <Link
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "end",
+                        gap: "12px",
+                        width: "100%",
+                      }}
+                      href="/Subscribe"
+                    >
+                      <SubsText>خرید اشتراک</SubsText>
+                      <SubsIcon src="./images/Drawer/shoppingcart.svg" />
+                    </Link>
                   </SubsPlace>
                   <CatgPlace>
-                    <CatgText>دسته‌بندی</CatgText>
-                    <CatgIcon src="./images/Drawer/category.svg" />
+                    <Link
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "end",
+                        gap: "12px",
+                        width: "100%",
+                      }}
+                      href="/category"
+                    >
+                      <CatgText>دسته‌بندی</CatgText>
+                      <CatgIcon src="./images/Drawer/category.svg" />
+                    </Link>
                   </CatgPlace>
                   <FilmPlace
                     onClick={() => {

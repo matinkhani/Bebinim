@@ -16,7 +16,34 @@ export const TopSection = styled.div`
   border-radius: 16px;
   box-shadow: 0px 10px 20px -7px;
   background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
+
+export const LoginTopSection = styled.div`
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+`;
+
+export const PhoneContainer = styled.div`
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fefefe;
+  font-family: var(--medium);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+`;
+
 export const ButtomSection = styled.div`
   height: 80%;
   width: 100%;
@@ -156,7 +183,7 @@ export const FilmsText = styled.div`
   line-height: 24px;
   letter-spacing: 0em;
   text-align: right;
-  color: #2C6666;
+  color: #2c6666;
 `;
 
 export const Film = styled.div`
@@ -229,7 +256,7 @@ export const SerialsText = styled.div`
   line-height: 24px;
   letter-spacing: 0em;
   text-align: right;
-  color: #2C6666;
+  color: #2c6666;
 `;
 
 export const Serial = styled.div`
