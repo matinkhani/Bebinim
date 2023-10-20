@@ -48,7 +48,7 @@ import {
 import AccountDrop from "./DropDown/AccountDrop";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Drawer from "@mui/material/Drawer";
-import { ButtomSection, CatgPlace, DrawerContainer, FilmPlace, HomePlace, SerialPlace, SubsPlace, TopSection } from "../Styled Components/HeaderDrawer";
+import { ButtomSection, CatgIcon, CatgPlace, CatgText, DrawerContainer, FilmIcon, FilmPlace, FilmText, HomeeIcon, HomeePlace, HomeeText, SerialIcon, SerialPlace, SerialText, SubsIcon, SubsPlace, SubsText, TopSection } from "../Styled Components/HeaderDrawer";
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
@@ -70,7 +70,7 @@ export default function Header() {
         <>
           <ContainerResponsive  onClick={()=>{if (openMenu) {
             setOpenMenu(false)
-          }}}>
+          }}}>  
             <SearchSection>
               <Link href="/Search">
                 <SearchIcon
@@ -106,7 +106,7 @@ export default function Header() {
             <Drawer
               sx={{
                 "& .MuiPaper-root ": {
-                  width: "65%",
+                  width: "67%",
                   backgroundColor:"#2b2b2b"
                 },
               }}
@@ -117,11 +117,26 @@ export default function Header() {
               <DrawerContainer>
                 <TopSection></TopSection>
                 <ButtomSection>
-                  <HomePlace></HomePlace>
-                  <SubsPlace></SubsPlace>
-                  <CatgPlace></CatgPlace>
-                  <FilmPlace></FilmPlace>
-                  <SerialPlace></SerialPlace>
+                  <HomeePlace>
+                    <HomeeText>خانه</HomeeText>
+                    <HomeeIcon src="./images/Drawer/Home.svg"/>
+                  </HomeePlace>
+                  <SubsPlace>
+                    <SubsText>خرید اشتراک</SubsText>
+                    <SubsIcon src="./images/Drawer/shoppingcart.svg"/>
+                  </SubsPlace>
+                  <CatgPlace>
+                    <CatgText>دسته‌بندی</CatgText>
+                    <CatgIcon src="./images/Drawer/category.svg"/>
+                  </CatgPlace>
+                  <FilmPlace>
+                    <FilmText>فیلم</FilmText>
+                    <FilmIcon src="./images/Drawer/video.svg"/>
+                  </FilmPlace>
+                  <SerialPlace>
+                    <SerialText>سریال</SerialText>
+                    <SerialIcon src="./images/Drawer/monitor.svg"/>
+                  </SerialPlace>
                 </ButtomSection>
               </DrawerContainer>
 
