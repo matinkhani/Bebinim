@@ -48,7 +48,38 @@ import {
 import AccountDrop from "./DropDown/AccountDrop";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Drawer from "@mui/material/Drawer";
-import { ButtomSection, CatgIcon, CatgPlace, CatgText, DrawerContainer, FilmIcon, FilmPlace, FilmText, HomeeIcon, HomeePlace, HomeeText, SerialIcon, SerialPlace, SerialText, SubsIcon, SubsPlace, SubsText, TopSection } from "../Styled Components/HeaderDrawer";
+import {
+  ButtomSection,
+  CatgIcon,
+  CatgPlace,
+  CatgText,
+  DrawerContainer,
+  Film,
+  FilmCatgLast,
+  FilmDown,
+  FilmIcon,
+  FilmPlace,
+  FilmText,
+  FilmTop,
+  FilmsCatg,
+  FilmsText,
+  HomeeIcon,
+  HomeePlace,
+  HomeeText,
+  Serial,
+  SerialCatg,
+  SerialCatgLast,
+  SerialDown,
+  SerialIcon,
+  SerialPlace,
+  SerialText,
+  SerialTop,
+  SerialsText,
+  SubsIcon,
+  SubsPlace,
+  SubsText,
+  TopSection,
+} from "../Styled Components/HeaderDrawer";
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
@@ -63,14 +94,20 @@ export default function Header() {
   const responsive = useMediaQuery("(max-width: 630px)");
 
   const [openMenu, setOpenMenu] = useState<boolean>(false);
+  const [film, setFilm] = useState<boolean>(false);
+  const [serial, setSerial] = useState<boolean>(false);
 
   return (
     <UnderContainer>
       {responsive ? (
         <>
-          <ContainerResponsive  onClick={()=>{if (openMenu) {
-            setOpenMenu(false)
-          }}}>  
+          <ContainerResponsive
+          // onClick={() => {
+          //   if (openMenu) {
+          //     setOpenMenu(false);
+          //   }
+          // }}
+          >
             <SearchSection>
               <Link href="/Search">
                 <SearchIcon
@@ -107,39 +144,151 @@ export default function Header() {
               sx={{
                 "& .MuiPaper-root ": {
                   width: "67%",
-                  backgroundColor:"#2b2b2b"
+                  backgroundColor: "#2b2b2b",
                 },
               }}
               anchor="right"
               open={openMenu}
             >
-              
               <DrawerContainer>
                 <TopSection></TopSection>
                 <ButtomSection>
                   <HomeePlace>
                     <HomeeText>خانه</HomeeText>
-                    <HomeeIcon src="./images/Drawer/Home.svg"/>
+                    <HomeeIcon src="./images/Drawer/Home.svg" />
                   </HomeePlace>
                   <SubsPlace>
                     <SubsText>خرید اشتراک</SubsText>
-                    <SubsIcon src="./images/Drawer/shoppingcart.svg"/>
+                    <SubsIcon src="./images/Drawer/shoppingcart.svg" />
                   </SubsPlace>
                   <CatgPlace>
                     <CatgText>دسته‌بندی</CatgText>
-                    <CatgIcon src="./images/Drawer/category.svg"/>
+                    <CatgIcon src="./images/Drawer/category.svg" />
                   </CatgPlace>
-                  <FilmPlace>
-                    <FilmText>فیلم</FilmText>
-                    <FilmIcon src="./images/Drawer/video.svg"/>
+                  <FilmPlace
+                    onClick={() => {
+                      setFilm(!film);
+                      setSerial(false);
+                    }}
+                    style={film ? { height: "50%" } : { height: "8%" }}
+                  >
+                    <FilmTop>
+                      <img
+                        style={
+                          film
+                            ? {
+                                transition: "0.3s",
+                                WebkitTransition: "0.3s",
+                                MozTransition: "0.3s",
+                                msTransition: "0.3s",
+                                OTransition: "0.3s",
+                                WebkitTransform: "rotate(180deg)",
+                                transform: "rotate(180deg)",
+                              }
+                            : { transition: "0.2s" }
+                        }
+                        src="./images/arrowdown.svg"
+                      />
+                      <Film>
+                        <FilmText>فیلم</FilmText>
+                        <FilmIcon src="./images/Drawer/video.svg" />
+                      </Film>
+                    </FilmTop>
+                    <FilmDown
+                      style={film ? { display: "flex" } : { display: "none" }}
+                    >
+                      <FilmsCatg>
+                        <FilmsText>معمایی</FilmsText>
+                        <FilmsText>جنگی</FilmsText>
+                      </FilmsCatg>
+                      <FilmsCatg>
+                        <FilmsText>جنایی</FilmsText>
+                        <FilmsText>کمدی</FilmsText>
+                      </FilmsCatg>
+                      <FilmsCatg>
+                        <FilmsText>عاشقانه</FilmsText>
+                        <FilmsText>ترسناک</FilmsText>
+                      </FilmsCatg>
+                      <FilmsCatg>
+                        <FilmsText>ماجراجویی</FilmsText>
+                        <FilmsText>تاریخی</FilmsText>
+                      </FilmsCatg>
+                      <FilmsCatg>
+                        <FilmsText>اکشن</FilmsText>
+                        <FilmsText>درام</FilmsText>
+                      </FilmsCatg>
+                      <FilmsCatg>
+                        <FilmsText>وسترن</FilmsText>
+                        <FilmsText>اجتماعی</FilmsText>
+                      </FilmsCatg>
+                      <FilmCatgLast>
+                        <FilmsText>بیوگرافی</FilmsText>
+                      </FilmCatgLast>
+                    </FilmDown>
                   </FilmPlace>
-                  <SerialPlace>
-                    <SerialText>سریال</SerialText>
-                    <SerialIcon src="./images/Drawer/monitor.svg"/>
+                  <SerialPlace
+                    onClick={() => {
+                      setSerial(!serial);
+                      setFilm(false);
+                    }}
+                    style={serial ? { height: "50%" } : { height: "8%" }}
+                  >
+                    <SerialTop>
+                      <img
+                        style={
+                          serial
+                            ? {
+                                transition: "0.3s",
+                                WebkitTransition: "0.3s",
+                                MozTransition: "0.3s",
+                                msTransition: "0.3s",
+                                OTransition: "0.3s",
+                                WebkitTransform: "rotate(180deg)",
+                                transform: "rotate(180deg)",
+                              }
+                            : { transition: "0.2s" }
+                        }
+                        src="./images/arrowdown.svg"
+                      />
+                      <Serial>
+                        <SerialText>سریال</SerialText>
+                        <SerialIcon src="./images/Drawer/monitor.svg" />
+                      </Serial>
+                    </SerialTop>
+                    <SerialDown
+                      style={serial ? { display: "flex" } : { display: "none" }}
+                    >
+                      <SerialCatg>
+                        <SerialsText>معمایی</SerialsText>
+                        <SerialsText>جنگی</SerialsText>
+                      </SerialCatg>
+                      <SerialCatg>
+                        <SerialsText>جنایی</SerialsText>
+                        <SerialsText>کمدی</SerialsText>
+                      </SerialCatg>
+                      <SerialCatg>
+                        <SerialsText>عاشقانه</SerialsText>
+                        <SerialsText>ترسناک</SerialsText>
+                      </SerialCatg>
+                      <SerialCatg>
+                        <SerialsText>ماجراجویی</SerialsText>
+                        <SerialsText>تاریخی</SerialsText>
+                      </SerialCatg>
+                      <SerialCatg>
+                        <SerialsText>اکشن</SerialsText>
+                        <SerialsText>درام</SerialsText>
+                      </SerialCatg>
+                      <SerialCatg>
+                        <SerialsText>وسترن</SerialsText>
+                        <SerialsText>اجتماعی</SerialsText>
+                      </SerialCatg>
+                      <SerialCatgLast>
+                        <SerialsText>بیوگرافی</SerialsText>
+                      </SerialCatgLast>
+                    </SerialDown>
                   </SerialPlace>
                 </ButtomSection>
               </DrawerContainer>
-
             </Drawer>
           </ContainerResponsive>
         </>

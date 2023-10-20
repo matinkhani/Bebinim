@@ -110,10 +110,58 @@ export const FilmPlace = styled.div`
   height: 8%;
   width: 80%;
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
   gap: 12px;
   /* background-color: red; */
+  transition: all 0.3s;
+`;
+
+export const FilmTop = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const FilmDown = styled.div`
+  width: 110%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #222222;
+  border-radius: 8px;
+`;
+
+export const FilmsCatg = styled.div`
+  width: 100%;
+  height: 14%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: purple; */
+`;
+
+export const FilmCatgLast = styled(FilmsCatg)`
+  justify-content: end;
+  width: 72%;
+`;
+
+export const FilmsText = styled.div`
+  font-family: var(--medium);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #2C6666;
+`;
+
+export const Film = styled.div`
+  display: flex;
+  gap: 12px;
 `;
 
 export const FilmIcon = styled.img`
@@ -136,10 +184,57 @@ export const SerialPlace = styled.div`
   height: 8%;
   width: 80%;
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
   gap: 12px;
-  /* background-color: red; */
+  transition: all 0.3s;
+`;
+
+export const SerialTop = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const SerialDown = styled.div`
+  width: 110%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #222222;
+  border-radius: 8px;
+`;
+
+export const SerialCatg = styled.div`
+  width: 100%;
+  height: 14%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: purple; */
+`;
+
+export const SerialCatgLast = styled(SerialCatg)`
+  justify-content: end;
+  width: 72%;
+`;
+
+export const SerialsText = styled.div`
+  font-family: var(--medium);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #2C6666;
+`;
+
+export const Serial = styled.div`
+  display: flex;
+  gap: 12px;
 `;
 
 export const SerialIcon = styled.img`
