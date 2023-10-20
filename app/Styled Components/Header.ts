@@ -231,11 +231,10 @@ export const DropDownSerial = styled.div`
 // Responsive Mode
 
 export const ContainerResponsive = styled.div`
-  width: 100%;
+  width: 90%;
   height: 64px;
   display: flex;
-  justify-content: center;
-  gap: 18%;
+  justify-content: space-between;
   background-color: #291212;
   z-index: 2;
 `;
@@ -266,7 +265,6 @@ export const MenuSection = styled.div`
 
 export const MenuContainer = styled.div`
   height: 280px;
-  /* min-height: 280px; */
   width: 280px;
   border-radius: 8px;
   position: absolute;

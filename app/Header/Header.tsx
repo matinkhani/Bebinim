@@ -47,20 +47,8 @@ import {
 } from "../Styled Components/AccDropDown";
 import AccountDrop from "./DropDown/AccountDrop";
 import useMediaQuery from "@mui/material/useMediaQuery";
-
-import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
-
-type Anchor = "top" | "left" | "bottom" | "right";
+import { ButtomSection, CatgPlace, DrawerContainer, FilmPlace, HomePlace, SerialPlace, SubsPlace, TopSection } from "../Styled Components/HeaderDrawer";
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
@@ -74,13 +62,15 @@ export default function Header() {
 
   const responsive = useMediaQuery("(max-width: 630px)");
 
-  const [state, setState] = useState<boolean>(false);
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
 
   return (
     <UnderContainer>
       {responsive ? (
         <>
-          <ContainerResponsive>
+          <ContainerResponsive  onClick={()=>{if (openMenu) {
+            setOpenMenu(false)
+          }}}>
             <SearchSection>
               <Link href="/Search">
                 <SearchIcon
@@ -105,7 +95,7 @@ export default function Header() {
             <MenuSection>
               <img
                 onClick={() => {
-                  setState(true);
+                  setOpenMenu(true);
                 }}
                 src="./images/menu.svg"
                 style={{ height: 30, width: 30 }}
@@ -116,21 +106,25 @@ export default function Header() {
             <Drawer
               sx={{
                 "& .MuiPaper-root ": {
-                  width: "75%",
+                  width: "65%",
+                  backgroundColor:"#2b2b2b"
                 },
               }}
               anchor="right"
-              open={state}
+              open={openMenu}
             >
-              <div>
-                <p
-                  onClick={() => {
-                    setState(false);
-                  }}
-                >
-                  KIR
-                </p>
-              </div>
+              
+              <DrawerContainer>
+                <TopSection></TopSection>
+                <ButtomSection>
+                  <HomePlace></HomePlace>
+                  <SubsPlace></SubsPlace>
+                  <CatgPlace></CatgPlace>
+                  <FilmPlace></FilmPlace>
+                  <SerialPlace></SerialPlace>
+                </ButtomSection>
+              </DrawerContainer>
+
             </Drawer>
           </ContainerResponsive>
         </>
