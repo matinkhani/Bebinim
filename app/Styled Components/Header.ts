@@ -13,16 +13,16 @@ export const Container = styled.div`
 `;
 
 export const UnderContainer = styled.div`
-height: 64px;
-width: 100vw;
-position: fixed;
-z-index: 2;
-left: 0px;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #291212;
-`
+  height: 64px;
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #291212;
+`;
 export const LeftSectionContainer = styled.div`
   height: 100%;
   width: 20%;
@@ -226,4 +226,101 @@ export const DropDownSerial = styled.div`
   top: 64px;
   right: 34.8%;
   transition: all 0.3s linear;
+`;
+
+// Responsive Mode
+
+export const ContainerResponsive = styled.div`
+  width: 90%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #291212;
+  z-index: 2;
+`;
+
+export const SearchSection = styled.div`
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const BebinimSection = styled.div`
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const MenuSection = styled.div`
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const MenuContainer = styled.div`
+  height: 280px;
+  width: 280px;
+  border-radius: 8px;
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  background-color: rgba(7, 7, 7, 0.9);
+  font-family: var(--medium);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const HomeMenu = styled.div`
+  width: 90%;
+  height: 20%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+`;
+
+export const CategoryMenu = styled.div`
+  width: 90%;
+  height: 20%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+`;
+
+export const FilmMenu = styled.div`
+  width: 90%;
+  height: 20%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+`;
+
+export const SerialMenu = styled.div`
+  width: 90%;
+  height: 20%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+`;
+
+export const SubMenu = styled.div`
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+`;
+
+export const OpenFilm = styled.div`
+  width: 100%;
+  height: 312px;
+  position: absolute;
 `;
