@@ -3,8 +3,10 @@ import React, { useState } from "react";
 
 import {
   CloseInput,
+  DivSearch,
   FilterDrop,
   FilterPlace,
+  ImgSearch,
   Input,
   InputContainer,
   InputandSearch,
@@ -95,19 +97,12 @@ export default function Search() {
 
         <SearchItem>
           {userInput === "" ? (
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                marginTop: 160,
-              }}
-            >
-              <img src="./images/Search/searchstatus.svg" />
+            <DivSearch>
+              <ImgSearch src="./images/Search/searchstatus.svg" />
               عنوان فیلم، سریال یا بازیگر مورد نظر خود را
               <br /> جستجو کنید و یا از طریق فیلترهای موجود
               <br /> {"."}فیلم و سریال مورد نظر خود را پیدا کنید
-            </div>
+            </DivSearch>
           ) : (
             <Container>
               {filteredData.map((item, index) => {
@@ -121,18 +116,18 @@ export default function Search() {
                     >
                       <Hover>
                         <Link href={`Search/${item.id}`}>
-                        <LinkPlace>
-                          <HoverText>
-                            <Details>
-                              <NameFilm>{item.name}</NameFilm>
-                              <DateFilm>
-                                <Year>{item.year}</Year>
-                                <Line />
-                                <Name>{item.category}</Name>
-                              </DateFilm>
-                            </Details>
-                          </HoverText>
-                        </LinkPlace>
+                          <LinkPlace>
+                            <HoverText>
+                              <Details>
+                                <NameFilm>{item.name}</NameFilm>
+                                <DateFilm>
+                                  <Year>{item.year}</Year>
+                                  <Line />
+                                  <Name>{item.category}</Name>
+                                </DateFilm>
+                              </Details>
+                            </HoverText>
+                          </LinkPlace>
                         </Link>
                       </Hover>
                     </Items>
