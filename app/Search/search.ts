@@ -228,6 +228,10 @@ export const ImgSearch = styled.img`
     width: 90px;
     height: 90px;
   }
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 80px;
+    height: 80px;
+  }
 `;
 
 /// Search Header Styled
