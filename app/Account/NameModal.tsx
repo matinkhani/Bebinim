@@ -5,10 +5,11 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import { EditName } from "../Styled Components/Account";
-import { Div, NameBtn, NameInput } from "../Styled Components/NameModal";
+import { Div, NameBtn, NameInput } from "../Styled Components/Modal";
 import { GetName } from "../Redux/createslice";
 import { useDispatch, useSelector } from "react-redux";
 import { RoutState } from "../Redux/store";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function TransitionsModal() {
   const [open, setOpen] = React.useState(false);
@@ -17,6 +18,9 @@ export default function TransitionsModal() {
   const select = useSelector((state: RoutState) => state.Reducer);
   const dispatch = useDispatch();
   const regex = /^[a-z A-Zآ-ی_.-]*$/;
+  const Responsive480 = useMediaQuery("(max-width:480px)");
+  const Responsive630 = useMediaQuery("(max-width:630px)");
+
   const style = {
     position: "absolute" as "absolute",
     top: "36%",
@@ -28,6 +32,40 @@ export default function TransitionsModal() {
     transform: "translate(-50%, -50%)",
     height: 250,
     width: 600,
+    bgcolor: "#291212",
+    borderRadius: "8px",
+    outeline: "none",
+    boxShadow: 24,
+    p: 4,
+  };
+  const Responsivstyle480 = {
+    position: "absolute" as "absolute",
+    top: "36%",
+    left: "50%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-around",
+    alignItems: "center",
+    transform: "translate(-50%, -50%)",
+    height: 270,
+    width: 350,
+    bgcolor: "#291212",
+    borderRadius: "8px",
+    outeline: "none",
+    boxShadow: 24,
+    p: 4,
+  };
+  const Responsivstyle630 = {
+    position: "absolute" as "absolute",
+    top: "38%",
+    left: "50%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-around",
+    alignItems: "center",
+    transform: "translate(-50%, -50%)",
+    height: 270,
+    width: 480,
     bgcolor: "#291212",
     borderRadius: "8px",
     outeline: "none",
@@ -54,7 +92,15 @@ export default function TransitionsModal() {
         }}
       >
         <Fade in={open}>
-          <Box sx={style}>
+          <Box
+            sx={
+              Responsive480
+                ? Responsivstyle480
+                : Responsive630
+                ? Responsivstyle630
+                : style
+            }
+          >
             <NameInput
               onChange={(e) => {
                 if (e.target.value === "" || regex.test(e.target.value)) {
