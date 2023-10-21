@@ -126,7 +126,6 @@ export const FilterPlace = styled.div`
   display: flex;
   justify-content: center;
   align-items: start;
-  background-color: black;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     display: none;

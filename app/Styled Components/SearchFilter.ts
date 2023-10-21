@@ -8,6 +8,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 100%;
+  }
 `;
 
 export const ItemsPlace = styled.div`
