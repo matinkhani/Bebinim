@@ -10,7 +10,6 @@ export const SearchMain = styled.div`
   align-items: center;
   overflow-y: hidden;
   gap: 30px;
-  /* background-color: green; */
 `;
 
 export const InputContainer = styled.div`
@@ -21,10 +20,12 @@ export const InputContainer = styled.div`
   margin-top: 20px;
   align-items: end;
   gap: 20px;
-  /* background-color: red; */
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 40%;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 30%;
   }
 `;
 
@@ -34,10 +35,12 @@ export const SerachInputPlace = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: blue; */
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     flex-direction: column;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    gap: 25px;
   }
 `;
 
@@ -48,11 +51,14 @@ export const InputandSearch = styled.div`
   border: none;
   display: flex;
   background-color: rgba(254, 254, 254, 1);
-  /* background-color: green; */
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 50%;
     margin-top: 15px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 75%;
+    /* margin-top: 15px; */
   }
 `;
 
@@ -69,9 +75,11 @@ export const Input = styled.input`
   font-family: var(--medium);
   color: rgba(7, 7, 7, 1);
   background-color: rgba(254, 254, 254, 1);
-  /* background-color: red; */
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 85%;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 85%;
   }
 `;
@@ -82,9 +90,11 @@ export const SearchIcons = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: blue; */
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 15%;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 15%;
   }
 `;
@@ -100,11 +110,13 @@ export const CloseInput = styled.div`
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  /* background-color: aqua; */
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: fit-content;
     display: none;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: fit-content;
   }
 `;
 
@@ -148,11 +160,14 @@ export const SearchItem = styled.div`
   font-family: var(--medium);
   font-size: 16px;
   font-weight: 400;
-  /* background-color: darkgreen; */
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 20%;
     font-size: 14px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 30%;
+    font-size: 15px;
   }
 `;
 
@@ -168,12 +183,21 @@ export const DivSearch = styled.div`
     gap: 10px;
     margin-top: 110px;
   }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    align-self: center;
+    gap: 10px;
+    margin-top: 110px;
+  }
 `;
 
 export const ImgSearch = styled.img`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 50px;
     height: 50px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 85px;
+    height: 85px;
   }
 `;
 
@@ -182,5 +206,4 @@ export const SearchContainer = styled.div`
   width: 1440px;
   min-height: 100vh;
   background-color: #291212;
-  /* background-color: darkmagenta; */
 `;
