@@ -27,6 +27,9 @@ export const InputContainer = styled.div`
   @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 30%;
   }
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 45%;
+  }
 `;
 
 export const SerachInputPlace = styled.div`
@@ -41,6 +44,9 @@ export const SerachInputPlace = styled.div`
   }
   @media screen and (min-width: 481px) and (max-width: 630px) {
     gap: 25px;
+  }
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    gap: 15px;
   }
 `;
 
@@ -58,7 +64,9 @@ export const InputandSearch = styled.div`
   }
   @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 75%;
-    /* margin-top: 15px; */
+  }
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 70%;
   }
 `;
 
@@ -82,6 +90,9 @@ export const Input = styled.input`
   @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 85%;
   }
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 90%;
+  }
 `;
 
 export const SearchIcons = styled.div`
@@ -96,6 +107,9 @@ export const SearchIcons = styled.div`
   }
   @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 15%;
+  }
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 10%;
   }
 `;
 
@@ -118,6 +132,9 @@ export const CloseInput = styled.div`
   @media screen and (min-width: 481px) and (max-width: 630px) {
     width: fit-content;
   }
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 15%;
+  }
 `;
 
 export const FilterPlace = styled.div`
@@ -129,6 +146,9 @@ export const FilterPlace = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     display: none;
+  }
+  @media screen and (min-width: 630px) and (max-width: 850px) {
+    width: 31.5%;
   }
 `;
 
