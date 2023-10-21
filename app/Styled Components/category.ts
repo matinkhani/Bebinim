@@ -15,20 +15,21 @@ export const Null = styled.div`
 
 export const ImagesPlace = styled.div`
   height: fit-content;
-  width: 90.5%;
+  width: 92.5%;
   max-width: 1440px;
   margin-bottom: 56px;
   margin-top: 90px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 288px);
   justify-content: end;
   align-items: center;
   gap: 24px;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 215px);
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    width: 98%;
     gap: 40px;
   }
 `;

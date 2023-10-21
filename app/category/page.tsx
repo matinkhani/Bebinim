@@ -59,7 +59,6 @@ export default function Category() {
             </>
           ) : (
             <>
-              {" "}
               <Link href="/Search">
                 <Image13 />
               </Link>
