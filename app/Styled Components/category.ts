@@ -27,10 +27,10 @@ export const ImagesPlace = styled.div`
   direction: rtl;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    grid-template-columns: repeat(1, 215px);
+    grid-template-columns: repeat(1, 250px);
     justify-content: center;
     align-items: center;
-    width: 98%;
+    width: 100%;
     gap: 40px;
   }
   @media screen and (min-width: 481px) and (max-width: 800px) {
