@@ -192,6 +192,11 @@ export const AddEmail = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    width: 100px;
+    padding-right: 20px;
+  }
 `;
 
 export const CheckEmail = styled.div`
