@@ -24,6 +24,13 @@ export const ImagesPlace = styled.div`
   justify-content: end;
   align-items: center;
   gap: 24px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+  }
 `;
 
 export const CategoryItems = styled.div`
@@ -32,6 +39,13 @@ export const CategoryItems = styled.div`
   cursor: pointer;
   border-radius: 8px;
   border: 1px solid rgba(254, 254, 254, 1);
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    height: 150px;
+    width: 250px;
+    background-position: 80% 30%;
+    border: none;
+  }
 `;
 
 export const Image1 = styled(CategoryItems)`

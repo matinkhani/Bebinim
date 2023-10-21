@@ -25,8 +25,11 @@ import { GlobalStyle } from "../Styled Components/Landing";
 import Header from "../Header/Header";
 import "animate.css";
 import Link from "next/link";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function Category() {
+  const Responsive = useMediaQuery("(max-width: 480px)");
+
   return (
     <React.Fragment>
       <GlobalStyle />
@@ -46,11 +49,24 @@ export default function Category() {
           <Image10 />
           <Image11 />
           <Image12 />
-          <Link href="/Search">
-            <Image13 />
-          </Link>
-          <Image14 />
-          <Image15 />
+          {Responsive ? (
+            <>
+              <Image14 />
+              <Image15 />
+              <Link href="/Search">
+                <Image13 />
+              </Link>
+            </>
+          ) : (
+            <>
+              {" "}
+              <Link href="/Search">
+                <Image13 />
+              </Link>
+              <Image14 />
+              <Image15 />
+            </>
+          )}
         </ImagesPlace>
       </Container>
     </React.Fragment>
