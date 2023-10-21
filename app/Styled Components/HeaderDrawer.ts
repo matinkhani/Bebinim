@@ -280,3 +280,43 @@ export const SerialText = styled.div`
   line-height: normal;
   /* background-color: blue; */
 `;
+
+export const TopNone = styled.div`
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+`;
+export const TopTextNone = styled.div`
+  height: 50%;
+  width: 100%;
+  direction: rtl;
+  text-align: center;
+  padding-top: 12px;
+  color: #fefefe;
+  font-family: var(--medium);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  /* background-color: gold; */
+`;
+
+export const DownTextNone = styled.div`
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: #fefefe;
+  font-family: var(--medium);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  /* background-color: brown; */
+`;

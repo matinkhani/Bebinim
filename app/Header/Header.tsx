@@ -53,6 +53,7 @@ import {
   CatgIcon,
   CatgPlace,
   CatgText,
+  DownTextNone,
   DrawerContainer,
   Film,
   FilmCatgLast,
@@ -80,7 +81,9 @@ import {
   SubsIcon,
   SubsPlace,
   SubsText,
+  TopNone,
   TopSection,
+  TopTextNone,
 } from "../Styled Components/HeaderDrawer";
 
 export default function Header() {
@@ -104,11 +107,13 @@ export default function Header() {
       {responsive ? (
         <>
           <ContainerResponsive
-          // onClick={() => {
-          //   if (openMenu) {
-          //     setOpenMenu(false);
-          //   }
-          // }}
+            onClick={() => {
+              if (openMenu) {
+                setOpenMenu(false);
+                setFilm(false);
+                setSerial(false);
+              }
+            }}
           >
             <SearchSection>
               <Link href="/Search">
@@ -169,11 +174,19 @@ export default function Header() {
                     </>
                   ) : (
                     <>
-                      <Link href="/Login">
+                      {/* <Link href="/Login">
                         <SignLoginBtn>
                           <ButtonsText>ورود / ثبت نام</ButtonsText>
                         </SignLoginBtn>
-                      </Link>
+                      </Link> */}
+
+                      <TopNone>
+                        <TopTextNone>شما حساب کاربری ندارید !</TopTextNone>
+                        <DownTextNone>
+                          <Link href="/SignIn"> ثبت نام </Link>/
+                          <Link href="/Login"> ورود </Link>
+                        </DownTextNone>
+                      </TopNone>
                     </>
                   )}
                 </TopSection>
@@ -224,7 +237,8 @@ export default function Header() {
                     </Link>
                   </CatgPlace>
                   <FilmPlace
-                    onClick={() => {
+                    onClick={(e) => {
+                      e.stopPropagation();
                       setFilm(!film);
                       setSerial(false);
                     }}
@@ -285,7 +299,8 @@ export default function Header() {
                     </FilmDown>
                   </FilmPlace>
                   <SerialPlace
-                    onClick={() => {
+                    onClick={(e) => {
+                      e.stopPropagation();
                       setSerial(!serial);
                       setFilm(false);
                     }}
