@@ -96,7 +96,7 @@ export default function Header() {
   const select = useSelector((state: RoutState) => state.Reducer);
   const pathname = usePathname();
 
-  const responsive = useMediaQuery("(max-width: 630px)");
+  const responsive = useMediaQuery("(max-width: 1210px)");
 
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [film, setFilm] = useState<boolean>(false);
