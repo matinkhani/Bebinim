@@ -33,6 +33,9 @@ export const InputContainer = styled.div`
   @media screen and (min-width: 850px) and (max-width: 1100px) {
     width: 60%;
   }
+  @media screen and (min-width: 1100px) and (max-width: 1280px) {
+    width: 85%;
+  }
 `;
 
 export const SerachInputPlace = styled.div`
@@ -70,6 +73,9 @@ export const InputandSearch = styled.div`
   }
   @media screen and (min-width: 630px) and (max-width: 850px) {
     width: 70%;
+  }
+  @media screen and (min-width: 1100px) and (max-width: 1280px) {
+    width: 75%;
   }
 `;
 
@@ -156,6 +162,9 @@ export const FilterPlace = styled.div`
   @media screen and (min-width: 850px) and (max-width: 1100px) {
     width: 26.5%;
   }
+  @media screen and (min-width: 1100px) and (max-width: 1280px) {
+    width: 25%;
+  }
 `;
 
 export const FilterDrop = styled.div`
@@ -231,6 +240,10 @@ export const ImgSearch = styled.img`
   @media screen and (min-width: 630px) and (max-width: 850px) {
     width: 80px;
     height: 80px;
+  }
+  @media screen and (min-width: 1100px) and (max-width: 1280px) {
+    width: 85px;
+    height: 85px;
   }
 `;
 
