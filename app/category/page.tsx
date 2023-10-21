@@ -34,7 +34,7 @@ export default function Category() {
         <Header />
         <Null />
         <ImagesPlace className="animate__animated animate__fadeInUpBig">
-          {/* <Image1 />
+          <Image1 />
           <Image2 />
           <Image3 />
           <Image4 />
@@ -50,7 +50,7 @@ export default function Category() {
             <Image13 />
           </Link>
           <Image14 />
-          <Image15 /> */}
+          <Image15 />
         </ImagesPlace>
       </Container>
     </React.Fragment>
