@@ -14,7 +14,6 @@ import {
   SearchMain,
   SerachInputPlace,
 } from "./search";
-import Searchheader from "./search-header";
 import { useRouter } from "next/navigation";
 import AllMovies from "./array";
 import {
@@ -33,6 +32,7 @@ import {
   ItemsName,
 } from "../Styled Components/SearchFilter";
 import Link from "next/link";
+import Header from "../Header/Header";
 
 export default function Search() {
   const [userInput, setUserInput] = useState<string>("");
@@ -49,7 +49,7 @@ export default function Search() {
   const route = useRouter();
   return (
     <SearchContainer>
-      <Searchheader />
+      <Header />
       <SearchMain>
         <InputContainer>
           <SerachInputPlace>

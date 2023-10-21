@@ -403,7 +403,10 @@ export default function Header() {
                   >
                     <AccImg src="./images/Account/profile.svg" />{" "}
                   </AccIconConatiner>
-                  <Link href="/Search">
+                  <Link
+                    style={pathname === "/Search" ? { display: "none" } : {}}
+                    href="/Search"
+                  >
                     <SearchIcon src="./images/SearchIcon.svg" />
                   </Link>
                 </LeftSectionContainer2>
