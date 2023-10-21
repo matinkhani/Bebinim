@@ -25,7 +25,7 @@ import {
 import Link from "next/link";
 import { RoutState } from "../Redux/store";
 import { useSelector } from "react-redux";
-import TransitionsModal from "./Modal";
+import TransitionsModal from "./NameModal";
 import TransitionsEmailModal from "./EmailModal";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
