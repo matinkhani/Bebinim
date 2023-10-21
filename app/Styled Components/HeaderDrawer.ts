@@ -30,6 +30,18 @@ export const LoginTopSection = styled.div`
   justify-content: space-evenly;
 `;
 
+export const Div = styled.div`
+  direction: rtl;
+  text-align: center;
+  color: #fefefe;
+  padding-top: 10px;
+  font-family: var(--medium);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+`;
+
 export const PhoneContainer = styled.div`
   width: 100%;
   height: 30%;
@@ -51,8 +63,8 @@ export const ButtomSection = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  /* background-color: gold; */
 `;
+
 export const HomeePlace = styled.div`
   height: 8%;
   width: 80%;
@@ -61,16 +73,14 @@ export const HomeePlace = styled.div`
   justify-content: end;
   align-items: center;
   gap: 12px;
-  /* background-color: red; */
 `;
+
 export const HomeeIcon = styled.img`
   height: 18px;
   width: 18px;
-  /* background-color: red; */
 `;
 
 export const HomeeText = styled.div`
-  /* background-color: gold; */
   margin-top: 4px;
   color: #fefefe;
   font-family: var(--medium);
@@ -78,7 +88,6 @@ export const HomeeText = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  /* background-color: blue; */
 `;
 
 export const SubsPlace = styled.div`
@@ -88,15 +97,14 @@ export const SubsPlace = styled.div`
   justify-content: end;
   align-items: center;
   gap: 12px;
-  /* background-color: red; */
 `;
+
 export const SubsIcon = styled.img`
   height: 18px;
   width: 18px;
 `;
 
 export const SubsText = styled.div`
-  /* background-color: gold; */
   margin-top: 4px;
   color: #fefefe;
   font-family: var(--medium);
@@ -104,7 +112,6 @@ export const SubsText = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  /* background-color: blue; */
 `;
 
 export const CatgPlace = styled.div`
@@ -114,15 +121,14 @@ export const CatgPlace = styled.div`
   justify-content: end;
   align-items: center;
   gap: 12px;
-  /* background-color: red; */
 `;
 
 export const CatgIcon = styled.img`
   height: 18px;
   width: 18px;
 `;
+
 export const CatgText = styled.div`
-  /* background-color: gold; */
   margin-top: 4px;
   color: #fefefe;
   font-family: var(--medium);
@@ -130,7 +136,32 @@ export const CatgText = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  /* background-color: blue; */
+`;
+
+export const LogOutPlace = styled.div`
+  height: 8%;
+  width: 80%;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 12px;
+  bottom: 0px;
+  right: 30px;
+`;
+
+export const LogOutIcon = styled.img`
+  height: 18px;
+  width: 18px;
+`;
+
+export const LogOutText = styled.div`
+  color: #b55253;
+  font-family: var(--medium);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 `;
 
 export const FilmPlace = styled.div`
@@ -141,7 +172,6 @@ export const FilmPlace = styled.div`
   justify-content: start;
   align-items: center;
   gap: 12px;
-  /* background-color: red; */
   transition: all 0.3s;
 `;
 
@@ -168,7 +198,6 @@ export const FilmsCatg = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-color: purple; */
 `;
 
 export const FilmCatgLast = styled(FilmsCatg)`
@@ -195,8 +224,8 @@ export const FilmIcon = styled.img`
   height: 18px;
   width: 18px;
 `;
+
 export const FilmText = styled.div`
-  /* background-color: gold; */
   margin-top: 4px;
   color: #fefefe;
   font-family: var(--medium);
@@ -204,7 +233,6 @@ export const FilmText = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  /* background-color: blue; */
 `;
 
 export const SerialPlace = styled.div`
@@ -241,7 +269,6 @@ export const SerialCatg = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-color: purple; */
 `;
 
 export const SerialCatgLast = styled(SerialCatg)`
@@ -270,7 +297,6 @@ export const SerialIcon = styled.img`
 `;
 
 export const SerialText = styled.div`
-  /* background-color: gold; */
   margin-top: 4px;
   color: #fefefe;
   font-family: var(--medium);
@@ -278,7 +304,6 @@ export const SerialText = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  /* background-color: blue; */
 `;
 
 export const TopNone = styled.div`
@@ -288,8 +313,8 @@ export const TopNone = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
 `;
+
 export const TopTextNone = styled.div`
   height: 50%;
   width: 100%;
@@ -302,7 +327,6 @@ export const TopTextNone = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  /* background-color: gold; */
 `;
 
 export const DownTextNone = styled.div`
@@ -318,5 +342,4 @@ export const DownTextNone = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  /* background-color: brown; */
 `;

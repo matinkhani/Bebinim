@@ -39,7 +39,7 @@ import { usePathname } from "next/navigation";
 import "./Header.css";
 import "animate.css";
 import { RoutState } from "../Redux/store";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   AccIconConatiner,
   AccImg,
@@ -53,6 +53,7 @@ import {
   CatgIcon,
   CatgPlace,
   CatgText,
+  Div,
   DownTextNone,
   DrawerContainer,
   Film,
@@ -67,6 +68,9 @@ import {
   HomeeIcon,
   HomeePlace,
   HomeeText,
+  LogOutIcon,
+  LogOutPlace,
+  LogOutText,
   LoginTopSection,
   PhoneContainer,
   Serial,
@@ -85,19 +89,18 @@ import {
   TopSection,
   TopTextNone,
 } from "../Styled Components/HeaderDrawer";
+import { CreateAccount } from "../Redux/createslice";
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
   const [serialDropDown, setSerialDropDown] = useState<boolean>(false);
   const [accDropDown, setAccDropDown] = useState<boolean>(false);
-
   const [filmArrow, setFilmArrow] = useState<boolean>(false);
   const [serialArrow, setSerialArrow] = useState<boolean>(false);
   const select = useSelector((state: RoutState) => state.Reducer);
   const pathname = usePathname();
-
+  const dispatch = useDispatch();
   const responsive = useMediaQuery("(max-width: 630px)");
-
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [film, setFilm] = useState<boolean>(false);
   const [serial, setSerial] = useState<boolean>(false);
@@ -169,17 +172,12 @@ export default function Header() {
                           <PhoneContainer>
                             +98{select.ShowPhoneNumber}
                           </PhoneContainer>
+                          <Div>ورود به حساب کاربری</Div>
                         </LoginTopSection>
                       </Link>
                     </>
                   ) : (
                     <>
-                      {/* <Link href="/Login">
-                        <SignLoginBtn>
-                          <ButtonsText>ورود / ثبت نام</ButtonsText>
-                        </SignLoginBtn>
-                      </Link> */}
-
                       <TopNone>
                         <TopTextNone>شما حساب کاربری ندارید !</TopTextNone>
                         <DownTextNone>
@@ -236,6 +234,30 @@ export default function Header() {
                       <CatgIcon src="./images/Drawer/category.svg" />
                     </Link>
                   </CatgPlace>
+                  <Link
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "end",
+                      gap: "12px",
+                      width: "100%",
+                    }}
+                    href="/"
+                  >
+                    <LogOutPlace
+                      style={
+                        select.CheckLogin
+                          ? { display: "flex" }
+                          : { display: "none" }
+                      }
+                      onClick={() => {
+                        dispatch(CreateAccount(false));
+                      }}
+                    >
+                      <LogOutText>خروج از حساب کاربری</LogOutText>
+                      <LogOutIcon src="./images/Drawer/logout.svg" />
+                    </LogOutPlace>
+                  </Link>
                   <FilmPlace
                     onClick={(e) => {
                       e.stopPropagation();
@@ -415,7 +437,6 @@ export default function Header() {
                 </Link>
               </LeftSectionContainer>
             )}
-
             <RightSection
               onMouseLeave={() => {
                 setSerialDropDown(false);
@@ -465,7 +486,6 @@ export default function Header() {
                 <DropDownSerial>
                   {serialDropDown && <SerialDrop />}
                 </DropDownSerial>
-
                 <FilmTab>
                   <FilmHover
                     onMouseEnter={() => {
@@ -500,9 +520,7 @@ export default function Header() {
                     <p>فیلم</p>
                   </FilmHover>
                 </FilmTab>
-
                 <DropDownFilm>{filmDropDown && <FimlDrop />}</DropDownFilm>
-
                 <CategoryTab>
                   <CatgoryText>
                     <Link
@@ -527,9 +545,7 @@ export default function Header() {
                   </HomeText>
                 </HomeTab>
               </TabsPlace>
-
               <MiddleLine />
-
               <BebinimPlace>
                 <BebinimIconAndText>
                   <BebinimText>
