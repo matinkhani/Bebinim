@@ -39,14 +39,14 @@ export default function TransitionsModal() {
   };
   const Responsivstyle480 = {
     position: "absolute" as "absolute",
-    top: "38%",
+    top: "37%",
     left: "50%",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-around",
     alignItems: "center",
     transform: "translate(-50%, -50%)",
-    height: 270,
+    height: 280,
     width: 350,
     bgcolor: "#291212",
     borderRadius: "8px",
@@ -75,7 +75,7 @@ export default function TransitionsModal() {
   return (
     <Div>
       <AddEmail onClick={handleOpen}>
-        {select.Email ? <>ویرایش</> : <>افزودن ایمیل</>}
+        {select.Email ? <>ویرایش</> : <>افزودن</>}
       </AddEmail>
       <Modal
         aria-labelledby="transition-modal-title"

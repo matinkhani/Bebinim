@@ -181,7 +181,7 @@ export const EmailPlace = styled.div`
 
 export const AddEmail = styled.div`
   height: 100%;
-  width: 100px;
+  width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
