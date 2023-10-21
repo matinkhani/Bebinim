@@ -32,7 +32,7 @@ export const ImagesPlace = styled.div`
     width: 98%;
     gap: 40px;
   }
-  @media screen and (min-width: 481px) and (max-width: 630px) {
+  @media screen and (min-width: 481px) and (max-width: 800px) {
     grid-template-columns: repeat(2, 200px);
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@ export const CategoryItems = styled.div`
     background-position: 80% 30%;
     border: none;
   }
-  @media screen and (min-width: 481px) and (max-width: 630px) {
+  @media screen and (min-width: 481px) and (max-width: 800px) {
     height: 140px;
     width: 210px;
     background-position: 94% 30%;
