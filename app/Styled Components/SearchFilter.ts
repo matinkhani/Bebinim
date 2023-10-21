@@ -15,6 +15,9 @@ export const Container = styled.div`
   @media screen and (min-width: 630px) and (max-width: 850px) {
     width: 98vw;
   }
+  @media screen and (min-width: 850px) and (max-width: 1100px) {
+    width: 98vw;
+  }
 `;
 
 export const ItemsPlace = styled.div`

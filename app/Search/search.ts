@@ -30,6 +30,9 @@ export const InputContainer = styled.div`
   @media screen and (min-width: 630px) and (max-width: 850px) {
     width: 45%;
   }
+  @media screen and (min-width: 850px) and (max-width: 1100px) {
+    width: 60%;
+  }
 `;
 
 export const SerachInputPlace = styled.div`
@@ -150,6 +153,9 @@ export const FilterPlace = styled.div`
   @media screen and (min-width: 630px) and (max-width: 850px) {
     width: 31.5%;
   }
+  @media screen and (min-width: 850px) and (max-width: 1100px) {
+    width: 26.5%;
+  }
 `;
 
 export const FilterDrop = styled.div`
@@ -217,6 +223,10 @@ export const ImgSearch = styled.img`
   @media screen and (min-width: 481px) and (max-width: 630px) {
     width: 85px;
     height: 85px;
+  }
+  @media screen and (min-width: 850px) and (max-width: 1100px) {
+    width: 90px;
+    height: 90px;
   }
 `;
 
