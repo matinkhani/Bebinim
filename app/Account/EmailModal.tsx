@@ -75,7 +75,7 @@ export default function TransitionsModal() {
   return (
     <Div>
       <AddEmail onClick={handleOpen}>
-        {select.Email ? <>ویرایش</> : <>افزودن ایمیل</>}
+        {select.Email ? <>ویرایش</> : <>افزودن</>}
       </AddEmail>
       <Modal
         aria-labelledby="transition-modal-title"
