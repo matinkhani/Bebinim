@@ -28,7 +28,7 @@ import Link from "next/link";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function Category() {
-  const Responsive = useMediaQuery("(max-width: 480px)");
+  const Responsive = useMediaQuery("(max-width: 630px)");
 
   return (
     <React.Fragment>

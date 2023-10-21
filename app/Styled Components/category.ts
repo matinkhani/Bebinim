@@ -32,6 +32,14 @@ export const ImagesPlace = styled.div`
     width: 98%;
     gap: 40px;
   }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    direction: rtl;
+  }
 `;
 
 export const CategoryItems = styled.div`
@@ -45,6 +53,12 @@ export const CategoryItems = styled.div`
     height: 150px;
     width: 250px;
     background-position: 80% 30%;
+    border: none;
+  }
+  @media screen and (min-width: 481px) and (max-width: 630px) {
+    height: 140px;
+    width: 210px;
+    background-position: 94% 30%;
     border: none;
   }
 `;
