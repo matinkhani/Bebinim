@@ -15,15 +15,16 @@ export const Null = styled.div`
 
 export const ImagesPlace = styled.div`
   height: fit-content;
-  width: 92.5%;
+  width: 100%;
   max-width: 1440px;
   margin-bottom: 56px;
   margin-top: 90px;
   display: grid;
   grid-template-columns: repeat(4, 288px);
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   gap: 24px;
+  direction: rtl;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     grid-template-columns: repeat(1, 215px);
@@ -39,6 +40,13 @@ export const ImagesPlace = styled.div`
     width: 100%;
     gap: 40px;
     direction: rtl;
+  }
+  @media screen and (min-width: 800px) and (max-width: 1240px) {
+    grid-template-columns: repeat(3, 220px);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
   }
 `;
 
@@ -58,6 +66,12 @@ export const CategoryItems = styled.div`
   @media screen and (min-width: 481px) and (max-width: 800px) {
     height: 140px;
     width: 210px;
+    background-position: 94% 30%;
+    border: none;
+  }
+  @media screen and (min-width: 800px) and (max-width: 1240px) {
+    height: 160px;
+    width: 240px;
     background-position: 94% 30%;
     border: none;
   }

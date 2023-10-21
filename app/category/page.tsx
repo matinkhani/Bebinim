@@ -28,8 +28,6 @@ import Link from "next/link";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function Category() {
-  const Responsive = useMediaQuery("(max-width: 800px)");
-
   return (
     <React.Fragment>
       <GlobalStyle />
@@ -49,23 +47,11 @@ export default function Category() {
           <Image10 />
           <Image11 />
           <Image12 />
-          {Responsive ? (
-            <>
-              <Image14 />
-              <Image15 />
-              <Link href="/Search">
-                <Image13 />
-              </Link>
-            </>
-          ) : (
-            <>
-              <Link href="/Search">
-                <Image13 />
-              </Link>
-              <Image14 />
-              <Image15 />
-            </>
-          )}
+          <Image14 />
+          <Image15 />
+          <Link href="/Search">
+            <Image13 />
+          </Link>
         </ImagesPlace>
       </Container>
     </React.Fragment>
