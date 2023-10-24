@@ -73,6 +73,9 @@ import {
   LogOutText,
   LoginTopSection,
   PhoneContainer,
+  SavedIcon,
+  SavedListPlace,
+  SavedText,
   Serial,
   SerialCatg,
   SerialCatgLast,
@@ -234,6 +237,27 @@ export default function Header() {
                       <CatgIcon src="./images/Drawer/category.svg" />
                     </Link>
                   </CatgPlace>
+                  <SavedListPlace
+                    style={
+                      select.CheckLogin
+                        ? { display: "flex" }
+                        : { display: "none" }
+                    }
+                  >
+                    <Link
+                      href="/Saved-List"
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "end",
+                        gap: "12px",
+                        width: "100%",
+                      }}
+                    >
+                      <SavedText>ذخیره شده‌ها</SavedText>
+                      <SavedIcon src="./images/Drawer/saved.svg" />
+                    </Link>
+                  </SavedListPlace>
                   <Link
                     style={{
                       display: "flex",

@@ -343,3 +343,27 @@ export const DownTextNone = styled.div`
   font-weight: 500;
   line-height: normal;
 `;
+
+export const SavedListPlace = styled.div`
+  height: 8%;
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 12px;
+`;
+
+export const SavedIcon = styled.img`
+  height: 18px;
+  width: 18px;
+`;
+
+export const SavedText = styled.div`
+  margin-top: 4px;
+  color: #fefefe;
+  font-family: var(--medium);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+`;
