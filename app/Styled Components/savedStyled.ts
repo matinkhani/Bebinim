@@ -29,6 +29,10 @@ export const SavedMain = styled.div`
     width: 100%;
     margin-top: 0px;
   }
+  @media screen and (min-width: 900px) and (max-width: 1280px) {
+    width: 100%;
+    margin-top: 0px;
+  }
 `;
 
 export const SavedText = styled.div`
@@ -52,6 +56,9 @@ export const SavedText = styled.div`
   @media screen and (min-width: 630px) and (max-width: 900px) {
     font-size: 20px;
   }
+  @media screen and (min-width: 900px) and (max-width: 1280px) {
+    font-size: 22px;
+  }
 `;
 
 export const SaveContainer = styled.div`
@@ -73,6 +80,10 @@ export const SaveContainer = styled.div`
   }
   @media screen and (min-width: 630px) and (max-width: 900px) {
     width: 44%;
+    margin-top: 90px;
+  }
+  @media screen and (min-width: 900px) and (max-width: 1280px) {
+    width: 60%;
     margin-top: 90px;
   }
 `;
