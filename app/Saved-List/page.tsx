@@ -1,13 +1,10 @@
 "use client";
 import React from "react";
-
 import {
   SavedContainer,
   SavedText,
   SearchMain,
 } from "../Styled Components/saved";
-
-import Savedheader from "./saved-header";
 import { useSelector } from "react-redux";
 import { RoutState } from "../Redux/store";
 import {
@@ -26,13 +23,14 @@ import {
   Year,
 } from "../Styled Components/SearchFilter";
 import Link from "next/link";
+import Header from "../Header/Header";
 
 export default function Search() {
   const select = useSelector((state: RoutState) => state.Reducer);
 
   return (
     <SavedContainer>
-      <Savedheader />
+      <Header />
       <SearchMain>
         {select.SavedList.length === 0 ? (
           <SavedText> {"."}فیلم یا سریال نشان شده‌ای ندارید </SavedText>
