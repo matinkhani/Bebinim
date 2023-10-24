@@ -16,6 +16,11 @@ export const SavedMain = styled.div`
   align-items: center;
   overflow-y: hidden;
   gap: 30px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    margin-top: 0px;
+  }
 `;
 
 export const SavedText = styled.div`
@@ -29,6 +34,10 @@ export const SavedText = styled.div`
   font-family: var(--medium);
   font-size: 24px;
   font-weight: 400;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 export const SaveContainer = styled.div`
@@ -39,6 +48,11 @@ export const SaveContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 20%;
+    margin-top: 90px;
+  }
 `;
 
 export const ItemsSavedPlace = styled.div`
