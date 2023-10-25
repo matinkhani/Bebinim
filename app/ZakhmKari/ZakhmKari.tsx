@@ -62,7 +62,7 @@ export default function Movie() {
                       باید منتظر زنده ماندن مالک از ضربات چاقو، خروش و انتقام
                       ...
                     </DetailsMovieText>
-                    <Link href={`Search/${item.id}`}>
+                    <Link href={`ZakhmKari/${item.id}`}>
                       <DetailsMovieBtn>
                         تماشا کنید
                         <WatchSVG src="./images/watch.svg" />
