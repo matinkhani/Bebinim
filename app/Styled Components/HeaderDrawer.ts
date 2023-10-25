@@ -66,7 +66,7 @@ export const ButtomSection = styled.div`
 `;
 
 export const HomeePlace = styled.div`
-  height: 8%;
+  height: 5%;
   width: 80%;
   margin-top: 12px;
   display: flex;
@@ -91,7 +91,7 @@ export const HomeeText = styled.div`
 `;
 
 export const SubsPlace = styled.div`
-  height: 8%;
+  height: 5%;
   width: 80%;
   display: flex;
   justify-content: end;
@@ -115,7 +115,7 @@ export const SubsText = styled.div`
 `;
 
 export const CatgPlace = styled.div`
-  height: 8%;
+  height: 5%;
   width: 80%;
   display: flex;
   justify-content: end;
@@ -139,7 +139,7 @@ export const CatgText = styled.div`
 `;
 
 export const LogOutPlace = styled.div`
-  height: 8%;
+  height: 5%;
   width: 80%;
   position: absolute;
   display: flex;
@@ -165,7 +165,7 @@ export const LogOutText = styled.div`
 `;
 
 export const FilmPlace = styled.div`
-  height: 8%;
+  height: 5%;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -236,7 +236,7 @@ export const FilmText = styled.div`
 `;
 
 export const SerialPlace = styled.div`
-  height: 8%;
+  height: 5%;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -345,7 +345,7 @@ export const DownTextNone = styled.div`
 `;
 
 export const SavedListPlace = styled.div`
-  height: 8%;
+  height: 5%;
   width: 80%;
   display: flex;
   justify-content: end;
