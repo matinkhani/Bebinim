@@ -113,12 +113,6 @@ export const SearchItem = styled.div`
 `;
 
 ///Search Header Styled
-export const SavedContainer = styled.div`
-  width: 1440px;
-  min-height: 100vh;
-  background-color: #291212;
-`;
-
 export const HeaderContainer = styled.div`
   width: 1440px;
   height: 64px;
@@ -390,15 +384,4 @@ export const TextMovies = styled.p`
     color: #52b5b4;
   }
 `;
-export const SavedText = styled.div`
-  height: 772px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fefefe;
-  text-align: right;
-  font-family: var(--medium);
-  font-size: 24px;
-  font-weight: 400;
-`;
+

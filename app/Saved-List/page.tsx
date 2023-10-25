@@ -1,78 +1,74 @@
 "use client";
 import React from "react";
-
-import {
-  SavedContainer,
-  SavedText,
-  SearchMain,
-} from "../Styled Components/saved";
-
-import Savedheader from "./saved-header";
 import { useSelector } from "react-redux";
 import { RoutState } from "../Redux/store";
-import {
-  Container,
-  DateFilm,
-  Details,
-  Hover,
-  HoverText,
-  Items,
-  ItemsName,
-  ItemsPlace,
-  Line,
-  LinkPlace,
-  Name,
-  NameFilm,
-  Year,
-} from "../Styled Components/SearchFilter";
 import Link from "next/link";
+import Header from "../Header/Header";
+import {
+  ItemsSavedPlace,
+  SaveContainer,
+  SaveItems,
+  SavedContainer,
+  SavedDateFilm,
+  SavedDetails,
+  SavedHover,
+  SavedHoverText,
+  SavedItemsName,
+  SavedLine,
+  SavedLinkPlace,
+  SavedMain,
+  SavedName,
+  SavedNameFilm,
+  SavedText,
+  SavedYear,
+} from "../Styled Components/savedStyled";
 
 export default function Search() {
   const select = useSelector((state: RoutState) => state.Reducer);
 
   return (
     <SavedContainer>
-      <Savedheader />
-      <SearchMain>
+      <Header />
+      <SavedMain>
         {select.SavedList.length === 0 ? (
           <SavedText> {"."}فیلم یا سریال نشان شده‌ای ندارید </SavedText>
         ) : (
           <>
-            <Container>
+            <SaveContainer>
               {select.SavedList.map((item, index) => {
                 return (
-                  <ItemsPlace>
-                    <Items
+                  <ItemsSavedPlace>
+                    <SaveItems
                       style={{
                         backgroundImage: `url(${item.url})`,
                         backgroundSize: "cover",
                       }}
                     >
-                      <Hover>
+                      <SavedHover>
                         <Link href={`Search/${item.id}`}>
-                          <LinkPlace>
-                            <HoverText>
-                              <Details>
-                                <NameFilm>{item.name}</NameFilm>
-                                <DateFilm>
-                                  <Year>{item.year}</Year>
-                                  <Line />
-                                  <Name>{item.category}</Name>
-                                </DateFilm>
-                              </Details>
-                            </HoverText>
-                          </LinkPlace>
+                          <SavedLinkPlace>
+                            <SavedHoverText>
+                              <SavedDetails>
+                                <SavedNameFilm>{item.name}</SavedNameFilm>
+                                <SavedDateFilm>
+                                  <SavedYear>{item.year}</SavedYear>
+                                  <SavedLine />
+                                  <SavedName>{item.category}</SavedName>
+                                </SavedDateFilm>
+                              </SavedDetails>
+                            </SavedHoverText>
+                          </SavedLinkPlace>
                         </Link>
-                      </Hover>
-                    </Items>
-                    <ItemsName>{item.name}</ItemsName>
-                  </ItemsPlace>
+                      </SavedHover>
+                    </SaveItems>
+                    <SavedItemsName>{item.name}</SavedItemsName>
+                  </ItemsSavedPlace>
                 );
               })}
-            </Container>
+            </SaveContainer>
           </>
         )}
-      </SearchMain>
+      </SavedMain>
     </SavedContainer>
   );
 }
