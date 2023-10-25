@@ -5,14 +5,20 @@ import {
   AboutPhoto,
   AboutText,
   AgeLimit,
+  BackColor,
   Buttons,
   Container,
   Episodes,
+  GradientDiv,
+  LeftNumbers,
   LeftSection,
   LikesButton,
   MiddleLine,
   Numbers,
+  Play,
   Rate,
+  ResAbout,
+  RightNumbers,
   RightSection,
   Sekans,
   SekansPhoto,
@@ -29,11 +35,25 @@ import {
   DeleteItem,
   SavedTypes,
 } from "@/app/Redux/createslice";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "../../Favorites/favorites.css";
+import { Navigation } from "swiper/modules";
+import {
+  Carousel,
+  CarouselContainer,
+  FavoriteImg,
+} from "@/app/Styled Components/favorites";
 
 export default function WatchOnline({ params }: { params: { id: number } }) {
   const Find: any = MainMovie.find((elem) => elem.id === +params.id);
   const dispatch = useDispatch();
   const select = useSelector((state: RoutState) => state.Reducer);
+
+  const Responsive680 = useMediaQuery("(max-width:680px)");
+  const Responsive1100 = useMediaQuery("(max-width:1100px)");
 
   const newList = () => {
     const isListed = select.SavedList.find((elem) => elem.id === +params.id);
@@ -62,50 +82,289 @@ export default function WatchOnline({ params }: { params: { id: number } }) {
   };
   return (
     <Container>
-      <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
-        <img src="../images/Watch/gradient.svg" />
-      </LeftSection>
-      <RightSection>
-        <AboutMovies>
-          <Tittle>{Find.name}</Tittle>
-          <Numbers>
-            <Rate>
-              {Find.rate}
-              <img src="../images/Watch/love.svg" />
-            </Rate>
-            <Time>{Find.time}</Time>
-            <Year>{Find.year} </Year>
-            <AgeLimit>{Find.age}</AgeLimit>
-          </Numbers>
-          <AboutText>{Find.description}</AboutText>
-          <Buttons>
-            <LikesButton>
-              <img src="../images/Watch/dislike.svg" />
-              <img src="../images/Watch/like.svg" />
-              <img
-                style={{ cursor: "pointer" }}
-                onClick={newList}
-                src={
-                  select.SavedList.find((elem) => elem.id === +params.id)
-                    ? Find.saved
-                    : Find.save
-                }
-              />
-            </LikesButton>
-            <WatchButton>تماشا کردن</WatchButton>
-          </Buttons>
-        </AboutMovies>
+      {Responsive680 ? (
+        <>
+          <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
+            <GradientDiv>
+              <BackColor>
+                <Play src="../images/play.svg" />
+              </BackColor>
+            </GradientDiv>
+          </LeftSection>
 
-        <MiddleLine />
-        <AboutPhoto>
-          <Episodes>تصاویر</Episodes>
-          <Sekans>
-            <SekansPhoto style={{ backgroundImage: `url(${Find.image1})` }} />
-            <SekansPhoto style={{ backgroundImage: `url(${Find.image2})` }} />
-            <SekansPhoto style={{ backgroundImage: `url(${Find.image3})` }} />
-          </Sekans>
-        </AboutPhoto>
-      </RightSection>
+          <RightSection>
+            <AboutMovies>
+              <ResAbout>
+                <Buttons>
+                  <LikesButton>
+                    <img src="../images/Watch/dislike.svg" />
+                    <img src="../images/Watch/like.svg" />
+                    <img
+                      style={{ cursor: "pointer" }}
+                      onClick={newList}
+                      src={
+                        select.SavedList.find((elem) => elem.id === +params.id)
+                          ? Find.saved
+                          : Find.save
+                      }
+                    />
+                  </LikesButton>
+                </Buttons>
+                <Tittle>{Find.name}</Tittle>
+              </ResAbout>
+              <Numbers>
+                <LeftNumbers>
+                  <Rate>
+                    {Find.rate}
+                    {" :"} علاقه‌مندی
+                    <img
+                      style={{ height: "18px", width: "18px" }}
+                      src="../images/Watch/love.svg"
+                    />
+                  </Rate>
+                  <Time>
+                    {Find.time}
+                    {" :"} مدت زمان
+                    <img
+                      style={{ height: "18px", width: "18px" }}
+                      src="../images/timer.svg"
+                    />
+                  </Time>
+                </LeftNumbers>
+                <RightNumbers>
+                  <Year>
+                    {Find.year} {":"} سال انتشار{" "}
+                    <img
+                      style={{ height: "18px", width: "18px" }}
+                      src="../images/calendar.svg"
+                    />{" "}
+                  </Year>
+                  <AgeLimit>
+                    {Find.age}
+                    {" :"} محدودیت سنی
+                    <img
+                      style={{ height: "18px", width: "18px" }}
+                      src="../images/lock.svg"
+                    />
+                  </AgeLimit>
+                </RightNumbers>
+              </Numbers>
+              <AboutText>
+                {" "}
+                خلاصه {": "}
+                <br />
+                {Find.description}{" "}
+              </AboutText>
+            </AboutMovies>
+
+            <MiddleLine />
+            <AboutPhoto>
+              <Episodes>تصاویر</Episodes>
+              <Sekans>
+                <CarouselContainer>
+                  <Carousel>
+                    <Swiper
+                      navigation={true}
+                      slidesPerView={1}
+                      speed={900}
+                      modules={[Navigation]}
+                      className="mySwiper"
+                      slidesPerGroup={1}
+                      loop={true}
+                    >
+                      <SwiperSlide>
+                        <FavoriteImg
+                          style={{ height: 180, width: 220 }}
+                          src={Find.image1}
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <FavoriteImg
+                          style={{ height: 180, width: 220 }}
+                          src={Find.image2}
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <FavoriteImg
+                          style={{ height: 180, width: 220 }}
+                          src={Find.image3}
+                        />
+                      </SwiperSlide>
+                    </Swiper>
+                  </Carousel>
+                </CarouselContainer>
+              </Sekans>
+            </AboutPhoto>
+          </RightSection>
+        </>
+      ) : Responsive1100 ? (
+        <>
+          <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
+            <GradientDiv>
+              <BackColor>
+                <Play src="../images/play.svg" />
+              </BackColor>
+            </GradientDiv>
+          </LeftSection>
+
+          <RightSection>
+            <AboutMovies>
+              <ResAbout>
+                <Buttons>
+                  <LikesButton>
+                    <img src="../images/Watch/dislike.svg" />
+                    <img src="../images/Watch/like.svg" />
+                    <img
+                      style={{ cursor: "pointer" }}
+                      onClick={newList}
+                      src={
+                        select.SavedList.find((elem) => elem.id === +params.id)
+                          ? Find.saved
+                          : Find.save
+                      }
+                    />
+                  </LikesButton>
+                </Buttons>
+                <Tittle>{Find.name}</Tittle>
+              </ResAbout>
+              <Numbers>
+                <LeftNumbers>
+                  <Rate>
+                    {Find.rate}
+                    {" :"} علاقه‌مندی
+                    <img
+                      style={{ height: "18px", width: "18px" }}
+                      src="../images/Watch/love.svg"
+                    />
+                  </Rate>
+                  <Time>
+                    {Find.time}
+                    {" :"} مدت زمان
+                    <img
+                      style={{ height: "18px", width: "18px" }}
+                      src="../images/timer.svg"
+                    />
+                  </Time>
+                </LeftNumbers>
+                <RightNumbers>
+                  <Year>
+                    {Find.year} {":"} سال انتشار{" "}
+                    <img
+                      style={{ height: "18px", width: "18px" }}
+                      src="../images/calendar.svg"
+                    />{" "}
+                  </Year>
+                  <AgeLimit>
+                    {Find.age}
+                    {" :"} محدودیت سنی
+                    <img
+                      style={{ height: "18px", width: "18px" }}
+                      src="../images/lock.svg"
+                    />
+                  </AgeLimit>
+                </RightNumbers>
+              </Numbers>
+              <AboutText>
+                {" "}
+                خلاصه {": "}
+                <br />
+                {Find.description}{" "}
+              </AboutText>
+            </AboutMovies>
+
+            <MiddleLine />
+            <AboutPhoto>
+              <Episodes>تصاویر</Episodes>
+              <Sekans>
+                <CarouselContainer>
+                  <Carousel>
+                    <Swiper
+                      navigation={true}
+                      slidesPerView={2}
+                      speed={900}
+                      modules={[Navigation]}
+                      className="mySwiper"
+                      slidesPerGroup={1}
+                    >
+                      <SwiperSlide>
+                        <FavoriteImg
+                          style={{ height: 200, width: 250 }}
+                          src={Find.image1}
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <FavoriteImg
+                          style={{ height: 200, width: 250 }}
+                          src={Find.image2}
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <FavoriteImg
+                          style={{ height: 200, width: 250 }}
+                          src={Find.image3}
+                        />
+                      </SwiperSlide>
+                    </Swiper>
+                  </Carousel>
+                </CarouselContainer>
+              </Sekans>
+            </AboutPhoto>
+          </RightSection>
+        </>
+      ) : (
+        <>
+          <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
+            <img src="../images/Watch/gradient.svg" />
+          </LeftSection>
+          <RightSection>
+            <AboutMovies>
+              <Tittle>{Find.name}</Tittle>
+              <Numbers>
+                <Rate>
+                  {Find.rate}
+                  <img src="../images/Watch/love.svg" />
+                </Rate>
+                <Time>{Find.time}</Time>
+                <Year>{Find.year} </Year>
+                <AgeLimit>{Find.age}</AgeLimit>
+              </Numbers>
+              <AboutText>{Find.description}</AboutText>
+              <Buttons>
+                <LikesButton>
+                  <img src="../images/Watch/dislike.svg" />
+                  <img src="../images/Watch/like.svg" />
+                  <img
+                    style={{ cursor: "pointer" }}
+                    onClick={newList}
+                    src={
+                      select.SavedList.find((elem) => elem.id === +params.id)
+                        ? Find.saved
+                        : Find.save
+                    }
+                  />
+                </LikesButton>
+                <WatchButton>تماشا کردن</WatchButton>
+              </Buttons>
+            </AboutMovies>
+
+            <MiddleLine />
+            <AboutPhoto>
+              <Episodes>تصاویر</Episodes>
+              <Sekans>
+                <SekansPhoto
+                  style={{ backgroundImage: `url(${Find.image1})` }}
+                />
+                <SekansPhoto
+                  style={{ backgroundImage: `url(${Find.image2})` }}
+                />
+                <SekansPhoto
+                  style={{ backgroundImage: `url(${Find.image3})` }}
+                />
+              </Sekans>
+            </AboutPhoto>
+          </RightSection>
+        </>
+      )}
     </Container>
   );
 }
