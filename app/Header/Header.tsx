@@ -254,7 +254,7 @@ export default function Header() {
                         width: "100%",
                       }}
                     >
-                      <SavedText>ذخیره شده‌ها</SavedText>
+                      <SavedText>نشان شده‌ها</SavedText>
                       <SavedIcon src="./images/Drawer/saved.svg" />
                     </Link>
                   </SavedListPlace>
