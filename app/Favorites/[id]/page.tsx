@@ -54,7 +54,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
   const select = useSelector((state: RoutState) => state.Reducer);
 
   const Responsive680 = useMediaQuery("(max-width:680px)");
-  const Responsive850 = useMediaQuery("(max-width:850px)");
+  const Responsive1100 = useMediaQuery("(max-width:1100px)");
 
   const newList = () => {
     const isListed = select.SavedList.find((elem) => elem.id === +params.id);
@@ -199,7 +199,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
             </AboutPhoto>
           </RightSection>
         </>
-      ) : Responsive850 ? (
+      ) : Responsive1100 ? (
         <>
           <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
             <GradientDiv>

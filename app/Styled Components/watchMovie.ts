@@ -8,7 +8,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 1100px) {
     gap: 0px;
     flex-direction: column;
     overflow-y: auto;
@@ -28,7 +28,7 @@ export const LeftSection = styled.div`
     width: 100%;
     position: relative;
   }
-  @media screen and (min-width: 480px) and (max-width: 850px) {
+  @media screen and (min-width: 480px) and (max-width: 1100px) {
     height: 35%;
     width: 100%;
     background-position: 50% 30%;
@@ -66,7 +66,7 @@ export const RightSection = styled.div`
   align-items: center;
   /* background-color: red; */
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 1100px) {
     height: 65%;
     width: 100%;
     justify-content: start;
@@ -82,7 +82,7 @@ export const AboutMovies = styled.div`
   justify-content: center;
   align-items: end;
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 1100px) {
     /* background-color: white; */
     height: 300px;
   }
@@ -115,7 +115,7 @@ export const Tittle = styled.div`
     padding-right: 40px;
     font-size: 28px;
   }
-  @media screen and (min-width: 680px) and (max-width: 850px) {
+  @media screen and (min-width: 680px) and (max-width: 1100px) {
     /* background-color: red; */
     height: 50px;
     align-items: center;
@@ -131,7 +131,7 @@ export const Numbers = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 1100px) {
     /* background-color: red; */
     height: 135px;
     width: 100%;
@@ -181,7 +181,7 @@ export const AgeLimit = styled.div`
     gap: 5px;
     background-color: transparent;
   }
-  @media screen and (min-width: 680px) and (max-width: 850px) {
+  @media screen and (min-width: 680px) and (max-width: 1100px) {
     font-size: 16px;
     width: 100%;
     display: flex;
@@ -211,7 +211,7 @@ export const Year = styled.div`
     gap: 5px;
     /* background-color: red; */
   }
-  @media screen and (min-width: 680px) and (max-width: 850px) {
+  @media screen and (min-width: 680px) and (max-width: 1100px) {
     font-size: 16px;
     width: 100%;
     display: flex;
@@ -240,7 +240,7 @@ export const Time = styled.div`
     font-weight: 500;
     gap: 3px;
   }
-  @media screen and (min-width: 680px) and (max-width: 850px) {
+  @media screen and (min-width: 680px) and (max-width: 1100px) {
     font-size: 16px;
     width: 100%;
     display: flex;
@@ -269,7 +269,7 @@ export const Rate = styled.div`
     font-weight: 500;
     gap: 10px;
   }
-  @media screen and (min-width: 680px) and (max-width: 850px) {
+  @media screen and (min-width: 680px) and (max-width: 1100px) {
     font-size: 16px;
     width: 100%;
     display: flex;
@@ -300,7 +300,7 @@ export const AboutText = styled.div`
     line-height: 24px;
     height: 120px;
   }
-  @media screen and (min-width: 680px) and (max-width: 850px) {
+  @media screen and (min-width: 680px) and (max-width: 1100px) {
     /* background-color: gold; */
     font-size: 16px;
     font-weight: 500;
@@ -333,7 +333,7 @@ export const Buttons = styled.div`
     align-items: end;
     justify-content: center;
   }
-  @media screen and (min-width: 680px) and (max-width: 850px) {
+  @media screen and (min-width: 680px) and (max-width: 1100px) {
     /* background-color: black; */
     height: 50px;
     width: 40%;
@@ -362,7 +362,7 @@ export const LikesButton = styled.div`
   @media screen and (max-width: 680px) {
     width: 100px;
   }
-  @media screen and (min-width: 680px) and (max-width: 850px) {
+  @media screen and (min-width: 680px) and (max-width: 1100px) {
     width: 100px;
   }
 `;
@@ -382,7 +382,7 @@ export const AboutPhoto = styled.div`
   @media screen and (max-width: 680px) {
     height: 71%;
   }
-  @media screen and (min-width: 680px) and (max-width: 850px) {
+  @media screen and (min-width: 680px) and (max-width: 1100px) {
     height: 71%;
   }
 `;
@@ -406,7 +406,7 @@ export const Episodes = styled.div`
     height: 80px;
     /* background-color: red; */
   }
-  @media screen and (min-width: 680px) and (max-width: 850px) {
+  @media screen and (min-width: 680px) and (max-width: 1100px) {
     font-size: 20px;
     width: 94%;
     height: 80px;
@@ -429,7 +429,7 @@ export const Sekans = styled.div`
     gap: 5px;
     height: 350px;
   }
-  @media screen and (min-width: 680px) and (max-width: 850px) {
+  @media screen and (min-width: 680px) and (max-width: 1100px) {
     /* background-color: gold; */
     align-items: start;
     justify-content: center;
@@ -449,7 +449,7 @@ export const SekansPhoto = styled.div`
     height: 240px;
     width: 250px;
   }
-  @media screen and (min-width: 680px) and (max-width: 850px) {
+  @media screen and (min-width: 680px) and (max-width: 1100px) {
     height: 240px;
     width: 250px;
   }
