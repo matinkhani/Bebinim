@@ -53,7 +53,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
   const dispatch = useDispatch();
   const select = useSelector((state: RoutState) => state.Reducer);
 
-  const Responsive630 = useMediaQuery("(max-width:630px)");
+  const Responsive680 = useMediaQuery("(max-width:680px)");
 
   const newList = () => {
     const isListed = select.SavedList.find((elem) => elem.id === +params.id);
@@ -83,7 +83,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
 
   return (
     <Container>
-      {Responsive630 ? (
+      {Responsive680 ? (
         <>
           <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
             <GradientDiv>
