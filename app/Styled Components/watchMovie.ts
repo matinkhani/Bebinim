@@ -8,7 +8,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     gap: 0px;
     flex-direction: column;
     overflow-y: auto;
@@ -23,9 +23,15 @@ export const LeftSection = styled.div`
   background-size: cover;
   background-position: 50% 10%;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     height: 35%;
     width: 100%;
+    position: relative;
+  }
+  @media screen and (min-width: 480px) and (max-width: 630px) {
+    height: 35%;
+    width: 100%;
+    background-position: 50% 30%;
     position: relative;
   }
 `;
@@ -60,7 +66,7 @@ export const RightSection = styled.div`
   align-items: center;
   /* background-color: red; */
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     height: 65%;
     width: 100%;
     justify-content: start;
@@ -76,7 +82,7 @@ export const AboutMovies = styled.div`
   justify-content: center;
   align-items: end;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     /* background-color: white; */
     height: 300px;
   }
@@ -101,7 +107,7 @@ export const Tittle = styled.div`
   display: flex;
   justify-content: end;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     /* background-color: red; */
     height: 50px;
     align-items: center;
@@ -117,7 +123,7 @@ export const Numbers = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     /* background-color: red; */
     height: 135px;
     width: 100%;
@@ -159,7 +165,7 @@ export const AgeLimit = styled.div`
   font-weight: 700;
   line-height: normal;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     font-size: 12px;
     width: 100%;
     display: flex;
@@ -181,7 +187,7 @@ export const Year = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     font-size: 14px;
     width: 100%;
     display: flex;
@@ -203,7 +209,7 @@ export const Time = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     font-size: 14px;
     width: 100%;
     display: flex;
@@ -225,7 +231,7 @@ export const Rate = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     font-size: 14px;
     width: 100%;
     display: flex;
@@ -246,7 +252,7 @@ export const AboutText = styled.div`
   line-height: 42px;
   display: flex;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     /* background-color: gold; */
     font-size: 14px;
     font-weight: 500;
@@ -272,7 +278,7 @@ export const Buttons = styled.div`
   align-items: center;
   justify-content: end;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     /* background-color: black; */
     height: 50px;
     width: 40%;
@@ -298,7 +304,7 @@ export const LikesButton = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     width: 100px;
   }
 `;
@@ -315,7 +321,7 @@ export const AboutPhoto = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     height: 71%;
   }
 `;
@@ -333,7 +339,7 @@ export const Episodes = styled.div`
   font-weight: 700;
   line-height: normal;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     font-size: 18px;
     width: 90%;
     height: 80px;
@@ -349,7 +355,7 @@ export const Sekans = styled.div`
   justify-content: space-between;
   /* background-color: red; */
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     /* background-color: gold; */
     align-items: start;
     justify-content: center;
@@ -365,7 +371,7 @@ export const SekansPhoto = styled.div`
   background-position: 50% 50%;
   border-radius: 8px;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
+  @media screen and (max-width: 630px) {
     height: 240px;
     width: 250px;
   }
