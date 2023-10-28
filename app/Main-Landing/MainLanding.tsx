@@ -41,7 +41,6 @@ const renderCenterRightControls = ({ nextSlide }: { nextSlide: any }) => {
 };
 export default function MainLanding() {
   const Responsive480 = useMediaQuery("(max-width:480px)");
-  // const Responsive = useMediaQuery("(max-width:630px)");
 
   return (
     <>
@@ -97,7 +96,9 @@ export default function MainLanding() {
                                   : item.id === 44
                                   ? "./images/mores2.svg"
                                   : item.id === 45
-                                  ? Responsive480?"./images/mores2.svg":"./images/mores2.svg"
+                                  ? Responsive480
+                                    ? "./images/mores2.svg"
+                                    : "./images/mores2.svg"
                                   : ""
                               }
                             />

@@ -43,7 +43,10 @@ export default function Movie() {
               <MovieMain>
                 <Details>
                   <MovieIacon>
-                    <img style={{height:"100px",width:"100px"}} src="./images/ZakhmKari/mov_logo.svg" />
+                    <img
+                      style={{ height: "100px", width: "100px" }}
+                      src="./images/ZakhmKari/mov_logo.svg"
+                    />
                   </MovieIacon>
                   <DetailsText>
                     <Director>کارگردان: محمدحسین مهدویان</Director>

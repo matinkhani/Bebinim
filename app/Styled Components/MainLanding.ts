@@ -11,7 +11,6 @@ export const Container = styled.div`
   background-position: 40%;
 
   @media screen and (max-width: 480px) {
-    /* background-color: red; */
     height: 450px;
   }
 `;
@@ -20,10 +19,6 @@ export const FilmPoster = styled.div`
   width: 100%;
   height: 1000px;
   display: flex;
-
-  @media screen and (max-width: 480px) {
-    /* background-color: red; */
-  }
 `;
 
 export const LeftSide = styled.div`
@@ -33,8 +28,13 @@ export const LeftSide = styled.div`
   align-items: end;
 
   @media screen and (max-width: 480px) {
-    /* background-color: gold; */
-    background-image: linear-gradient(to top, #291212, transparent, transparent, transparent);
+    background-image: linear-gradient(
+      to top,
+      #291212,
+      transparent,
+      transparent,
+      transparent
+    );
   }
 `;
 
@@ -56,7 +56,6 @@ export const ArrowIconsLeft = styled.img`
   cursor: pointer;
 
   @media screen and (max-width: 480px) {
-    /* background-color: red; */
     bottom: 15px;
   }
 `;
@@ -70,7 +69,6 @@ export const ArrowIconsRight = styled.img`
   cursor: pointer;
 
   @media screen and (max-width: 480px) {
-    /* background-color: red; */
     bottom: 15px;
   }
 `;
@@ -82,9 +80,14 @@ export const RightSide = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 480px) {
-    /* background-color: red; */
     align-items: end;
-    background-image: linear-gradient(to top, #291212, transparent, transparent, transparent);
+    background-image: linear-gradient(
+      to top,
+      #291212,
+      transparent,
+      transparent,
+      transparent
+    );
   }
 `;
 
@@ -95,10 +98,6 @@ export const ExplainContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media screen and (max-width: 480px) {
-    /* background-color: red; */
-  }
 `;
 
 export const ExplainAndWatch = styled.div`
@@ -110,8 +109,6 @@ export const ExplainAndWatch = styled.div`
   gap: 15px;
 
   @media screen and (max-width: 480px) {
-    /* background-color: blue; */
-    /* flex-direction: column; */
     gap: 15px;
     width: 100%;
     height: 85%;
@@ -126,11 +123,9 @@ export const MoreExplainText = styled.p`
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0em;
-  /* color: rgba(0, 0, 0, 1); */
 
   @media screen and (max-width: 480px) {
     display: none;
-    /* background-color: red; */
   }
 `;
 
@@ -140,7 +135,6 @@ export const MoreIcon = styled.img`
   cursor: pointer;
 
   @media screen and (max-width: 480px) {
-    /* background-color: red; */
     margin-bottom: 10px;
   }
 `;
@@ -165,7 +159,6 @@ export const MoreExplainBtn = styled.button`
   cursor: pointer;
 
   @media screen and (max-width: 480px) {
-    /* background-color: red; */
     width: 120px;
     height: 50px;
     font-size: 16px;
@@ -191,7 +184,6 @@ export const Text = styled.div`
   color: rgba(0, 0, 0, 1);
 
   @media screen and (max-width: 480px) {
-    /* background-color: red; */
     display: none;
   }
 `;
@@ -208,7 +200,6 @@ export const BebinimBox = styled.div`
   justify-content: space-evenly;
 
   @media screen and (max-width: 480px) {
-    /* background-image: linear-gradient(to top, gold, transparent); */
     position: unset;
     height: 280px;
   }

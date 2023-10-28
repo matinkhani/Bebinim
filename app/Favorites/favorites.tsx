@@ -42,7 +42,7 @@ export default function Favorites() {
             breakpoints={{
               0: {
                 slidesPerView: 2,
-                slidesPerGroup: 1
+                slidesPerGroup: 1,
               },
             }}
           >

@@ -11,7 +11,6 @@ export const Container = styled.div`
 
   @media screen and (max-width: 480px) {
     height: 200vh;
-    /* background-color: red; */
   }
 `;
 

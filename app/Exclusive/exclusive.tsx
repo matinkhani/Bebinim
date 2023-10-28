@@ -25,7 +25,14 @@ export default function Exclusive() {
       <ExclusiveMovie>
         {ExclusiveArr.map((item, index) => {
           return (
-            <Movies key={index} style={Responsive480?{ backgroundImage: `url(${item.urlMobile})` }:{ backgroundImage: `url(${item.url})` }}>
+            <Movies
+              key={index}
+              style={
+                Responsive480
+                  ? { backgroundImage: `url(${item.urlMobile})` }
+                  : { backgroundImage: `url(${item.url})` }
+              }
+            >
               <Hover>
                 <Link href={`Exclusive/${item.id}`}>
                   <HoverText>

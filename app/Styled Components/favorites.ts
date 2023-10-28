@@ -7,7 +7,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: end;
   background-color: #291212;
-  /* background-color: red; */
 
   @media screen and (max-width: 480px) {
     height: 35vh;
@@ -20,7 +19,6 @@ export const TextPlace = styled.div`
   display: flex;
   justify-content: center;
   align-items: end;
-  /* background-color: blue; */
 
   @media screen and (max-width: 480px) {
     width: 100%;
