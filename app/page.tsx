@@ -18,7 +18,7 @@ export default function Home() {
       <Container>
         <Header />
         <MainLanding />
-        {/* <Favorites /> */}
+        <Favorites />
         {/* <OnlineCinema /> */}
         {/* <Exclusive /> */}
         {/* <Animation /> */}

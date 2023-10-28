@@ -39,6 +39,12 @@ export default function Favorites() {
             modules={[Navigation]}
             className="mySwiper"
             slidesPerGroup={4}
+            breakpoints={{
+              0: {
+                slidesPerView: 2,
+                slidesPerGroup: 1
+              },
+            }}
           >
             {FavoritesArr.map((item, index) => {
               return (

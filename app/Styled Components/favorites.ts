@@ -7,6 +7,11 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: end;
   background-color: #291212;
+  /* background-color: red; */
+
+  @media screen and (max-width: 480px) {
+    height: 35vh;
+  }
 `;
 
 export const TextPlace = styled.div`
@@ -15,6 +20,12 @@ export const TextPlace = styled.div`
   display: flex;
   justify-content: center;
   align-items: end;
+  /* background-color: blue; */
+
+  @media screen and (max-width: 480px) {
+    width: 52%;
+    height: 25%;
+  }
 `;
 
 export const Text = styled.p`
@@ -23,6 +34,10 @@ export const Text = styled.p`
   line-height: 30px;
   font-weight: 700;
   color: rgba(254, 254, 254, 1);
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 export const CarouselContainer = styled.div`
@@ -62,6 +77,10 @@ export const Carousel = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    width: 74%;
+  }
 `;
 
 export const Details = styled.div`
@@ -125,6 +144,11 @@ export const Hover = styled.div`
   &:hover ${HoverText} {
     display: flex;
   }
+
+  @media screen and (max-width: 480px) {
+    height: 180px;
+    width: 140px;
+  }
 `;
 
 export const FavoriteImg = styled.img`
@@ -134,6 +158,11 @@ export const FavoriteImg = styled.img`
   overflow-y: hidden;
   cursor: pointer;
   position: relative;
+
+  @media screen and (max-width: 480px) {
+    height: 180px;
+    width: 140px;
+  }
 `;
 
 export const LinkPlace = styled.div`
@@ -142,4 +171,9 @@ export const LinkPlace = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    height: 180px;
+    width: 140px;
+  }
 `;
