@@ -26,7 +26,7 @@ export default function Home() {
         {/* <Nostalgia /> */}
         <BestIMDb />
       </Container>
-      {/* <FooterSection /> */}
+      <FooterSection />
     </React.Fragment>
   );
 }

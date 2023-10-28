@@ -10,7 +10,7 @@ export const Container = styled.div`
   background-color: #291212;
 
   @media screen and (max-width: 480px) {
-    height: 280vh;
+    height: 2100px;
   }
 `;
 
@@ -25,7 +25,7 @@ export const PlaceImdb = styled.div`
   gap: 25px;
   
   @media screen and (max-width: 480px) {
-    width: 100%;
+    width: 70%;
   }
 `;
 
