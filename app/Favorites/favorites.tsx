@@ -44,6 +44,10 @@ export default function Favorites() {
                 slidesPerView: 2,
                 slidesPerGroup: 1,
               },
+              1000: {
+                slidesPerView: 6,
+                slidesPerGroup: 4,
+              }
             }}
           >
             {FavoritesArr.map((item, index) => {
