@@ -18,15 +18,15 @@ export default function Home() {
       <Container>
         <Header />
         <MainLanding />
-        <Favorites />
-        <OnlineCinema />
-        <Exclusive />
-        <Animation />
-        <Movie />
+        {/* <Favorites /> */}
+        {/* <OnlineCinema /> */}
+        {/* <Exclusive /> */}
+        {/* <Animation /> */}
+        {/* <Movie /> */}
         {/* <Nostalgia /> */}
-        <BestIMDb />
+        {/* <BestIMDb /> */}
       </Container>
-      <FooterSection />
+      {/* <FooterSection /> */}
     </React.Fragment>
   );
 }

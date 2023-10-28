@@ -24,6 +24,7 @@ import MainMovie from "./array";
 import Link from "next/link";
 import Carousel from "nuka-carousel";
 import "./styles.css";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const renderCenterLeftControls = ({
   previousSlide,
@@ -39,6 +40,9 @@ const renderCenterRightControls = ({ nextSlide }: { nextSlide: any }) => {
   );
 };
 export default function MainLanding() {
+  const Responsive480 = useMediaQuery("(max-width:480px)");
+  // const Responsive = useMediaQuery("(max-width:630px)");
+
   return (
     <>
       <Carousel
@@ -49,7 +53,13 @@ export default function MainLanding() {
       >
         {MainMovie.map((item, index) => {
           return (
-            <Container style={{ backgroundImage: `url(${item.url})` }}>
+            <Container
+              style={
+                Responsive480
+                  ? { backgroundImage: `url(${item.urlMobile})` }
+                  : { backgroundImage: `url(${item.url})` }
+              }
+            >
               <FilmPoster>
                 <LeftSide>
                   <ArrowIconsPlace></ArrowIconsPlace>
@@ -57,46 +67,93 @@ export default function MainLanding() {
 
                 <RightSide>
                   <ExplainContainer>
-                    <ExplainAndWatch>
-                      <MoreExplainText
-                        style={
-                          item.id === 42
-                            ? { color: "black" }
-                            : item.id === 43
-                            ? { color: "White" }
-                            : item.id === 44
-                            ? { color: "white" }
-                            : item.id === 45
-                            ? { color: "white" }
-                            : {}
-                        }
-                      >
-                        <Link href={`Main-Landing/${item.id}`}>
-                          توضیحات بیشتر
-                        </Link>
-                      </MoreExplainText>
-                      <Link href={`Main-Landing/${item.id}`}>
-                        <MoreIcon
-                          src={
-                            item.id === 42
-                              ? "./images/mores.svg"
-                              : item.id === 43
-                              ? "./images/mores2.svg"
-                              : item.id === 44
-                              ? "./images/mores2.svg"
-                              : item.id === 45
-                              ? "./images/mores2.svg"
-                              : ""
-                          }
-                        />
-                      </Link>
-                      <Link href={`Main-Landing/${item.id}`}>
-                        <MoreExplainBtn>
-                          تماشا کنید
-                          <WatchSVG src="./images/watch.svg" />
-                        </MoreExplainBtn>
-                      </Link>
-                    </ExplainAndWatch>
+                    {Responsive480 ? (
+                      <>
+                        <ExplainAndWatch>
+                          <MoreExplainText
+                            style={
+                              item.id === 42
+                                ? { color: "black" }
+                                : item.id === 43
+                                ? { color: "White" }
+                                : item.id === 44
+                                ? { color: "white" }
+                                : item.id === 45
+                                ? { color: "white" }
+                                : {}
+                            }
+                          >
+                            <Link href={`Main-Landing/${item.id}`}>
+                              توضیحات بیشتر
+                            </Link>
+                          </MoreExplainText>
+                          <Link href={`Main-Landing/${item.id}`}>
+                            <MoreIcon
+                              src={
+                                item.id === 42
+                                  ? "./images/mores.svg"
+                                  : item.id === 43
+                                  ? "./images/mores2.svg"
+                                  : item.id === 44
+                                  ? "./images/mores2.svg"
+                                  : item.id === 45
+                                  ? Responsive480?"./images/mores2.svg":"./images/mores2.svg"
+                                  : ""
+                              }
+                            />
+                          </Link>
+                          <Link href={`Main-Landing/${item.id}`}>
+                            <MoreExplainBtn>
+                              تماشا کنید
+                              <WatchSVG src="./images/watch.svg" />
+                            </MoreExplainBtn>
+                          </Link>
+                        </ExplainAndWatch>
+                      </>
+                    ) : (
+                      <>
+                        <ExplainAndWatch>
+                          <MoreExplainText
+                            style={
+                              item.id === 42
+                                ? { color: "black" }
+                                : item.id === 43
+                                ? { color: "White" }
+                                : item.id === 44
+                                ? { color: "white" }
+                                : item.id === 45
+                                ? { color: "white" }
+                                : {}
+                            }
+                          >
+                            <Link href={`Main-Landing/${item.id}`}>
+                              توضیحات بیشتر
+                            </Link>
+                          </MoreExplainText>
+                          <Link href={`Main-Landing/${item.id}`}>
+                            <MoreIcon
+                              src={
+                                item.id === 42
+                                  ? "./images/mores.svg"
+                                  : item.id === 43
+                                  ? "./images/mores2.svg"
+                                  : item.id === 44
+                                  ? "./images/mores2.svg"
+                                  : item.id === 45
+                                  ? "./images/mores2.svg"
+                                  : ""
+                              }
+                            />
+                          </Link>
+                          <Link href={`Main-Landing/${item.id}`}>
+                            <MoreExplainBtn>
+                              تماشا کنید
+                              <WatchSVG src="./images/watch.svg" />
+                            </MoreExplainBtn>
+                          </Link>
+                        </ExplainAndWatch>
+                      </>
+                    )}
                     <Text
                       style={
                         item.id === 1
