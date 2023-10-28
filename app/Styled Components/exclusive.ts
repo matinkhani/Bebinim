@@ -8,6 +8,10 @@ export const Container = styled.div`
   justify-content: center;
   align-items: end;
   background-color: #291212;
+
+  @media screen and (max-width: 480px) {
+    height: 200vh;
+  }
 `;
 
 export const ExclusiveText = styled.div`
@@ -19,6 +23,13 @@ export const ExclusiveText = styled.div`
   font-family: var(--medium);
   font-size: 20px;
   font-weight: 700;
+  color: white;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    height: 5%;
+    font-size: 18px;
+  }
 `;
 
 export const ExclusiveMovie = styled.div`
@@ -28,6 +39,10 @@ export const ExclusiveMovie = styled.div`
   justify-content: center;
   align-items: center;
   gap: 30px;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const Movies = styled.div`
@@ -37,6 +52,10 @@ export const Movies = styled.div`
   background-size: cover;
   cursor: pointer;
   position: relative;
+
+  @media screen and (max-width: 480px) {
+    width: 300px;
+  }
 `;
 
 export const HoverText = styled.div`
@@ -51,6 +70,12 @@ export const Details = styled.div`
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
+
+  @media screen and (max-width: 480px) {
+    width: 300px;
+    justify-content: center;
+    gap: 140px;
+  }
 `;
 
 export const DetailsTop = styled.div`
@@ -64,7 +89,7 @@ export const DetailsTop = styled.div`
 export const RealBtn = styled.button`
   height: 32px;
   width: 82px;
-  font-family:  var(--medium);
+  font-family: var(--medium);
   font-size: 16px;
   font-weight: 700;
   border: none;
@@ -124,5 +149,10 @@ export const Hover = styled.div`
 
   &:hover ${HoverText} {
     display: flex;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 300px;
+    height: 350px;
   }
 `;

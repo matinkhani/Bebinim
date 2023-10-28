@@ -20,7 +20,7 @@ export default function Home() {
         <MainLanding />
         <Favorites />
         <OnlineCinema />
-        {/* <Exclusive /> */}
+        <Exclusive />
         {/* <Animation /> */}
         {/* <Movie /> */}
         {/* <Nostalgia /> */}
