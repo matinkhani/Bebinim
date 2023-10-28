@@ -6,6 +6,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  @media screen and (max-width: 480px) {
+    /* background-color: red;// */
+    height: 650px;
+  }
 `;
 
 export const BgImg = styled.div`
@@ -16,6 +21,10 @@ export const BgImg = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  @media screen and (max-width: 480px) {
+    background-position: 10% 50%;
+  }
 `;
 export const MovieMain = styled.div`
   height: 100%;
@@ -28,6 +37,10 @@ export const MovieMain = styled.div`
     rgba(43, 15, 15, 0.82) 99.99%,
     #291212 100%
   );
+  
+  @media screen and (max-width: 480px) {
+  /* background-color: red; */
+  }
 `;
 
 export const Details = styled.div`
@@ -36,10 +49,28 @@ export const Details = styled.div`
   gap: 280px;
   display: flex;
   justify-content: end;
+  
+  @media screen and (max-width: 480px) {
+  /* background-color: gold; */
+  /* flex-direction: column; */
+  width: 90%;
+  height: 100%;
+  justify-content: space-between;
+  align-items:center;
+  gap: 0px;
+  }
 `;
 export const MovieIacon = styled.div`
   width: 276px;
   height: 181px;
+  
+  @media screen and (max-width: 480px) {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    /* background-color: gold; */
+    }
 `;
 
 export const DetailsText = styled.div`
@@ -48,6 +79,13 @@ export const DetailsText = styled.div`
   display: flex;
   flex-direction: column;
   align-items: end;
+  
+  @media screen and (max-width: 480px) {
+    /* background-color: red; */
+    align-items: end;
+    /* width: 100%; */
+    width: 225px;
+  }
 `;
 export const Director = styled.div`
   height: 45px;
@@ -60,6 +98,12 @@ export const Director = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  
+  @media screen and (max-width: 480px) {
+    /* background-color: red; */
+    width: 80%;
+    justify-content: end;
+  }
 `;
 export const RatePlace = styled.div`
   height: 55px;
@@ -68,6 +112,10 @@ export const RatePlace = styled.div`
   justify-content: end;
   align-items: center;
   gap: 24px;
+  
+  @media screen and (max-width: 480px) {
+  width: 58%;
+  }
 `;
 export const Category1 = styled.div`
   height: 20px;
@@ -125,6 +173,13 @@ font-family: var(--medium);
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
+
+  @media screen and (max-width: 480px) {
+    width: 60%;
+    height: 200px;
+    font-size: 12px;
+     /* background-color: green; */
+  }
 `
 export const DetailsMovieBtn = styled.div`
   width: 110px;
@@ -145,6 +200,15 @@ export const DetailsMovieBtn = styled.div`
   align-items: center;
   border: none;
   cursor: pointer;
+  
+  @media screen and (max-width: 480px) {
+    width: 120px;
+    height: 50px;
+    margin-top: 190px;
+    font-size: 16px;
+    border-radius: 8px;
+    justify-content: center;
+  }
 `
 
 export const WatchSVG = styled.img`
@@ -167,6 +231,13 @@ export const TextPlace = styled.div`
   justify-content: center;
   align-self: end;
   align-items: end;
+  
+  @media screen and (max-width: 480px) {
+/* background-color: green; */
+width: 100%;
+height: 15%;
+align-items: center;
+  }
 `;
 
 export const Text = styled.p`

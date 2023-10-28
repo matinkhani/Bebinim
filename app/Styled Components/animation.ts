@@ -10,6 +10,7 @@ export const Container = styled.div`
   
   @media screen and (max-width: 480px) {
     height: 35vh;
+    margin-top: -50px;
     justify-content: center;
     gap: 20px;
     /* background-color: gold; */
