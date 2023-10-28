@@ -39,6 +39,12 @@ export default function Animation() {
             modules={[Navigation]}
             className="mySwiper"
             slidesPerGroup={4}
+            breakpoints={{
+              0: {
+                slidesPerView: 2,
+                slidesPerGroup: 1
+              },
+            }}
           >
             {AnimationsArr.map((item, index) => {
               return (

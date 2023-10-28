@@ -21,7 +21,7 @@ export default function Home() {
         <Favorites />
         <OnlineCinema />
         <Exclusive />
-        {/* <Animation /> */}
+        <Animation />
         {/* <Movie /> */}
         {/* <Nostalgia /> */}
         {/* <BestIMDb /> */}

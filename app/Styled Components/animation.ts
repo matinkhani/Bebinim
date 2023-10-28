@@ -6,7 +6,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: end;
-  background-color: #291212;
+  background-color: #291212; 
+  
+  @media screen and (max-width: 480px) {
+    height: 35vh;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: gold; */
+  }
 `;
 
 export const TextPlace = styled.div`
@@ -15,6 +22,13 @@ export const TextPlace = styled.div`
   display: flex;
   justify-content: center;
   align-items: end;
+  
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    height: 15%;
+    /* background-color: red; */
+    align-items: start;
+  }
 `;
 
 export const Text = styled.p`
@@ -23,6 +37,10 @@ export const Text = styled.p`
   line-height: 30px;
   font-weight: 700;
   color: rgba(254, 254, 254, 1);
+  
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 export const CarouselContainer = styled.div`
@@ -32,6 +50,11 @@ export const CarouselContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: blue; */
+  
+  @media screen and (max-width: 480px) {
+    height: 180px;
+  }
 `;
 
 export const ArrowLeft = styled.div`
@@ -62,6 +85,10 @@ export const Carousel = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  
+  @media screen and (max-width: 480px) {
+    width: 74%;
+  }
 `;
 
 export const Details = styled.div`
@@ -125,6 +152,11 @@ export const Hover = styled.div`
   &:hover ${HoverText} {
     display: flex;
   }
+  
+  @media screen and (max-width: 480px) {
+    height: 180px;
+    width: 140px;
+  }
 `;
 
 export const FavoriteImg = styled.img`
@@ -134,4 +166,9 @@ export const FavoriteImg = styled.img`
   overflow-y: hidden;
   cursor: pointer;
   position: relative;
+  
+  @media screen and (max-width: 480px) {
+    height: 180px;
+    width: 140px;
+  }
 `;
