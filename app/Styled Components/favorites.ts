@@ -23,7 +23,7 @@ export const TextPlace = styled.div`
   /* background-color: blue; */
 
   @media screen and (max-width: 480px) {
-    width: 52%;
+    width: 100%;
     height: 25%;
   }
 `;

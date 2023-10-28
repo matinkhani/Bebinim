@@ -19,7 +19,7 @@ export default function Home() {
         <Header />
         <MainLanding />
         <Favorites />
-        {/* <OnlineCinema /> */}
+        <OnlineCinema />
         {/* <Exclusive /> */}
         {/* <Animation /> */}
         {/* <Movie /> */}
