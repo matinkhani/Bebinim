@@ -9,8 +9,8 @@ export const Container = styled.div`
   flex-direction: column;
   background-size: cover;
   background-position: 40%;
-  
-  @media screen and (max-width: 480px){
+
+  @media screen and (max-width: 480px) {
     /* background-color: red; */
     height: 450px;
   }
@@ -20,8 +20,8 @@ export const FilmPoster = styled.div`
   width: 100%;
   height: 1000px;
   display: flex;
-  
-  @media screen and (max-width: 480px){
+
+  @media screen and (max-width: 480px) {
     /* background-color: red; */
   }
 `;
@@ -32,9 +32,9 @@ export const LeftSide = styled.div`
   display: flex;
   align-items: end;
 
-    
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 480px) {
     /* background-color: gold; */
+    background-image: linear-gradient(to top, #291212, transparent, transparent, transparent);
   }
 `;
 
@@ -55,8 +55,7 @@ export const ArrowIconsLeft = styled.img`
   left: 35px;
   cursor: pointer;
 
-    
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 480px) {
     /* background-color: red; */
     bottom: 15px;
   }
@@ -69,8 +68,8 @@ export const ArrowIconsRight = styled.img`
   left: 90px;
   bottom: 120px;
   cursor: pointer;
-      
-  @media screen and (max-width: 480px){
+
+  @media screen and (max-width: 480px) {
     /* background-color: red; */
     bottom: 15px;
   }
@@ -81,10 +80,11 @@ export const RightSide = styled.div`
   width: 50%;
   display: flex;
   justify-content: center;
-    
-  @media screen and (max-width: 480px){
+
+  @media screen and (max-width: 480px) {
     /* background-color: red; */
     align-items: end;
+    background-image: linear-gradient(to top, #291212, transparent, transparent, transparent);
   }
 `;
 
@@ -95,8 +95,8 @@ export const ExplainContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    
-  @media screen and (max-width: 480px){
+
+  @media screen and (max-width: 480px) {
     /* background-color: red; */
   }
 `;
@@ -108,8 +108,8 @@ export const ExplainAndWatch = styled.div`
   align-items: center;
   justify-content: end;
   gap: 15px;
-    
-  @media screen and (max-width: 480px){
+
+  @media screen and (max-width: 480px) {
     /* background-color: blue; */
     /* flex-direction: column; */
     gap: 15px;
@@ -127,19 +127,19 @@ export const MoreExplainText = styled.p`
   line-height: 24px;
   letter-spacing: 0em;
   /* color: rgba(0, 0, 0, 1); */
-      
-  @media screen and (max-width: 480px){
-  display: none;
+
+  @media screen and (max-width: 480px) {
+    display: none;
     /* background-color: red; */
-   }
+  }
 `;
 
 export const MoreIcon = styled.img`
   width: 24px;
   height: 24px;
   cursor: pointer;
-    
-  @media screen and (max-width: 480px){
+
+  @media screen and (max-width: 480px) {
     /* background-color: red; */
     margin-bottom: 10px;
   }
@@ -163,8 +163,8 @@ export const MoreExplainBtn = styled.button`
   align-items: center;
   border: none;
   cursor: pointer;
-  
-  @media screen and (max-width: 480px){
+
+  @media screen and (max-width: 480px) {
     /* background-color: red; */
     width: 120px;
     height: 50px;
@@ -189,8 +189,8 @@ export const Text = styled.div`
   line-height: 25px;
   letter-spacing: 0em;
   color: rgba(0, 0, 0, 1);
-    
-  @media screen and (max-width: 480px){
+
+  @media screen and (max-width: 480px) {
     /* background-color: red; */
     display: none;
   }
@@ -206,10 +206,11 @@ export const BebinimBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-    
-  @media screen and (max-width: 480px){
-    /* background-color: gold; */
+
+  @media screen and (max-width: 480px) {
+    /* background-image: linear-gradient(to top, gold, transparent); */
     position: unset;
+    height: 280px;
   }
 `;
 
@@ -220,6 +221,13 @@ export const LinksPlace = styled.div`
   display: flex;
   align-items: end;
   justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    gap: 15px;
+  }
 `;
 
 export const BebinimLinks = styled.div`
@@ -232,6 +240,10 @@ export const BebinimLinks = styled.div`
   justify-content: center;
   gap: 10px;
   background-color: rgba(254, 254, 254, 0.2);
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const FreshSVG = styled.img`
