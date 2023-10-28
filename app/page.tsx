@@ -22,9 +22,9 @@ export default function Home() {
         <OnlineCinema />
         <Exclusive />
         <Animation />
-        {/* <Movie /> */}
+        <Movie />
         {/* <Nostalgia /> */}
-        {/* <BestIMDb /> */}
+        <BestIMDb />
       </Container>
       {/* <FooterSection /> */}
     </React.Fragment>

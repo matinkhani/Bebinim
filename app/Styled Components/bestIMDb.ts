@@ -8,6 +8,10 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #291212;
+
+  @media screen and (max-width: 480px) {
+    height: 280vh;
+  }
 `;
 
 export const PlaceImdb = styled.div`
@@ -19,6 +23,10 @@ export const PlaceImdb = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
+  
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 export const ImdbDetails = styled.div`
@@ -29,6 +37,12 @@ export const ImdbDetails = styled.div`
   justify-content: center;
   align-self: flex-end;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    height: 5%;
+    align-items: end;
+  }
 `;
 
 export const ImdbText = styled.div`
@@ -41,6 +55,10 @@ export const ImdbText = styled.div`
   font-family: var(--medium);
   font-size: 20px;
   font-weight: 700;
+
+  @media screen and (max-width: 480px) {
+    align-items: end;
+  }
 `;
 
 export const MidlleLine = styled.div`
@@ -60,6 +78,10 @@ export const More = styled.div`
   display: flex;
   justify-content: end;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    align-items: end;
+  }
 `;
 
 export const ImgContainer = styled.div`
