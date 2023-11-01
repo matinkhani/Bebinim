@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   background-color: #291212;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     height: 700px;
     justify-content: start;
   }
@@ -26,7 +26,7 @@ export const CinemaOlineText = styled.div`
   font-size: 20px;
   font-weight: 700;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
     height: 10%;
     font-size: 18px;
@@ -43,7 +43,7 @@ export const PosterPlace = styled.div`
   align-items: center;
   gap: 35px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     gap: 10px;
     justify-content: center;
   }
@@ -63,6 +63,10 @@ export const Movie1 = styled.div`
   @media screen and (max-width: 600px) {
     height: 140px;
     width: 290px;
+  }
+  @media screen and (max-width: 800px) {
+    height: 140px;
+    width: 500px;
   }
 `;
 
