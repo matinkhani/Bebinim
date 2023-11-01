@@ -12,6 +12,9 @@ export const Container = styled.div`
   @media screen and (max-width: 600px) {
     height: 2100px;
   }
+  @media screen and (max-width: 800px) {
+    height: 135vh;
+  }
 `;
 
 export const PlaceImdb = styled.div`
@@ -26,6 +29,9 @@ export const PlaceImdb = styled.div`
   
   @media screen and (max-width: 600px) {
     width: 70%;
+  }
+  @media screen and (max-width: 800px) {
+    width: 100%;
   }
 `;
 
@@ -42,6 +48,11 @@ export const ImdbDetails = styled.div`
     width: 100%;
     height: 5%;
     align-items: end;
+  }
+  @media screen and (max-width: 800px) {
+    width: 50%;
+    height: 6%;
+    align-self: center;
   }
 `;
 
@@ -82,6 +93,9 @@ export const More = styled.div`
   @media screen and (max-width: 600px) {
     align-items: end;
   }
+  @media screen and (max-width: 800px) {
+    width: 40%;
+  }
 `;
 
 export const ImgContainer = styled.div`
@@ -91,6 +105,11 @@ export const ImgContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @media screen and (max-width: 800px) {
+    height: 180px;
+    width: 268px;
+  }
 `;
 
 export const HoverText = styled.div`
@@ -119,6 +138,11 @@ export const Hover = styled.div`
   &:hover ${HoverText} {
     display: flex;
   }
+
+  @media screen and (max-width: 800px) {
+    height: 180px;
+    width: 268px;
+  }
 `;
 
 export const ImdbImg = styled.img`
@@ -126,6 +150,11 @@ export const ImdbImg = styled.img`
   height: 200px;
   border-radius: 8px;
   cursor: pointer;
+
+  @media screen and (max-width: 800px) {
+    height: 180px;
+    width: 268px;
+  }
 `;
 
 export const Details = styled.div`
