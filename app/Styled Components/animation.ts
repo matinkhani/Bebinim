@@ -77,7 +77,7 @@ export const ArrowRight = styled.div`
   align-items: center;
 `;
 
-export const Carousel = styled.div`
+export const Carousel2 = styled.div`
   height: 100%;
   width: 87.9%;
   display: flex;

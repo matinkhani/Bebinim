@@ -9,7 +9,7 @@ import {
   CarouselContainer,
   TextPlace,
   Text,
-  Carousel,
+  Carousel2,
   FavoriteImg,
   Hover,
   HoverText,
@@ -22,16 +22,82 @@ import {
 } from "../Styled Components/animation";
 import AnimationsArr from "./arrayAnimation";
 import Link from "next/link";
-import { LinkPlace } from "../Styled Components/favorites";
+import { ArrowPlace, Arrowleft, Arrowright, LinkPlace } from "../Styled Components/favorites";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import Carousel from "nuka-carousel";
+import "./styleA.css";
 
 export default function Animation() {
+  const renderCenterLeftControls = ({
+    previousSlide,
+  }: {
+    previousSlide: any;
+  }) => <Arrowleft onClick={previousSlide} src="./images/arrowleft.svg" />;
+
+  const renderCenterRightControls = ({ nextSlide }: { nextSlide: any }) => {
+    return <Arrowright onClick={nextSlide} src="./images/arrowright.svg" />;
+  };
+  const Responsive480 = useMediaQuery("(max-width:480px)");
   return (
     <Container>
       <TextPlace>
         <Text>انیمیشن</Text>
       </TextPlace>
-      <CarouselContainer>
-        <Carousel>
+      {Responsive480 ? (
+        <>
+          <ArrowPlace>
+            <Carousel
+              slidesToScroll={1}
+              slidesToShow={2}
+              cellSpacing={0}
+              wrapAround={true}
+              style={{
+                height: "100%",
+                width: "80%",
+                gap: "5px",
+                marginLeft: "40px",
+                marginTop: "40px",
+              }}
+              renderCenterLeftControls={renderCenterLeftControls}
+              renderCenterRightControls={renderCenterRightControls}
+            >
+              {AnimationsArr.map((item, index) => (
+                <div
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <FavoriteImg key={index} src={item.url} />
+                  <Hover>
+                    {" "}
+                    <Link href={`Favorites/${item.id}`}>
+                      <LinkPlace>
+                        <HoverText>
+                          <Details>
+                            <NameFilm>{item.name}</NameFilm>
+                            <DateFilm>
+                              <Year>{item.year}</Year>
+                              <Line />
+                              <Name>{item.category}</Name>
+                            </DateFilm>
+                          </Details>
+                        </HoverText>
+                      </LinkPlace>
+                    </Link>
+                  </Hover>
+                </div>
+              ))}
+            </Carousel>
+          </ArrowPlace>
+        </>
+      ) : (
+        <>
+          <CarouselContainer>
+        <Carousel2>
           <Swiper
             navigation={true}
             slidesPerView={6}
@@ -74,8 +140,10 @@ export default function Animation() {
               );
             })}
           </Swiper>
-        </Carousel>
+        </Carousel2>
       </CarouselContainer>
+        </>
+      )}
     </Container>
   );
 }
