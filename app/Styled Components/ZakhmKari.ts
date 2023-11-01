@@ -21,7 +21,7 @@ export const BgImg = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     background-position: 10% 50%;
   }
 `;
@@ -53,6 +53,13 @@ export const Details = styled.div`
     align-items: center;
     gap: 0px;
   }
+  @media screen and (max-width: 800px) {
+    width: 90%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+  }
 `;
 
 export const MovieIacon = styled.div`
@@ -61,6 +68,12 @@ export const MovieIacon = styled.div`
 
   @media screen and (max-width: 600px) {
     width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  @media screen and (max-width: 800px) {
+    width: 28%;
     height: 100%;
     display: flex;
     justify-content: end;
@@ -78,6 +91,9 @@ export const DetailsText = styled.div`
     align-items: end;
     width: 225px;
   }
+  @media screen and (max-width: 800px) {
+    width: 350px;
+  }
 `;
 export const Director = styled.div`
   height: 45px;
@@ -91,7 +107,7 @@ export const Director = styled.div`
   font-weight: 500;
   line-height: normal;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     width: 80%;
     justify-content: end;
   }
@@ -105,7 +121,7 @@ export const RatePlace = styled.div`
   align-items: center;
   gap: 24px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     width: 58%;
   }
 `;
@@ -174,6 +190,11 @@ export const DetailsMovieText = styled.div`
     height: 200px;
     font-size: 12px;
   }
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    height: 200px;
+    font-size: 14px;
+  }
 `;
 export const DetailsMovieBtn = styled.div`
   width: 110px;
@@ -203,6 +224,14 @@ export const DetailsMovieBtn = styled.div`
     border-radius: 8px;
     justify-content: center;
   }
+  @media screen and (max-width: 800px) {
+    width: 120px;
+    height: 50px;
+    margin-top: 50px;
+    font-size: 16px;
+    border-radius: 8px;
+    justify-content: center;
+  }
 `;
 
 export const WatchSVG = styled.img`
@@ -227,6 +256,11 @@ export const TextPlace = styled.div`
   align-items: end;
 
   @media screen and (max-width: 600px) {
+    width: 100%;
+    height: 15%;
+    align-items: center;
+  }
+  @media screen and (max-width: 800px) {
     width: 100%;
     height: 15%;
     align-items: center;
