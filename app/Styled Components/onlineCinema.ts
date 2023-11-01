@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   background-color: #291212;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     height: 700px;
     justify-content: start;
   }
@@ -26,7 +26,7 @@ export const CinemaOlineText = styled.div`
   font-size: 20px;
   font-weight: 700;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 100%;
     height: 10%;
     font-size: 18px;
@@ -43,7 +43,7 @@ export const PosterPlace = styled.div`
   align-items: center;
   gap: 35px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     gap: 10px;
     justify-content: center;
   }
@@ -60,7 +60,7 @@ export const Movie1 = styled.div`
   cursor: pointer;
   position: relative;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     height: 140px;
     width: 290px;
   }
@@ -79,7 +79,7 @@ export const DetailsPlace = styled.div`
   border: 4px solid #52b5b4;
   border-radius: 8px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     height: 140px;
     width: 290px;
   }
@@ -109,7 +109,7 @@ export const Hover = styled.div`
     display: flex;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     height: 140px;
     width: 290px;
   }
@@ -122,7 +122,7 @@ export const DetalisTop = styled.div`
   align-items: center;
   justify-content: space-evenly;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 70%;
   }
 `;
@@ -153,7 +153,7 @@ export const DetailsText = styled.div`
   direction: rtl;
   line-height: 35px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     font-size: 10px;
     line-height: 25px;
   }
