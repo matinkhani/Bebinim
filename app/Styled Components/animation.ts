@@ -28,7 +28,7 @@ export const TextPlace = styled.div`
     height: 15%;
     align-items: start;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 600px) and (max-width: 800px) {
     width: 100%;
     height: 20%;
   }
