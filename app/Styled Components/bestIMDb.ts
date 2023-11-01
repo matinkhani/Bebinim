@@ -31,7 +31,7 @@ export const PlaceImdb = styled.div`
     width: 70%;
   }
   @media screen and (max-width: 800px) {
-    width: 100%;
+    width: 91%;
   }
 `;
 
