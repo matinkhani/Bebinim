@@ -12,7 +12,7 @@ export const Container = styled.div`
   @media screen and (max-width: 600px) {
     height: 200vh;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 600px) and (max-width: 800px) {
     height: 100vh;
   }
 `;
@@ -33,7 +33,7 @@ export const ExclusiveText = styled.div`
     height: 5%;
     font-size: 18px;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 600px) and (max-width: 800px) {
     width: 100%;
     height: 15%;
     font-size: 18px;
@@ -51,7 +51,7 @@ export const ExclusiveMovie = styled.div`
   @media screen and (max-width: 600px) {
     flex-direction: column;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 600px) and (max-width: 800px) {
     flex-wrap: wrap;
     height: 95%;
   }
@@ -68,7 +68,7 @@ export const Movies = styled.div`
   @media screen and (max-width: 600px) {
     width: 300px;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 600px) and (max-width: 800px) {
     width: 235px;
     height: 300px;
   }
