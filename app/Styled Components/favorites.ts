@@ -20,7 +20,7 @@ export const TextPlace = styled.div`
   justify-content: center;
   align-items: end;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
     height: 25%;
   }
@@ -33,7 +33,7 @@ export const Text = styled.p`
   font-weight: 700;
   color: rgba(254, 254, 254, 1);
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     font-size: 18px;
   }
 `;
@@ -143,7 +143,7 @@ export const Hover = styled.div`
     display: flex;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     height: 180px;
     width: 140px;
   }
@@ -157,7 +157,7 @@ export const FavoriteImg = styled.img`
   cursor: pointer;
   position: relative;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     height: 180px;
     width: 140px;
   }
@@ -170,7 +170,7 @@ export const LinkPlace = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     height: 180px;
     width: 140px;
   }

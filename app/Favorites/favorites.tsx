@@ -41,6 +41,7 @@ export default function Favorites() {
     return <Arrowright onClick={nextSlide} src="./images/arrowright.svg" />;
   };
   const Responsive600 = useMediaQuery("(max-width:600px)");
+  const Responsive800 = useMediaQuery("(max-width:800px)");
   return (
     <Container>
       <TextPlace>
@@ -52,6 +53,57 @@ export default function Favorites() {
             <Carousel
               slidesToScroll={1}
               slidesToShow={2}
+              cellSpacing={0}
+              wrapAround={true}
+              style={{
+                height: "100%",
+                width: "86.5%",
+                gap: "5px",
+                marginLeft: "40px",
+                marginTop: "40px",
+              }}
+              renderCenterLeftControls={renderCenterLeftControls}
+              renderCenterRightControls={renderCenterRightControls}
+            >
+              {FavoritesArr.map((item, index) => (
+                <div
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <FavoriteImg key={index} src={item.url} />
+                  <Hover>
+                    {" "}
+                    <Link href={`Favorites/${item.id}`}>
+                      <LinkPlace>
+                        <HoverText>
+                          <Details>
+                            <NameFilm>{item.name}</NameFilm>
+                            <DateFilm>
+                              <Year>{item.year}</Year>
+                              <Line />
+                              <Name>{item.category}</Name>
+                            </DateFilm>
+                          </Details>
+                        </HoverText>
+                      </LinkPlace>
+                    </Link>
+                  </Hover>
+                </div>
+              ))}
+            </Carousel>
+          </ArrowPlace>
+        </>
+      ) : Responsive800 ? (
+        <>
+          <ArrowPlace>
+            <Carousel
+              slidesToScroll={1}
+              slidesToShow={3}
               cellSpacing={0}
               wrapAround={true}
               style={{
