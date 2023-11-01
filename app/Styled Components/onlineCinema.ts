@@ -10,7 +10,7 @@ export const Container = styled.div`
   background-color: #291212;
 
   @media screen and (max-width: 800px) {
-    height: 700px;
+    height: 800px;
     justify-content: start;
   }
 `;
@@ -28,9 +28,10 @@ export const CinemaOlineText = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 100%;
-    height: 10%;
+    height: 15%;
     font-size: 18px;
     justify-content: center;
+    align-items: end;
   }
 `;
 
@@ -64,7 +65,7 @@ export const Movie1 = styled.div`
     height: 140px;
     width: 290px;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 600px) and (max-width: 800px) {
     height: 140px;
     width: 500px;
   }
