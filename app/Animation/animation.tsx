@@ -74,7 +74,7 @@ export default function Animation() {
                   <FavoriteImg key={index} src={item.url} />
                   <Hover>
                     {" "}
-                    <Link href={`Favorites/${item.id}`}>
+                    <Link href={`Animation/${item.id}`}>
                       <LinkPlace>
                         <HoverText>
                           <Details>
