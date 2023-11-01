@@ -40,7 +40,7 @@ const renderCenterRightControls = ({ nextSlide }: { nextSlide: any }) => {
   );
 };
 export default function MainLanding() {
-  const Responsive480 = useMediaQuery("(max-width:480px)");
+  const Responsive600 = useMediaQuery("(max-width:600px)");
 
   return (
     <>
@@ -54,7 +54,7 @@ export default function MainLanding() {
           return (
             <Container
               style={
-                Responsive480
+                Responsive600
                   ? { backgroundImage: `url(${item.urlMobile})` }
                   : { backgroundImage: `url(${item.url})` }
               }
@@ -66,7 +66,7 @@ export default function MainLanding() {
 
                 <RightSide>
                   <ExplainContainer>
-                    {Responsive480 ? (
+                    {Responsive600 ? (
                       <>
                         <ExplainAndWatch>
                           <MoreExplainText
@@ -96,7 +96,7 @@ export default function MainLanding() {
                                   : item.id === 44
                                   ? "./images/mores2.svg"
                                   : item.id === 45
-                                  ? Responsive480
+                                  ? Responsive600
                                     ? "./images/mores2.svg"
                                     : "./images/mores2.svg"
                                   : ""
