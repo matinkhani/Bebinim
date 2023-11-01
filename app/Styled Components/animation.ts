@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: end;
   background-color: #291212;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     height: 35vh;
     margin-top: -50px;
     justify-content: center;
@@ -23,7 +23,7 @@ export const TextPlace = styled.div`
   justify-content: center;
   align-items: end;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 100%;
     height: 15%;
     align-items: start;
@@ -37,7 +37,7 @@ export const Text = styled.p`
   font-weight: 700;
   color: rgba(254, 254, 254, 1);
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     font-size: 18px;
   }
 `;
@@ -50,7 +50,7 @@ export const CarouselContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     height: 180px;
   }
 `;
@@ -84,7 +84,7 @@ export const Carousel2 = styled.div`
   justify-content: space-evenly;
   align-items: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 74%;
   }
 `;
@@ -151,7 +151,7 @@ export const Hover = styled.div`
     display: flex;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     height: 180px;
     width: 140px;
   }
@@ -165,7 +165,7 @@ export const FavoriteImg = styled.img`
   cursor: pointer;
   position: relative;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     height: 180px;
     width: 140px;
   }
