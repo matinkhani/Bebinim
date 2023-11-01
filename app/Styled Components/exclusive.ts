@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: end;
   background-color: #291212;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     height: 200vh;
   }
 `;
@@ -25,7 +25,7 @@ export const ExclusiveText = styled.div`
   font-weight: 700;
   color: white;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 100%;
     height: 5%;
     font-size: 18px;
@@ -40,7 +40,7 @@ export const ExclusiveMovie = styled.div`
   align-items: center;
   gap: 30px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     flex-direction: column;
   }
 `;
@@ -53,7 +53,7 @@ export const Movies = styled.div`
   cursor: pointer;
   position: relative;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 300px;
   }
 `;
@@ -71,7 +71,7 @@ export const Details = styled.div`
   align-items: center;
   border-radius: 8px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 300px;
     justify-content: center;
     gap: 140px;
@@ -151,7 +151,7 @@ export const Hover = styled.div`
     display: flex;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 300px;
     height: 350px;
   }
