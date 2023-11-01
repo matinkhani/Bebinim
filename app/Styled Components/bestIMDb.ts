@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   background-color: #291212;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     height: 2100px;
   }
 `;
@@ -24,7 +24,7 @@ export const PlaceImdb = styled.div`
   flex-wrap: wrap;
   gap: 25px;
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 70%;
   }
 `;
@@ -38,7 +38,7 @@ export const ImdbDetails = styled.div`
   align-self: flex-end;
   align-items: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 100%;
     height: 5%;
     align-items: end;
@@ -56,7 +56,7 @@ export const ImdbText = styled.div`
   font-size: 20px;
   font-weight: 700;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     align-items: end;
   }
 `;
@@ -79,7 +79,7 @@ export const More = styled.div`
   justify-content: end;
   align-items: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     align-items: end;
   }
 `;
