@@ -10,9 +10,9 @@ export const Container = styled.div`
   background-color: #291212;
 
   @media screen and (max-width: 600px) {
-    height: 2100px;
+    height: 265vh;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 600px) and (max-width: 800px) {
     height: 135vh;
   }
 `;
@@ -26,11 +26,11 @@ export const PlaceImdb = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
-  
+
   @media screen and (max-width: 600px) {
     width: 70%;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 600px) and (max-width: 800px) {
     width: 91%;
   }
 `;
@@ -45,11 +45,11 @@ export const ImdbDetails = styled.div`
   align-items: center;
 
   @media screen and (max-width: 600px) {
-    width: 100%;
-    height: 5%;
-    align-items: end;
+    width: 84%;
+    height: 4%;
+    justify-content: start;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 600px) and (max-width: 800px) {
     width: 50%;
     height: 6%;
     align-self: center;
@@ -66,10 +66,6 @@ export const ImdbText = styled.div`
   font-family: var(--medium);
   font-size: 20px;
   font-weight: 700;
-
-  @media screen and (max-width: 600px) {
-    align-items: end;
-  }
 `;
 
 export const MidlleLine = styled.div`
@@ -90,10 +86,7 @@ export const More = styled.div`
   justify-content: end;
   align-items: center;
 
-  @media screen and (max-width: 600px) {
-    align-items: end;
-  }
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 600px) and (max-width: 800px) {
     width: 40%;
   }
 `;
@@ -106,7 +99,7 @@ export const ImgContainer = styled.div`
   align-items: center;
   position: relative;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (min-width: 600px) and (max-width: 800px) {
     height: 180px;
     width: 268px;
   }
