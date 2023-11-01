@@ -40,13 +40,13 @@ export default function Favorites() {
   const renderCenterRightControls = ({ nextSlide }: { nextSlide: any }) => {
     return <Arrowright onClick={nextSlide} src="./images/arrowright.svg" />;
   };
-  const Responsive480 = useMediaQuery("(max-width:480px)");
+  const Responsive600 = useMediaQuery("(max-width:600px)");
   return (
     <Container>
       <TextPlace>
         <Text>محبوب‌ترین‌های ببینیم</Text>
       </TextPlace>
-      {Responsive480 ? (
+      {Responsive600 ? (
         <>
           <ArrowPlace>
             <Carousel
