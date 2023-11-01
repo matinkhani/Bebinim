@@ -69,7 +69,7 @@ export const ArrowRight = styled.div`
   align-items: center;
 `;
 
-export const Carousel = styled.div`
+export const Carousel2 = styled.div`
   height: 100%;
   width: 87.9%;
   display: flex;
@@ -175,3 +175,26 @@ export const LinkPlace = styled.div`
     width: 140px;
   }
 `;
+
+export const ArrowPlace = styled.div`
+  height: 100%;
+  width: 100%;
+  position: relative;
+`;
+
+export const Arrowright = styled.img`
+height: 48px;
+width: 48px;
+position: absolute;
+top: 40%;
+right: 1.5%;
+cursor: pointer;
+`
+export const Arrowleft = styled.img`
+height: 48px;
+width: 48px;
+position: absolute;
+top: 40%;
+left: 1.5%;
+cursor: pointer;
+`
