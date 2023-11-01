@@ -30,7 +30,7 @@ import Link from "next/link";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function Movie() {
-  const Responsive480 = useMediaQuery("(max-width:480px)");
+  const Responsive600 = useMediaQuery("(max-width:600px)");
   return (
     <Container>
       {ZakhmKariArr.map((item, index) => {
@@ -78,7 +78,7 @@ export default function Movie() {
 
                 <MovieCarousel
                   style={
-                    Responsive480 ? { display: "none" } : { display: "flex" }
+                    Responsive600 ? { display: "none" } : { display: "flex" }
                   }
                 >
                   <CarouselContainer>

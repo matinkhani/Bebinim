@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     height: 650px;
   }
 `;
@@ -21,7 +21,7 @@ export const BgImg = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     background-position: 10% 50%;
   }
 `;
@@ -46,7 +46,7 @@ export const Details = styled.div`
   display: flex;
   justify-content: end;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 90%;
     height: 100%;
     justify-content: space-between;
@@ -59,7 +59,7 @@ export const MovieIacon = styled.div`
   width: 276px;
   height: 181px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 35%;
     height: 100%;
     display: flex;
@@ -74,7 +74,7 @@ export const DetailsText = styled.div`
   flex-direction: column;
   align-items: end;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     align-items: end;
     width: 225px;
   }
@@ -91,7 +91,7 @@ export const Director = styled.div`
   font-weight: 500;
   line-height: normal;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 80%;
     justify-content: end;
   }
@@ -105,7 +105,7 @@ export const RatePlace = styled.div`
   align-items: center;
   gap: 24px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 58%;
   }
 `;
@@ -169,7 +169,7 @@ export const DetailsMovieText = styled.div`
   font-style: normal;
   font-weight: 500;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 60%;
     height: 200px;
     font-size: 12px;
@@ -195,7 +195,7 @@ export const DetailsMovieBtn = styled.div`
   border: none;
   cursor: pointer;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 120px;
     height: 50px;
     margin-top: 190px;
@@ -226,7 +226,7 @@ export const TextPlace = styled.div`
   align-self: end;
   align-items: end;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     width: 100%;
     height: 15%;
     align-items: center;
