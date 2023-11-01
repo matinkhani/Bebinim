@@ -41,6 +41,7 @@ const renderCenterRightControls = ({ nextSlide }: { nextSlide: any }) => {
 };
 export default function MainLanding() {
   const Responsive600 = useMediaQuery("(max-width:600px)");
+  const Responsive800 = useMediaQuery("(max-width:800px)");
 
   return (
     <>
@@ -54,7 +55,7 @@ export default function MainLanding() {
           return (
             <Container
               style={
-                Responsive600
+                Responsive800
                   ? { backgroundImage: `url(${item.urlMobile})` }
                   : { backgroundImage: `url(${item.url})` }
               }
@@ -66,7 +67,7 @@ export default function MainLanding() {
 
                 <RightSide>
                   <ExplainContainer>
-                    {Responsive600 ? (
+                    {Responsive800 ? (
                       <>
                         <ExplainAndWatch>
                           <MoreExplainText
