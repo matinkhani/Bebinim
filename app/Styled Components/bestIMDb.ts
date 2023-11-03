@@ -15,6 +15,9 @@ export const Container = styled.div`
   @media screen and (min-width: 600px) and (max-width: 1200px) {
     height: 135vh;
   }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 77vh;
+  }
 `;
 
 export const PlaceImdb = styled.div`
@@ -32,6 +35,10 @@ export const PlaceImdb = styled.div`
   }
   @media screen and (min-width: 600px) and (max-width: 1200px) {
     width: 91%;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 95%;
+    height: 80%;
   }
 `;
 
@@ -53,6 +60,9 @@ export const ImdbDetails = styled.div`
     width: 50%;
     height: 6%;
     align-self: center;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 29%;
   }
 `;
 
@@ -103,6 +113,10 @@ export const ImgContainer = styled.div`
     height: 180px;
     width: 268px;
   }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 170px;
+    width: 250px;
+  }
 `;
 
 export const HoverText = styled.div`
@@ -136,6 +150,10 @@ export const Hover = styled.div`
     height: 180px;
     width: 268px;
   }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 170px;
+    width: 250px;
+  }
 `;
 
 export const ImdbImg = styled.img`
@@ -147,6 +165,10 @@ export const ImdbImg = styled.img`
   @media screen and (max-width: 900px) {
     height: 180px;
     width: 268px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 170px;
+    width: 250px;
   }
 `;
 
