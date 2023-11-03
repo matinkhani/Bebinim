@@ -13,6 +13,9 @@ export const Container = styled.div`
     height: 800px;
     justify-content: start;
   }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 75vh;
+  }
 `;
 
 export const CinemaOlineText = styled.div`
@@ -33,6 +36,10 @@ export const CinemaOlineText = styled.div`
     justify-content: center;
     align-items: center;
   }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 89%;
+    height: 20%;
+  }
 `;
 
 export const PosterPlace = styled.div`
@@ -47,6 +54,9 @@ export const PosterPlace = styled.div`
   @media screen and (max-width: 1200px) {
     gap: 20px;
     justify-content: center;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 90%;
   }
 `;
 
@@ -71,6 +81,10 @@ export const Movie1 = styled.div`
   }
   @media screen and (min-width: 800px) and (max-width: 1200px) {
     height: 160px;
+    width: 520px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 205px;
     width: 520px;
   }
 `;
