@@ -12,7 +12,7 @@ export const Container = styled.div`
   @media screen and (max-width: 600px) {
     height: 265vh;
   }
-  @media screen and (min-width: 600px) and (max-width: 900px) {
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
     height: 135vh;
   }
 `;
@@ -30,7 +30,7 @@ export const PlaceImdb = styled.div`
   @media screen and (max-width: 600px) {
     width: 70%;
   }
-  @media screen and (min-width: 600px) and (max-width: 900px) {
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
     width: 91%;
   }
 `;
@@ -49,7 +49,7 @@ export const ImdbDetails = styled.div`
     height: 4%;
     justify-content: start;
   }
-  @media screen and (min-width: 600px) and (max-width: 900px) {
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
     width: 50%;
     height: 6%;
     align-self: center;
