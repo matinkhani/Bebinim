@@ -26,6 +26,9 @@ export const Container = styled.div`
 export const ExlContainer = styled.div`
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 
   @media screen and (max-width: 1200px) {
     width: 80%;
