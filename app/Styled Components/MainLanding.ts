@@ -19,6 +19,9 @@ export const Container = styled.div`
   @media screen and (min-width: 900px) and (max-width: 1200px) {
     height: 600px;
   }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 650px;
+  }
 `;
 
 export const FilmPoster = styled.div`
@@ -212,6 +215,9 @@ export const BebinimBox = styled.div`
   @media screen and (max-width: 1200px) {
     position: unset;
     height: 280px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    left: 0px;
   }
 `;
 
