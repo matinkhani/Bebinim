@@ -11,6 +11,9 @@ export const Container = styled.div`
   @media screen and (max-width: 600px) {
     height: 35vh;
   }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 55vh;
+  }
 `;
 
 export const TextPlace = styled.div`
@@ -23,6 +26,9 @@ export const TextPlace = styled.div`
   @media screen and (max-width: 1200px) {
     width: 100%;
     height: 25%;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 26%;
   }
 `;
 
