@@ -16,6 +16,9 @@ export const Container = styled.div`
   @media screen and (max-width: 900px) {
     height: 500px;
   }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    height: 600px;
+  }
 `;
 
 export const FilmPoster = styled.div`
@@ -30,7 +33,7 @@ export const LeftSide = styled.div`
   display: flex;
   align-items: end;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     background-image: linear-gradient(
       to top,
       #291212,
@@ -58,7 +61,7 @@ export const ArrowIconsLeft = styled.img`
   left: 35px;
   cursor: pointer;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     bottom: 15px;
   }
 `;
@@ -71,7 +74,7 @@ export const ArrowIconsRight = styled.img`
   bottom: 120px;
   cursor: pointer;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     bottom: 15px;
   }
 `;
@@ -82,7 +85,7 @@ export const RightSide = styled.div`
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     align-items: end;
     background-image: linear-gradient(
       to top,
@@ -111,7 +114,7 @@ export const ExplainAndWatch = styled.div`
   justify-content: end;
   gap: 15px;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     gap: 15px;
     width: 100%;
     height: 85%;
@@ -131,6 +134,9 @@ export const MoreExplainText = styled.p`
   @media screen and (max-width: 900px) {
     display: none;
   }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    margin-bottom: 10px;
+  }
 `;
 
 export const MoreIcon = styled.img`
@@ -138,7 +144,7 @@ export const MoreIcon = styled.img`
   height: 24px;
   cursor: pointer;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     margin-bottom: 10px;
   }
 `;
@@ -162,7 +168,7 @@ export const MoreExplainBtn = styled.button`
   border: none;
   cursor: pointer;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     width: 120px;
     height: 50px;
     font-size: 16px;
@@ -187,7 +193,7 @@ export const Text = styled.div`
   letter-spacing: 0em;
   color: rgba(0, 0, 0, 1);
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 `;
@@ -203,7 +209,7 @@ export const BebinimBox = styled.div`
   align-items: center;
   justify-content: space-evenly;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     position: unset;
     height: 280px;
   }
@@ -222,6 +228,9 @@ export const LinksPlace = styled.div`
     align-items: center;
     height: 90%;
     gap: 15px;
+  }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    height: 40%;
   }
 `;
 
