@@ -18,7 +18,7 @@ export const Container = styled.div`
     align-items: center;
   }
   @media screen and (min-width: 900px) and (max-width: 1200px) {
-    height: 125vh;
+    height: 140vh;
     align-items: center;
   }
 `;
@@ -66,9 +66,13 @@ export const ExclusiveMovie = styled.div`
   @media screen and (max-width: 600px) {
     flex-direction: column;
   }
-  @media screen and (min-width: 600px) and (max-width: 1200px) {
+  @media screen and (min-width: 600px) and (max-width: 900px) {
     flex-wrap: wrap;
-    height: 95%;
+    height: 80%;
+  }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    flex-wrap: wrap;
+    height: 80%;
   }
 `;
 
@@ -84,7 +88,7 @@ export const Movies = styled.div`
     width: 300px;
   }
   @media screen and (min-width: 600px) and (max-width: 900px) {
-    width: 235px;
+    width: 220px;
     height: 300px;
   }
   @media screen and (min-width: 900px) and (max-width: 1200px) {

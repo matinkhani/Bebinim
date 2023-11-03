@@ -14,6 +14,11 @@ export const Container = styled.div`
     justify-content: center;
     gap: 20px;
   }
+
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+      align-items: center;
+      justify-content: center;
+  }
 `;
 
 export const TextPlace = styled.div`
@@ -28,7 +33,7 @@ export const TextPlace = styled.div`
     height: 15%;
     align-items: start;
   }
-  @media screen and (min-width: 600px) and (max-width: 900px) {
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
     width: 100%;
     height: 20%;
   }
@@ -54,7 +59,7 @@ export const CarouselContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     height: 180px;
   }
 `;
@@ -88,7 +93,7 @@ export const Carousel2 = styled.div`
   justify-content: space-evenly;
   align-items: center;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     width: 74%;
   }
 `;
@@ -155,7 +160,7 @@ export const Hover = styled.div`
     display: flex;
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     height: 180px;
     width: 140px;
   }
@@ -169,7 +174,7 @@ export const FavoriteImg = styled.img`
   cursor: pointer;
   position: relative;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     height: 180px;
     width: 140px;
   }
