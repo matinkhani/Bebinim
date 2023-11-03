@@ -31,7 +31,7 @@ export const CinemaOlineText = styled.div`
     height: 15%;
     font-size: 18px;
     justify-content: center;
-    align-items: end;
+    align-items: center;
   }
 `;
 
