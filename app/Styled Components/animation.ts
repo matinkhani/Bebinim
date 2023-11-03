@@ -14,10 +14,12 @@ export const Container = styled.div`
     justify-content: center;
     gap: 20px;
   }
-
   @media screen and (min-width: 900px) and (max-width: 1200px) {
-      align-items: center;
-      justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 55vh;
   }
 `;
 
