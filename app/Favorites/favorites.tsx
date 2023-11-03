@@ -42,6 +42,7 @@ export default function Favorites() {
   };
   const Responsive600 = useMediaQuery("(max-width:600px)");
   const Responsive900 = useMediaQuery("(max-width:900px)");
+  const Responsive1200 = useMediaQuery("(max-width:1200px)");
   return (
     <Container>
       <TextPlace>
@@ -109,6 +110,57 @@ export default function Favorites() {
               style={{
                 height: "100%",
                 width: "88%",
+                gap: "5px",
+                marginLeft: "40px",
+                marginTop: "40px",
+              }}
+              renderCenterLeftControls={renderCenterLeftControls}
+              renderCenterRightControls={renderCenterRightControls}
+            >
+              {FavoritesArr.map((item, index) => (
+                <div
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <FavoriteImg key={index} src={item.url} />
+                  <Hover>
+                    {" "}
+                    <Link href={`Favorites/${item.id}`}>
+                      <LinkPlace>
+                        <HoverText>
+                          <Details>
+                            <NameFilm>{item.name}</NameFilm>
+                            <DateFilm>
+                              <Year>{item.year}</Year>
+                              <Line />
+                              <Name>{item.category}</Name>
+                            </DateFilm>
+                          </Details>
+                        </HoverText>
+                      </LinkPlace>
+                    </Link>
+                  </Hover>
+                </div>
+              ))}
+            </Carousel>
+          </ArrowPlace>
+        </>
+      ) : Responsive1200 ? (
+        <>
+          <ArrowPlace>
+            <Carousel
+              slidesToScroll={2}
+              slidesToShow={4}
+              cellSpacing={0}
+              wrapAround={true}
+              style={{
+                height: "100%",
+                width: "92%",
                 gap: "5px",
                 marginLeft: "40px",
                 marginTop: "40px",
