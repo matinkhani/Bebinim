@@ -216,4 +216,8 @@ export const Hover = styled.div`
     width: 300px;
     height: 350px;
   }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 260px;
+    height: 390px;
+  }
 `;
