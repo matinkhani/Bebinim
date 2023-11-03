@@ -21,6 +21,10 @@ export const Container = styled.div`
     height: 140vh;
     align-items: center;
   }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 80vh;
+    align-items: center;
+  }
 `;
 
 export const ExlContainer = styled.div`
@@ -32,6 +36,9 @@ export const ExlContainer = styled.div`
 
   @media screen and (max-width: 1200px) {
     width: 80%;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 95%;
   }
 `;
 
@@ -56,6 +63,11 @@ export const ExclusiveText = styled.div`
     height: 15%;
     font-size: 18px;
   }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 18%;
+    height: 15%;
+    align-items: end;
+  }
 `;
 
 export const ExclusiveMovie = styled.div`
@@ -77,6 +89,9 @@ export const ExclusiveMovie = styled.div`
     flex-wrap: wrap;
     height: 80%;
   }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    gap: 20px;
+  }
 `;
 
 export const Movies = styled.div`
@@ -96,6 +111,10 @@ export const Movies = styled.div`
   }
   @media screen and (min-width: 900px) and (max-width: 1200px) {
     width: 285px;
+    height: 390px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 260px;
     height: 390px;
   }
 `;
