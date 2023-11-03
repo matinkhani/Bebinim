@@ -43,7 +43,7 @@ export default function Animation() {
     return <Arrowright onClick={nextSlide} src="./images/arrowright.svg" />;
   };
   const Responsive600 = useMediaQuery("(max-width:600px)");
-  const Responsive800 = useMediaQuery("(max-width:800px)");
+  const Responsive900 = useMediaQuery("(max-width:900px)");
   return (
     <Container>
       <TextPlace>
@@ -100,7 +100,7 @@ export default function Animation() {
             </Carousel>
           </ArrowPlace>
         </>
-      ) : Responsive800 ? (
+      ) : Responsive900 ? (
         <>
           <ArrowPlace>
             <Carousel
@@ -110,7 +110,7 @@ export default function Animation() {
               wrapAround={true}
               style={{
                 height: "100%",
-                width: "86.5%",
+                width: "88%",
                 gap: "5px",
                 marginLeft: "40px",
                 marginTop: "40px",
