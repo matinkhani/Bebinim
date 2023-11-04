@@ -205,7 +205,7 @@ export const BebinimBox = styled.div`
   width: 100%;
   height: 128px;
   position: absolute;
-  top: 562px;
+  top: 617px;
   background-image: linear-gradient(to top, #291212, transparent);
   display: flex;
   align-items: center;
