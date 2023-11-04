@@ -60,7 +60,7 @@ export default function Subscribe() {
             <AutoTop>
               <AutoPrice>
                 <LinkPlace>
-                  <p style={{ cursor: "pointer" }}>۷۵‍‍‍,۰۰۰ تومان</p>
+                  <p style={{ cursor: "pointer",fontSize:"15px" }}>۷۵‍‍‍,۰۰۰ تومان</p>
                   <img
                     style={{ cursor: "pointer" }}
                     src="./images/Subscribe/arrow.svg"

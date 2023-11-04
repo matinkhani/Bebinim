@@ -132,9 +132,9 @@ export default function Header() {
             <BebinimSection>
               <BebinimIconAndText>
                 <BebinimText style={{ fontSize: 28 }}>
-                  <Link href="#">ببینیم</Link>
+                  <Link href="/">ببینیم</Link>
                 </BebinimText>
-                <Link href="#">
+                <Link href="/">
                   <BebinimIcon
                     style={{ height: 35, width: 35 }}
                     src="./images/BebinimIcon.svg"
@@ -576,9 +576,9 @@ export default function Header() {
               <BebinimPlace>
                 <BebinimIconAndText>
                   <BebinimText>
-                    <Link href="#">ببینیم</Link>
+                    <Link href="/">ببینیم</Link>
                   </BebinimText>
-                  <Link href="#">
+                  <Link href="/">
                     <BebinimIcon src="./images/BebinimIcon.svg" />
                   </Link>
                 </BebinimIconAndText>

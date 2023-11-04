@@ -19,6 +19,9 @@ import {
   MoreIcon,
   ArrowIconsRight,
   ArrowIconsLeft,
+  IconPlace,
+  CenterPlace,
+  CenterPl,
 } from "../Styled Components/MainLanding";
 import MainMovie from "./array";
 import Link from "next/link";
@@ -181,18 +184,30 @@ export default function MainLanding() {
       <BebinimBox>
         <LinksPlace>
           <BebinimLinks>
-            <FreshText>انیمیشن تازه ببینیم</FreshText>
-            <FreshSVG src="./images/freshAnimation.svg" />
+            <CenterPlace>
+              <CenterPl>
+                <FreshText>انیمیشن تازه ببینیم</FreshText>
+                <FreshSVG src="./images/freshAnimation.svg" />
+              </CenterPl>
+            </CenterPlace>
           </BebinimLinks>
 
           <BebinimLinks>
-            <FreshText>سریال تازه ببینیم</FreshText>
-            <FreshSVG src="./images/freshSerial.svg" />
+            <CenterPlace>
+              <CenterPl>
+                <FreshText>سریال تازه ببینیم</FreshText>
+                <FreshSVG src="./images/freshSerial.svg" />
+              </CenterPl>
+            </CenterPlace>
           </BebinimLinks>
 
           <BebinimLinks>
-            <FreshText>فیلم تازه ببینیم</FreshText>
-            <FreshSVG src="./images/freshMovie.svg" />
+            <CenterPlace>
+              <CenterPl>
+                <FreshText>فیلم تازه ببینیم</FreshText>
+                <FreshSVG src="./images/freshMovie.svg" />
+              </CenterPl>
+            </CenterPlace>
           </BebinimLinks>
         </LinksPlace>
       </BebinimBox>

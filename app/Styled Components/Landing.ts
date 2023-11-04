@@ -22,5 +22,6 @@ export const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
   width: 100vw;
   max-width: 1440px;
+  position: relative;
   background-color: #291212;
 `;

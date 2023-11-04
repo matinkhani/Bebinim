@@ -193,7 +193,7 @@ height: 48px;
 width: 48px;
 position: absolute;
 top: 40%;
-right: 1.5%;
+right: 0%;
 cursor: pointer;
 `
 export const Arrowleft = styled.img`
@@ -201,6 +201,6 @@ height: 48px;
 width: 48px;
 position: absolute;
 top: 40%;
-left: 1.5%;
+left: 0%;
 cursor: pointer;
 `

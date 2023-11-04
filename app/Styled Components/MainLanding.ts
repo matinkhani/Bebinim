@@ -205,8 +205,7 @@ export const BebinimBox = styled.div`
   width: 100%;
   height: 128px;
   position: absolute;
-  bottom: 91px;
-  left: 20px;
+  top: 562px;
   background-image: linear-gradient(to top, #291212, transparent);
   display: flex;
   align-items: center;
@@ -253,6 +252,16 @@ export const BebinimLinks = styled.div`
 
   @media screen and (max-width: 900px) {
     width: 100%;
+    justify-content: center;
+  }
+`;
+
+export const IconPlace = styled.div`
+  @media screen and (max-width: 900px) {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
   }
 `;
 
@@ -261,11 +270,43 @@ export const FreshSVG = styled.img`
   height: 40px;
 `;
 
-export const FreshText = styled.p`
+export const FreshText = styled.div`
   font-family: var(--medium);
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0em;
   text-align: right;
+  color: #fff;
+
+  @media screen and (max-width: 900px) {
+    font-weight: 500;
+    height: 50px;
+    width: 400px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+`;
+
+export const CenterPlace = styled.div`
+  display: flex;
+  @media screen and (max-width: 900px) {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const CenterPl = styled.div`
+  display: flex;
+  gap: 10px;
+  @media screen and (max-width: 900px) {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
 `;

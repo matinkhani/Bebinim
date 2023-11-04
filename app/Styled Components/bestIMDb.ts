@@ -53,7 +53,7 @@ export const ImdbDetails = styled.div`
 
   @media screen and (max-width: 600px) {
     width: 84%;
-    height: 4%;
+    height: 0%;
     justify-content: start;
   }
   @media screen and (min-width: 600px) and (max-width: 1200px) {

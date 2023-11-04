@@ -413,7 +413,7 @@ export const OncePriceTop = styled.div`
   line-height: normal;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 15px;
   }
 `;
 
@@ -440,7 +440,7 @@ export const OncePriceBottom = styled.div`
   line-height: normal;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 15px;
   }
 `;
 
@@ -618,7 +618,7 @@ export const ThirdPriceTop = styled.div`
   line-height: normal;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 15px;
   }
 `;
 
@@ -645,7 +645,7 @@ export const ThirdPriceBottom = styled.div`
   line-height: normal;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 15px;
   }
 `;
 
@@ -731,8 +731,8 @@ export const SixthPrice = styled.div`
   line-height: normal;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    font-size: 20px;
-    width: 43%;
+    font-size: 15px;
+    width: 38%;
     gap: 0px;
     justify-content: space-around;
   }

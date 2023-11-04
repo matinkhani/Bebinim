@@ -62,7 +62,7 @@ export default function Animation() {
               wrapAround={true}
               style={{
                 height: "100%",
-                width: "86.5%",
+                width: "80%",
                 gap: "5px",
                 marginLeft: "40px",
                 marginTop: "40px",
