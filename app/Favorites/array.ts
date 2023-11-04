@@ -21,7 +21,7 @@ const FavoritesArr = [
   //titi
   {
     id: 2,
-    url: "./images/favorites/frame2.png",
+    url: "./images/favorites/Frame2.png",
     name: "تی تی",
     category: "فیلم",
     year: "۱۳۹۹",

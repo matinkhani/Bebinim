@@ -204,7 +204,7 @@ export default function Header() {
                       href="/"
                     >
                       <HomeeText>خانه</HomeeText>
-                      <HomeeIcon src="./images/Drawer/Home.svg" />
+                      <HomeeIcon src="./images/Drawer/home.svg" />
                     </Link>
                   </HomeePlace>
                   <SubsPlace>

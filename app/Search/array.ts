@@ -22,7 +22,7 @@ const AllMovies = [
   // TiTi
   {
     id: 2,
-    url: "./images/favorites/frame2.png",
+    url: "./images/favorites/Frame2.png",
     name: "تی تی",
     name2: "titi",
     category: "فیلم",

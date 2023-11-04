@@ -113,7 +113,7 @@ export const Tittle = styled.div`
     align-items: center;
     padding-top: 20px;
     padding-right: 40px;
-    font-size: 28px;
+    font-size: 22px;
   }
   @media screen and (min-width: 680px) and (max-width: 1100px) {
     /* background-color: red; */
