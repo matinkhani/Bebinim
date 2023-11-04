@@ -2,6 +2,7 @@ const MainMovie = [
   {
     id: 42,
     url: "./images/GharibFilm.png",
+    urlMobile: "./images/Main-Movies/Gharib-480.jpg",
     name: "غریب",
     category: "فیلم",
     year: "۱۳۹۹",
@@ -21,6 +22,7 @@ const MainMovie = [
   {
     id: 43,
     url: "./images/Main-Movies/maghz.jpg",
+    urlMobile: "./images/Main-Movies/Maqz-480.jpg",
     name: "مغزهای کوچک زنگ زده",
     category: "فیلم",
     year: "۱۳۹۷",
@@ -40,6 +42,7 @@ const MainMovie = [
   {
     id: 44,
     url: "./images/Main-Movies/sorkh2.jpg",
+    urlMobile: "./images/Main-Movies/Sorkh-480.jpg",
     name: "سرخ پوست",
     category: "فیلم",
     year: "۱۳۹۹",
@@ -59,6 +62,7 @@ const MainMovie = [
   {
     id: 45,
     url: "./images/Main-Movies/metri6_2jpg.jpg",
+    urlMobile: "./images/Main-Movies/Setare-480.jpg",
     name: "ستاره بازی",
     category: "فیلم",
     year: "۱۴۰۱",

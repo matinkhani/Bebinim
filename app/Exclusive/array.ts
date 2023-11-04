@@ -3,6 +3,7 @@ const ExclusiveArr = [
   {
     id: 17,
     url: "./images/exclusive/sedato.svg",
+    urlMobile: "./images/exclusive/sedato.svg",
     name: "صداتو",
     date: "پنجشنبه‌ها",
     category: "ریلیتی‌شو",
@@ -23,6 +24,7 @@ const ExclusiveArr = [
   {
     id: 18,
     url: "./images/exclusive/actor.svg",
+    urlMobile: "./images/exclusive/actor.svg",
     name: "آکتور",
     date: "شنبه‌ها",
     category: "سریال",
@@ -43,6 +45,7 @@ const ExclusiveArr = [
   {
     id: 19,
     url: "./images/exclusive/godfather.svg",
+    urlMobile: "./images/exclusive/godfather.svg",
     name: "پدر خوانده",
     date: "جمعه‌ها",
     category: "ریلیتی‌شو",
@@ -63,6 +66,7 @@ const ExclusiveArr = [
   {
     id: 20,
     url: "./images/exclusive/nato.svg",
+    urlMobile: "./images/D-Exclusive/nato-480.jpg",
     name: "ناتو",
     date: "دوشنبه‌ها",
     category: "ریلیتی‌شو",

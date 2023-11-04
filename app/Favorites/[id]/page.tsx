@@ -38,7 +38,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RoutState } from "@/app/Redux/store";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import {
-  Carousel,
+  Carousel2,
   CarouselContainer,
   FavoriteImg,
 } from "@/app/Styled Components/favorites";
@@ -164,7 +164,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
               <Episodes>تصاویر</Episodes>
               <Sekans>
                 <CarouselContainer>
-                  <Carousel>
+                  <Carousel2>
                     <Swiper
                       navigation={true}
                       slidesPerView={1}
@@ -193,7 +193,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                         />
                       </SwiperSlide>
                     </Swiper>
-                  </Carousel>
+                  </Carousel2>
                 </CarouselContainer>
               </Sekans>
             </AboutPhoto>
@@ -279,7 +279,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
               <Episodes>تصاویر</Episodes>
               <Sekans>
                 <CarouselContainer>
-                  <Carousel>
+                  <Carousel2>
                     <Swiper
                       navigation={true}
                       slidesPerView={2}
@@ -307,7 +307,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                         />
                       </SwiperSlide>
                     </Swiper>
-                  </Carousel>
+                  </Carousel2>
                 </CarouselContainer>
               </Sekans>
             </AboutPhoto>

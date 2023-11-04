@@ -8,6 +8,16 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #291212;
+
+  @media screen and (max-width: 600px) {
+    height: 265vh;
+  }
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
+    height: 135vh;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 77vh;
+  }
 `;
 
 export const PlaceImdb = styled.div`
@@ -19,6 +29,17 @@ export const PlaceImdb = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
+
+  @media screen and (max-width: 600px) {
+    width: 70%;
+  }
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
+    width: 91%;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 95%;
+    height: 80%;
+  }
 `;
 
 export const ImdbDetails = styled.div`
@@ -29,6 +50,20 @@ export const ImdbDetails = styled.div`
   justify-content: center;
   align-self: flex-end;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    width: 84%;
+    height: 4%;
+    justify-content: start;
+  }
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
+    width: 50%;
+    height: 6%;
+    align-self: center;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 29%;
+  }
 `;
 
 export const ImdbText = styled.div`
@@ -60,6 +95,10 @@ export const More = styled.div`
   display: flex;
   justify-content: end;
   align-items: center;
+
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    width: 40%;
+  }
 `;
 
 export const ImgContainer = styled.div`
@@ -69,6 +108,15 @@ export const ImgContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    height: 180px;
+    width: 268px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 170px;
+    width: 250px;
+  }
 `;
 
 export const HoverText = styled.div`
@@ -97,6 +145,15 @@ export const Hover = styled.div`
   &:hover ${HoverText} {
     display: flex;
   }
+
+  @media screen and (max-width: 900px) {
+    height: 180px;
+    width: 268px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 170px;
+    width: 250px;
+  }
 `;
 
 export const ImdbImg = styled.img`
@@ -104,6 +161,15 @@ export const ImdbImg = styled.img`
   height: 200px;
   border-radius: 8px;
   cursor: pointer;
+
+  @media screen and (max-width: 900px) {
+    height: 180px;
+    width: 268px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 170px;
+    width: 250px;
+  }
 `;
 
 export const Details = styled.div`

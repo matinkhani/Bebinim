@@ -9,7 +9,7 @@ import {
   CarouselContainer,
   TextPlace,
   Text,
-  Carousel,
+  Carousel2,
   FavoriteImg,
   Hover,
   HoverText,
@@ -22,29 +22,67 @@ import {
 } from "../Styled Components/animation";
 import AnimationsArr from "./arrayAnimation";
 import Link from "next/link";
-import { LinkPlace } from "../Styled Components/favorites";
+import {
+  ArrowPlace,
+  Arrowleft,
+  Arrowright,
+  LinkPlace,
+} from "../Styled Components/favorites";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import Carousel from "nuka-carousel";
+import "./styleA.css";
 
 export default function Animation() {
+  const renderCenterLeftControls = ({
+    previousSlide,
+  }: {
+    previousSlide: any;
+  }) => <Arrowleft onClick={previousSlide} src="./images/arrowleft.svg" />;
+
+  const renderCenterRightControls = ({ nextSlide }: { nextSlide: any }) => {
+    return <Arrowright onClick={nextSlide} src="./images/arrowright.svg" />;
+  };
+  const Responsive600 = useMediaQuery("(max-width:600px)");
+  const Responsive900 = useMediaQuery("(max-width:900px)");
+  const Responsive1200 = useMediaQuery("(max-width:1200px)");
+  const Responsive1440 = useMediaQuery("(max-width:1440px)");
+
   return (
     <Container>
       <TextPlace>
         <Text>انیمیشن</Text>
       </TextPlace>
-      <CarouselContainer>
-        <Carousel>
-          <Swiper
-            navigation={true}
-            slidesPerView={6}
-            speed={1200}
-            modules={[Navigation]}
-            className="mySwiper"
-            slidesPerGroup={4}
-          >
-            {AnimationsArr.map((item, index) => {
-              return (
-                <SwiperSlide>
+      {Responsive600 ? (
+        <>
+          <ArrowPlace>
+            <Carousel
+              slidesToScroll={1}
+              slidesToShow={2}
+              cellSpacing={0}
+              wrapAround={true}
+              style={{
+                height: "100%",
+                width: "86.5%",
+                gap: "5px",
+                marginLeft: "40px",
+                marginTop: "40px",
+              }}
+              renderCenterLeftControls={renderCenterLeftControls}
+              renderCenterRightControls={renderCenterRightControls}
+            >
+              {AnimationsArr.map((item, index) => (
+                <div
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
                   <FavoriteImg key={index} src={item.url} />
                   <Hover>
+                    {" "}
                     <Link href={`Animation/${item.id}`}>
                       <LinkPlace>
                         <HoverText>
@@ -60,12 +98,214 @@ export default function Animation() {
                       </LinkPlace>
                     </Link>
                   </Hover>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </Carousel>
-      </CarouselContainer>
+                </div>
+              ))}
+            </Carousel>
+          </ArrowPlace>
+        </>
+      ) : Responsive900 ? (
+        <>
+          <ArrowPlace>
+            <Carousel
+              slidesToScroll={1}
+              slidesToShow={3}
+              cellSpacing={0}
+              wrapAround={true}
+              style={{
+                height: "100%",
+                width: "88%",
+                gap: "5px",
+                marginLeft: "40px",
+                marginTop: "40px",
+              }}
+              renderCenterLeftControls={renderCenterLeftControls}
+              renderCenterRightControls={renderCenterRightControls}
+            >
+              {AnimationsArr.map((item, index) => (
+                <div
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <FavoriteImg key={index} src={item.url} />
+                  <Hover>
+                    {" "}
+                    <Link href={`Favorites/${item.id}`}>
+                      <LinkPlace>
+                        <HoverText>
+                          <Details>
+                            <NameFilm>{item.name}</NameFilm>
+                            <DateFilm>
+                              <Year>{item.year}</Year>
+                              <Line />
+                              <Name>{item.category}</Name>
+                            </DateFilm>
+                          </Details>
+                        </HoverText>
+                      </LinkPlace>
+                    </Link>
+                  </Hover>
+                </div>
+              ))}
+            </Carousel>
+          </ArrowPlace>
+        </>
+      ) : Responsive1200 ? (
+        <>
+          <ArrowPlace>
+            <Carousel
+              slidesToScroll={2}
+              slidesToShow={4}
+              cellSpacing={0}
+              wrapAround={true}
+              style={{
+                height: "100%",
+                width: "92%",
+                gap: "5px",
+                marginLeft: "40px",
+                marginTop: "40px",
+              }}
+              renderCenterLeftControls={renderCenterLeftControls}
+              renderCenterRightControls={renderCenterRightControls}
+            >
+              {AnimationsArr.map((item, index) => (
+                <div
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <FavoriteImg key={index} src={item.url} />
+                  <Hover>
+                    {" "}
+                    <Link href={`Favorites/${item.id}`}>
+                      <LinkPlace>
+                        <HoverText>
+                          <Details>
+                            <NameFilm>{item.name}</NameFilm>
+                            <DateFilm>
+                              <Year>{item.year}</Year>
+                              <Line />
+                              <Name>{item.category}</Name>
+                            </DateFilm>
+                          </Details>
+                        </HoverText>
+                      </LinkPlace>
+                    </Link>
+                  </Hover>
+                </div>
+              ))}
+            </Carousel>
+          </ArrowPlace>
+        </>
+      ) : Responsive1440 ? (
+        <>
+          <ArrowPlace>
+            <Carousel
+              slidesToScroll={2}
+              slidesToShow={5}
+              cellSpacing={0}
+              wrapAround={true}
+              style={{
+                height: "100%",
+                width: "93%",
+                gap: "5px",
+                marginLeft: "40px",
+                marginTop: "40px",
+              }}
+              renderCenterLeftControls={renderCenterLeftControls}
+              renderCenterRightControls={renderCenterRightControls}
+            >
+              {AnimationsArr.map((item, index) => (
+                <div
+                  style={{
+                    height: "100%",
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <FavoriteImg key={index} src={item.url} />
+                  <Hover>
+                    {" "}
+                    <Link href={`Favorites/${item.id}`}>
+                      <LinkPlace>
+                        <HoverText>
+                          <Details>
+                            <NameFilm>{item.name}</NameFilm>
+                            <DateFilm>
+                              <Year>{item.year}</Year>
+                              <Line />
+                              <Name>{item.category}</Name>
+                            </DateFilm>
+                          </Details>
+                        </HoverText>
+                      </LinkPlace>
+                    </Link>
+                  </Hover>
+                </div>
+              ))}
+            </Carousel>
+          </ArrowPlace>
+        </>
+      ) : (
+        <>
+          <CarouselContainer>
+            <Carousel2>
+              <Swiper
+                navigation={true}
+                slidesPerView={6}
+                speed={1200}
+                modules={[Navigation]}
+                className="mySwiper"
+                slidesPerGroup={4}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 1,
+                  },
+                  1000: {
+                    slidesPerView: 6,
+                    slidesPerGroup: 4,
+                  },
+                }}
+              >
+                {AnimationsArr.map((item, index) => {
+                  return (
+                    <SwiperSlide>
+                      <FavoriteImg key={index} src={item.url} />
+                      <Hover>
+                        <Link href={`Animation/${item.id}`}>
+                          <LinkPlace>
+                            <HoverText>
+                              <Details>
+                                <NameFilm>{item.name}</NameFilm>
+                                <DateFilm>
+                                  <Year>{item.year}</Year>
+                                  <Line />
+                                  <Name>{item.category}</Name>
+                                </DateFilm>
+                              </Details>
+                            </HoverText>
+                          </LinkPlace>
+                        </Link>
+                      </Hover>
+                    </SwiperSlide>
+                  );
+                })}
+              </Swiper>
+            </Carousel2>
+          </CarouselContainer>
+        </>
+      )}
     </Container>
   );
 }

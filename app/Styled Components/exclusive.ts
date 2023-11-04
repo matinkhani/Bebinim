@@ -8,6 +8,38 @@ export const Container = styled.div`
   justify-content: center;
   align-items: end;
   background-color: #291212;
+
+  @media screen and (max-width: 600px) {
+    height: 200vh;
+    align-items: center;
+  }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    height: 100vh;
+    align-items: center;
+  }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    height: 140vh;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 80vh;
+    align-items: center;
+  }
+`;
+
+export const ExlContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 95%;
+  }
 `;
 
 export const ExclusiveText = styled.div`
@@ -19,6 +51,23 @@ export const ExclusiveText = styled.div`
   font-family: var(--medium);
   font-size: 20px;
   font-weight: 700;
+  color: white;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    height: 5%;
+    font-size: 18px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
+    width: 100%;
+    height: 15%;
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 18%;
+    height: 15%;
+    align-items: end;
+  }
 `;
 
 export const ExclusiveMovie = styled.div`
@@ -28,6 +77,21 @@ export const ExclusiveMovie = styled.div`
   justify-content: center;
   align-items: center;
   gap: 30px;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    flex-wrap: wrap;
+    height: 80%;
+  }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    flex-wrap: wrap;
+    height: 80%;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    gap: 20px;
+  }
 `;
 
 export const Movies = styled.div`
@@ -37,6 +101,22 @@ export const Movies = styled.div`
   background-size: cover;
   cursor: pointer;
   position: relative;
+
+  @media screen and (max-width: 600px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    width: 220px;
+    height: 300px;
+  }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    width: 285px;
+    height: 390px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 260px;
+    height: 390px;
+  }
 `;
 
 export const HoverText = styled.div`
@@ -51,6 +131,12 @@ export const Details = styled.div`
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
+
+  @media screen and (max-width: 600px) {
+    width: 300px;
+    justify-content: center;
+    gap: 140px;
+  }
 `;
 
 export const DetailsTop = styled.div`
@@ -64,7 +150,7 @@ export const DetailsTop = styled.div`
 export const RealBtn = styled.button`
   height: 32px;
   width: 82px;
-  font-family:  var(--medium);
+  font-family: var(--medium);
   font-size: 16px;
   font-weight: 700;
   border: none;
@@ -124,5 +210,14 @@ export const Hover = styled.div`
 
   &:hover ${HoverText} {
     display: flex;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 300px;
+    height: 350px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 260px;
+    height: 390px;
   }
 `;

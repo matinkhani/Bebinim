@@ -27,8 +27,10 @@ import { Navigation } from "swiper/modules";
 import ZakhmKariArr from "./array";
 import "./movie.css";
 import Link from "next/link";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function Movie() {
+  const Responsive1440 = useMediaQuery("(max-width:1440px)");
   return (
     <Container>
       {ZakhmKariArr.map((item, index) => {
@@ -41,7 +43,10 @@ export default function Movie() {
               <MovieMain>
                 <Details>
                   <MovieIacon>
-                    <img src="./images/ZakhmKari/mov_logo.svg" />
+                    <img
+                      style={{ height: "100px", width: "100px" }}
+                      src="./images/ZakhmKari/mov_logo.svg"
+                    />
                   </MovieIacon>
                   <DetailsText>
                     <Director>کارگردان: محمدحسین مهدویان</Director>
@@ -71,7 +76,11 @@ export default function Movie() {
                   </DetailsText>
                 </Details>
 
-                <MovieCarousel>
+                <MovieCarousel
+                  style={
+                    Responsive1440 ? { display: "none" } : { display: "flex" }
+                  }
+                >
                   <CarouselContainer>
                     <Carousel>
                       <Swiper

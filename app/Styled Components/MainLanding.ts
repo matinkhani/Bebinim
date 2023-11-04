@@ -9,6 +9,19 @@ export const Container = styled.div`
   flex-direction: column;
   background-size: cover;
   background-position: 40%;
+
+  @media screen and (max-width: 600px) {
+    height: 450px;
+  }
+  @media screen and (max-width: 900px) {
+    height: 500px;
+  }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    height: 600px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 690px;
+  }
 `;
 
 export const FilmPoster = styled.div`
@@ -22,6 +35,16 @@ export const LeftSide = styled.div`
   width: 50%;
   display: flex;
   align-items: end;
+
+  @media screen and (max-width: 1200px) {
+    background-image: linear-gradient(
+      to top,
+      #291212,
+      transparent,
+      transparent,
+      transparent
+    );
+  }
 `;
 
 export const ArrowIconsPlace = styled.div`
@@ -40,6 +63,10 @@ export const ArrowIconsLeft = styled.img`
   bottom: 120px;
   left: 35px;
   cursor: pointer;
+
+  @media screen and (max-width: 1200px) {
+    bottom: 15px;
+  }
 `;
 
 export const ArrowIconsRight = styled.img`
@@ -49,6 +76,10 @@ export const ArrowIconsRight = styled.img`
   left: 90px;
   bottom: 120px;
   cursor: pointer;
+
+  @media screen and (max-width: 1200px) {
+    bottom: 15px;
+  }
 `;
 
 export const RightSide = styled.div`
@@ -56,6 +87,17 @@ export const RightSide = styled.div`
   width: 50%;
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 1200px) {
+    align-items: end;
+    background-image: linear-gradient(
+      to top,
+      #291212,
+      transparent,
+      transparent,
+      transparent
+    );
+  }
 `;
 
 export const ExplainContainer = styled.div`
@@ -74,6 +116,15 @@ export const ExplainAndWatch = styled.div`
   align-items: center;
   justify-content: end;
   gap: 15px;
+
+  @media screen and (max-width: 1200px) {
+    gap: 15px;
+    width: 100%;
+    height: 85%;
+    align-items: end;
+    justify-content: end;
+    margin-right: 40px;
+  }
 `;
 
 export const MoreExplainText = styled.p`
@@ -82,13 +133,23 @@ export const MoreExplainText = styled.p`
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0em;
-  /* color: rgba(0, 0, 0, 1); */
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    margin-bottom: 10px;
+  }
 `;
 
 export const MoreIcon = styled.img`
   width: 24px;
   height: 24px;
   cursor: pointer;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 10px;
+  }
 `;
 
 export const MoreExplainBtn = styled.button`
@@ -109,6 +170,14 @@ export const MoreExplainBtn = styled.button`
   align-items: center;
   border: none;
   cursor: pointer;
+
+  @media screen and (max-width: 1200px) {
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 8px;
+    justify-content: center;
+  }
 `;
 
 export const WatchSVG = styled.img`
@@ -126,6 +195,10 @@ export const Text = styled.div`
   line-height: 25px;
   letter-spacing: 0em;
   color: rgba(0, 0, 0, 1);
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 export const BebinimBox = styled.div`
@@ -138,6 +211,14 @@ export const BebinimBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  @media screen and (max-width: 1200px) {
+    position: unset;
+    height: 280px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    left: 0px;
+  }
 `;
 
 export const LinksPlace = styled.div`
@@ -147,6 +228,16 @@ export const LinksPlace = styled.div`
   display: flex;
   align-items: end;
   justify-content: center;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    gap: 15px;
+  }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    height: 40%;
+  }
 `;
 
 export const BebinimLinks = styled.div`
@@ -159,6 +250,10 @@ export const BebinimLinks = styled.div`
   justify-content: center;
   gap: 10px;
   background-color: rgba(254, 254, 254, 0.2);
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 export const FreshSVG = styled.img`

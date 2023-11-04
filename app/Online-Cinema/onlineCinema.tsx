@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import {
   CinemaOlineText,
@@ -11,9 +11,6 @@ import {
   HoverText,
   Line,
   Movie1,
-  Movie2,
-  Movie3,
-  Movie4,
   Name,
   PosterPlace,
   Year,

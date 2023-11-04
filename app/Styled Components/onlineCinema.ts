@@ -8,6 +8,14 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #291212;
+
+  @media screen and (max-width: 1200px) {
+    height: 800px;
+    justify-content: start;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 75vh;
+  }
 `;
 
 export const CinemaOlineText = styled.div`
@@ -20,6 +28,18 @@ export const CinemaOlineText = styled.div`
   font-family: var(--medium);
   font-size: 20px;
   font-weight: 700;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    height: 15%;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 89%;
+    height: 20%;
+  }
 `;
 
 export const PosterPlace = styled.div`
@@ -30,6 +50,14 @@ export const PosterPlace = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 35px;
+
+  @media screen and (max-width: 1200px) {
+    gap: 20px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 90%;
+  }
 `;
 
 export const Movie1 = styled.div`
@@ -42,47 +70,23 @@ export const Movie1 = styled.div`
   background-size: cover;
   cursor: pointer;
   position: relative;
-`;
 
-export const Movie2 = styled.div`
-  width: 600px;
-  height: 228px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  background-size: cover;
-  background-position: 50% 15%;
-  position: relative;
-  cursor: pointer;
-`;
-
-export const Movie3 = styled.div`
-  width: 600px;
-  height: 228px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  background-size: cover;
-  background-position: 50% 0%;
-  cursor: pointer;
-  position: relative;
-  margin-top: -80px;
-`;
-
-export const Movie4 = styled.div`
-  width: 600px;
-  height: 228px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  background-size: cover;
-  background-position: 50% 70%;
-  cursor: pointer;
-  position: relative;
-  margin-top: -80px;
+  @media screen and (max-width: 600px) {
+    height: 140px;
+    width: 290px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+    height: 140px;
+    width: 500px;
+  }
+  @media screen and (min-width: 800px) and (max-width: 1200px) {
+    height: 160px;
+    width: 520px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 205px;
+    width: 520px;
+  }
 `;
 
 export const HoverText = styled.div`
@@ -97,6 +101,19 @@ export const DetailsPlace = styled.div`
   flex-direction: column;
   border: 4px solid #52b5b4;
   border-radius: 8px;
+
+  @media screen and (max-width: 600px) {
+    height: 140px;
+    width: 290px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+    height: 140px;
+    width: 500px;
+  }
+  @media screen and (min-width: 800px) and (max-width: 1200px) {
+    height: 160px;
+    width: 520px;
+  }
 `;
 
 export const Hover = styled.div`
@@ -122,6 +139,19 @@ export const Hover = styled.div`
   &:hover ${HoverText} {
     display: flex;
   }
+
+  @media screen and (max-width: 600px) {
+    height: 140px;
+    width: 290px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+    height: 140px;
+    width: 500px;
+  }
+  @media screen and (min-width: 800px) and (max-width: 1200px) {
+    height: 160px;
+    width: 520px;
+  }
 `;
 
 export const DetalisTop = styled.div`
@@ -130,6 +160,10 @@ export const DetalisTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  @media screen and (max-width: 600px) {
+    width: 70%;
+  }
 `;
 
 export const Year = styled.p``;
@@ -157,4 +191,9 @@ export const DetailsText = styled.div`
   font-size: 16px;
   direction: rtl;
   line-height: 35px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 10px;
+    line-height: 25px;
+  }
 `;

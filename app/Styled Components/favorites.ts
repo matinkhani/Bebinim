@@ -7,6 +7,13 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: end;
   background-color: #291212;
+
+  @media screen and (max-width: 600px) {
+    height: 35vh;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    height: 55vh;
+  }
 `;
 
 export const TextPlace = styled.div`
@@ -15,6 +22,14 @@ export const TextPlace = styled.div`
   display: flex;
   justify-content: center;
   align-items: end;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    height: 25%;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 26%;
+  }
 `;
 
 export const Text = styled.p`
@@ -23,6 +38,10 @@ export const Text = styled.p`
   line-height: 30px;
   font-weight: 700;
   color: rgba(254, 254, 254, 1);
+
+  @media screen and (max-width: 900px) {
+    font-size: 18px;
+  }
 `;
 
 export const CarouselContainer = styled.div`
@@ -56,12 +75,16 @@ export const ArrowRight = styled.div`
   align-items: center;
 `;
 
-export const Carousel = styled.div`
+export const Carousel2 = styled.div`
   height: 100%;
   width: 87.9%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    width: 74%;
+  }
 `;
 
 export const Details = styled.div`
@@ -125,6 +148,11 @@ export const Hover = styled.div`
   &:hover ${HoverText} {
     display: flex;
   }
+
+  @media screen and (max-width: 1200px) {
+    height: 180px;
+    width: 140px;
+  }
 `;
 
 export const FavoriteImg = styled.img`
@@ -134,6 +162,11 @@ export const FavoriteImg = styled.img`
   overflow-y: hidden;
   cursor: pointer;
   position: relative;
+
+  @media screen and (max-width: 1200px) {
+    height: 180px;
+    width: 140px;
+  }
 `;
 
 export const LinkPlace = styled.div`
@@ -142,4 +175,32 @@ export const LinkPlace = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 1200px) {
+    height: 180px;
+    width: 140px;
+  }
 `;
+
+export const ArrowPlace = styled.div`
+  height: 100%;
+  width: 100%;
+  position: relative;
+`;
+
+export const Arrowright = styled.img`
+height: 48px;
+width: 48px;
+position: absolute;
+top: 40%;
+right: 1.5%;
+cursor: pointer;
+`
+export const Arrowleft = styled.img`
+height: 48px;
+width: 48px;
+position: absolute;
+top: 40%;
+left: 1.5%;
+cursor: pointer;
+`
