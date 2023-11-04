@@ -36,7 +36,7 @@ const renderCenterLeftControls = ({
 
 const renderCenterRightControls = ({ nextSlide }: { nextSlide: any }) => {
   return (
-    <ArrowIconsRight onClick={nextSlide} src="./images/arrowcircleRight.svg" />
+    <ArrowIconsRight onClick={nextSlide} src="./images/arrowcircleright.svg" />
   );
 };
 export default function MainLanding() {
