@@ -194,6 +194,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                           height={180}
                           width={220}
                           src={Find.image1}
+                          style={{ borderRadius: 8 }}
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -202,6 +203,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                           height={180}
                           width={220}
                           src={Find.image2}
+                          style={{ borderRadius: 8 }}
                         />
                       </SwiperSlide>
                       <SwiperSlide>
@@ -210,6 +212,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                           height={180}
                           width={220}
                           src={Find.image3}
+                          style={{ borderRadius: 8 }}
                         />
                       </SwiperSlide>
                     </Swiper>

@@ -87,6 +87,23 @@ export default function Animation() {
                     width={184}
                     key={index}
                     src={item.url}
+                    style={
+                      Responsive1200
+                        ? {
+                            borderRadius: 8,
+                            overflowY: "hidden",
+                            cursor: "pointer",
+                            position: "relative",
+                            height: 180,
+                            width: 140,
+                          }
+                        : {
+                            borderRadius: 8,
+                            overflowY: "hidden",
+                            cursor: "pointer",
+                            position: "relative",
+                          }
+                    }
                   />
                   <Hover>
                     {" "}
