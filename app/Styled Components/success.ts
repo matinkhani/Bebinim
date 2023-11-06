@@ -67,11 +67,13 @@ export const SuccessText = styled.div`
   line-height: normal;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    font-size: 22px;
+    font-size: 2px;
+    font-weight: 100;
     height: 150px;
     justify-content: end;
     align-items: center;
     flex-direction: column;
+    background-color: red;
   }
 
   @media screen and (min-width: 481px) and (max-width: 630px) {

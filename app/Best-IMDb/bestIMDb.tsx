@@ -35,10 +35,11 @@ export default function BestIMDb() {
         {BestIMDbArr.map((item, index) => {
           return (
             <>
-              <Link href={`Best-IMDb/${item.id}`}>
-                <ImgContainer>
-                  <ImdbImg key={index} src={item.url} />
-                  <Hover>
+              <ImgContainer>
+                <ImdbImg key={index} src={item.url} />
+                <Hover>
+                  {" "}
+                  <Link href={`Best-IMDb/${item.id}`}>
                     <HoverText>
                       <Details>
                         <NameFilm>{item.name}</NameFilm>
@@ -49,9 +50,9 @@ export default function BestIMDb() {
                         </DateFilm>
                       </Details>
                     </HoverText>
-                  </Hover>
-                </ImgContainer>
-              </Link>
+                  </Link>{" "}
+                </Hover>
+              </ImgContainer>
             </>
           );
         })}
