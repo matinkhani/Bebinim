@@ -29,6 +29,7 @@ import FavoritesArr from "./array";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Carousel from "nuka-carousel";
 import "./styleF.css";
+import Image from "next/image";
 
 export default function Favorites() {
   const renderCenterLeftControls = ({
@@ -50,21 +51,57 @@ export default function Favorites() {
       <TextPlace>
         <Text>محبوب‌ترین‌های ببینیم</Text>
       </TextPlace>
-      {Responsive600 ? (
+      {Responsive1440 ? (
         <>
           <ArrowPlace>
             <Carousel
-              slidesToScroll={1}
-              slidesToShow={2}
+              slidesToScroll={Responsive900 ? 1 : Responsive1440 ? 2 : 3}
+              slidesToShow={
+                Responsive600
+                  ? 2
+                  : Responsive900
+                  ? 3
+                  : Responsive1200
+                  ? 4
+                  : Responsive1440
+                  ? 5
+                  : 6
+              }
               cellSpacing={0}
               wrapAround={true}
-              style={{
-                height: "100%",
-                width: "80%",
-                gap: "5px",
-                marginLeft: "40px",
-                marginTop: "40px",
-              }}
+              style={
+                Responsive600
+                  ? {
+                      height: "100%",
+                      width: "80%",
+                      gap: "5px",
+                      marginLeft: "40px",
+                      marginTop: "40px",
+                    }
+                  : Responsive900
+                  ? {
+                      height: "100%",
+                      width: "88%",
+                      gap: "5px",
+                      marginLeft: "40px",
+                      marginTop: "40px",
+                    }
+                  : Responsive1200
+                  ? {
+                      height: "100%",
+                      width: "92%",
+                      gap: "5px",
+                      marginLeft: "40px",
+                      marginTop: "40px",
+                    }
+                  : {
+                      height: "100%",
+                      width: "93%",
+                      gap: "5px",
+                      marginLeft: "40px",
+                      marginTop: "40px",
+                    }
+              }
               renderCenterLeftControls={renderCenterLeftControls}
               renderCenterRightControls={renderCenterRightControls}
             >
@@ -78,160 +115,19 @@ export default function Favorites() {
                     alignItems: "center",
                   }}
                 >
-                  <FavoriteImg key={index} src={item.url} />
-                  <Hover>
-                    {" "}
-                    <Link href={`Favorites/${item.id}`}>
-                      <LinkPlace>
-                        <HoverText>
-                          <Details>
-                            <NameFilm>{item.name}</NameFilm>
-                            <DateFilm>
-                              <Year>{item.year}</Year>
-                              <Line />
-                              <Name>{item.category}</Name>
-                            </DateFilm>
-                          </Details>
-                        </HoverText>
-                      </LinkPlace>
-                    </Link>
-                  </Hover>
-                </div>
-              ))}
-            </Carousel>
-          </ArrowPlace>
-        </>
-      ) : Responsive900 ? (
-        <>
-          <ArrowPlace>
-            <Carousel
-              slidesToScroll={1}
-              slidesToShow={3}
-              cellSpacing={0}
-              wrapAround={true}
-              style={{
-                height: "100%",
-                width: "88%",
-                gap: "5px",
-                marginLeft: "40px",
-                marginTop: "40px",
-              }}
-              renderCenterLeftControls={renderCenterLeftControls}
-              renderCenterRightControls={renderCenterRightControls}
-            >
-              {FavoritesArr.map((item, index) => (
-                <div
-                  style={{
-                    height: "100%",
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <FavoriteImg key={index} src={item.url} />
-                  <Hover>
-                    {" "}
-                    <Link href={`Favorites/${item.id}`}>
-                      <LinkPlace>
-                        <HoverText>
-                          <Details>
-                            <NameFilm>{item.name}</NameFilm>
-                            <DateFilm>
-                              <Year>{item.year}</Year>
-                              <Line />
-                              <Name>{item.category}</Name>
-                            </DateFilm>
-                          </Details>
-                        </HoverText>
-                      </LinkPlace>
-                    </Link>
-                  </Hover>
-                </div>
-              ))}
-            </Carousel>
-          </ArrowPlace>
-        </>
-      ) : Responsive1200 ? (
-        <>
-          <ArrowPlace>
-            <Carousel
-              slidesToScroll={2}
-              slidesToShow={4}
-              cellSpacing={0}
-              wrapAround={true}
-              style={{
-                height: "100%",
-                width: "92%",
-                gap: "5px",
-                marginLeft: "40px",
-                marginTop: "40px",
-              }}
-              renderCenterLeftControls={renderCenterLeftControls}
-              renderCenterRightControls={renderCenterRightControls}
-            >
-              {FavoritesArr.map((item, index) => (
-                <div
-                  style={{
-                    height: "100%",
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <FavoriteImg key={index} src={item.url} />
-                  <Hover>
-                    {" "}
-                    <Link href={`Favorites/${item.id}`}>
-                      <LinkPlace>
-                        <HoverText>
-                          <Details>
-                            <NameFilm>{item.name}</NameFilm>
-                            <DateFilm>
-                              <Year>{item.year}</Year>
-                              <Line />
-                              <Name>{item.category}</Name>
-                            </DateFilm>
-                          </Details>
-                        </HoverText>
-                      </LinkPlace>
-                    </Link>
-                  </Hover>
-                </div>
-              ))}
-            </Carousel>
-          </ArrowPlace>
-        </>
-      ) : Responsive1440 ? (
-        <>
-          <ArrowPlace>
-            <Carousel
-              slidesToScroll={2}
-              slidesToShow={5}
-              cellSpacing={0}
-              wrapAround={true}
-              style={{
-                height: "100%",
-                width: "93%",
-                gap: "5px",
-                marginLeft: "40px",
-                marginTop: "40px",
-              }}
-              renderCenterLeftControls={renderCenterLeftControls}
-              renderCenterRightControls={renderCenterRightControls}
-            >
-              {FavoritesArr.map((item, index) => (
-                <div
-                  style={{
-                    height: "100%",
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <FavoriteImg key={index} src={item.url} />
+                  <Image
+                    alt="favorites image"
+                    height={Responsive1200 ? 180 : 258}
+                    width={Responsive1200 ? 140 : 184}
+                    key={index}
+                    src={item.url}
+                    style={{
+                      borderRadius: 8,
+                      overflowY: "hidden",
+                      cursor: "pointer",
+                      position: "relative",
+                    }}
+                  />
                   <Hover>
                     {" "}
                     <Link href={`Favorites/${item.id}`}>
@@ -279,9 +175,20 @@ export default function Favorites() {
                 {FavoritesArr.map((item, index) => {
                   return (
                     <SwiperSlide>
-                      <FavoriteImg key={index} src={item.url} />
+                      <Image
+                        alt="favorites image"
+                        height={256}
+                        width={184}
+                        key={index}
+                        src={item.url}
+                        style={{
+                          borderRadius: 8,
+                          overflowY: "hidden",
+                          cursor: "pointer",
+                          position: "relative",
+                        }}
+                      />
                       <Hover>
-                        {" "}
                         <Link href={`Favorites/${item.id}`}>
                           <LinkPlace>
                             <HoverText>
