@@ -325,21 +325,30 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                       slidesPerGroup={1}
                     >
                       <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 200, width: 250 }}
+                        <Image
+                          alt="animation images"
                           src={Find.image1}
+                          height={200}
+                          width={250}
+                          style={{ borderRadius: 16 }}
                         />
                       </SwiperSlide>
                       <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 200, width: 250 }}
+                        <Image
+                          alt="animation images"
                           src={Find.image2}
+                          height={200}
+                          width={250}
+                          style={{ borderRadius: 16 }}
                         />
                       </SwiperSlide>
                       <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 200, width: 250 }}
+                        <Image
+                          alt="animation images"
                           src={Find.image3}
+                          height={200}
+                          width={250}
+                          style={{ borderRadius: 16 }}
                         />
                       </SwiperSlide>
                     </Swiper>
