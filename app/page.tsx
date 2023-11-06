@@ -11,9 +11,13 @@ import Nostalgia from "./Nostalgia/nostalgia";
 import BestIMDb from "./Best-IMDb/bestIMDb";
 import FooterSection from "./Footer Section/footerSection";
 import Movie from "./ZakhmKari/ZakhmKari";
+
 export default function Home() {
   return (
     <React.Fragment>
+      <head>
+        <meta name="theme-color" content="#B55253" />
+      </head>
       <GlobalStyle />
       <Container>
         <Header />
