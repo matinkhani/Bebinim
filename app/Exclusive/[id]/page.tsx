@@ -8,10 +8,12 @@ import {
   BackColor,
   Buttons,
   Container,
+  DisLike,
   Episodes,
   GradientDiv,
   LeftNumbers,
   LeftSection,
+  Like,
   LikesButton,
   MiddleLine,
   Numbers,
@@ -20,6 +22,7 @@ import {
   ResAbout,
   RightNumbers,
   RightSection,
+  Saved,
   Sekans,
   SekansPhoto,
   Time,
@@ -41,7 +44,11 @@ import "swiper/css/navigation";
 import "../../Favorites/favorites.css";
 import { Navigation } from "swiper/modules";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { Carousel2, CarouselContainer, FavoriteImg } from "@/app/Styled Components/favorites";
+import {
+  Carousel2,
+  CarouselContainer,
+  FavoriteImg,
+} from "@/app/Styled Components/favorites";
 
 export default function WatchMovie({ params }: { params: { id: number } }) {
   const Find: any = ExclusiveArr.find((elem) => elem.id === +params.id);
@@ -92,17 +99,30 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
               <ResAbout>
                 <Buttons>
                   <LikesButton>
-                    <img src="../images/Watch/dislike.svg" />
-                    <img src="../images/Watch/like.svg" />
-                    <img
-                      style={{ cursor: "pointer" }}
-                      onClick={newList}
-                      src={
-                        select.SavedList.find((elem) => elem.id === +params.id)
-                          ? Find.saved
-                          : Find.save
-                      }
-                    />
+                    <DisLike>
+                      {" "}
+                      <img src="../images/Watch/dislike.svg" />
+                    </DisLike>
+                    <Like>
+                      <img src="../images/Watch/like.svg" />
+                    </Like>
+                    <Saved>
+                      <img
+                        style={{
+                          cursor: "pointer",
+                          height: "22px",
+                          width: "22px",
+                        }}
+                        onClick={newList}
+                        src={
+                          select.SavedList.find(
+                            (elem) => elem.id === +params.id
+                          )
+                            ? Find.saved
+                            : Find.save
+                        }
+                      />
+                    </Saved>
                   </LikesButton>
                 </Buttons>
                 <Tittle>{Find.name}</Tittle>
@@ -207,17 +227,30 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
               <ResAbout>
                 <Buttons>
                   <LikesButton>
-                    <img src="../images/Watch/dislike.svg" />
-                    <img src="../images/Watch/like.svg" />
-                    <img
-                      style={{ cursor: "pointer" }}
-                      onClick={newList}
-                      src={
-                        select.SavedList.find((elem) => elem.id === +params.id)
-                          ? Find.saved
-                          : Find.save
-                      }
-                    />
+                    <DisLike>
+                      {" "}
+                      <img src="../images/Watch/dislike.svg" />
+                    </DisLike>
+                    <Like>
+                      <img src="../images/Watch/like.svg" />
+                    </Like>
+                    <Saved>
+                      <img
+                        style={{
+                          cursor: "pointer",
+                          height: "22px",
+                          width: "22px",
+                        }}
+                        onClick={newList}
+                        src={
+                          select.SavedList.find(
+                            (elem) => elem.id === +params.id
+                          )
+                            ? Find.saved
+                            : Find.save
+                        }
+                      />
+                    </Saved>
                   </LikesButton>
                 </Buttons>
                 <Tittle>{Find.name}</Tittle>
@@ -306,50 +339,71 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
             </AboutPhoto>
           </RightSection>
         </>
-      ):(<><LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
-        <img src="../images/Watch/gradient.svg" />
-      </LeftSection>
-      <RightSection>
-        <AboutMovies>
-          <Tittle>{Find.name}</Tittle>
-          <Numbers>
-            <Rate>
-              {Find.rate}
-              <img src="../images/Watch/love.svg" />
-            </Rate>
-            <Time>{Find.time}</Time>
-            <Year>{Find.year} </Year>
-            <AgeLimit>{Find.age}</AgeLimit>
-          </Numbers>
-          <AboutText>{Find.description}</AboutText>
-          <Buttons>
-            <LikesButton>
-              <img src="../images/Watch/dislike.svg" />
-              <img src="../images/Watch/like.svg" />
-              <img
-                style={{ cursor: "pointer" }}
-                onClick={newList}
-                src={
-                  select.SavedList.find((elem) => elem.id === +params.id)
-                    ? Find.saved
-                    : Find.save
-                }
-              />
-            </LikesButton>
-            <WatchButton>تماشا کردن</WatchButton>
-          </Buttons>
-        </AboutMovies>
+      ) : (
+        <>
+          <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
+            <img src="../images/Watch/gradient.svg" />
+          </LeftSection>
+          <RightSection>
+            <AboutMovies>
+              <Tittle>{Find.name}</Tittle>
+              <Numbers>
+                <Rate>
+                  {Find.rate}
+                  <img src="../images/Watch/love.svg" />
+                </Rate>
+                <Time>{Find.time}</Time>
+                <Year>{Find.year} </Year>
+                <AgeLimit>{Find.age}</AgeLimit>
+              </Numbers>
+              <AboutText>{Find.description}</AboutText>
+              <Buttons>
+                <LikesButton>
+                  <DisLike>
+                    {" "}
+                    <img src="../images/Watch/dislike.svg" />
+                  </DisLike>
+                  <Like>
+                    <img src="../images/Watch/like.svg" />
+                  </Like>
+                  <Saved>
+                    <img
+                      style={{
+                        cursor: "pointer",
+                        height: "22px",
+                        width: "22px",
+                      }}
+                      onClick={newList}
+                      src={
+                        select.SavedList.find((elem) => elem.id === +params.id)
+                          ? Find.saved
+                          : Find.save
+                      }
+                    />
+                  </Saved>
+                </LikesButton>
+                <WatchButton>تماشا کردن</WatchButton>
+              </Buttons>
+            </AboutMovies>
 
-        <MiddleLine />
-        <AboutPhoto>
-          <Episodes>تصاویر</Episodes>
-          <Sekans>
-            <SekansPhoto style={{ backgroundImage: `url(${Find.image1})` }} />
-            <SekansPhoto style={{ backgroundImage: `url(${Find.image2})` }} />
-            <SekansPhoto style={{ backgroundImage: `url(${Find.image3})` }} />
-          </Sekans>
-        </AboutPhoto>
-      </RightSection></>)}
+            <MiddleLine />
+            <AboutPhoto>
+              <Episodes>تصاویر</Episodes>
+              <Sekans>
+                <SekansPhoto
+                  style={{ backgroundImage: `url(${Find.image1})` }}
+                />
+                <SekansPhoto
+                  style={{ backgroundImage: `url(${Find.image2})` }}
+                />
+                <SekansPhoto
+                  style={{ backgroundImage: `url(${Find.image3})` }}
+                />
+              </Sekans>
+            </AboutPhoto>
+          </RightSection>
+        </>
+      )}
     </Container>
   );
 }

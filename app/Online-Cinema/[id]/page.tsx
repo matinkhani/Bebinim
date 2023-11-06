@@ -8,10 +8,12 @@ import {
   BackColor,
   Buttons,
   Container,
+  DisLike,
   Episodes,
   GradientDiv,
   LeftNumbers,
   LeftSection,
+  Like,
   LikesButton,
   MiddleLine,
   Numbers,
@@ -20,6 +22,7 @@ import {
   ResAbout,
   RightNumbers,
   RightSection,
+  Saved,
   Sekans,
   SekansPhoto,
   Time,
@@ -94,17 +97,30 @@ export default function WatchOnline({ params }: { params: { id: number } }) {
               <ResAbout>
                 <Buttons>
                   <LikesButton>
-                    <img src="../images/Watch/dislike.svg" />
-                    <img src="../images/Watch/like.svg" />
-                    <img
-                      style={{ cursor: "pointer" }}
-                      onClick={newList}
-                      src={
-                        select.SavedList.find((elem) => elem.id === +params.id)
-                          ? Find.saved
-                          : Find.save
-                      }
-                    />
+                  <DisLike>
+                      {" "}
+                      <img src="../images/Watch/dislike.svg" />
+                    </DisLike>
+                    <Like>
+                      <img src="../images/Watch/like.svg" />
+                    </Like>
+                    <Saved>
+                      <img
+                        style={{
+                          cursor: "pointer",
+                          height: "22px",
+                          width: "22px",
+                        }}
+                        onClick={newList}
+                        src={
+                          select.SavedList.find(
+                            (elem) => elem.id === +params.id
+                          )
+                            ? Find.saved
+                            : Find.save
+                        }
+                      />
+                    </Saved>
                   </LikesButton>
                 </Buttons>
                 <Tittle>{Find.name}</Tittle>
@@ -209,17 +225,30 @@ export default function WatchOnline({ params }: { params: { id: number } }) {
               <ResAbout>
                 <Buttons>
                   <LikesButton>
-                    <img src="../images/Watch/dislike.svg" />
-                    <img src="../images/Watch/like.svg" />
-                    <img
-                      style={{ cursor: "pointer" }}
-                      onClick={newList}
-                      src={
-                        select.SavedList.find((elem) => elem.id === +params.id)
-                          ? Find.saved
-                          : Find.save
-                      }
-                    />
+                  <DisLike>
+                      {" "}
+                      <img src="../images/Watch/dislike.svg" />
+                    </DisLike>
+                    <Like>
+                      <img src="../images/Watch/like.svg" />
+                    </Like>
+                    <Saved>
+                      <img
+                        style={{
+                          cursor: "pointer",
+                          height: "22px",
+                          width: "22px",
+                        }}
+                        onClick={newList}
+                        src={
+                          select.SavedList.find(
+                            (elem) => elem.id === +params.id
+                          )
+                            ? Find.saved
+                            : Find.save
+                        }
+                      />
+                    </Saved>
                   </LikesButton>
                 </Buttons>
                 <Tittle>{Find.name}</Tittle>
@@ -328,17 +357,30 @@ export default function WatchOnline({ params }: { params: { id: number } }) {
           <AboutText>{Find.description}</AboutText>
           <Buttons>
             <LikesButton>
-              <img src="../images/Watch/dislike.svg" />
-              <img src="../images/Watch/like.svg" />
-              <img
-                style={{ cursor: "pointer" }}
-                onClick={newList}
-                src={
-                  select.SavedList.find((elem) => elem.id === +params.id)
-                    ? Find.saved
-                    : Find.save
-                }
-              />
+            <DisLike>
+                      {" "}
+                      <img src="../images/Watch/dislike.svg" />
+                    </DisLike>
+                    <Like>
+                      <img src="../images/Watch/like.svg" />
+                    </Like>
+                    <Saved>
+                      <img
+                        style={{
+                          cursor: "pointer",
+                          height: "22px",
+                          width: "22px",
+                        }}
+                        onClick={newList}
+                        src={
+                          select.SavedList.find(
+                            (elem) => elem.id === +params.id
+                          )
+                            ? Find.saved
+                            : Find.save
+                        }
+                      />
+                    </Saved>
             </LikesButton>
             <WatchButton>تماشا کردن</WatchButton>
           </Buttons>
