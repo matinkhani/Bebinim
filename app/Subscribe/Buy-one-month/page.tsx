@@ -108,6 +108,8 @@ export default function Buy() {
                   <BankIconPlace>
                     <Image
                       alt="bank icon image"
+                      height={130}
+                      width={130}
                       src={item.url}
                       style={
                         Responsive480
