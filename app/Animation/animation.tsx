@@ -53,21 +53,57 @@ export default function Animation() {
       <TextPlace>
         <Text>انیمیشن</Text>
       </TextPlace>
-      {Responsive600 ? (
+      {Responsive1440 ? (
         <>
           <ArrowPlace>
             <Carousel
-              slidesToScroll={1}
-              slidesToShow={2}
+              slidesToScroll={Responsive900 ? 1 : Responsive1440 ? 2 : 3}
+              slidesToShow={
+                Responsive600
+                  ? 2
+                  : Responsive900
+                  ? 3
+                  : Responsive1200
+                  ? 4
+                  : Responsive1440
+                  ? 5
+                  : 6
+              }
               cellSpacing={0}
               wrapAround={true}
-              style={{
-                height: "100%",
-                width: "80%",
-                gap: "5px",
-                marginLeft: "40px",
-                marginTop: "40px",
-              }}
+              style={
+                Responsive600
+                  ? {
+                      height: "100%",
+                      width: "80%",
+                      gap: "5px",
+                      marginLeft: "40px",
+                      marginTop: "40px",
+                    }
+                  : Responsive900
+                  ? {
+                      height: "100%",
+                      width: "88%",
+                      gap: "5px",
+                      marginLeft: "40px",
+                      marginTop: "40px",
+                    }
+                  : Responsive1200
+                  ? {
+                      height: "100%",
+                      width: "92%",
+                      gap: "5px",
+                      marginLeft: "40px",
+                      marginTop: "40px",
+                    }
+                  : {
+                      height: "100%",
+                      width: "93%",
+                      gap: "5px",
+                      marginLeft: "40px",
+                      marginTop: "40px",
+                    }
+              }
               renderCenterLeftControls={renderCenterLeftControls}
               renderCenterRightControls={renderCenterRightControls}
             >
@@ -83,181 +119,17 @@ export default function Animation() {
                 >
                   <Image
                     alt="animation image"
-                    height={256}
-                    width={184}
+                    height={Responsive1200 ? 180 : 258}
+                    width={Responsive1200 ? 140 : 184}
                     key={index}
                     src={item.url}
-                    style={
-                      Responsive1200
-                        ? {
-                            borderRadius: 8,
-                            overflowY: "hidden",
-                            cursor: "pointer",
-                            position: "relative",
-                            height: 180,
-                            width: 140,
-                          }
-                        : {
-                            borderRadius: 8,
-                            overflowY: "hidden",
-                            cursor: "pointer",
-                            position: "relative",
-                          }
-                    }
+                    style={{
+                      borderRadius: 8,
+                      overflowY: "hidden",
+                      cursor: "pointer",
+                      position: "relative",
+                    }}
                   />
-                  <Hover>
-                    {" "}
-                    <Link href={`Animation/${item.id}`}>
-                      <LinkPlace>
-                        <HoverText>
-                          <Details>
-                            <NameFilm>{item.name}</NameFilm>
-                            <DateFilm>
-                              <Year>{item.year}</Year>
-                              <Line />
-                              <Name>{item.category}</Name>
-                            </DateFilm>
-                          </Details>
-                        </HoverText>
-                      </LinkPlace>
-                    </Link>
-                  </Hover>
-                </div>
-              ))}
-            </Carousel>
-          </ArrowPlace>
-        </>
-      ) : Responsive900 ? (
-        <>
-          <ArrowPlace>
-            <Carousel
-              slidesToScroll={1}
-              slidesToShow={3}
-              cellSpacing={0}
-              wrapAround={true}
-              style={{
-                height: "100%",
-                width: "88%",
-                gap: "5px",
-                marginLeft: "40px",
-                marginTop: "40px",
-              }}
-              renderCenterLeftControls={renderCenterLeftControls}
-              renderCenterRightControls={renderCenterRightControls}
-            >
-              {AnimationsArr.map((item, index) => (
-                <div
-                  style={{
-                    height: "100%",
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <FavoriteImg key={index} src={item.url} />
-                  <Hover>
-                    {" "}
-                    <Link href={`Favorites/${item.id}`}>
-                      <LinkPlace>
-                        <HoverText>
-                          <Details>
-                            <NameFilm>{item.name}</NameFilm>
-                            <DateFilm>
-                              <Year>{item.year}</Year>
-                              <Line />
-                              <Name>{item.category}</Name>
-                            </DateFilm>
-                          </Details>
-                        </HoverText>
-                      </LinkPlace>
-                    </Link>
-                  </Hover>
-                </div>
-              ))}
-            </Carousel>
-          </ArrowPlace>
-        </>
-      ) : Responsive1200 ? (
-        <>
-          <ArrowPlace>
-            <Carousel
-              slidesToScroll={2}
-              slidesToShow={4}
-              cellSpacing={0}
-              wrapAround={true}
-              style={{
-                height: "100%",
-                width: "92%",
-                gap: "5px",
-                marginLeft: "40px",
-                marginTop: "40px",
-              }}
-              renderCenterLeftControls={renderCenterLeftControls}
-              renderCenterRightControls={renderCenterRightControls}
-            >
-              {AnimationsArr.map((item, index) => (
-                <div
-                  style={{
-                    height: "100%",
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <FavoriteImg key={index} src={item.url} />
-                  <Hover>
-                    {" "}
-                    <Link href={`Favorites/${item.id}`}>
-                      <LinkPlace>
-                        <HoverText>
-                          <Details>
-                            <NameFilm>{item.name}</NameFilm>
-                            <DateFilm>
-                              <Year>{item.year}</Year>
-                              <Line />
-                              <Name>{item.category}</Name>
-                            </DateFilm>
-                          </Details>
-                        </HoverText>
-                      </LinkPlace>
-                    </Link>
-                  </Hover>
-                </div>
-              ))}
-            </Carousel>
-          </ArrowPlace>
-        </>
-      ) : Responsive1440 ? (
-        <>
-          <ArrowPlace>
-            <Carousel
-              slidesToScroll={2}
-              slidesToShow={5}
-              cellSpacing={0}
-              wrapAround={true}
-              style={{
-                height: "100%",
-                width: "93%",
-                gap: "5px",
-                marginLeft: "40px",
-                marginTop: "40px",
-              }}
-              renderCenterLeftControls={renderCenterLeftControls}
-              renderCenterRightControls={renderCenterRightControls}
-            >
-              {AnimationsArr.map((item, index) => (
-                <div
-                  style={{
-                    height: "100%",
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <FavoriteImg key={index} src={item.url} />
                   <Hover>
                     {" "}
                     <Link href={`Favorites/${item.id}`}>
@@ -305,7 +177,19 @@ export default function Animation() {
                 {AnimationsArr.map((item, index) => {
                   return (
                     <SwiperSlide>
-                      <FavoriteImg key={index} src={item.url} />
+                      <Image
+                        alt="animation image"
+                        height={256}
+                        width={184}
+                        key={index}
+                        src={item.url}
+                        style={{
+                          borderRadius: 8,
+                          overflowY: "hidden",
+                          cursor: "pointer",
+                          position: "relative",
+                        }}
+                      />
                       <Hover>
                         <Link href={`Animation/${item.id}`}>
                           <LinkPlace>
