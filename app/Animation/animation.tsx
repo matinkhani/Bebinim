@@ -132,7 +132,7 @@ export default function Animation() {
                   />
                   <Hover>
                     {" "}
-                    <Link href={`Favorites/${item.id}`}>
+                    <Link href={`Animation/${item.id}`}>
                       <LinkPlace>
                         <HoverText>
                           <Details>
