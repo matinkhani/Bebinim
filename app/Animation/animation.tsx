@@ -31,6 +31,7 @@ import {
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Carousel from "nuka-carousel";
 import "./styleA.css";
+import Image from "next/image";
 
 export default function Animation() {
   const renderCenterLeftControls = ({
@@ -80,7 +81,30 @@ export default function Animation() {
                     alignItems: "center",
                   }}
                 >
-                  <FavoriteImg key={index} src={item.url} />
+                  <Image
+                    alt="animation image"
+                    height={256}
+                    width={184}
+                    key={index}
+                    src={item.url}
+                    style={
+                      Responsive1200
+                        ? {
+                            borderRadius: 8,
+                            overflowY: "hidden",
+                            cursor: "pointer",
+                            position: "relative",
+                            height: 180,
+                            width: 140,
+                          }
+                        : {
+                            borderRadius: 8,
+                            overflowY: "hidden",
+                            cursor: "pointer",
+                            position: "relative",
+                          }
+                    }
+                  />
                   <Hover>
                     {" "}
                     <Link href={`Animation/${item.id}`}>

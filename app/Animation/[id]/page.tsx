@@ -49,6 +49,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "../../Favorites/favorites.css";
 import { Navigation } from "swiper/modules";
+import Image from "next/image";
 
 export default function WatchMovie({ params }: { params: { id: number } }) {
   const Find: any = AnimationsArr.find((elem) => elem.id === +params.id);
@@ -188,21 +189,30 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                       loop={true}
                     >
                       <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 180, width: 220 }}
+                        <Image
+                          alt="images of animation"
+                          height={180}
+                          width={220}
                           src={Find.image1}
+                          style={{ borderRadius: 8 }}
                         />
                       </SwiperSlide>
                       <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 180, width: 220 }}
+                        <Image
+                          alt="images of animation"
+                          height={180}
+                          width={220}
                           src={Find.image2}
+                          style={{ borderRadius: 8 }}
                         />
                       </SwiperSlide>
                       <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 180, width: 220 }}
+                        <Image
+                          alt="images of animation"
+                          height={180}
+                          width={220}
                           src={Find.image3}
+                          style={{ borderRadius: 8 }}
                         />
                       </SwiperSlide>
                     </Swiper>

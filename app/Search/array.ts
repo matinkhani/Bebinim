@@ -566,12 +566,12 @@ const AllMovies = [
   // Luca
   {
     id: 29,
-    url: "./images/animation/luca.svg",
+    url: "./images/animation/luca.png",
     name: "لوکا",
     name2: "luca",
     year: "۲۰۲۱",
     category: "انیمیشن",
-    bgImg: "../images/animation/luca.svg",
+    bgImg: "../images/animation/luca.png",
     image1: "../images/D-Animation/luca1.jpg",
     image2: "../images/D-Animation/luca2.jpg",
     image3: "../images/D-Animation/luca3.jpg",
@@ -586,7 +586,7 @@ const AllMovies = [
   // Soul
   {
     id: 30,
-    url: "./images/animation/soul.svg",
+    url: "./images/animation/soul1.png",
     name: "روح",
     name2: "soul",
     year: "۲۰۲۰",
@@ -606,7 +606,7 @@ const AllMovies = [
   // Rango
   {
     id: 31,
-    url: "./images/animation/rango.svg",
+    url: "./images/animation/rango.png",
     name: "رنگو",
     name2: "rango",
     year: "۲۰۱۱",
@@ -626,7 +626,7 @@ const AllMovies = [
   // Dolphin Boy
   {
     id: 32,
-    url: "./images/animation/dolphin.svg",
+    url: "./images/animation/dolphin.png",
     name: "پسر دلفینی",
     name2: "dolphin boy",
     year: "۲۰۲۱",
@@ -646,7 +646,7 @@ const AllMovies = [
   // Turning Red
   {
     id: 33,
-    url: "./images/animation/turning-red.svg",
+    url: "./images/animation/turning-red.png",
     name: "قرمز شدن",
     name2: "turning red",
     year: "۲۰۲۱",
