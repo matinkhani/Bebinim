@@ -50,12 +50,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "../favorites.css";
 import { Navigation } from "swiper/modules";
+import Image from "next/image";
 
 export default function WatchMovie({ params }: { params: { id: number } }) {
   const Find: any = FavoritesArr.find((elem) => elem.id === +params.id);
   const dispatch = useDispatch();
   const select = useSelector((state: RoutState) => state.Reducer);
-
   const Responsive680 = useMediaQuery("(max-width:680px)");
   const Responsive1100 = useMediaQuery("(max-width:1100px)");
 
@@ -87,7 +87,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
 
   return (
     <Container>
-      {Responsive680 ? (
+      {Responsive1100 ? (
         <>
           <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
             <GradientDiv>
@@ -111,11 +111,25 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                     </Like>
                     <Saved>
                       <img
-                        style={{
-                          cursor: "pointer",
-                          height: "22px",
-                          width: "22px",
-                        }}
+                        style={
+                          Responsive680
+                            ? {
+                                cursor: "pointer",
+                                height: "22px",
+                                width: "22px",
+                              }
+                            : Responsive1100
+                            ? {
+                                cursor: "pointer",
+                                height: "24px",
+                                width: "24px",
+                              }
+                            : {
+                                cursor: "pointer",
+                                height: "24.5px",
+                                width: "24.5px",
+                              }
+                        }
                         onClick={newList}
                         src={
                           select.SavedList.find(
@@ -183,7 +197,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                   <Carousel2>
                     <Swiper
                       navigation={true}
-                      slidesPerView={1}
+                      slidesPerView={Responsive680 ? 1 : Responsive1100 ? 2 : 2}
                       speed={900}
                       modules={[Navigation]}
                       className="mySwiper"
@@ -191,148 +205,42 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                       loop={true}
                     >
                       <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 200, width: 250 }}
+                        <Image
+                          alt="images of favorites"
+                          height={Responsive680 ? 180 : 200}
+                          width={Responsive680 ? 220 : 250}
                           src={Find.image1}
+                          style={
+                            Responsive680
+                              ? { borderRadius: 8 }
+                              : { borderRadius: 16 }
+                          }
                         />
                       </SwiperSlide>
                       <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 200, width: 250 }}
+                        <Image
+                          alt="images of favorites"
+                          height={Responsive680 ? 180 : 200}
+                          width={Responsive680 ? 220 : 250}
                           src={Find.image2}
+                          style={
+                            Responsive680
+                              ? { borderRadius: 8 }
+                              : { borderRadius: 16 }
+                          }
                         />
                       </SwiperSlide>
                       <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 200, width: 250 }}
+                        <Image
+                          alt="images of favorites"
+                          height={Responsive680 ? 180 : 200}
+                          width={Responsive680 ? 220 : 250}
                           src={Find.image3}
-                        />
-                      </SwiperSlide>
-                    </Swiper>
-                  </Carousel2>
-                </CarouselContainer>
-              </Sekans>
-            </AboutPhoto>
-          </RightSection>
-        </>
-      ) : Responsive1100 ? (
-        <>
-          <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
-            <GradientDiv>
-              <BackColor>
-                <Play src="../images/play.svg" />
-              </BackColor>
-            </GradientDiv>
-          </LeftSection>
-
-          <RightSection>
-            <AboutMovies>
-              <ResAbout>
-                <Buttons>
-                  <LikesButton>
-                    <DisLike>
-                      {" "}
-                      <img src="../images/Watch/dislike.svg" />
-                    </DisLike>
-                    <Like>
-                      <img src="../images/Watch/like.svg" />
-                    </Like>
-                    <Saved>
-                      <img
-                        style={{
-                          cursor: "pointer",
-                          height: "22px",
-                          width: "22px",
-                        }}
-                        onClick={newList}
-                        src={
-                          select.SavedList.find(
-                            (elem) => elem.id === +params.id
-                          )
-                            ? Find.saved
-                            : Find.save
-                        }
-                      />
-                    </Saved>
-                  </LikesButton>
-                </Buttons>
-                <Tittle>{Find.name}</Tittle>
-              </ResAbout>
-              <Numbers>
-                <LeftNumbers>
-                  <Rate>
-                    {Find.rate}
-                    {" :"} علاقه‌مندی
-                    <img
-                      style={{ height: "18px", width: "18px" }}
-                      src="../images/Watch/love.svg"
-                    />
-                  </Rate>
-                  <Time>
-                    {Find.time}
-                    {" :"} مدت زمان
-                    <img
-                      style={{ height: "18px", width: "18px" }}
-                      src="../images/timer.svg"
-                    />
-                  </Time>
-                </LeftNumbers>
-                <RightNumbers>
-                  <Year>
-                    {Find.year} {":"} سال انتشار{" "}
-                    <img
-                      style={{ height: "18px", width: "18px" }}
-                      src="../images/calendar.svg"
-                    />{" "}
-                  </Year>
-                  <AgeLimit>
-                    {Find.age}
-                    {" :"} محدودیت سنی
-                    <img
-                      style={{ height: "18px", width: "18px" }}
-                      src="../images/lock.svg"
-                    />
-                  </AgeLimit>
-                </RightNumbers>
-              </Numbers>
-              <AboutText>
-                {" "}
-                خلاصه {": "}
-                <br />
-                {Find.description}{" "}
-              </AboutText>
-            </AboutMovies>
-
-            <MiddleLine />
-            <AboutPhoto>
-              <Episodes>تصاویر</Episodes>
-              <Sekans>
-                <CarouselContainer>
-                  <Carousel2>
-                    <Swiper
-                      navigation={true}
-                      slidesPerView={2}
-                      speed={900}
-                      modules={[Navigation]}
-                      className="mySwiper"
-                      slidesPerGroup={1}
-                    >
-                      <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 200, width: 250 }}
-                          src={Find.image1}
-                        />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 200, width: 250 }}
-                          src={Find.image2}
-                        />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 200, width: 250 }}
-                          src={Find.image3}
+                          style={
+                            Responsive680
+                              ? { borderRadius: 8 }
+                              : { borderRadius: 16 }
+                          }
                         />
                       </SwiperSlide>
                     </Swiper>
@@ -345,9 +253,8 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
       ) : (
         <>
           <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
-            <GradientImg src="../images/Watch/gradient.svg" />
+            <img src="../images/Watch/gradient.svg" />
           </LeftSection>
-
           <RightSection>
             <AboutMovies>
               <Tittle>{Find.name}</Tittle>
@@ -361,7 +268,6 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                 <AgeLimit>{Find.age}</AgeLimit>
               </Numbers>
               <AboutText>{Find.description}</AboutText>
-
               <Buttons>
                 <LikesButton>
                   <DisLike>
@@ -375,8 +281,8 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                     <img
                       style={{
                         cursor: "pointer",
-                        height: "22px",
-                        width: "22px",
+                        height: "24.5px",
+                        width: "24.5px",
                       }}
                       onClick={newList}
                       src={
