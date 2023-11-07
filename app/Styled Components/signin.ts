@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100vw;
   height: fit-content;
   min-height: 100vh;
-  background-image: url("./images/Signin/signinBg.svg");
+  background-image: url("./images/Login/background.png");
   background-size: cover;
   background-position: 50% 65%;
   display: flex;

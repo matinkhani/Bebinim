@@ -80,7 +80,7 @@ export const DownContainer = styled.div`
 `;
 
 export const TopText = styled.div`
-  height: 15%;
+  height: 8%;
   width: 390px;
   color: rgba(254, 254, 254, 1);
   text-align: right;
