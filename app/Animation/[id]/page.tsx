@@ -17,14 +17,12 @@ import {
   LikesButton,
   MiddleLine,
   Numbers,
-  Play,
   Rate,
   ResAbout,
   RightNumbers,
   RightSection,
   Saved,
   Sekans,
-  SekansPhoto,
   Time,
   Tittle,
   WatchButton,
@@ -90,7 +88,12 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
           <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
             <GradientDiv>
               <BackColor>
-                <Play src="../images/play.svg" />
+                <Image
+                  alt="play button"
+                  height={50}
+                  width={50}
+                  src="../images/play.svg"
+                />
               </BackColor>
             </GradientDiv>
           </LeftSection>
@@ -102,32 +105,27 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                   <LikesButton>
                     <DisLike>
                       {" "}
-                      <img src="../images/Watch/dislike.svg" />
+                      <Image
+                        alt="dislike button"
+                        height={22}
+                        width={22}
+                        src="../images/Watch/dislike.svg"
+                      />
                     </DisLike>
                     <Like>
-                      <img src="../images/Watch/like.svg" />
+                      <Image
+                        alt="like button"
+                        height={22}
+                        width={22}
+                        src="../images/Watch/like.svg"
+                      />
                     </Like>
                     <Saved>
-                      <img
-                        style={
-                          Responsive680
-                            ? {
-                                cursor: "pointer",
-                                height: "22px",
-                                width: "22px",
-                              }
-                            : Responsive1100
-                            ? {
-                                cursor: "pointer",
-                                height: "24px",
-                                width: "24px",
-                              }
-                            : {
-                                cursor: "pointer",
-                                height: "24.5px",
-                                width: "24.5px",
-                              }
-                        }
+                      <Image
+                        alt="save button"
+                        height={22}
+                        width={22}
+                        style={{ cursor: "pointer" }}
                         onClick={newList}
                         src={
                           select.SavedList.find(
@@ -147,16 +145,20 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                   <Rate>
                     {Find.rate}
                     {" :"} علاقه‌مندی
-                    <img
-                      style={{ height: "18px", width: "18px" }}
+                    <Image
+                      height={18}
+                      width={18}
+                      alt="love button"
                       src="../images/Watch/love.svg"
                     />
                   </Rate>
                   <Time>
                     {Find.time}
                     {" :"} مدت زمان
-                    <img
-                      style={{ height: "18px", width: "18px" }}
+                    <Image
+                      height={18}
+                      width={18}
+                      alt="time button"
                       src="../images/timer.svg"
                     />
                   </Time>
@@ -164,16 +166,20 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                 <RightNumbers>
                   <Year>
                     {Find.year} {":"} سال انتشار{" "}
-                    <img
-                      style={{ height: "18px", width: "18px" }}
+                    <Image
+                      height={18}
+                      width={18}
+                      alt="calendar button"
                       src="../images/calendar.svg"
-                    />{" "}
+                    />
                   </Year>
                   <AgeLimit>
                     {Find.age}
                     {" :"} محدودیت سنی
-                    <img
-                      style={{ height: "18px", width: "18px" }}
+                    <Image
+                      alt="lock button"
+                      height={18}
+                      width={18}
                       src="../images/lock.svg"
                     />
                   </AgeLimit>
@@ -251,7 +257,12 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
       ) : (
         <>
           <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
-            <img src="../images/Watch/gradient.svg" />
+            <Image
+              height={875}
+              width={605}
+              alt="gradient image"
+              src="../images/Watch/gradient.svg"
+            />
           </LeftSection>
           <RightSection>
             <AboutMovies>
@@ -259,7 +270,12 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
               <Numbers>
                 <Rate>
                   {Find.rate}
-                  <img src="../images/Watch/love.svg" />
+                  <Image
+                    alt="love button"
+                    height={24.5}
+                    width={24.5}
+                    src="../images/Watch/love.svg"
+                  />
                 </Rate>
                 <Time>{Find.time}</Time>
                 <Year>{Find.year} </Year>
@@ -270,17 +286,28 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                 <LikesButton>
                   <DisLike>
                     {" "}
-                    <img src="../images/Watch/dislike.svg" />
+                    <Image
+                      height={24.5}
+                      width={24.5}
+                      alt="dislike button"
+                      src="../images/Watch/dislike.svg"
+                    />
                   </DisLike>
                   <Like>
-                    <img src="../images/Watch/like.svg" />
+                    <Image
+                      height={24.5}
+                      width={24.5}
+                      alt="like button"
+                      src="../images/Watch/like.svg"
+                    />
                   </Like>
                   <Saved>
-                    <img
+                    <Image
+                      height={24.5}
+                      width={24.5}
+                      alt="save button"
                       style={{
                         cursor: "pointer",
-                        height: "24.5px",
-                        width: "24.5px",
                       }}
                       onClick={newList}
                       src={
@@ -299,14 +326,38 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
             <AboutPhoto>
               <Episodes>تصاویر</Episodes>
               <Sekans>
-                <SekansPhoto
-                  style={{ backgroundImage: `url(${Find.image1})` }}
+                <Image
+                  alt="scene image"
+                  height={Responsive1100 ? 240 : 256}
+                  width={Responsive1100 ? 250 : 184}
+                  src={Find.image1}
+                  style={{
+                    backgroundSize: "cover",
+                    backgroundPosition: "50% 50%",
+                    borderRadius: 8,
+                  }}
                 />
-                <SekansPhoto
-                  style={{ backgroundImage: `url(${Find.image2})` }}
+                <Image
+                  alt="scene image"
+                  height={Responsive1100 ? 240 : 256}
+                  width={Responsive1100 ? 250 : 184}
+                  src={Find.image2}
+                  style={{
+                    backgroundSize: "cover",
+                    backgroundPosition: "50% 50%",
+                    borderRadius: 8,
+                  }}
                 />
-                <SekansPhoto
-                  style={{ backgroundImage: `url(${Find.image3})` }}
+                <Image
+                  alt="scene image"
+                  height={Responsive1100 ? 240 : 256}
+                  width={Responsive1100 ? 250 : 184}
+                  src={Find.image3}
+                  style={{
+                    backgroundSize: "cover",
+                    backgroundPosition: "50% 50%",
+                    borderRadius: 8,
+                  }}
                 />
               </Sekans>
             </AboutPhoto>

@@ -10,7 +10,6 @@ import {
   TextPlace,
   Text,
   Carousel2,
-  FavoriteImg,
   Hover,
   HoverText,
   Details,

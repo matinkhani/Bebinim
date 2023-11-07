@@ -17,7 +17,6 @@ import {
   LikesButton,
   MiddleLine,
   Numbers,
-  Play,
   Rate,
   ResAbout,
   RightNumbers,
