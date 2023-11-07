@@ -309,7 +309,7 @@ const AllMovies = [
     // Actor
     {
       id: 18,
-      url: "./images/exclusive/actor.png",
+      url: "./images/exclusive/actor.svg",
       name: "آکتور",
       name2: "actor",
       date: "شنبه‌ها",
