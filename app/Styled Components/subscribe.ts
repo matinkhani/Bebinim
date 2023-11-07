@@ -8,7 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("./images/Subscribe/pofila.svg") lightgray 50% / cover;
+  background: url("./images/Subscribe/pofila.png") lightgray 50% / cover;
   background-position: 50% 10%;
 `;
 
