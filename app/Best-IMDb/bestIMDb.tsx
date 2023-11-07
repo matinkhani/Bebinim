@@ -6,7 +6,6 @@ import {
   Hover,
   HoverText,
   ImdbDetails,
-  ImdbImg,
   ImdbText,
   ImgContainer,
   Line,
