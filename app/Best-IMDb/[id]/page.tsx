@@ -17,14 +17,12 @@ import {
   LikesButton,
   MiddleLine,
   Numbers,
-  Play,
   Rate,
   ResAbout,
   RightNumbers,
   RightSection,
   Saved,
   Sekans,
-  SekansPhoto,
   Time,
   Tittle,
   WatchButton,
@@ -47,14 +45,13 @@ import { Navigation } from "swiper/modules";
 import {
   Carousel2,
   CarouselContainer,
-  FavoriteImg,
 } from "@/app/Styled Components/favorites";
+import Image from "next/image";
 
 export default function WatchMovie({ params }: { params: { id: number } }) {
   const Find: any = BestIMDbArr.find((elem) => elem.id === +params.id);
   const dispatch = useDispatch();
   const select = useSelector((state: RoutState) => state.Reducer);
-
   const Responsive680 = useMediaQuery("(max-width:680px)");
   const Responsive1100 = useMediaQuery("(max-width:1100px)");
 
@@ -84,16 +81,19 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
     }
   };
 
-  console.log(params.id);
-
   return (
     <Container>
-      {Responsive680 ? (
+      {Responsive1100 ? (
         <>
           <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
             <GradientDiv>
               <BackColor>
-                <Play src="../images/play.svg" />
+                <Image
+                  alt="play button"
+                  height={50}
+                  width={50}
+                  src="../images/play.svg"
+                />
               </BackColor>
             </GradientDiv>
           </LeftSection>
@@ -105,18 +105,27 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                   <LikesButton>
                     <DisLike>
                       {" "}
-                      <img src="../images/Watch/dislike.svg" />
+                      <Image
+                        alt="dislike button"
+                        height={22}
+                        width={22}
+                        src="../images/Watch/dislike.svg"
+                      />
                     </DisLike>
                     <Like>
-                      <img src="../images/Watch/like.svg" />
+                      <Image
+                        alt="like button"
+                        height={22}
+                        width={22}
+                        src="../images/Watch/like.svg"
+                      />
                     </Like>
                     <Saved>
-                      <img
-                        style={{
-                          cursor: "pointer",
-                          height: "22px",
-                          width: "22px",
-                        }}
+                      <Image
+                        alt="save button"
+                        height={22}
+                        width={22}
+                        style={{ cursor: "pointer" }}
                         onClick={newList}
                         src={
                           select.SavedList.find(
@@ -136,16 +145,20 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                   <Rate>
                     {Find.rate}
                     {" :"} علاقه‌مندی
-                    <img
-                      style={{ height: "18px", width: "18px" }}
+                    <Image
+                      height={18}
+                      width={18}
+                      alt="love button"
                       src="../images/Watch/love.svg"
                     />
                   </Rate>
                   <Time>
                     {Find.time}
                     {" :"} مدت زمان
-                    <img
-                      style={{ height: "18px", width: "18px" }}
+                    <Image
+                      height={18}
+                      width={18}
+                      alt="time button"
                       src="../images/timer.svg"
                     />
                   </Time>
@@ -153,144 +166,20 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                 <RightNumbers>
                   <Year>
                     {Find.year} {":"} سال انتشار{" "}
-                    <img
-                      style={{ height: "18px", width: "18px" }}
+                    <Image
+                      height={18}
+                      width={18}
+                      alt="calendar button"
                       src="../images/calendar.svg"
-                    />{" "}
+                    />
                   </Year>
                   <AgeLimit>
                     {Find.age}
                     {" :"} محدودیت سنی
-                    <img
-                      style={{ height: "18px", width: "18px" }}
-                      src="../images/lock.svg"
-                    />
-                  </AgeLimit>
-                </RightNumbers>
-              </Numbers>
-              <AboutText>
-                {" "}
-                خلاصه {": "}
-                <br />
-                {Find.description}{" "}
-              </AboutText>
-            </AboutMovies>
-
-            <MiddleLine />
-            <AboutPhoto>
-              <Episodes>تصاویر</Episodes>
-              <Sekans>
-                <CarouselContainer>
-                  <Carousel2>
-                    <Swiper
-                      navigation={true}
-                      slidesPerView={1}
-                      speed={900}
-                      modules={[Navigation]}
-                      className="mySwiper"
-                      slidesPerGroup={1}
-                      loop={true}
-                    >
-                      <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 180, width: 220 }}
-                          src={Find.image1}
-                        />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 180, width: 220 }}
-                          src={Find.image2}
-                        />
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 180, width: 220 }}
-                          src={Find.image3}
-                        />
-                      </SwiperSlide>
-                    </Swiper>
-                  </Carousel2>
-                </CarouselContainer>
-              </Sekans>
-            </AboutPhoto>
-          </RightSection>
-        </>
-      ) : Responsive1100 ? (
-        <>
-          <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
-            <GradientDiv>
-              <BackColor>
-                <Play src="../images/play.svg" />
-              </BackColor>
-            </GradientDiv>
-          </LeftSection>
-
-          <RightSection>
-            <AboutMovies>
-              <ResAbout>
-                <Buttons>
-                  <LikesButton>
-                  <DisLike>
-                      {" "}
-                      <img src="../images/Watch/dislike.svg" />
-                    </DisLike>
-                    <Like>
-                      <img src="../images/Watch/like.svg" />
-                    </Like>
-                    <Saved>
-                      <img
-                        style={{
-                          cursor: "pointer",
-                          height: "22px",
-                          width: "22px",
-                        }}
-                        onClick={newList}
-                        src={
-                          select.SavedList.find(
-                            (elem) => elem.id === +params.id
-                          )
-                            ? Find.saved
-                            : Find.save
-                        }
-                      />
-                    </Saved>
-                  </LikesButton>
-                </Buttons>
-                <Tittle>{Find.name}</Tittle>
-              </ResAbout>
-              <Numbers>
-                <LeftNumbers>
-                  <Rate>
-                    {Find.rate}
-                    {" :"} علاقه‌مندی
-                    <img
-                      style={{ height: "18px", width: "18px" }}
-                      src="../images/Watch/love.svg"
-                    />
-                  </Rate>
-                  <Time>
-                    {Find.time}
-                    {" :"} مدت زمان
-                    <img
-                      style={{ height: "18px", width: "18px" }}
-                      src="../images/timer.svg"
-                    />
-                  </Time>
-                </LeftNumbers>
-                <RightNumbers>
-                  <Year>
-                    {Find.year} {":"} سال انتشار{" "}
-                    <img
-                      style={{ height: "18px", width: "18px" }}
-                      src="../images/calendar.svg"
-                    />{" "}
-                  </Year>
-                  <AgeLimit>
-                    {Find.age}
-                    {" :"} محدودیت سنی
-                    <img
-                      style={{ height: "18px", width: "18px" }}
+                    <Image
+                      alt="lock button"
+                      height={18}
+                      width={18}
                       src="../images/lock.svg"
                     />
                   </AgeLimit>
@@ -319,21 +208,42 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                       slidesPerGroup={1}
                     >
                       <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 200, width: 250 }}
+                        <Image
+                          alt="images of animation"
+                          height={Responsive680 ? 180 : 200}
+                          width={Responsive680 ? 220 : 250}
                           src={Find.image1}
+                          style={
+                            Responsive680
+                              ? { borderRadius: 8 }
+                              : { borderRadius: 16 }
+                          }
                         />
                       </SwiperSlide>
                       <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 200, width: 250 }}
+                        <Image
+                          alt="images of animation"
+                          height={Responsive680 ? 180 : 200}
+                          width={Responsive680 ? 220 : 250}
                           src={Find.image2}
+                          style={
+                            Responsive680
+                              ? { borderRadius: 8 }
+                              : { borderRadius: 16 }
+                          }
                         />
                       </SwiperSlide>
                       <SwiperSlide>
-                        <FavoriteImg
-                          style={{ height: 200, width: 250 }}
+                        <Image
+                          alt="images of animation"
+                          height={Responsive680 ? 180 : 200}
+                          width={Responsive680 ? 220 : 250}
                           src={Find.image3}
+                          style={
+                            Responsive680
+                              ? { borderRadius: 8 }
+                              : { borderRadius: 16 }
+                          }
                         />
                       </SwiperSlide>
                     </Swiper>
@@ -346,7 +256,12 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
       ) : (
         <>
           <LeftSection style={{ backgroundImage: `url(${Find.bgImg})` }}>
-            <img src="../images/Watch/gradient.svg" />
+            <Image
+              height={875}
+              width={605}
+              alt="gradient image"
+              src="../images/Watch/gradient.svg"
+            />
           </LeftSection>
           <RightSection>
             <AboutMovies>
@@ -354,7 +269,12 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
               <Numbers>
                 <Rate>
                   {Find.rate}
-                  <img src="../images/Watch/love.svg" />
+                  <Image
+                    alt="love button"
+                    height={24.5}
+                    width={24.5}
+                    src="../images/Watch/love.svg"
+                  />
                 </Rate>
                 <Time>{Find.time}</Time>
                 <Year>{Find.year} </Year>
@@ -363,30 +283,39 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
               <AboutText>{Find.description}</AboutText>
               <Buttons>
                 <LikesButton>
-                <DisLike>
-                      {" "}
-                      <img src="../images/Watch/dislike.svg" />
-                    </DisLike>
-                    <Like>
-                      <img src="../images/Watch/like.svg" />
-                    </Like>
-                    <Saved>
-                      <img
-                        style={{
-                          cursor: "pointer",
-                          height: "22px",
-                          width: "22px",
-                        }}
-                        onClick={newList}
-                        src={
-                          select.SavedList.find(
-                            (elem) => elem.id === +params.id
-                          )
-                            ? Find.saved
-                            : Find.save
-                        }
-                      />
-                    </Saved>
+                  <DisLike>
+                    {" "}
+                    <Image
+                      height={24.5}
+                      width={24.5}
+                      alt="dislike button"
+                      src="../images/Watch/dislike.svg"
+                    />
+                  </DisLike>
+                  <Like>
+                    <Image
+                      height={24.5}
+                      width={24.5}
+                      alt="like button"
+                      src="../images/Watch/like.svg"
+                    />
+                  </Like>
+                  <Saved>
+                    <Image
+                      height={24.5}
+                      width={24.5}
+                      alt="save button"
+                      style={{
+                        cursor: "pointer",
+                      }}
+                      onClick={newList}
+                      src={
+                        select.SavedList.find((elem) => elem.id === +params.id)
+                          ? Find.saved
+                          : Find.save
+                      }
+                    />
+                  </Saved>
                 </LikesButton>
                 <WatchButton>تماشا کردن</WatchButton>
               </Buttons>
@@ -396,14 +325,38 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
             <AboutPhoto>
               <Episodes>تصاویر</Episodes>
               <Sekans>
-                <SekansPhoto
-                  style={{ backgroundImage: `url(${Find.image1})` }}
+                <Image
+                  alt="scene image"
+                  height={Responsive1100 ? 240 : 256}
+                  width={Responsive1100 ? 250 : 184}
+                  src={Find.image1}
+                  style={{
+                    backgroundSize: "cover",
+                    backgroundPosition: "50% 50%",
+                    borderRadius: 8,
+                  }}
                 />
-                <SekansPhoto
-                  style={{ backgroundImage: `url(${Find.image2})` }}
+                <Image
+                  alt="scene image"
+                  height={Responsive1100 ? 240 : 256}
+                  width={Responsive1100 ? 250 : 184}
+                  src={Find.image2}
+                  style={{
+                    backgroundSize: "cover",
+                    backgroundPosition: "50% 50%",
+                    borderRadius: 8,
+                  }}
                 />
-                <SekansPhoto
-                  style={{ backgroundImage: `url(${Find.image3})` }}
+                <Image
+                  alt="scene image"
+                  height={Responsive1100 ? 240 : 256}
+                  width={Responsive1100 ? 250 : 184}
+                  src={Find.image3}
+                  style={{
+                    backgroundSize: "cover",
+                    backgroundPosition: "50% 50%",
+                    borderRadius: 8,
+                  }}
                 />
               </Sekans>
             </AboutPhoto>
