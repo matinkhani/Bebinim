@@ -290,7 +290,7 @@ const AllMovies = [
     // Sedato
     {
       id: 17,
-      url: "./images/exclusive/sedato.svg",
+      url: "./images/exclusive/sedato.png",
       name: "صداتو",
       name2: "sedato",
       date: "پنجشنبه‌ها",
@@ -302,14 +302,14 @@ const AllMovies = [
       age: "+۳",
       time: "۴۵:۰۰",
       rate: "۶۲٪",
-      bgImg: "../images/exclusive/sedato.svg",
+      bgImg: "../images/exclusive/sedato.png",
       description:
         "«صداتو» یک مسابقه موزیکال-معمایی به کارگردانی و تهیه‌کنندگی حامد جوادزاده و با اجرای محسن کیایی محصول سال ۱۴۰۲ می‌باشد که برای پلتفرم نمایش‌خوانگی فیلیمو ساخته شد.",
     },
     // Actor
     {
       id: 18,
-      url: "./images/exclusive/actor.svg",
+      url: "./images/exclusive/actor.png",
       name: "آکتور",
       name2: "actor",
       date: "شنبه‌ها",
@@ -328,7 +328,7 @@ const AllMovies = [
     // The God Father
     {
       id: 19,
-      url: "./images/exclusive/godfather.svg",
+      url: "./images/exclusive/godfather.png",
       name: "پدر خوانده",
       name2: "pedar khande",
       date: "جمعه‌ها",
@@ -347,7 +347,7 @@ const AllMovies = [
     // Nato
     {
       id: 20,
-      url: "./images/exclusive/nato.svg",
+      url: "./images/exclusive/nato.png",
       name: "ناتو",
       name2: "nato",
       date: "دوشنبه‌ها",
