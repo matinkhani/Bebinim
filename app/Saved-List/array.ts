@@ -2,7 +2,7 @@ const AllMovies = [
     // Ablagh
     {
       id: 1,
-      url: "../../images/Watch/ablagh.svg",
+      url: "../../images/Watch/ablagh.png",
       name: "ابلق",
       name2: "ablagh",
       category: "فیلم",
@@ -13,7 +13,7 @@ const AllMovies = [
       age: "+۱۳",
       time: "۲:۳۸:۰۰",
       rate: "۱۸٪",
-      bgImg: "../images/Watch/ablagh.svg",
+      bgImg: "../images/Watch/ablagh.png",
       description:
         "راحله به همراه خوانواده در یکی از محله‌های تهران زندگی می‌کنند. شوهر خواهر علی، فردی است که یک کسب و کار را برای خانم‌های محله ایجاد کرده است.",
     },

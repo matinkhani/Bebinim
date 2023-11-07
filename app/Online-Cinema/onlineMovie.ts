@@ -1,7 +1,7 @@
 const OnlineMovie = [
   {
     id: 1,
-    url: "./images/CinemaOnline/ablagh.svg",
+    url: "/./images/CinemaOnline/ablagh.png",
     name: "ابلق",
     category: "فیلم",
     year: "۱۳۹۹",
@@ -19,7 +19,7 @@ const OnlineMovie = [
   },
   {
     id: 14,
-    url: "./images/CinemaOnline/worldwar3.svg",
+    url: "/./images/CinemaOnline/worldwar3.png",
     name: "جنگ جهانی سوم",
     category: "فیلم",
     year: "۱۴۰۱",
@@ -37,7 +37,7 @@ const OnlineMovie = [
   },
   {
     id: 15,
-    url: "./images/CinemaOnline/maslahat.png",
+    url: "/./images/CinemaOnline/maslahat.png",
     name: "مصلحت",
     category: "فیلم",
     year: "۱۳۹۹",
@@ -55,7 +55,7 @@ const OnlineMovie = [
   },
   {
     id: 16,
-    url: "./images/CinemaOnline/fosil.png",
+    url: "/./images/CinemaOnline/fosil.png",
     name: "فسیل",
     category: "فیلم",
     year: "۱۳۹۹",
