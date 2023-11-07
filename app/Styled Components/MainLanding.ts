@@ -56,32 +56,6 @@ export const ArrowIconsPlace = styled.div`
   align-items: center;
 `;
 
-export const ArrowIconsLeft = styled.img`
-  height: 48px;
-  width: 48px;
-  position: absolute;
-  bottom: 120px;
-  left: 35px;
-  cursor: pointer;
-
-  @media screen and (max-width: 1200px) {
-    bottom: 15px;
-  }
-`;
-
-export const ArrowIconsRight = styled.img`
-  height: 48px;
-  width: 48px;
-  position: absolute;
-  left: 90px;
-  bottom: 120px;
-  cursor: pointer;
-
-  @media screen and (max-width: 1200px) {
-    bottom: 15px;
-  }
-`;
-
 export const RightSide = styled.div`
   height: 100%;
   width: 50%;
@@ -142,16 +116,6 @@ export const MoreExplainText = styled.p`
   }
 `;
 
-export const MoreIcon = styled.img`
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-
-  @media screen and (max-width: 1200px) {
-    margin-bottom: 10px;
-  }
-`;
-
 export const MoreExplainBtn = styled.button`
   width: 161px;
   height: 54px;
@@ -177,27 +141,6 @@ export const MoreExplainBtn = styled.button`
     font-size: 16px;
     border-radius: 8px;
     justify-content: center;
-  }
-`;
-
-export const WatchSVG = styled.img`
-  width: 24px;
-  height: 24px;
-`;
-
-export const Text = styled.div`
-  height: 18%;
-  width: 70%;
-  direction: rtl;
-  font-family: var(--medium);
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 25px;
-  letter-spacing: 0em;
-  color: rgba(0, 0, 0, 1);
-
-  @media screen and (max-width: 1200px) {
-    display: none;
   }
 `;
 
@@ -263,11 +206,6 @@ export const IconPlace = styled.div`
     display: flex;
     align-items: center;
   }
-`;
-
-export const FreshSVG = styled.img`
-  width: 40px;
-  height: 40px;
 `;
 
 export const FreshText = styled.div`
