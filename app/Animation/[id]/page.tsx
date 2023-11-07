@@ -40,7 +40,6 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import {
   Carousel2,
   CarouselContainer,
-  FavoriteImg,
 } from "@/app/Styled Components/animation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
