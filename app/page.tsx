@@ -7,7 +7,6 @@ import Favorites from "./Favorites/favorites";
 import OnlineCinema from "./Online-Cinema/onlineCinema";
 import Exclusive from "./Exclusive/exclusive";
 import Animation from "./Animation/animation";
-import Nostalgia from "./Nostalgia/nostalgia";
 import BestIMDb from "./Best-IMDb/bestIMDb";
 import FooterSection from "./Footer Section/footerSection";
 import Movie from "./ZakhmKari/ZakhmKari";
@@ -27,7 +26,6 @@ export default function Home() {
         <Exclusive />
         <Animation />
         <Movie />
-        {/* <Nostalgia /> */}
         <BestIMDb />
       </Container>
       <FooterSection />
