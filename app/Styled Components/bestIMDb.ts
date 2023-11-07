@@ -150,6 +150,10 @@ export const Hover = styled.div`
     height: 180px;
     width: 268px;
   }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    height: 170px;
+    width: 250px;
+  }
   @media screen and (min-width: 1200px) and (max-width: 1440px) {
     height: 170px;
     width: 250px;
