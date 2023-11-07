@@ -9,7 +9,6 @@ export const Container = styled.div`
   background-image: url("./images/footer/cinema-seats.svg");
   background-color: #291212;
   position: relative;
-  background-color: red;
   
   @media screen and (max-width: 480px) {
     height: 30vh;
