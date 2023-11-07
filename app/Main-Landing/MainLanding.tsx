@@ -73,39 +73,13 @@ export default function MainLanding() {
                     {Responsive1200 ? (
                       <>
                         <ExplainAndWatch>
-                          <MoreExplainText
-                            style={
-                              item.id === 42
-                                ? { color: "black" }
-                                : item.id === 43
-                                ? { color: "White" }
-                                : item.id === 44
-                                ? { color: "white" }
-                                : item.id === 45
-                                ? { color: "white" }
-                                : {}
-                            }
-                          >
+                          <MoreExplainText style={{ color: "#fff" }}>
                             <Link href={`Main-Landing/${item.id}`}>
                               توضیحات بیشتر
                             </Link>
                           </MoreExplainText>
                           <Link href={`Main-Landing/${item.id}`}>
-                            <MoreIcon
-                              src={
-                                item.id === 42
-                                  ? "./images/mores.svg"
-                                  : item.id === 43
-                                  ? "./images/mores2.svg"
-                                  : item.id === 44
-                                  ? "./images/mores2.svg"
-                                  : item.id === 45
-                                  ? Responsive600
-                                    ? "./images/mores2.svg"
-                                    : "./images/mores2.svg"
-                                  : ""
-                              }
-                            />
+                            <MoreIcon src={"./images/mores2.svg"} />
                           </Link>
                           <Link href={`Main-Landing/${item.id}`}>
                             <MoreExplainBtn>

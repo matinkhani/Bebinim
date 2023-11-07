@@ -134,8 +134,9 @@ export const Details = styled.div`
 
   @media screen and (max-width: 600px) {
     width: 300px;
+    height: 300px;
     justify-content: center;
-    gap: 140px;
+    gap: 80px;
   }
 `;
 
@@ -168,6 +169,11 @@ export const DetailsBottom = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    height: 40%;
+    margin-top: 40px;
+  }
 `;
 
 export const HoverFilmName = styled.div`
@@ -214,7 +220,7 @@ export const Hover = styled.div`
 
   @media screen and (max-width: 600px) {
     width: 300px;
-    height: 350px;
+    height: 300px;
   }
   @media screen and (min-width: 1200px) and (max-width: 1440px) {
     width: 260px;

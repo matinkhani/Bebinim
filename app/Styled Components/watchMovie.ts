@@ -367,6 +367,24 @@ export const LikesButton = styled.div`
   }
 `;
 
+export const DisLike = styled.div`
+  height: 100%;
+  width: 30%;
+`;
+
+export const Like = styled.div`
+  height: 100%;
+  width: 30%;
+`;
+
+export const Saved = styled.div`
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const MiddleLine = styled.div`
   height: 1px;
   width: 100%;
