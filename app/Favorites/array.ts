@@ -12,7 +12,7 @@ const FavoritesArr = [
     age: "+۱۳",
     time: "۲:۳۸:۰۰",
     rate: "۱۸٪",
-    bgImg: "../images/Watch/ablagh.png",
+    bgImg: "../images/Watch/ablagh.svg",
     description:
       "راحله به همراه خوانواده در یکی از محله‌های تهران زندگی می‌کنند. شوهر خواهر علی، فردی است که یک کسب و کار را برای خانم‌های محله ایجاد کرده است.",
     save: "/../images/Watch/save.svg",

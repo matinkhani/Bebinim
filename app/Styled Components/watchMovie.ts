@@ -455,20 +455,3 @@ export const Sekans = styled.div`
     height: 350px;
   }
 `;
-
-export const SekansPhoto = styled.div`
-  height: 256px;
-  width: 184px;
-  background-size: cover;
-  background-position: 50% 50%;
-  border-radius: 8px;
-
-  @media screen and (max-width: 680px) {
-    height: 240px;
-    width: 250px;
-  }
-  @media screen and (min-width: 680px) and (max-width: 1100px) {
-    height: 240px;
-    width: 250px;
-  }
-`;
