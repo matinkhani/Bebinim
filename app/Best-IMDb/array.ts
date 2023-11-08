@@ -2,7 +2,7 @@ const BestIMDbArr = [
   // Fight Club
   {
     id: 34,
-    url: "/./images/imdb/fight-club.png",
+    url: "/./images/imdb/fight-club.webp",
     name: "Fight Club",
     year: "۱۹۹۹",
     category: "فیلم",
@@ -21,7 +21,7 @@ const BestIMDbArr = [
   // The Dark Knight
   {
     id: 35,
-    url: "/./images/imdb/dark-knight.png",
+    url: "/./images/imdb/dark-knight.webp",
     name: "The Dark Knight",
     year: "۲۰۰۸",
     category: "فیلم",
@@ -40,7 +40,7 @@ const BestIMDbArr = [
   // Breaking Bad
   {
     id: 36,
-    url: "/./images/imdb/breaking-bad.png",
+    url: "/./images/imdb/breaking-bad.webp",
     name: "Breaking Bad",
     year: "۲۰۰۸",
     category: "سریال",
@@ -59,7 +59,7 @@ const BestIMDbArr = [
   // Inception
   {
     id: 37,
-    url: "/./images/imdb/inception.png",
+    url: "/./images/imdb/inception.webp",
     name: "Inception",
     year: "۲۰۱۰",
     category: "فیلم",
@@ -78,7 +78,7 @@ const BestIMDbArr = [
   // La La Land
   {
     id: 38,
-    url: "/./images/imdb/lala-land.png",
+    url: "/./images/imdb/lala-land.webp",
     name: "La La Land",
     year: "۲۰۱۶",
     category: "فیلم",
@@ -97,7 +97,7 @@ const BestIMDbArr = [
   // Coda
   {
     id: 39,
-    url: "/./images/imdb/coda.png",
+    url: "/./images/imdb/coda.webp",
     name: "Coda",
     year: "۲۰۲۱",
     category: "فیلم",
@@ -116,7 +116,7 @@ const BestIMDbArr = [
   // Interstellar
   {
     id: 40,
-    url: "/./images/imdb/interstellar.png",
+    url: "/./images/imdb/interstellar.webp",
     name: "Interstellar",
     year: "۲۰۱۴",
     category: "فیلم",
@@ -135,7 +135,7 @@ const BestIMDbArr = [
   // The Godfather
   {
     id: 41,
-    url: "/./images/imdb/god-father.png",
+    url: "/./images/imdb/god-father.webp",
     name: "The Godfather",
     year: "۱۹۷۲",
     category: "فیلم",
