@@ -41,7 +41,7 @@ export default function Favorites() {
       style={{
         position: "absolute",
         top: "40%",
-        right: "0%",
+        left: "0%",
         cursor: "pointer",
       }}
       onClick={previousSlide}
