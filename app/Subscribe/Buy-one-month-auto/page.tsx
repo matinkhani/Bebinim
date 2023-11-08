@@ -33,7 +33,7 @@ import {
   ChangeThreeMonth,
 } from "@/app/Redux/createslice";
 import { RoutState } from "@/app/Redux/store";
-import { BanksData } from "../Buy-one-month/page";
+import { BanksNames } from "../Buy-one-month/page";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Image from "next/image";
 
@@ -94,7 +94,7 @@ export default function Buy() {
           </MiddleLine>
           <ChooseBank>انتخاب بانک</ChooseBank>
           <BanksPlace>
-            {BanksData.map((item, index) => {
+            {BanksNames.map((item, index) => {
               return (
                 <Bank key={index}>
                   <BankIconPlace>

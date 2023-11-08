@@ -36,7 +36,7 @@ import { RoutState } from "@/app/Redux/store";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Image from "next/image";
 
-export const BanksData = [
+export const BanksNames = [
   { url: "/../images/Buy/saman.png", name: "بانک سامان" },
   { url: "/../images/Buy/ayande.png", name: "بانک آینده" },
   { url: "/../images/Buy/maskan.png", name: "بانک مسکن" },
@@ -101,7 +101,7 @@ export default function Buy() {
           </MiddleLine>
           <ChooseBank>انتخاب بانک</ChooseBank>
           <BanksPlace>
-            {BanksData.map((item, index) => {
+            {BanksNames.map((item, index) => {
               return (
                 <Bank key={index}>
                   <BankIconPlace>
