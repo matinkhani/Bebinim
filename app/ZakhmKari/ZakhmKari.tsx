@@ -45,7 +45,7 @@ export default function Movie() {
                   <MovieIacon>
                     <img
                       style={{ height: "100px", width: "100px" }}
-                      src="./images/ZakhmKari/mov_logo.svg"
+                      src="./images/ZakhmKari/mov_logo.png"
                     />
                   </MovieIacon>
                   <DetailsText>

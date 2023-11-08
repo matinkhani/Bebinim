@@ -16,12 +16,12 @@ const ZakhmKariArr = [
       "در نبود مالک حالا مدعیان تاج و تخت او یکی یکی از راه می‌رسند و این آغاز آشوب دیگری است… هنوز بوی خون به مشام می‌رسد!»",
     save: "../images/Watch/save.svg",
     saved: "../images/Watch/saved.svg",
-    photo1: "./images/ZakhmKari/Zakhm1.svg",
-    photo2: "./images/ZakhmKari/Zakhm2.svg",
-    photo3: "./images/ZakhmKari/Zakhm3.svg",
-    photo4: "./images/ZakhmKari/Zakhm4.svg",
-    photo5: "./images/ZakhmKari/Zakhm5.svg",
-    photo6: "./images/ZakhmKari/Zakhm6.svg",
+    photo1: "./images/ZakhmKari/Zakhm1.png",
+    photo2: "./images/ZakhmKari/Zakhm2.png",
+    photo3: "./images/ZakhmKari/Zakhm3.png",
+    photo4: "./images/ZakhmKari/Zakhm4.png",
+    photo5: "./images/ZakhmKari/Zakhm5.png",
+    photo6: "./images/ZakhmKari/Zakhm6.png",
   },
 ];
 
