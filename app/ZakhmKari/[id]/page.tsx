@@ -200,7 +200,7 @@ export default function WatchMovie({ params }: { params: { id: number } }) {
                   <Carousel2>
                     <Swiper
                       navigation={true}
-                      slidesPerView={2}
+                      slidesPerView={Responsive680 ? 1 : Responsive1100 ? 2 : 2}
                       speed={900}
                       modules={[Navigation]}
                       className="mySwiper"
