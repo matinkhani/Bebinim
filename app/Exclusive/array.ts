@@ -2,8 +2,8 @@ const ExclusiveArr = [
   // Sedato
   {
     id: 17,
-    url: "/./images/exclusive/sedato.png",
-    urlMobile: "/./images/exclusive/sedato.png",
+    url: "/./images/exclusive/sedato.webp",
+    urlMobile: "/./images/exclusive/sedato.webp",
     name: "صداتو",
     date: "پنجشنبه‌ها",
     category: "ریلیتی‌شو",
@@ -14,7 +14,7 @@ const ExclusiveArr = [
     age: "+۳",
     time: "۴۵:۰۰",
     rate: "۶۲٪",
-    bgImg: "../images/exclusive/sedato.png",
+    bgImg: "../images/exclusive/sedato.webp",
     description:
       "«صداتو» یک مسابقه موزیکال-معمایی به کارگردانی و تهیه‌کنندگی حامد جوادزاده و با اجرای محسن کیایی محصول سال ۱۴۰۲ می‌باشد که برای پلتفرم نمایش‌خوانگی فیلیمو ساخته شد.",
     save: "/../images/Watch/save.svg",
@@ -23,8 +23,8 @@ const ExclusiveArr = [
   // Actor
   {
     id: 18,
-    url: "/./images/exclusive/actor.png",
-    urlMobile: "/./images/exclusive/actor.png",
+    url: "/./images/exclusive/actor.webp",
+    urlMobile: "/./images/exclusive/actor.webp",
     name: "آکتور",
     date: "شنبه‌ها",
     category: "سریال",
@@ -44,8 +44,8 @@ const ExclusiveArr = [
   // The God Father
   {
     id: 19,
-    url: "/./images/exclusive/godfather.png",
-    urlMobile: "/./images/exclusive/godfather.png",
+    url: "/./images/exclusive/godfather.webp",
+    urlMobile: "/./images/exclusive/godfather.webp",
     name: "پدر خوانده",
     date: "جمعه‌ها",
     category: "ریلیتی‌شو",
@@ -65,7 +65,7 @@ const ExclusiveArr = [
   // Nato
   {
     id: 20,
-    url: "/./images/exclusive/nato.png",
+    url: "/./images/exclusive/nato.webp",
     urlMobile: "/./images/D-Exclusive/nato-480.webp",
     name: "ناتو",
     date: "دوشنبه‌ها",
