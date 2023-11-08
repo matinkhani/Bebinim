@@ -33,11 +33,18 @@ import {
   ChangeThreeMonth,
 } from "@/app/Redux/createslice";
 import { RoutState } from "@/app/Redux/store";
-import { BanksNames } from "../Buy-one-month/page";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Image from "next/image";
 
 export default function Buy() {
+  const BanksData = [
+    { url: "../images/Buy/saman.svg", name: "بانک سامان" },
+    { url: "../images/Buy/ayande.svg", name: "بانک آینده" },
+    { url: "../images/Buy/maskan.svg", name: "بانک مسکن" },
+    { url: "../images/Buy/mellat.svg", name: "بانک ملت" },
+    { url: "../images/Buy/sepah.svg", name: "بانک سپه" },
+  ];
+
   const dispatch = useDispatch();
   const select = useSelector((state: RoutState) => state.Reducer);
   const Responsive480 = useMediaQuery("(max-width:480px)");
@@ -94,7 +101,7 @@ export default function Buy() {
           </MiddleLine>
           <ChooseBank>انتخاب بانک</ChooseBank>
           <BanksPlace>
-            {BanksNames.map((item, index) => {
+            {BanksData.map((item, index) => {
               return (
                 <Bank key={index}>
                   <BankIconPlace>
