@@ -38,11 +38,11 @@ import Image from "next/image";
 
 export default function Buy() {
   const BanksData = [
-    { url: "/../images/Buy/saman.png", name: "بانک سامان" },
-    { url: "/../images/Buy/ayande.png", name: "بانک آینده" },
-    { url: "/../images/Buy/maskan.png", name: "بانک مسکن" },
-    { url: "/../images/Buy/mellat.png", name: "بانک ملت" },
-    { url: "/../images/Buy/sepah.png", name: "بانک سپه" },
+    { url: "/../images/Buy/saman.webp", name: "بانک سامان" },
+    { url: "/../images/Buy/ayande.webp", name: "بانک آینده" },
+    { url: "/../images/Buy/maskan.webp", name: "بانک مسکن" },
+    { url: "/../images/Buy/mellat.webp", name: "بانک ملت" },
+    { url: "/../images/Buy/sepah.webp", name: "بانک سپه" },
   ];
 
   const dispatch = useDispatch();
