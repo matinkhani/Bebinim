@@ -406,12 +406,12 @@ const AllMovies = [
   // Sponge Bob
   {
     id: 21,
-    url: "../images/animation/sponge-bob.png",
+    url: "../images/animation/sponge-bob.webp",
     name: "باب اسنفجی",
     name2: "sponge bob",
     year: "۱۹۹۹",
     category: "انیمیشن",
-    bgImg: "../images/animation/pong-bob.jpg",
+    bgImg: "../images/animation/pong-bob.webp",
     image1: "../images/D-Animation/bob1.jpg",
     image2: "../images/D-Animation/bob2.jpg",
     image3: "../images/D-Animation/bob3.jpg",
@@ -446,12 +446,12 @@ const AllMovies = [
   // Ice Age
   {
     id: 23,
-    url: "./images/animation/ice-age.jpg",
+    url: "./images/animation/ice-age.webp",
     name: "عصر یخبندان",
     name2: "ice age",
     year: "۲۰۰۲",
     category: "انیمیشن",
-    bgImg: "../images/animation/ice-age.jpg",
+    bgImg: "../images/animation/ice-age.webp",
     image1: "../images/D-Animation/asr1.jpg",
     image2: "../images/D-Animation/asr2.jpg",
     image3: "../images/D-Animation/asr3.jpg",
@@ -466,12 +466,12 @@ const AllMovies = [
   // Cars
   {
     id: 24,
-    url: "./images/animation/cars.jpg",
+    url: "./images/animation/cars.webp",
     name: "ماشین‌ها",
     name2: "cars",
     year: "۲۰۰۶",
     category: "انیمیشن",
-    bgImg: "../images/animation/cars2.jpg",
+    bgImg: "../images/animation/cars2.webp",
     image1: "../images/D-Animation/cars1.jpg",
     image2: "../images/D-Animation/cars2.jpg",
     image3: "../images/D-Animation/cars3.jpg",
@@ -486,12 +486,12 @@ const AllMovies = [
   // Tom & Jerry
   {
     id: 25,
-    url: "./images/animation/tom&jerry.png",
+    url: "./images/animation/tom&jerry.webp",
     name: "تام و جری",
     name2: "tom and jerry",
     year: "۱۹۴۰",
     category: "انیمیشن",
-    bgImg: "../images/animation/tom&jerry.png",
+    bgImg: "../images/animation/tom&jerry.webp",
     image1: "../images/D-Animation/tom1.jpg",
     image2: "../images/D-Animation/tom2.jpg",
     image3: "../images/D-Animation/tom3.jpg",
@@ -506,12 +506,12 @@ const AllMovies = [
   // Pink Panther
   {
     id: 26,
-    url: "./images/animation/pink-panther.png",
+    url: "./images/animation/pink-panther.webp",
     name: "پلنگ صورتی",
     name2: "pink panther",
     year: "۱۹۶۹",
     category: "انیمیشن",
-    bgImg: "../images/animation/pink.jpg",
+    bgImg: "../images/animation/pink.webp",
     image1: "../images/D-Animation/pink1.jpg",
     image2: "../images/D-Animation/pink2.png",
     image3: "../images/D-Animation/pink3.jpg",
@@ -526,12 +526,12 @@ const AllMovies = [
   // Madagascar
   {
     id: 27,
-    url: "./images/animation/madagascar.jpg",
+    url: "./images/animation/madagascar.webp",
     name: "ماداگاسکار ۲",
     name2: "madagascar",
     year: "۲۰۰۵",
     category: "انیمیشن",
-    bgImg: "../images/animation/madagascar1.jpg",
+    bgImg: "../images/animation/madagascar1.webp",
     image1: "../images/D-Animation/madagascar1.jpg",
     image2: "../images/D-Animation/madagascar2.jpg",
     image3: "../images/D-Animation/madagascar3.jpg",
@@ -546,12 +546,12 @@ const AllMovies = [
   // Toy Story
   {
     id: 28,
-    url: "./images/animation/toy-story.jpeg",
+    url: "./images/animation/toy-story.webp",
     name: "داستان اسباب بازی",
     name2: "toy story",
     year: "۱۹۹۵",
     category: "انیمیشن",
-    bgImg: "../images/animation/toy-story.jpeg",
+    bgImg: "../images/animation/toy-story.webp",
     image1: "../images/D-Animation/toy1.jpg",
     image2: "../images/D-Animation/toy2.jpg",
     image3: "../images/D-Animation/toy3.jpg",
@@ -566,12 +566,12 @@ const AllMovies = [
   // Luca
   {
     id: 29,
-    url: "./images/animation/luca.png",
+    url: "./images/animation/luca.webp",
     name: "لوکا",
     name2: "luca",
     year: "۲۰۲۱",
     category: "انیمیشن",
-    bgImg: "../images/animation/luca.png",
+    bgImg: "../images/animation/luca.webp",
     image1: "../images/D-Animation/luca1.jpg",
     image2: "../images/D-Animation/luca2.jpg",
     image3: "../images/D-Animation/luca3.jpg",
@@ -586,12 +586,12 @@ const AllMovies = [
   // Soul
   {
     id: 30,
-    url: "./images/animation/soul1.png",
+    url: "./images/animation/soul1.webp",
     name: "روح",
     name2: "soul",
     year: "۲۰۲۰",
     category: "انیمیشن",
-    bgImg: "../images/animation/soul.jpg",
+    bgImg: "../images/animation/soul.webp",
     image1: "../images/D-Animation/soul1.jpg",
     image2: "../images/D-Animation/soul2.jpg",
     image3: "../images/D-Animation/soul3.jpg",
@@ -606,12 +606,12 @@ const AllMovies = [
   // Rango
   {
     id: 31,
-    url: "./images/animation/rango.png",
+    url: "./images/animation/rangopng.webp",
     name: "رنگو",
     name2: "rango",
     year: "۲۰۱۱",
     category: "انیمیشن",
-    bgImg: "../images/animation/rango.jpg",
+    bgImg: "../images/animation/rango.webp",
     image1: "../images/D-Animation/rango1.jpg",
     image2: "../images/D-Animation/rango2.jpg",
     image3: "../images/D-Animation/rango3.jpg",
@@ -626,12 +626,12 @@ const AllMovies = [
   // Dolphin Boy
   {
     id: 32,
-    url: "./images/animation/dolphin.png",
+    url: "./images/animation/dolphin.webp",
     name: "پسر دلفینی",
     name2: "dolphin boy",
     year: "۲۰۲۱",
     category: "انیمیشن",
-    bgImg: "../images/animation/dolphin1.jpg",
+    bgImg: "../images/animation/dolphin1.webp",
     image1: "../images/D-Animation/dolphin1.jpg",
     image2: "../images/D-Animation/dolphin2.jpg",
     image3: "../images/D-Animation/dolphin3.jpg",
@@ -646,12 +646,12 @@ const AllMovies = [
   // Turning Red
   {
     id: 33,
-    url: "./images/animation/turning-red.png",
+    url: "./images/animation/turning-red.webp",
     name: "قرمز شدن",
     name2: "turning red",
     year: "۲۰۲۱",
     category: "انیمیشن",
-    bgImg: "../images/animation/turning-red1.jpg",
+    bgImg: "../images/animation/turning-red1.webp",
     image1: "../images/D-Animation/turning1.jpg",
     image2: "../images/D-Animation/turning2.jpg",
     image3: "../images/D-Animation/turning3.jpg",
