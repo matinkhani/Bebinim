@@ -57,7 +57,7 @@ export default function Category() {
           })}
           <Link href="/Search">
             <Image
-              src={"/./images/Category/search.png"}
+              src={"/./images/Category/search.webp"}
               alt="search tab"
               height={200}
               width={288}
