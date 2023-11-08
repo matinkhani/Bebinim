@@ -6,7 +6,7 @@ export const Container = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 70%;
-  background-image: url("./images/footer/cinema-seats.png");
+  background-image: url("./images/footer/cinema-seats.webp");
   background-color: #291212;
   position: relative;
   
