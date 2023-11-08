@@ -2,7 +2,7 @@ const FavoritesArr = [
   //ablagh
   {
     id: 1,
-    url: "/./images/favorites/Frame1.png",
+    url: "/./images/favorites/Frame1.webp",
     name: "ابلق",
     category: "فیلم",
     year: "۱۳۹۹",
@@ -21,7 +21,7 @@ const FavoritesArr = [
   //titi
   {
     id: 2,
-    url: "/./images/favorites/Frame2.png",
+    url: "/./images/favorites/Frame2.webp",
     name: "تی تی",
     category: "فیلم",
     year: "۱۳۹۹",
@@ -40,7 +40,7 @@ const FavoritesArr = [
   //posteshir
   {
     id: 3,
-    url: "/./images/favorites/Frame3.png",
+    url: "/./images/favorites/Frame3.webp",
     name: "پوست شیر‍",
     category: "سریال",
     year: "۱۴۰۱",
@@ -59,7 +59,7 @@ const FavoritesArr = [
   //marde baznde
   {
     id: 4,
-    url: "/./images/favorites/Frame4.png",
+    url: "/./images/favorites/Frame4.webp",
     name: "مرد بازنده",
     category: "فیلم",
     year: "۱۴۰۰",
@@ -78,7 +78,7 @@ const FavoritesArr = [
   //sag band
   {
     id: 5,
-    url: "/./images/favorites/Frame5.png",
+    url: "/./images/favorites/Frame5.webp",
     name: "سگ بند",
     category: "فیلم",
     year: "۱۴۰۰",
@@ -97,7 +97,7 @@ const FavoritesArr = [
   //shadravan
   {
     id: 6,
-    url: "/./images/favorites/Frame6.png",
+    url: "/./images/favorites/Frame6.webp",
     name: "شادروان",
     category: "فیلم",
     year: "۱۴۰۱",
@@ -116,7 +116,7 @@ const FavoritesArr = [
   //zelava
   {
     id: 7,
-    url: "/./images/favorites/Frame7.jpg",
+    url: "/./images/favorites/Frame7.webp",
     name: "زالاوا",
     category: "فیلم",
     year: "۱۳۹۹",
@@ -135,7 +135,7 @@ const FavoritesArr = [
   //last of us
   {
     id: 8,
-    url: "/./images/favorites/Frame8.jpg",
+    url: "/./images/favorites/Frame8.webp",
     name: "The Last of Us",
     category: "سریال",
     year: "۲۰۱۳",
@@ -145,7 +145,7 @@ const FavoritesArr = [
     age: "+۱۴",
     time: "۴۶:۲۰",
     rate: "۸۷٪",
-    bgImg: "../images/favorites/Frame8.jpg",
+    bgImg: "../images/favorites/Frame8.webp",
     description:
       "وقایع این سریال در سال ۲۰۲۳ جریان دارد و اتفاقات مربوط به ۲۰ سال پس از همه‌گیری یک بیماری قارچی را به تصویر می‌کشد.",
     save: "/../images/Watch/save.svg",
@@ -154,7 +154,7 @@ const FavoritesArr = [
   //bedon gharar ghabli
   {
     id: 9,
-    url: "/./images/favorites/Frame9.jpg",
+    url: "/./images/favorites/Frame9.webp",
     name: "بدون قرار قبلی",
     category: "فیلم",
     year: "۱۴۰۰",
@@ -192,7 +192,7 @@ const FavoritesArr = [
   //shenaye parvane
   {
     id: 11,
-    url: "/./images/favorites/Frame11.jpg",
+    url: "/./images/favorites/Frame11.webp",
     name: "شنای پروانه",
     category: "فیلم",
     year: "۱۳۹۸",
@@ -230,7 +230,7 @@ const FavoritesArr = [
   //dozist
   {
     id: 13,
-    url: "/./images/favorites/Frame13.jpg",
+    url: "/./images/favorites/Frame13.webp",
     name: "دوزیست",
     category: "فیلم",
     year: "۱۳۹۹",

@@ -20,7 +20,7 @@ const AllMovies = [
     // TiTi
     {
       id: 2,
-      url: "./images/favorites/frame2.png",
+      url: "./images/favorites/frame2.webp",
       name: "تی تی",
       name2: "titi",
       category: "فیلم",
@@ -38,7 +38,7 @@ const AllMovies = [
     // Pooste Shir
     {
       id: 3,
-      url: "./images/favorites/Frame3.png",
+      url: "./images/favorites/Frame3.webp",
       name: "پوست شیر‍",
       name2: "pooste shir",
       category: "سریال",
@@ -56,7 +56,7 @@ const AllMovies = [
     // Marde Bazande
     {
       id: 4,
-      url: "./images/favorites/Frame4.png",
+      url: "./images/favorites/Frame4.webp",
       name: "مرد بازنده",
       name2: "marde bazande",
       category: "فیلم",
@@ -74,7 +74,7 @@ const AllMovies = [
     // Sag Band
     {
       id: 5,
-      url: "./images/favorites/Frame5.png",
+      url: "./images/favorites/Frame5.webp",
       name: "سگ بند",
       name2: "sag band",
       category: "فیلم",
@@ -92,7 +92,7 @@ const AllMovies = [
     // Shadravan
     {
       id: 6,
-      url: "./images/favorites/Frame6.png",
+      url: "./images/favorites/Frame6.webp",
       name: "شادروان",
       name2: "shadravan",
       category: "فیلم",
@@ -110,7 +110,7 @@ const AllMovies = [
     // Zelava
     {
       id: 7,
-      url: "./images/favorites/Frame7.jpg",
+      url: "./images/favorites/Frame7.webp",
       name: "زالاوا",
       name2: "zalava",
       category: "فیلم",
@@ -128,7 +128,7 @@ const AllMovies = [
     // The Last of Us
     {
       id: 8,
-      url: "./images/favorites/Frame8.jpg",
+      url: "./images/favorites/Frame8.webp",
       name: "The Last of Us",
       name2: "آخرین بازمانده از ما",
       category: "سریال",
@@ -139,14 +139,14 @@ const AllMovies = [
       age: "+۱۴",
       time: "۴۶:۲۰",
       rate: "۸۷٪",
-      bgImg: "../images/favorites/Frame8.jpg",
+      bgImg: "../images/favorites/Frame8.webp",
       description:
         "وقایع این سریال در سال ۲۰۲۳ جریان دارد و اتفاقات مربوط به ۲۰ سال پس از همه‌گیری یک بیماری قارچی را به تصویر می‌کشد.",
     },
     // Bedoone Gharar Ghabli
     {
       id: 9,
-      url: "./images/favorites/Frame9.jpg",
+      url: "./images/favorites/Frame9.webp",
       name: "بدون قرار قبلی",
       name2: "bedoone gharar ghabli",
       category: "فیلم",
@@ -182,7 +182,7 @@ const AllMovies = [
     // Shenaye Parvane
     {
       id: 11,
-      url: "./images/favorites/Frame11.jpg",
+      url: "./images/favorites/Frame11.webp",
       name: "شنای پروانه",
       name2: "shenaye parvane",
       category: "فیلم",
@@ -200,7 +200,7 @@ const AllMovies = [
     // Mogheiat Mahdi
     {
       id: 12,
-      url: "./images/favorites/Frame12.jpeg",
+      url: "./images/favorites/Frame12.webp",
       name: "موقعیت مهدی",
       name2: "mogheiat mahdi",
       category: "فیلم",
@@ -218,7 +218,7 @@ const AllMovies = [
     // Dozist
     {
       id: 13,
-      url: "./images/favorites/Frame13.jpg",
+      url: "./images/favorites/Frame13.webp",
       name: "دوزیست",
       name2: "dozist",
       category: "فیلم",
