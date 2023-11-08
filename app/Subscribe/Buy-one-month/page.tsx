@@ -36,7 +36,10 @@ import { RoutState } from "@/app/Redux/store";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Image from "next/image";
 
-export const BanksNames = [
+export const BanksNames: {
+  url: string;
+  name: string;
+}[] = [
   { url: "/../images/Buy/saman.png", name: "بانک سامان" },
   { url: "/../images/Buy/ayande.png", name: "بانک آینده" },
   { url: "/../images/Buy/maskan.png", name: "بانک مسکن" },
