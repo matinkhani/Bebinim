@@ -33,7 +33,7 @@ const AllMovies = [
     age: "+۱۸",
     time: "۱:۴۲:۵۹",
     rate: "۶۵٪",
-    bgImg: "../images/Watch/titi.svg",
+    bgImg: "../images/Watch/titi.png",
     description:
       "ابراهیم، استاد فیزیک دانشگاه که روی تئوری پایان دنیا کار می‌کند، در بیمارستان با خانم نظافتچی عجیبی به نام تی تی آشنا می‌شود.",
     save: "../images/Watch/save.svg",
@@ -47,13 +47,13 @@ const AllMovies = [
     name2: "pooste shir",
     category: "سریال",
     year: "۱۴۰۱",
-    image1: "../images/Watch/frame1.svg",
-    image2: "../images/Watch/frame2.svg",
-    image3: "../images/Watch/frame3.svg",
+    image1: "../images/Watch/frame1.png",
+    image2: "../images/Watch/frame2.png",
+    image3: "../images/Watch/frame3.png",
     age: "+۱۴",
     time: "۴۵:۳۰",
     rate: "۹۰٪",
-    bgImg: "../images/Watch/postshir.svg",
+    bgImg: "../images/Watch/postshir.png",
     description:
       "نعیم که پانزده سال زندان را به عشق دیدن دخترش تاب آورده پس از رهایی، برای دیدار با او دچار بحرانی بزرگ می شود.",
     save: "../images/Watch/save.svg",
@@ -73,7 +73,7 @@ const AllMovies = [
     age: "+۱۵",
     time: "۱:۵۳:۳۰",
     rate: "۵۵٪",
-    bgImg: "../images/Watch/loser.svg",
+    bgImg: "../images/Watch/loser.png",
     description:
       "احمد خسروی مسئول رسیدگی به پرونده‌های مشکوک به قتل می‌شود و به سرنخ‌هایی دست می‌یابد که پشت پرده این قتل رازگونه به کشف شبکه فساد اقتصادی می‌رسد.",
     save: "../images/Watch/save.svg",
@@ -93,7 +93,7 @@ const AllMovies = [
     age: "+۱۶",
     time: "۱:۳۰:۳۰",
     rate: "۹۸٪",
-    bgImg: "../images/Watch/sagband.svg",
+    bgImg: "../images/Watch/sagband.png",
     description:
       "هیچ وقت گول اسم و ظاهر آدم‌ها رو نخورید؛ ارتش هیتلر با اون عظمت، اسمش نازی بود. این فیلم سینمایی  دومین ساخته مهران احمدی پس از فیلم سینمایی «مصادره» محسوب می‌شود.",
     save: "../images/Watch/save.svg",
@@ -113,7 +113,7 @@ const AllMovies = [
     age: "+۱۷",
     time: "۱:۳۴:۳۰",
     rate: "۳۵٪",
-    bgImg: "../images/Watch/shad.svg",
+    bgImg: "../images/Watch/shad.png",
     description:
       "شادروان به دردسرهای یک خانواده پس از فوت ناگهانی پدرشان می‌پردازد. آن‌ها که در حاشیهٔ شهر زندگی می‌کنند و حالا با درگذشت پدرشان ماجراهای تازه‌ای برایشان به وجود می‌آید.",
     save: "../images/Watch/save.svg",
@@ -133,7 +133,7 @@ const AllMovies = [
     age: "+۱۳",
     time: "۱:۳۰:۱۵",
     rate: "۴۵٪",
-    bgImg: "../images/Watch/zelava.svg",
+    bgImg: "../images/Watch/zelava.png",
     description:
       "داستان زالاوا در اواخر دههٔ ۱۳۵۰ خورشیدی روی می‌دهد و راوی اتفاقی است که باعث ترس مردم شده و رئیس پاسگاه تلاش می‌کند تا امنیت را به روستا بازگرداند.",
     save: "../images/Watch/save.svg",
@@ -173,7 +173,7 @@ const AllMovies = [
     age: "+۱۵",
     time: "۲:۰۲:۰۵",
     rate: "۵۸٪",
-    bgImg: "../images/Watch/gharar.svg",
+    bgImg: "../images/Watch/gharar.png",
     description:
       "داستان فیلم در مورد دختری به نام یاسمن است که پس از سال‌ها به دلیل مرگ پدرش از آلمان به ایران بازگشته است.",
     save: "../images/Watch/save.svg",
@@ -213,7 +213,7 @@ const AllMovies = [
     age: "+۱۵",
     time: "۲:۰۱:۱۷",
     rate: "۶۷٪",
-    bgImg: "../images/Watch/shena.svg",
+    bgImg: "../images/Watch/shena.png",
     description:
       "پروانه به گاراژ صافکاری برادرشوهرش حجت می‌رود و از او می‌خواهد تا جلوی همسرش هاشم  را بگیرد.",
     save: "../images/Watch/save.svg",
@@ -233,7 +233,7 @@ const AllMovies = [
     age: "+۱۵",
     time: "۱:۴۰:۰۰",
     rate: "۷۵٪",
-    bgImg: "../images/Watch/mehdi.svg",
+    bgImg: "../images/Watch/mehdi.jpg",
     description:
       "داستان درباره زندگی مهدی باکری و رابطه وی با همسرش، شرکت در جنگ ایران و عراق همراه برادرش حمید باکری، فرماندهی سپاه عاشورا در جنگ و به شهادت رسیدن وی است.",
     save: "../images/Watch/save.svg",
@@ -253,7 +253,7 @@ const AllMovies = [
     age: "+۱۵",
     time: "۱:۳۵:۰۰",
     rate: "۶۹٪",
-    bgImg: "../images/Watch/dozist.svg",
+    bgImg: "../images/Watch/dozist.png",
     description:
       "در جنوب شهر، پسری به نام عطا (جواد عزتی)، با پدرش زندگی می‌کند و دو تن از دوستان خود را نیز به خانه راه داده‌ است.",
     save: "../images/Watch/save.svg",

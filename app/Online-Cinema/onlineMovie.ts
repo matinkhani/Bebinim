@@ -11,7 +11,7 @@ const OnlineMovie = [
     age: "+۱۲",
     time: "۲:۳۸:۰۰",
     rate: "۱۸٪",
-    bgImg: "../images/Watch/ablagh.svg",
+    bgImg: "../images/Watch/ablagh.png",
     description:
       "راحله به همراه همسرش علی و دختر کوچکش در یکی از محله‌های حاشیه‌ای تهران زندگی می‌کنند...",
     save: "/../images/Watch/save.svg",
