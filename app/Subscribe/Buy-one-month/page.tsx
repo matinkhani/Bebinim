@@ -4,7 +4,6 @@ import {
   AmountPayable,
   Bank,
   BankIconPlace,
-  BankImg,
   BankNamePlace,
   BanksPlace,
   BuyBtnPlace,

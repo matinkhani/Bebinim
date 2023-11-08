@@ -20,8 +20,6 @@ import {
   Line,
   LinkPlace,
   ArrowPlace,
-  Arrowright,
-  Arrowleft,
 } from "../Styled Components/favorites";
 import Link from "next/link";
 import FavoritesArr from "./array";
@@ -35,10 +33,38 @@ export default function Favorites() {
     previousSlide,
   }: {
     previousSlide: any;
-  }) => <Arrowleft onClick={previousSlide} src="./images/arrowleft.svg" />;
+  }) => (
+    <Image
+      height={48}
+      width={48}
+      alt="previous button"
+      style={{
+        position: "absolute",
+        top: "40%",
+        right: "0%",
+        cursor: "pointer",
+      }}
+      onClick={previousSlide}
+      src="./images/arrowleft.svg"
+    />
+  );
 
   const renderCenterRightControls = ({ nextSlide }: { nextSlide: any }) => {
-    return <Arrowright onClick={nextSlide} src="./images/arrowright.svg" />;
+    return (
+      <Image
+        height={48}
+        width={48}
+        alt="next button"
+        style={{
+          position: "absolute",
+          top: "40%",
+          right: "0%",
+          cursor: "pointer",
+        }}
+        onClick={nextSlide}
+        src="./images/arrowright.svg"
+      />
+    );
   };
   const Responsive600 = useMediaQuery("(max-width:600px)");
   const Responsive900 = useMediaQuery("(max-width:900px)");

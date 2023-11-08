@@ -14,6 +14,7 @@ import {
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import { RoutState } from "@/app/Redux/store";
+import Image from "next/image";
 
 export default function Success() {
   const select = useSelector((state: RoutState) => state.Reducer);
@@ -22,7 +23,12 @@ export default function Success() {
     <Container>
       <SuccessMain className="animate__animated animate__slideInUp">
         <PlaceIcon>
-          <img src="../../images/Success/tick.svg" />
+          <Image
+            height={128}
+            width={128}
+            alt="success"
+            src="../../images/Success/tick.svg"
+          />
         </PlaceIcon>
         <SuccessText>
           اشتراک یک ماهه شما از تاریخ
@@ -40,7 +46,12 @@ export default function Success() {
                   style={{ height: "100%", width: "100%", display: "flex" }}
                   href="/Account"
                 >
-                  <img src="../../images/Success/user.svg" />
+                  <Image
+                    height={24}
+                    width={24}
+                    alt="user"
+                    src="../../images/Success/user.svg"
+                  />
                   ورود به حساب کاربری
                 </Link>
               </>
@@ -50,20 +61,27 @@ export default function Success() {
                   style={{ height: "100%", width: "100%", display: "flex" }}
                   href="/SignIn"
                 >
-                  <img src="../../images/Success/user.svg" />
+                  <Image
+                    height={24}
+                    width={24}
+                    alt="user"
+                    src="../../images/Success/user.svg"
+                  />
                   ورود به حساب کاربری
                 </Link>
               </>
             )}
           </LinkToProfile>
         </LoginSection>
-        <Link
-          style={{ display: "flex", gap: 4 }}
-          href="/"
-        >
+        <Link style={{ display: "flex", gap: 4 }} href="/">
           <LandingButton>
             <LinkToProfile>
-              <img src="../../images/Success/arrowleft.svg" />
+              <Image
+                height={24}
+                width={24}
+                alt="arrow"
+                src="../../images/Success/arrowleft.svg"
+              />
               بازکشت به صفحه اصلی
             </LinkToProfile>
           </LandingButton>

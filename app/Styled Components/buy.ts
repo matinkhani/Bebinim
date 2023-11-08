@@ -280,23 +280,6 @@ export const Bank = styled.div`
   align-items: center;
 `;
 
-export const BankImg = styled.img`
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-    width: 55px;
-    height: 55px;
-  }
-
-  @media screen and (min-width: 481px) and (max-width: 630px) {
-    width: 61px;
-    height: 61px;
-  }
-
-  @media screen and (min-width: 630px) and (max-width: 850px) {
-    width: 75px;
-    height: 75px;
-  }
-`;
-
 export const BankIconPlace = styled.div`
   height: 135px;
   width: 135px;

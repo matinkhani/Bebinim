@@ -160,22 +160,6 @@ export const Hover = styled.div`
   }
 `;
 
-export const ImdbImg = styled.img`
-  width: 288px;
-  height: 200px;
-  border-radius: 8px;
-  cursor: pointer;
-
-  @media screen and (max-width: 900px) {
-    height: 180px;
-    width: 268px;
-  }
-  @media screen and (min-width: 1200px) and (max-width: 1440px) {
-    height: 170px;
-    width: 250px;
-  }
-`;
-
 export const Details = styled.div`
   height: 120px;
   width: 200px;

@@ -42,12 +42,6 @@ export const ArrowLeft = styled.div`
   align-items: center;
 `;
 
-export const Arrow = styled.img`
-  height: 56px;
-  width: 56px;
-  cursor: pointer;
-`;
-
 export const ArrowRight = styled.div`
   height: 100%;
   width: 10%;
@@ -163,13 +157,4 @@ export const WatchBtn = styled.button`
   font-size: 20px;
   font-weight: 500;
   color: #fefefe;
-`;
-
-export const FavoriteImg = styled.img`
-  height: 100%;
-  width: 650px;
-  border-radius: 8px;
-  overflow-y: hidden;
-  cursor: pointer;
-  position: relative;
 `;

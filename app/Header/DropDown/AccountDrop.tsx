@@ -8,14 +8,10 @@ import {
 import { RoutState } from "@/app/Redux/store";
 import {
   AccDropContainer,
-  ArrowIcon,
   BuySub,
   BuySubBtn,
-  BuySubIcon,
   BuySubText,
-  ConatinerAcc,
   ExplainSub,
-  Icons,
   Line,
   LineMidlle,
   LogOutTab,
@@ -30,6 +26,7 @@ import {
   TabsRight,
   Texts,
 } from "@/app/Styled Components/AccDropDown";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -68,7 +65,12 @@ export default function AccountDrop() {
           <Link href="/Subscribe">
             <BuySubBtn>
               <SubBtnMiddle>
-                <BuySubIcon src="./images/AccDropDown/buyIcon.svg" />
+                <Image
+                  height={16}
+                  width={16}
+                  alt="buy icon"
+                  src="./images/AccDropDown/buyIcon.svg"
+                />
                 <BuySubText>خرید اشتراک</BuySubText>
               </SubBtnMiddle>
             </BuySubBtn>
@@ -83,11 +85,21 @@ export default function AccountDrop() {
             href="/Account"
           >
             <TabsLeft>
-              <ArrowIcon src="./images/AccDropDown/Vector.svg" />
+              <Image
+                height={16}
+                width={16}
+                alt="vector"
+                src="./images/AccDropDown/Vector.svg"
+              />
             </TabsLeft>
             <TabsRight>
               <Texts>حساب کاربری</Texts>
-              <Icons src="./images/AccDropDown/profile.svg" />
+              <Image
+                height={16}
+                width={16}
+                alt="profile"
+                src="./images/AccDropDown/profile.svg"
+              />
             </TabsRight>
           </Link>
         </Tabs>
@@ -98,11 +110,21 @@ export default function AccountDrop() {
             href="/Saved-List"
           >
             <TabsLeft>
-              <ArrowIcon src="./images/AccDropDown/Vector.svg" />
+              <Image
+                height={16}
+                width={16}
+                alt="vector"
+                src="./images/AccDropDown/Vector.svg"
+              />
             </TabsLeft>
             <TabsRight>
               <Texts>نشان شده‌ها</Texts>
-              <Icons src="./images/AccDropDown/save.svg" />
+              <Image
+                height={16}
+                width={16}
+                alt="saved list"
+                src="./images/AccDropDown/save.svg"
+              />
             </TabsRight>
           </Link>
         </Tabs>
@@ -113,11 +135,21 @@ export default function AccountDrop() {
             href="/Subscribe"
           >
             <TabsLeft>
-              <ArrowIcon src="./images/AccDropDown/Vector.svg" />
+              <Image
+                height={16}
+                width={16}
+                alt="vector"
+                src="./images/AccDropDown/Vector.svg"
+              />
             </TabsLeft>
             <TabsRight>
               <Texts>خرید اشتراک</Texts>
-              <Icons src="./images/AccDropDown/ticket.svg" />
+              <Image
+                height={16}
+                width={16}
+                alt="ticket"
+                src="./images/AccDropDown/ticket.svg"
+              />
             </TabsRight>
           </Link>
         </Tabs>
@@ -128,11 +160,21 @@ export default function AccountDrop() {
             href="#"
           >
             <TabsLeft>
-              <ArrowIcon src="./images/AccDropDown/Vector.svg" />
+              <Image
+                height={16}
+                width={16}
+                alt="vector"
+                src="./images/AccDropDown/Vector.svg"
+              />
             </TabsLeft>
             <TabsRight>
               <Texts>کارت هدیه</Texts>
-              <Icons src="./images/AccDropDown/gift.svg" />
+              <Image
+                height={16}
+                width={16}
+                alt="gift card"
+                src="./images/AccDropDown/gift.svg"
+              />
             </TabsRight>
           </Link>
         </Tabs>
@@ -143,11 +185,21 @@ export default function AccountDrop() {
         {/* Log Out Tab */}
         <LogOutTab onClick={LogingOut}>
           <LogOutTabLeft>
-            <ArrowIcon src="./images/AccDropDown/Vector.svg" />
+            <Image
+              height={16}
+              width={16}
+              alt="vector"
+              src="./images/AccDropDown/Vector.svg"
+            />
           </LogOutTabLeft>
           <LogOutTabRight>
             <Texts>خروج از حساب کاربری</Texts>
-            <Icons src="./images/AccDropDown/logoutcurve.svg" />
+            <Image
+              height={16}
+              width={16}
+              alt="log out"
+              src="./images/AccDropDown/logoutcurve.svg"
+            />
           </LogOutTabRight>
         </LogOutTab>
       </MoreContainer>

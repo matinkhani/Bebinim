@@ -1,13 +1,11 @@
 import React from "react";
 import {
-  BebinimIcon,
   BebinimIconAndText,
   BebinimText,
   ButtonsText,
   BuyBtn,
   Container,
   RightSection,
-  SearchIcon,
   SignLoginBtn,
   BebinimPlace,
   MiddleLine,
@@ -16,7 +14,6 @@ import {
   FilmTab,
   CategoryTab,
   HomeTab,
-  FilmSerialImg,
   CatgoryText,
   HomeText,
   DropDownFilm,
@@ -42,7 +39,6 @@ import { RoutState } from "../Redux/store";
 import { useDispatch, useSelector } from "react-redux";
 import {
   AccIconConatiner,
-  AccImg,
   ConatinerAcc,
 } from "../Styled Components/AccDropDown";
 import AccountDrop from "./DropDown/AccountDrop";
@@ -50,7 +46,6 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Drawer from "@mui/material/Drawer";
 import {
   ButtomSection,
-  CatgIcon,
   CatgPlace,
   CatgText,
   Div,
@@ -59,33 +54,27 @@ import {
   Film,
   FilmCatgLast,
   FilmDown,
-  FilmIcon,
   FilmPlace,
   FilmText,
   FilmTop,
   FilmsCatg,
   FilmsText,
-  HomeeIcon,
   HomeePlace,
   HomeeText,
-  LogOutIcon,
   LogOutPlace,
   LogOutText,
   LoginTopSection,
   PhoneContainer,
-  SavedIcon,
   SavedListPlace,
   SavedText,
   Serial,
   SerialCatg,
   SerialCatgLast,
   SerialDown,
-  SerialIcon,
   SerialPlace,
   SerialText,
   SerialTop,
   SerialsText,
-  SubsIcon,
   SubsPlace,
   SubsText,
   TopNone,
@@ -93,6 +82,7 @@ import {
   TopTextNone,
 } from "../Styled Components/HeaderDrawer";
 import { CreateAccount } from "../Redux/createslice";
+import Image from "next/image";
 
 export default function Header() {
   const [filmDropDown, setFilmDropDown] = useState<boolean>(false);
@@ -123,9 +113,12 @@ export default function Header() {
           >
             <SearchSection>
               <Link href="/Search">
-                <SearchIcon
+                <Image
+                  height={30}
+                  width={30}
+                  alt="search"
+                  style={{ cursor: "pointer" }}
                   src="./images/SearchIcon.svg"
-                  style={{ height: 30, width: 30 }}
                 />
               </Link>
             </SearchSection>
@@ -135,20 +128,25 @@ export default function Header() {
                   <Link href="/">ببینیم</Link>
                 </BebinimText>
                 <Link href="/">
-                  <BebinimIcon
-                    style={{ height: 35, width: 35 }}
+                  <Image
+                    height={35}
+                    width={35}
+                    alt="bebinim icon"
+                    style={{ cursor: "pointer" }}
                     src="./images/BebinimIcon.svg"
                   />
                 </Link>
               </BebinimIconAndText>
             </BebinimSection>
             <MenuSection>
-              <img
+              <Image
+                alt="menu"
+                height={30}
+                width={30}
                 onClick={() => {
                   setOpenMenu(true);
                 }}
-                src="./images/menu.svg"
-                style={{ height: 30, width: 30 }}
+                src="/./images/menu.svg"
               />
             </MenuSection>
 
@@ -170,7 +168,13 @@ export default function Header() {
                       <Link href="/Account">
                         <LoginTopSection>
                           <AccIconConatiner>
-                            <AccImg src="./images/Account/profile.svg" />{" "}
+                            <Image
+                              height={48}
+                              width={48}
+                              alt="profile"
+                              style={{ cursor: "pointer" }}
+                              src="./images/Account/profile.svg"
+                            />{" "}
                           </AccIconConatiner>
                           <PhoneContainer>
                             +98{select.ShowPhoneNumber}
@@ -204,7 +208,12 @@ export default function Header() {
                       href="/"
                     >
                       <HomeeText>خانه</HomeeText>
-                      <HomeeIcon src="./images/Drawer/home.svg" />
+                      <Image
+                        height={16}
+                        width={16}
+                        alt="home icon"
+                        src="./images/Drawer/home.svg"
+                      />
                     </Link>
                   </HomeePlace>
                   <SubsPlace>
@@ -219,7 +228,12 @@ export default function Header() {
                       href="/Subscribe"
                     >
                       <SubsText>خرید اشتراک</SubsText>
-                      <SubsIcon src="./images/Drawer/shoppingcart.svg" />
+                      <Image
+                        height={18}
+                        width={18}
+                        alt="shopping"
+                        src="./images/Drawer/shoppingcart.svg"
+                      />
                     </Link>
                   </SubsPlace>
                   <CatgPlace>
@@ -234,7 +248,12 @@ export default function Header() {
                       href="/category"
                     >
                       <CatgText>دسته‌بندی</CatgText>
-                      <CatgIcon src="./images/Drawer/category.svg" />
+                      <Image
+                        height={18}
+                        width={18}
+                        alt="category"
+                        src="./images/Drawer/category.svg"
+                      />
                     </Link>
                   </CatgPlace>
                   <SavedListPlace
@@ -255,7 +274,12 @@ export default function Header() {
                       }}
                     >
                       <SavedText>نشان شده‌ها</SavedText>
-                      <SavedIcon src="./images/Drawer/saved.svg" />
+                      <Image
+                        height={18}
+                        width={18}
+                        alt="saved"
+                        src="./images/Drawer/saved.svg"
+                      />
                     </Link>
                   </SavedListPlace>
                   <Link
@@ -279,7 +303,12 @@ export default function Header() {
                       }}
                     >
                       <LogOutText>خروج از حساب کاربری</LogOutText>
-                      <LogOutIcon src="./images/Drawer/logout.svg" />
+                      <Image
+                        height={16}
+                        width={16}
+                        alt="log out"
+                        src="./images/Drawer/logout.svg"
+                      />
                     </LogOutPlace>
                   </Link>
                   <FilmPlace
@@ -291,7 +320,10 @@ export default function Header() {
                     style={film ? { height: "50%" } : { height: "8%" }}
                   >
                     <FilmTop>
-                      <img
+                      <Image
+                        alt="arrow"
+                        height={16}
+                        width={16}
                         style={
                           film
                             ? {
@@ -309,7 +341,12 @@ export default function Header() {
                       />
                       <Film>
                         <FilmText>فیلم</FilmText>
-                        <FilmIcon src="./images/Drawer/video.svg" />
+                        <Image
+                          height={18}
+                          width={18}
+                          alt="film"
+                          src="./images/Drawer/video.svg"
+                        />
                       </Film>
                     </FilmTop>
                     <FilmDown
@@ -353,7 +390,10 @@ export default function Header() {
                     style={serial ? { height: "50%" } : { height: "8%" }}
                   >
                     <SerialTop>
-                      <img
+                      <Image
+                        alt="arrow"
+                        height={16}
+                        width={16}
                         style={
                           serial
                             ? {
@@ -371,7 +411,12 @@ export default function Header() {
                       />
                       <Serial>
                         <SerialText>سریال</SerialText>
-                        <SerialIcon src="./images/Drawer/monitor.svg" />
+                        <Image
+                          height={18}
+                          width={18}
+                          alt="serial"
+                          src="./images/Drawer/monitor.svg"
+                        />
                       </Serial>
                     </SerialTop>
                     <SerialDown
@@ -425,13 +470,25 @@ export default function Header() {
                       setAccDropDown(false);
                     }}
                   >
-                    <AccImg src="./images/Account/profile.svg" />{" "}
+                    <Image
+                      height={48}
+                      width={48}
+                      alt="profile"
+                      style={{ cursor: "pointer" }}
+                      src="./images/Account/profile.svg"
+                    />{" "}
                   </AccIconConatiner>
                   <Link
                     style={pathname === "/Search" ? { display: "none" } : {}}
                     href="/Search"
                   >
-                    <SearchIcon src="./images/SearchIcon.svg" />
+                    <Image
+                      height={35}
+                      width={35}
+                      alt="search"
+                      style={{ cursor: "pointer" }}
+                      src="./images/SearchIcon.svg"
+                    />
                   </Link>
                 </LeftSectionContainer2>
                 {accDropDown && (
@@ -460,7 +517,13 @@ export default function Header() {
                   </BuyBtn>
                 </Link>
                 <Link href="/Search">
-                  <SearchIcon src="./images/SearchIcon.svg" />
+                  <Image
+                    height={16}
+                    width={16}
+                    alt="search"
+                    style={{ cursor: "pointer" }}
+                    src="./images/SearchIcon.svg"
+                  />
                 </Link>
               </LeftSectionContainer>
             )}
@@ -490,7 +553,10 @@ export default function Header() {
                       width: "fit-content",
                     }}
                   >
-                    <FilmSerialImg
+                    <Image
+                      height={16}
+                      width={16}
+                      alt="arrow"
                       src="./images/arrowdown.svg"
                       style={
                         serialArrow
@@ -528,7 +594,10 @@ export default function Header() {
                       alignItems: "center",
                     }}
                   >
-                    <FilmSerialImg
+                    <Image
+                      height={16}
+                      width={16}
+                      alt="arrow"
                       src="./images/arrowdown.svg"
                       style={
                         filmArrow
@@ -579,7 +648,12 @@ export default function Header() {
                     <Link href="/">ببینیم</Link>
                   </BebinimText>
                   <Link href="/">
-                    <BebinimIcon src="./images/BebinimIcon.svg" />
+                    <Image
+                      height={35}
+                      width={35}
+                      alt="bebinim icon"
+                      src="./images/BebinimIcon.svg"
+                    />
                   </Link>
                 </BebinimIconAndText>
               </BebinimPlace>

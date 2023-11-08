@@ -61,12 +61,6 @@ export const ArrowLeft = styled.div`
   align-items: center;
 `;
 
-export const Arrow = styled.img`
-  height: 56px;
-  width: 56px;
-  cursor: pointer;
-`;
-
 export const ArrowRight = styled.div`
   height: 100%;
   width: 10%;
@@ -155,20 +149,6 @@ export const Hover = styled.div`
   }
 `;
 
-export const FavoriteImg = styled.img`
-  height: 256px;
-  width: 184px;
-  border-radius: 8px;
-  overflow-y: hidden;
-  cursor: pointer;
-  position: relative;
-
-  @media screen and (max-width: 1200px) {
-    height: 180px;
-    width: 140px;
-  }
-`;
-
 export const LinkPlace = styled.div`
   height: 256px;
   width: 184px;
@@ -187,20 +167,3 @@ export const ArrowPlace = styled.div`
   width: 100%;
   position: relative;
 `;
-
-export const Arrowright = styled.img`
-height: 48px;
-width: 48px;
-position: absolute;
-top: 40%;
-right: 0%;
-cursor: pointer;
-`
-export const Arrowleft = styled.img`
-height: 48px;
-width: 48px;
-position: absolute;
-top: 40%;
-left: 0%;
-cursor: pointer;
-`

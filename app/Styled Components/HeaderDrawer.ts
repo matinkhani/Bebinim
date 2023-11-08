@@ -75,10 +75,6 @@ export const HomeePlace = styled.div`
   gap: 12px;
 `;
 
-export const HomeeIcon = styled.img`
-  height: 18px;
-  width: 18px;
-`;
 
 export const HomeeText = styled.div`
   margin-top: 4px;
@@ -99,11 +95,6 @@ export const SubsPlace = styled.div`
   gap: 12px;
 `;
 
-export const SubsIcon = styled.img`
-  height: 18px;
-  width: 18px;
-`;
-
 export const SubsText = styled.div`
   margin-top: 4px;
   color: #fefefe;
@@ -121,11 +112,6 @@ export const CatgPlace = styled.div`
   justify-content: end;
   align-items: center;
   gap: 12px;
-`;
-
-export const CatgIcon = styled.img`
-  height: 18px;
-  width: 18px;
 `;
 
 export const CatgText = styled.div`
@@ -148,11 +134,6 @@ export const LogOutPlace = styled.div`
   gap: 12px;
   bottom: 0px;
   right: 30px;
-`;
-
-export const LogOutIcon = styled.img`
-  height: 18px;
-  width: 18px;
 `;
 
 export const LogOutText = styled.div`
@@ -218,11 +199,6 @@ export const FilmsText = styled.div`
 export const Film = styled.div`
   display: flex;
   gap: 12px;
-`;
-
-export const FilmIcon = styled.img`
-  height: 18px;
-  width: 18px;
 `;
 
 export const FilmText = styled.div`
@@ -291,11 +267,6 @@ export const Serial = styled.div`
   gap: 12px;
 `;
 
-export const SerialIcon = styled.img`
-  height: 18px;
-  width: 18px;
-`;
-
 export const SerialText = styled.div`
   margin-top: 4px;
   color: #fefefe;
@@ -351,11 +322,6 @@ export const SavedListPlace = styled.div`
   justify-content: end;
   align-items: center;
   gap: 12px;
-`;
-
-export const SavedIcon = styled.img`
-  height: 18px;
-  width: 18px;
 `;
 
 export const SavedText = styled.div`

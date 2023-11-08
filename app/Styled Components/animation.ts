@@ -66,28 +66,6 @@ export const CarouselContainer = styled.div`
   }
 `;
 
-export const ArrowLeft = styled.div`
-  height: 100%;
-  width: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const Arrow = styled.img`
-  height: 56px;
-  width: 56px;
-  cursor: pointer;
-`;
-
-export const ArrowRight = styled.div`
-  height: 100%;
-  width: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 export const Carousel2 = styled.div`
   height: 100%;
   width: 87.9%;
@@ -161,20 +139,6 @@ export const Hover = styled.div`
   &:hover ${HoverText} {
     display: flex;
   }
-
-  @media screen and (max-width: 1200px) {
-    height: 180px;
-    width: 140px;
-  }
-`;
-
-export const FavoriteImg = styled.img`
-  height: 256px;
-  width: 184px;
-  border-radius: 8px;
-  overflow-y: hidden;
-  cursor: pointer;
-  position: relative;
 
   @media screen and (max-width: 1200px) {
     height: 180px;

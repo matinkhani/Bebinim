@@ -18,7 +18,6 @@ import {
   RatePlace,
   Text,
   TextPlace,
-  WatchSVG,
 } from "../Styled Components/ZakhmKari";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

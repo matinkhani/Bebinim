@@ -234,11 +234,6 @@ export const DetailsMovieBtn = styled.div`
   }
 `;
 
-export const WatchSVG = styled.img`
-  width: 24px;
-  height: 24px;
-`;
-
 export const MovieCarousel = styled.div`
   height: 160px;
   width: 100%;
