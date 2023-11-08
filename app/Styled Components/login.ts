@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   background-position: 50% 65%;
   background-size: cover;
-  background-image: url("./images/Login/background.png");
+  background-image: url("./images/Login/background.webp");
 `;
 
 export const MiddleContainer = styled.div`
