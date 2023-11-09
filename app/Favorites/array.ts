@@ -2,7 +2,7 @@ const FavoritesArr = [
   //ablagh
   {
     id: 1,
-    url: "/../images/favorites/Frame1.webp",
+    url: "/../images/favorites/Frame1.png",
     name: "ابلق",
     category: "فیلم",
     year: "۱۳۹۹",
