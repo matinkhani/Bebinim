@@ -236,7 +236,7 @@ const AllMovies = [
     // WW3
     {
       id: 14,
-      url: "./images/Search/ww3.jpg",
+      url: "./images/Search/ww3.webp",
       name: "جنگ جهانی سوم",
       name2: "ww3",
       category: "فیلم",
@@ -254,7 +254,7 @@ const AllMovies = [
     // Maslahat
     {
       id: 15,
-      url: "./images/Search/mslahat.jpeg",
+      url: "./images/Search/mslahat.webp",
       name: "مصلحت",
       name2: "maslahat",
       category: "فیلم",
@@ -272,7 +272,7 @@ const AllMovies = [
     // Fosil
     {
       id: 16,
-      url: "./images/Search/fosil.jpg",
+      url: "./images/Search/fosil.webp",
       name: "فسیل",
       name2: "fosil",
       category: "فیلم",
@@ -600,7 +600,7 @@ const AllMovies = [
     // Fight Club
     {
       id: 34,
-      url: "./images/Search/fightclub.jpg",
+      url: "./images/Search/fightclub.webp",
       name: "Fight Club",
       name2: "باشگاه مبارزه",
       year: "۱۹۹۹",
@@ -618,7 +618,7 @@ const AllMovies = [
     // The Dark Knight
     {
       id: 35,
-      url: "./images/Search/darkknight.jpg",
+      url: "./images/Search/darkknight.webp",
       name: "The Dark Knight",
       name2: "شوالیه تاریکی",
       year: "۲۰۰۸",
@@ -636,7 +636,7 @@ const AllMovies = [
     // Breaking Bad
     {
       id: 36,
-      url: "./images/Search/breakingbad.jpg",
+      url: "./images/Search/breakingbad.webp",
       name: "Breaking Bad",
       name2: "افسارگسیخته",
       year: "۲۰۰۸",
@@ -654,7 +654,7 @@ const AllMovies = [
     // Inception
     {
       id: 37,
-      url: "./images/Search/inception.jpg",
+      url: "./images/Search/inception.webp",
       name: "Inception",
       name2: "الهام",
       year: "۲۰۱۰",
@@ -672,7 +672,7 @@ const AllMovies = [
     // La La Land
     {
       id: 38,
-      url: "./images/Search/lalaland.jpg",
+      url: "./images/Search/lalaland.webp",
       name: "La La Land",
       name2: "لا لا لند",
       year: "۲۰۱۶",
@@ -690,7 +690,7 @@ const AllMovies = [
     // Coda
     {
       id: 39,
-      url: "./images/Search/coda.jpg",
+      url: "./images/Search/coda.webp",
       name: "Coda",
       name2: "کدا",
       year: "۲۰۲۱",
@@ -708,7 +708,7 @@ const AllMovies = [
     // Interstellar
     {
       id: 40,
-      url: "./images/Search/interstellar.jpg",
+      url: "./images/Search/interstellar.webp",
       name: "Interstellar",
       name2: "میان ستاره‌ای",
       year: "۲۰۱۴",
@@ -726,7 +726,7 @@ const AllMovies = [
     // The Godfather
     {
       id: 41,
-      url: "./images/Search/god.jpg",
+      url: "./images/Search/god.webp",
       name: "The Godfather",
       name2: "پدر خوانده",
       year: "۱۹۷۲",
