@@ -42,7 +42,6 @@ export const GradientDiv = styled.div`
   background: linear-gradient(to top, #291212 0%, rgba(41, 18, 18, 0) 100%);
 `;
 
-export const GradientImg = styled.img``;
 export const BackColor = styled.div`
   height: 40px;
   width: 40px;
@@ -51,10 +50,6 @@ export const BackColor = styled.div`
   right: 40px;
   border-radius: 50%;
   background-color: #291212;
-`;
-export const Play = styled.img`
-  height: 50px;
-  width: 50px;
 `;
 
 export const RightSection = styled.div`
@@ -453,22 +448,5 @@ export const Sekans = styled.div`
     justify-content: center;
     gap: 5px;
     height: 350px;
-  }
-`;
-
-export const SekansPhoto = styled.div`
-  height: 256px;
-  width: 184px;
-  background-size: cover;
-  background-position: 50% 50%;
-  border-radius: 8px;
-
-  @media screen and (max-width: 680px) {
-    height: 240px;
-    width: 250px;
-  }
-  @media screen and (min-width: 680px) and (max-width: 1100px) {
-    height: 240px;
-    width: 250px;
   }
 `;

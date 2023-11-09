@@ -21,6 +21,7 @@ import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import { CreateAccount, GetNumber, ShowNumber } from "../Redux/createslice";
 import { RoutState } from "../Redux/store";
+import Image from "next/image";
 
 export default function Login() {
   const dispatch = useDispatch();
@@ -62,7 +63,12 @@ export default function Login() {
           <Link href="/SignIn">
             <SignIn>
               ثبت نام
-              <img src="./images/Login/login.svg" />
+              <Image
+                height={16}
+                width={16}
+                alt="login"
+                src="./images/Login/login.svg"
+              />
             </SignIn>
           </Link>
         </TopContainer>

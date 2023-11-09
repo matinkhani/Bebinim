@@ -4,7 +4,6 @@ import {
   AmountPayable,
   Bank,
   BankIconPlace,
-  BankImg,
   BankNamePlace,
   BanksPlace,
   BuyBtnPlace,
@@ -34,18 +33,23 @@ import {
   ChangeThreeMonth,
 } from "@/app/Redux/createslice";
 import { RoutState } from "@/app/Redux/store";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import Image from "next/image";
 
 export default function Buy() {
   const BanksData = [
-    { url: "../images/Buy/saman.svg", name: "بانک سامان" },
-    { url: "../images/Buy/ayande.svg", name: "بانک آینده" },
-    { url: "../images/Buy/maskan.svg", name: "بانک مسکن" },
-    { url: "../images/Buy/mellat.svg", name: "بانک ملت" },
-    { url: "../images/Buy/sepah.svg", name: "بانک سپه" },
+    { url: "/../images/Buy/saman.webp", name: "بانک سامان" },
+    { url: "/../images/Buy/ayande.webp", name: "بانک آینده" },
+    { url: "/../images/Buy/maskan.webp", name: "بانک مسکن" },
+    { url: "/../images/Buy/mellat.webp", name: "بانک ملت" },
+    { url: "/../images/Buy/sepah.webp", name: "بانک سپه" },
   ];
 
   const dispatch = useDispatch();
   const select = useSelector((state: RoutState) => state.Reducer);
+  const Responsive480 = useMediaQuery("(max-width:480px)");
+  const Responsive630 = useMediaQuery("(max-width:630px)");
+  const Responsive850 = useMediaQuery("(max-width:850px)");
 
   const ChangeSubState = () => {
     if (select.OneMonth) {
@@ -101,7 +105,21 @@ export default function Buy() {
               return (
                 <Bank key={index}>
                   <BankIconPlace>
-                    <BankImg src={item.url} />
+                    <Image
+                      alt="bank icon image"
+                      height={130}
+                      width={130}
+                      src={item.url}
+                      style={
+                        Responsive480
+                          ? { height: 55, width: 55 }
+                          : Responsive630
+                          ? { height: 61, width: 61 }
+                          : Responsive850
+                          ? { height: 75, width: 75 }
+                          : {}
+                      }
+                    />
                   </BankIconPlace>
                   <BankNamePlace>{item.name}</BankNamePlace>
                 </Bank>

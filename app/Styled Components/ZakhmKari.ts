@@ -15,7 +15,7 @@ export const Container = styled.div`
 export const BgImg = styled.div`
   height: 100%;
   width: 115%;
-  background-image: url("./images/ZakhmKari/background.svg");
+  background-image: url("./images/ZakhmKari/background.webp");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -232,11 +232,6 @@ export const DetailsMovieBtn = styled.div`
     border-radius: 8px;
     justify-content: center;
   }
-`;
-
-export const WatchSVG = styled.img`
-  width: 24px;
-  height: 24px;
 `;
 
 export const MovieCarousel = styled.div`

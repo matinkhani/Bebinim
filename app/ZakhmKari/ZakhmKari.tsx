@@ -18,7 +18,6 @@ import {
   RatePlace,
   Text,
   TextPlace,
-  WatchSVG,
 } from "../Styled Components/ZakhmKari";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -28,6 +27,7 @@ import ZakhmKariArr from "./array";
 import "./movie.css";
 import Link from "next/link";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Image from "next/image";
 
 export default function Movie() {
   const Responsive1440 = useMediaQuery("(max-width:1440px)");
@@ -43,9 +43,11 @@ export default function Movie() {
               <MovieMain>
                 <Details>
                   <MovieIacon>
-                    <img
-                      style={{ height: "100px", width: "100px" }}
-                      src="./images/ZakhmKari/mov_logo.svg"
+                    <Image
+                      height={100}
+                      width={100}
+                      alt="zakhm kari logo"
+                      src="/./images/ZakhmKari/mov_logo.webp"
                     />
                   </MovieIacon>
                   <DetailsText>
@@ -53,7 +55,12 @@ export default function Movie() {
                     <RatePlace>
                       <Rate>
                         ۳۰٪
-                        <img src="./images/ZakhmKari/rate.svg" />
+                        <Image
+                          height={24}
+                          width={24}
+                          alt="rate icon"
+                          src="./images/ZakhmKari/rate.svg"
+                        />
                       </Rate>
                       <Category2>خانوادگی</Category2>
                       <Category1>درام</Category1>
@@ -79,7 +86,12 @@ export default function Movie() {
                         href={`ZakhmKari/${item.id}`}
                       >
                         تماشا کنید
-                        <WatchSVG src="./images/watch.svg" />
+                        <Image
+                          height={24}
+                          width={24}
+                          alt="watch icon"
+                          src="./images/watch.svg"
+                        />
                       </Link>
                     </DetailsMovieBtn>
                   </DetailsText>
@@ -101,39 +113,57 @@ export default function Movie() {
                         slidesPerGroup={2}
                       >
                         <SwiperSlide>
-                          <img
-                            style={{ height: 160, width: 280, borderRadius: 8 }}
+                          <Image
+                            alt="zakhm kari images"
+                            height={160}
+                            width={280}
                             src={item.photo1}
+                            style={{ borderRadius: 8 }}
                           />
                         </SwiperSlide>
                         <SwiperSlide>
-                          <img
-                            style={{ height: 160, width: 280, borderRadius: 8 }}
+                          <Image
+                            alt="zakhm kari images"
+                            height={160}
+                            width={280}
                             src={item.photo2}
+                            style={{ borderRadius: 8 }}
                           />
                         </SwiperSlide>
                         <SwiperSlide>
-                          <img
-                            style={{ height: 160, width: 280, borderRadius: 8 }}
+                          <Image
+                            alt="zakhm kari images"
+                            height={160}
+                            width={280}
                             src={item.photo3}
+                            style={{ borderRadius: 8 }}
                           />
                         </SwiperSlide>
                         <SwiperSlide>
-                          <img
-                            style={{ height: 160, width: 280, borderRadius: 8 }}
+                          <Image
+                            alt="zakhm kari images"
+                            height={160}
+                            width={280}
                             src={item.photo4}
+                            style={{ borderRadius: 8 }}
                           />
                         </SwiperSlide>
                         <SwiperSlide>
-                          <img
-                            style={{ height: 160, width: 280, borderRadius: 8 }}
+                          <Image
+                            alt="zakhm kari images"
+                            height={160}
+                            width={280}
                             src={item.photo5}
+                            style={{ borderRadius: 8 }}
                           />
                         </SwiperSlide>
                         <SwiperSlide>
-                          <img
-                            style={{ height: 160, width: 280, borderRadius: 8 }}
+                          <Image
+                            alt="zakhm kari images"
+                            height={160}
+                            width={280}
                             src={item.photo6}
+                            style={{ borderRadius: 8 }}
                           />
                         </SwiperSlide>
                       </Swiper>

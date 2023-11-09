@@ -6,7 +6,6 @@ import {
   Hover,
   HoverText,
   ImdbDetails,
-  ImdbImg,
   ImdbText,
   ImgContainer,
   Line,
@@ -19,13 +18,24 @@ import {
 } from "../Styled Components/bestIMDb";
 import BestIMDbArr from "./array";
 import Link from "next/link";
+import Image from "next/image";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function BestIMDb() {
+  const Responsive900 = useMediaQuery("(max-width:900px)");
+  const Responsive1440 = useMediaQuery("(max-width:1440px)");
+
   return (
     <Container>
       <ImdbDetails>
         <More>
-          <img style={{ cursor: "pointer" }} src="./images/imdb/arrow.svg" />{" "}
+          <Image
+            alt="more icon"
+            height={16}
+            width={16}
+            style={{ cursor: "pointer" }}
+            src="./images/imdb/arrow.svg"
+          />{" "}
           <p style={{ cursor: "pointer" }}>مشاهده همه</p>
         </More>
         <MidlleLine></MidlleLine>
@@ -36,7 +46,14 @@ export default function BestIMDb() {
           return (
             <>
               <ImgContainer>
-                <ImdbImg key={index} src={item.url} />
+                <Image
+                  alt="imdbs shows"
+                  height={Responsive900 ? 180 : Responsive1440 ? 170 : 200}
+                  width={Responsive900 ? 268 : Responsive1440 ? 250 : 288}
+                  key={index}
+                  src={item.url}
+                  style={{ borderRadius: 8 }}
+                />
                 <Hover>
                   {" "}
                   <Link href={`Best-IMDb/${item.id}`}>

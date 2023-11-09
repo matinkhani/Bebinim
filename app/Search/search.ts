@@ -224,29 +224,6 @@ export const DivSearch = styled.div`
   }
 `;
 
-export const ImgSearch = styled.img`
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-    width: 50px;
-    height: 50px;
-  }
-  @media screen and (min-width: 481px) and (max-width: 630px) {
-    width: 85px;
-    height: 85px;
-  }
-  @media screen and (min-width: 850px) and (max-width: 1100px) {
-    width: 90px;
-    height: 90px;
-  }
-  @media screen and (min-width: 630px) and (max-width: 850px) {
-    width: 80px;
-    height: 80px;
-  }
-  @media screen and (min-width: 1100px) and (max-width: 1280px) {
-    width: 85px;
-    height: 85px;
-  }
-`;
-
 /// Search Header Styled
 export const SearchContainer = styled.div`
   width: 1440px;

@@ -1,12 +1,10 @@
 "use client";
 import React, { useState } from "react";
-
 import {
   CloseInput,
   DivSearch,
   FilterDrop,
   FilterPlace,
-  ImgSearch,
   Input,
   InputContainer,
   InputandSearch,
@@ -35,6 +33,8 @@ import {
 } from "../Styled Components/SearchFilter";
 import Link from "next/link";
 import Header from "../Header/Header";
+import Image from "next/image";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function Search() {
   const [userInput, setUserInput] = useState<string>("");
@@ -47,6 +47,12 @@ export default function Search() {
       return id.name.toLowerCase().includes(userInput);
     }
   });
+
+  const Responsive480 = useMediaQuery("(max-width:480px)");
+  const Responsive630 = useMediaQuery("(max-width:630px)");
+  const Responsive850 = useMediaQuery("(max-width:850px)");
+  const Responsive1100 = useMediaQuery("(max-width:1100px)");
+  const Responsive1280 = useMediaQuery("(max-width:1280px)");
 
   const route = useRouter();
   return (
@@ -61,8 +67,10 @@ export default function Search() {
               }}
             >
               بستن
-              <img
-                style={{ height: 48, width: 48 }}
+              <Image
+                alt="close icon"
+                height={48}
+                width={48}
                 src="./images/Search/close.svg"
               />
             </CloseInput>
@@ -77,8 +85,10 @@ export default function Search() {
                 placeholder="فیلم، سریال، بازیگر و ژانر"
               />
               <SearchIcons>
-                <img
-                  style={{ height: 24, width: 24 }}
+                <Image
+                  alt="search icon"
+                  height={24}
+                  width={24}
                   src="./images/Search/search.svg"
                 />
               </SearchIcons>
@@ -86,8 +96,10 @@ export default function Search() {
           </SerachInputPlace>
           <FilterPlace>
             <FilterDrop>
-              <img
-                style={{ height: 16, width: 16 }}
+              <Image
+                alt="arrow"
+                height={16}
+                width={16}
                 src="./images/Search/arrow.svg"
               />
               فیلتر کردن
@@ -98,7 +110,36 @@ export default function Search() {
         <SearchItem>
           {userInput === "" ? (
             <DivSearch>
-              <ImgSearch src="./images/Search/searchstatus.svg" />
+              <Image
+                alt="search status"
+                height={
+                  Responsive480
+                    ? 50
+                    : Responsive630
+                    ? 85
+                    : Responsive850
+                    ? 80
+                    : Responsive1100
+                    ? 90
+                    : Responsive1280
+                    ? 85
+                    : 85
+                }
+                width={
+                  Responsive480
+                    ? 50
+                    : Responsive630
+                    ? 85
+                    : Responsive850
+                    ? 80
+                    : Responsive1100
+                    ? 90
+                    : Responsive1280
+                    ? 85
+                    : 85
+                }
+                src="./images/Search/searchstatus.svg"
+              />
               عنوان فیلم، سریال یا بازیگر مورد نظر خود را
               <br /> جستجو کنید و یا از طریق فیلترهای موجود
               <br /> {"."}فیلم و سریال مورد نظر خود را پیدا کنید

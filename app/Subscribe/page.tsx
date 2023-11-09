@@ -41,6 +41,7 @@ import {
   TittleText,
 } from "../Styled Components/subscribe";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Subscribe() {
   return (
@@ -60,8 +61,13 @@ export default function Subscribe() {
             <AutoTop>
               <AutoPrice>
                 <LinkPlace>
-                  <p style={{ cursor: "pointer",fontSize:"15px" }}>۷۵‍‍‍,۰۰۰ تومان</p>
-                  <img
+                  <p style={{ cursor: "pointer", fontSize: "15px" }}>
+                    ۷۵‍‍‍,۰۰۰ تومان
+                  </p>
+                  <Image
+                    height={24}
+                    width={24}
+                    alt="arrow"
                     style={{ cursor: "pointer" }}
                     src="./images/Subscribe/arrow.svg"
                   />
@@ -72,7 +78,12 @@ export default function Subscribe() {
             <MiddleLine />
             <AutoBottom>
               <AutoBottomText>
-                <img src="./images/Subscribe/arrow2.svg" />
+                <Image
+                  height={24}
+                  width={24}
+                  alt="arrow"
+                  src="./images/Subscribe/arrow2.svg"
+                />
                 <More>بیشتر بدانید</More>
                 {"."}
                 مبلغ اشتراک هر ماه به صوت خودکار از حساب شما کسر خواهد شد
@@ -94,8 +105,10 @@ export default function Subscribe() {
           >
             <OnceMonthPrice>
               <ArrowIcon>
-                <img
-                  style={{ height: 24, width: 24 }}
+                <Image
+                  height={24}
+                  width={24}
+                  alt="arrow"
                   src="./images/Subscribe/arrow.svg"
                 />
               </ArrowIcon>
@@ -129,8 +142,10 @@ export default function Subscribe() {
           >
             <ThirdMonthPrice>
               <ArrowIcon>
-                <img
-                  style={{ height: 24, width: 24 }}
+                <Image
+                  height={24}
+                  width={24}
+                  alt="arrow"
                   src="./images/Subscribe/arrow.svg"
                 />
               </ArrowIcon>
@@ -164,10 +179,12 @@ export default function Subscribe() {
           >
             <SixthPrice>
               ۴۹۹,۰۰۰ تومان
-                <img
-                  style={{ height: 24, width: 24 }}
-                  src="./images/Subscribe/arrow.svg"
-                />
+              <Image
+                height={24}
+                width={24}
+                alt="arrow"
+                src="./images/Subscribe/arrow.svg"
+              />
             </SixthPrice>
             <SixthText>شش ماهه </SixthText>
           </Link>

@@ -28,6 +28,7 @@ import { useSelector } from "react-redux";
 import TransitionsModal from "./NameModal";
 import TransitionsEmailModal from "./EmailModal";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Image from "next/image";
 
 export default function Account() {
   const select = useSelector((state: RoutState) => state.Reducer);
@@ -38,7 +39,12 @@ export default function Account() {
       <UnderHeader />
       <AccountMain>
         <AccountText>
-          <img src="./images/Account/profileIcon.svg" />
+          <Image
+            height={24}
+            width={24}
+            alt="profile"
+            src="/./images/Account/profileIcon.svg"
+          />
           حساب کاربری
         </AccountText>
 

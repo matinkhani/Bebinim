@@ -174,13 +174,6 @@ export const BuyBtn = styled.button`
   cursor: pointer;
 `;
 
-export const SearchIcon = styled.img`
-  height: 32px;
-  width: 32px;
-  color: #fefefe;
-  cursor: pointer;
-`;
-
 export const RightSection = styled.div`
   height: 100%;
   width: 40%;
@@ -212,11 +205,6 @@ export const TabsPlace = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-`;
-
-export const FilmSerialImg = styled.img`
-  height: 16px;
-  width: 16px;
 `;
 
 export const SerialTab = styled.div`
@@ -290,12 +278,6 @@ export const BebinimIconAndText = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
-`;
-
-export const BebinimIcon = styled.img`
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
 `;
 
 export const BebinimText = styled.p`

@@ -5,21 +5,14 @@ import {
   Container,
   FilmPoster,
   BebinimLinks,
-  FreshSVG,
   FreshText,
   LeftSide,
   RightSide,
   ArrowIconsPlace,
   ExplainContainer,
   ExplainAndWatch,
-  Text,
   MoreExplainText,
   MoreExplainBtn,
-  WatchSVG,
-  MoreIcon,
-  ArrowIconsRight,
-  ArrowIconsLeft,
-  IconPlace,
   CenterPlace,
   CenterPl,
 } from "../Styled Components/MainLanding";
@@ -28,24 +21,69 @@ import Link from "next/link";
 import Carousel from "nuka-carousel";
 import "./styles.css";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Image from "next/image";
 
 const renderCenterLeftControls = ({
   previousSlide,
 }: {
   previousSlide: any;
-}) => (
-  <ArrowIconsLeft onClick={previousSlide} src="./images/arrowcircleleft.svg" />
-);
+}) => {
+  const Responsive1200 = useMediaQuery("(max-width:1200px)");
+  return (
+    <Image
+      alt="previous button"
+      height={48}
+      width={48}
+      style={
+        Responsive1200
+          ? {
+              position: "absolute",
+              left: "35px",
+              bottom: "15px",
+              cursor: "pointer",
+            }
+          : {
+              position: "absolute",
+              left: "35px",
+              bottom: "120px",
+              cursor: "pointer",
+            }
+      }
+      onClick={previousSlide}
+      src="./images/arrowcircleleft.svg"
+    />
+  );
+};
 
 const renderCenterRightControls = ({ nextSlide }: { nextSlide: any }) => {
+  const Responsive1200 = useMediaQuery("(max-width:1200px)");
   return (
-    <ArrowIconsRight onClick={nextSlide} src="./images/arrowcircleright.svg" />
+    <Image
+      alt="next button"
+      height={48}
+      width={48}
+      style={
+        Responsive1200
+          ? {
+              position: "absolute",
+              left: "90px",
+              bottom: "15px",
+              cursor: "pointer",
+            }
+          : {
+              position: "absolute",
+              left: "90px",
+              bottom: "120px",
+              cursor: "pointer",
+            }
+      }
+      onClick={nextSlide}
+      src="./images/arrowcircleright.svg"
+    />
   );
 };
 export default function MainLanding() {
-  const Responsive600 = useMediaQuery("(max-width:600px)");
   const Responsive1200 = useMediaQuery("(max-width:1200px)");
-
   return (
     <>
       <Carousel
@@ -63,7 +101,7 @@ export default function MainLanding() {
                   : { backgroundImage: `url(${item.url})` }
               }
             >
-              <FilmPoster>
+              <FilmPoster key={index}>
                 <LeftSide>
                   <ArrowIconsPlace></ArrowIconsPlace>
                 </LeftSide>
@@ -79,12 +117,26 @@ export default function MainLanding() {
                             </Link>
                           </MoreExplainText>
                           <Link href={`Main-Landing/${item.id}`}>
-                            <MoreIcon src={"./images/mores2.svg"} />
+                            <Image
+                              alt="more icon"
+                              height={24}
+                              width={24}
+                              style={{
+                                marginBottom: "10px",
+                                cursor: "pointer",
+                              }}
+                              src={"./images/mores2.svg"}
+                            />
                           </Link>
                           <Link href={`Main-Landing/${item.id}`}>
                             <MoreExplainBtn>
                               تماشا کنید
-                              <WatchSVG src="./images/watch.svg" />
+                              <Image
+                                alt="watch icon"
+                                height={24}
+                                width={24}
+                                src="./images/watch.svg"
+                              />
                             </MoreExplainBtn>
                           </Link>
                         </ExplainAndWatch>
@@ -110,7 +162,10 @@ export default function MainLanding() {
                             </Link>
                           </MoreExplainText>
                           <Link href={`Main-Landing/${item.id}`}>
-                            <MoreIcon
+                            <Image
+                              alt="more icon"
+                              height={24}
+                              width={24}
                               src={
                                 item.id === 42
                                   ? "./images/mores.svg"
@@ -122,32 +177,23 @@ export default function MainLanding() {
                                   ? "./images/mores2.svg"
                                   : ""
                               }
+                              style={{ cursor: "pointer" }}
                             />
                           </Link>
                           <Link href={`Main-Landing/${item.id}`}>
                             <MoreExplainBtn>
                               تماشا کنید
-                              <WatchSVG src="./images/watch.svg" />
+                              <Image
+                                alt="watch icon"
+                                height={24}
+                                width={24}
+                                src="./images/watch.svg"
+                              />
                             </MoreExplainBtn>
                           </Link>
                         </ExplainAndWatch>
                       </>
                     )}
-                    <Text
-                      style={
-                        item.id === 1
-                          ? { color: "black" }
-                          : item.id === 2
-                          ? { color: "black" }
-                          : item.id === 3
-                          ? { color: "white" }
-                          : item.id === 4
-                          ? { color: "white" }
-                          : {}
-                      }
-                    >
-                      {/* {item.text} */}
-                    </Text>
                   </ExplainContainer>
                 </RightSide>
               </FilmPoster>
@@ -161,7 +207,12 @@ export default function MainLanding() {
             <CenterPlace>
               <CenterPl>
                 <FreshText>انیمیشن تازه ببینیم</FreshText>
-                <FreshSVG src="./images/freshAnimation.svg" />
+                <Image
+                  alt="animaiton icon"
+                  height={40}
+                  width={40}
+                  src="./images/freshAnimation.svg"
+                />
               </CenterPl>
             </CenterPlace>
           </BebinimLinks>
@@ -170,7 +221,12 @@ export default function MainLanding() {
             <CenterPlace>
               <CenterPl>
                 <FreshText>سریال تازه ببینیم</FreshText>
-                <FreshSVG src="./images/freshSerial.svg" />
+                <Image
+                  alt="animaiton icon"
+                  height={40}
+                  width={40}
+                  src="./images/freshSerial.svg"
+                />
               </CenterPl>
             </CenterPlace>
           </BebinimLinks>
@@ -179,7 +235,12 @@ export default function MainLanding() {
             <CenterPlace>
               <CenterPl>
                 <FreshText>فیلم تازه ببینیم</FreshText>
-                <FreshSVG src="./images/freshMovie.svg" />
+                <Image
+                  alt="animaiton icon"
+                  height={40}
+                  width={40}
+                  src="./images/freshMovie.svg"
+                />
               </CenterPl>
             </CenterPlace>
           </BebinimLinks>

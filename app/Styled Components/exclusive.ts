@@ -138,6 +138,21 @@ export const Details = styled.div`
     justify-content: center;
     gap: 80px;
   }
+  @media screen and (max-width: 600px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    width: 220px;
+    height: 300px;
+  }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    width: 285px;
+    height: 390px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1440px) {
+    width: 260px;
+    height: 390px;
+  }
 `;
 
 export const DetailsTop = styled.div`
@@ -221,6 +236,14 @@ export const Hover = styled.div`
   @media screen and (max-width: 600px) {
     width: 300px;
     height: 300px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    width: 220px;
+    height: 300px;
+  }
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    width: 285px;
+    height: 390px;
   }
   @media screen and (min-width: 1200px) and (max-width: 1440px) {
     width: 260px;

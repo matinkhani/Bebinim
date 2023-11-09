@@ -8,10 +8,6 @@ export const AccIconConatiner = styled.div`
   align-items: center;
 `;
 
-export const AccImg = styled.img`
-  cursor: pointer;
-`;
-
 export const ConatinerAcc = styled.div`
   width: 288px;
   height: 330px;
@@ -98,11 +94,6 @@ export const BuySubText = styled.p`
   color: rgba(7, 7, 7, 1);
 `;
 
-export const BuySubIcon = styled.img`
-  width: 16px;
-  height: 16px;
-`;
-
 export const MoreContainer = styled.div`
   width: 288px;
   height: 224px;
@@ -130,8 +121,6 @@ export const TabsRight = styled.div`
   gap: 4px;
 `;
 
-export const Icons = styled.img``;
-
 export const Texts = styled.div`
   font-family: var(--medium);
   font-size: 14px;
@@ -149,8 +138,6 @@ export const TabsLeft = styled.div`
   align-items: center;
   justify-content: start;
 `;
-
-export const ArrowIcon = styled.img``;
 
 export const Line = styled.div`
   width: 90%;
@@ -191,8 +178,6 @@ export const LogOutTabLeft = styled.div`
   align-items: center;
   justify-content: start;
 `;
-
-export const LogOutTabIcon = styled.img``;
 
 export const LogOutTabText = styled.div`
   font-family: var(--medium);
