@@ -103,7 +103,7 @@ const FavoritesArr = [
     year: "۱۴۰۱",
     image1: "/../images/Watch/shad1.webp",
     image2: "/../images/Watch/shad2.webp",
-    image3: "/../images/Watch/shad3.jpg",
+    image3: "/../images/Watch/shad3.webp",
     age: "+۱۷",
     time: "۱:۳۴:۳۰",
     rate: "۳۵٪",
@@ -211,7 +211,7 @@ const FavoritesArr = [
   //mogheiat mahdi
   {
     id: 12,
-    url: "/./images/favorites/Frame12.jpeg",
+    url: "/./images/favorites/Frame12.webp",
     name: "موقعیت مهدی",
     category: "فیلم",
     year: "۱۴۰۰",

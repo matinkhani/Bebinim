@@ -99,7 +99,7 @@ const AllMovies = [
       year: "۱۴۰۱",
       image1: "../images/Watch/shad1.webp",
       image2: "../images/Watch/shad2.webp",
-      image3: "../images/Watch/shad3.jpg",
+      image3: "../images/Watch/shad3.webp",
       age: "+۱۷",
       time: "۱:۳۴:۳۰",
       rate: "۳۵٪",
@@ -384,12 +384,12 @@ const AllMovies = [
     // Panda
     {
       id: 22,
-      url: "./images/animation/panda.svg",
+      url: "./images/animation/panda.webp",
       name: "پاندای کونگ فو کار ۳",
       name2: "kung fu panda",
       year: "۲۰۱۶",
       category: "انیمیشن",
-      bgImg: "../images/animation/panda.svg",
+      bgImg: "../images/animation/panda.webp",
       image1: "../images/D-Animation/panda1.webp",
       image2: "../images/D-Animation/panda2.webp",
       image3: "../images/D-Animation/panda3.webp",
