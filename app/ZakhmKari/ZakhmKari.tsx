@@ -33,6 +33,12 @@ export default function Movie() {
   const Responsive1440 = useMediaQuery("(max-width:1440px)");
   return (
     <Container>
+      <Image
+        height={100}
+        width={100}
+        alt="zakhm kari logo"
+        src="/./images/ZakhmKari/mov_logo.webp"
+      />
       {ZakhmKariArr.map((item, index) => {
         return (
           <>
