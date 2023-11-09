@@ -826,7 +826,7 @@ const AllMovies = [
   // Gharib
   {
     id: 42,
-    url: "./images/GharibFilm.png",
+    url: "./images/GharibFilm.webp",
     name: "غریب",
     category: "فیلم",
     year: "۱۳۹۹",
@@ -836,7 +836,7 @@ const AllMovies = [
     age: "+۱۲",
     time: "۲:۰۸:۰۰",
     rate: "۸۸٪",
-    bgImg: "../gharib.jpg",
+    bgImg: "../gharib.webp",
     description:
       "با آغاز شورش کردها در ایران توسط احزاب کُرد در سال ۱۳۵۸ از جمله کومله و دموکرات، محمد بروجردی از طرف آیت الله خمینی مأموریت می‌یابد تا ...",
     save: "../images/Watch/save.svg",
