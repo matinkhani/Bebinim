@@ -200,13 +200,24 @@ export default function Favorites() {
                 {FavoritesArr.map((item, index) => {
                   return (
                     <SwiperSlide>
-                      <Image
+                      {/* <Image
                         alt="favorites image"
                         height={256}
                         width={184}
                         key={index}
                         src={item.url}
                         style={{
+                          borderRadius: 8,
+                          overflowY: "hidden",
+                          cursor: "pointer",
+                          position: "relative",
+                        }}
+                      /> */}
+                      <img
+                        src={item.url}
+                        style={{
+                          height: 184,
+                          width: 256,
                           borderRadius: 8,
                           overflowY: "hidden",
                           cursor: "pointer",
