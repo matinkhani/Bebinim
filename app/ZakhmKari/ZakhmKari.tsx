@@ -47,7 +47,7 @@ export default function Movie() {
                       height={100}
                       width={100}
                       alt="zakhm kari logo"
-                      src="/./images/ZakhmKari/mov_logo.webp"
+                      src="/images/ZakhmKari/mov_logo.webp"
                     />
                   </MovieIacon>
                   <DetailsText>
