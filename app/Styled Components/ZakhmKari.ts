@@ -63,7 +63,7 @@ export const Details = styled.div`
 `;
 
 export const MovieIacon = styled.div`
-  width: 276px;
+  width: 160px;
   height: 181px;
 
   @media screen and (max-width: 600px) {
