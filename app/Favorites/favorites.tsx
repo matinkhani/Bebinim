@@ -204,7 +204,7 @@ export default function Favorites() {
                         alt="favorites image"
                         height={256}
                         width={184}
-                        src={'/images/favorites/Frame1.png'}
+                        src={item.url}
                         style={{
                           borderRadius: 8,
                           overflowY: "hidden",
