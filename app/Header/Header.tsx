@@ -518,8 +518,8 @@ export default function Header() {
                 </Link>
                 <Link href="/Search">
                   <Image
-                    height={16}
-                    width={16}
+                    height={35}
+                    width={35}
                     alt="search"
                     style={{ cursor: "pointer" }}
                     src="./images/SearchIcon.svg"
